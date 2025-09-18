@@ -9,3 +9,9 @@ body {
 html, body {
   overflow-x: hidden;
 }
+
+@media (min-width: 1920px) {
+  body {
+    overflow-x: visible;
+  }
+}
