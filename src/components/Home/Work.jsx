@@ -34,7 +34,7 @@ const Work = () => {
             />
 
             <motion.div
-                className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[105rem] left-[63.2rem] rounded-3xl overflow-hidden flex justify-end items-end 3xl:mt-[-2rem] 3xl:ml-[-4.5rem] 2xl:ml-[11.5rem] 2xl:mt-[-10rem] 2xl:z-10 lg:z-20 lg:left-[45rem] lg:mt-[-25vh]"
+                className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[105rem] left-[63.2rem] rounded-3xl overflow-hidden flex justify-end items-end 3xl:mt-[-2rem] 3xl:ml-[13.8rem] 2xl:ml-[11.5rem] 2xl:mt-[-10rem] 2xl:z-10 lg:z-20 lg:left-[45rem] lg:mt-[-25vh]"
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"

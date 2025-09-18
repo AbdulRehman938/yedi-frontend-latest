@@ -76,11 +76,11 @@ const Hero = () => {
       <div className="hidden sm:block relative w-full">
         <div className="w-full h-screen px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20 pt-24 pb-0 grid grid-cols-12 gap-4 lg:gap-8 items-center">
           {/* Image left */}
-          <AnimatedItem className="col-span-5 flex justify-center items-center relative z-10 xl:mt-[-2rem] 3xl:mt-[-10rem]">
+          <AnimatedItem className="col-span-5 flex justify-center items-center relative z-10 xl:mt-[-2rem] 3xl:mt-[5rem]">
             <img src="/Home-character.svg" alt="character" className="w-[70%] sm:w-[65%] md:w-[75%] lg:w-[85%] xl:w-[75%] 3xl:w-[120%] 3xl:mt-40 2xl:w-[120%] 2xl:mt-[-5rem] 3xl:mt-[13rem]] max-w-[300px] lg:max-w-[350px] xl:max-w-[400px] 2xl:max-w-[450px]" />
           </AnimatedItem>
           {/* Text right */}
-          <AnimatedItem className="col-span-7 flex flex-col items-start justify-center z-10 pl-4 lg:pl-0 xl:mt-[-30rem] 3xl:ml-[13rem] 3xl:mb-[-10rem] 2xl:mt-[-35rem] 2xl:ml-[10rem] lg:mt-[-35rem] lg:ml-[6rem]  ">
+          <AnimatedItem className="col-span-7 flex flex-col items-start justify-center z-10 pl-4 lg:pl-0 xl:mt-[-30rem] 3xl:ml-[13rem] 3xl:mb-[-15rem] 2xl:mt-[-35rem] 2xl:ml-[10rem] lg:mt-[-35rem] lg:ml-[6rem]  ">
             <h1 className="text-primary font-bold leading-tight
                 sm:text-[2.5rem] sm:leading-[2.2rem]
                 md:text-[3.5rem] md:leading-[3rem]
