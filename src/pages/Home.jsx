@@ -10,7 +10,7 @@ const Home = () => {
       <Hero />
       <Mirror />
       <Work />
-      <Locations />
+      {/* <Locations /> */}
     </div>
   )
 }

@@ -19,13 +19,13 @@ const Work = () => {
     }, [])
 
     return (
-        <div className="work-container w-full h-[120rem] pt-20 bg-background relative top-[-10.5rem] flex justify-center items-start">
-            <div className="work-bg-decor w-[50%] h-[15%] bg-background absolute z-20 top-36 right-[45rem]"></div>
+        <div className="work-container w-full h-[120rem] pt-20 bg-background relative top-[-10.5rem] flex justify-center items-start 3xl:mt-[-4rem] 2xl:mt-[1rem]">
+            <div className="w-[50%] h-[15%] bg-background absolute z-20 top-36 right-[45rem] xl:left-[-20rem] 3xl:h-[18%] lg:left-[-10rem]"></div>
 
             <motion.img
                 src="/HomeWorkSlide.svg"
                 alt="slide"
-                className="work-main-slide w-full h-full object-cover absolute z-40"
+                className="work-main-slide w-full h-full object-fill absolute z-30 3xl:mt-[5rem] 3xl:z-40"
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"
@@ -34,7 +34,7 @@ const Work = () => {
             />
 
             <motion.div
-                className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[105rem] left-[63.2rem] rounded-3xl overflow-hidden flex justify-end items-end"
+                className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[105rem] left-[63.2rem] rounded-3xl overflow-hidden flex justify-end items-end 3xl:mt-[-2rem] 3xl:ml-[-4.5rem] 2xl:ml-[11.5rem] 2xl:mt-[-10rem] 2xl:z-10 lg:z-20 lg:left-[45rem] lg:mt-[-25vh]"
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"
@@ -62,7 +62,7 @@ const Work = () => {
                         />
                     </div>
                     <div className="work-section1-text w-[48%] ml-5 mt-[-13rem] h-full flex flex-col justify-start items-start">
-                        <h1 className="work-section1-title text-primary font-bold text-[4rem] relative bottom-[2rem]">
+                        <h1 className="work-section1-title text-primary font-bold text-[4rem] relative bottom-[2rem] lg:text-[3rem]">
                             How it works
                         </h1>
                         <div className="work-step1 w-full ml-10 h-[15rem] flex justify-between items-start">

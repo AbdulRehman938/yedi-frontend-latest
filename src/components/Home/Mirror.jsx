@@ -96,7 +96,7 @@ const Mirror = () => {
         </motion.div>
 
         {/* Sections */}
-        <div id="second" className="w-[100vw] relative z-20 flex flex-col overflow-visible mt-[20rem] xl:mt-[-10rem] 3xl:mt-[20rem]">
+        <div id="second" className="w-[100vw] relative z-20 flex flex-col overflow-visible mt-[20rem] 2xl:mt-[20rem] xl:mt-[-10rem] 3xl:mt-[20rem]">
           {/* Mirror background for desktop */}
           <img
             src="/Mirror2.svg"
@@ -154,7 +154,7 @@ const Mirror = () => {
                 want to tell someone I have to evacuate <br className="xs:hidden" /> my bowels.
               </p>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center md:justify-start xl:ml-[3rem] lg:mt-[-1rem] 3xl:ml-[5rem] 3xl:mt-[-3rem] ">
+            <div className="w-full md:w-1/2 flex justify-center md:justify-start xl:ml-[3rem] lg:mt-[-1rem] 2xl:mt-[-2rem] 3xl:ml-[5rem] 3xl:mt-[-3rem] ">
               <img src="/Home-character3.svg" alt="char3" className="w-2/3 sm:w-1/2 lg:w-[45%] lg:ml-[10rem] xl:w-[40%] 2xl:w-[35%] 2xl:ml-[10rem] 2xl:mt-[5rem] max-w-md" />
             </div>
           </motion.div>
@@ -178,7 +178,7 @@ const Mirror = () => {
                 unlock to find <span className="text-black font-medium">relief</span>.
               </p>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center md:justify-end 3xl:mr-[10rem] lg:mt-[4rem] 3xl:mt-[1rem] ">
+            <div className="w-full md:w-1/2 flex justify-center md:justify-end 3xl:mr-[10rem] lg:mt-[4rem] 2xl:mt-[-1rem] 3xl:mt-[1rem] ">
               <img src="/Home-character4.svg" alt="char4" className="w-2/3 sm:w-1/2 lg:w-[60%] xl:w-[50%] 2xl:w-[45%] 2xl:mt-10 3xl:w-[55%] max-w-md" />
             </div>
           </motion.div>
