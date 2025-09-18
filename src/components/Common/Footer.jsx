@@ -7,9 +7,9 @@ import { FaXTwitter } from 'react-icons/fa6';
 const Footer = () => {
   return (
     <div className='bg-third w-full h-[30rem] flex justify-center items-start relative z-10 overflow-hidden'>
-      <img src="/FooterLine.svg" alt="Footer" className='absolute w-full h-[90%] mt-5 z-20' />
+      <img src="/FooterLine.svg" alt="Footer" className='absolute w-full h-[90%] mt-5 z-20 lg:object-fill' />
       <div className='absolute w-[90%] h-[50%] bottom-36 z-30 flex justify-between items-center'>
-        <div className='h-[80%] w-[25%] flex flex-col justify-between items-start mt-10'>
+        <div className='h-[80%] w-[25%] flex flex-col justify-between items-start mt-10 lg:ml-[-2rem] lg:mt-[5rem]'>
           <h1 className='text-6xl text-primary font-black'>Find Your <br /> Restroom</h1>
           <nav className="w-full flex flex-col items-start p-6 gap-4">
             <Link
