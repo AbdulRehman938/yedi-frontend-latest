@@ -80,7 +80,7 @@ const Hero = () => {
             <img src="/Home-character.svg" alt="character" className="w-[70%] sm:w-[65%] md:w-[75%] lg:w-[85%] xl:w-[75%] 3xl:w-[120%] 3xl:mt-[-5rem] 2xl:w-[120%] 2xl:mt-[-5rem] max-w-[300px] lg:max-w-[350px] xl:max-w-[400px] 2xl:max-w-[450px]" />
           </AnimatedItem>
           {/* Text right */}
-          <AnimatedItem className="col-span-7 flex flex-col items-start justify-center z-10 pl-4 lg:pl-0 xl:mt-[-30rem] 3xl:ml-[13rem] 3xl:mb-[-15rem] 2xl:mt-[-40rem] 2xl:ml-[10rem] lg:mt-[-35rem] lg:ml-[6rem]  ">
+          <AnimatedItem className="col-span-7 flex flex-col items-start justify-center z-10 pl-4 lg:pl-0 xl:mt-[-30rem] 3xl:ml-[13rem] 3xl:mb-[-15rem] 2xl:mt-[-30rem] 2xl:ml-[10rem] lg:mt-[-35rem] lg:ml-[6rem]  ">
             <h1 className="text-primary font-bold leading-tight
                 sm:text-[2.5rem] sm:leading-[2.2rem]
                 md:text-[3.5rem] md:leading-[3rem]
