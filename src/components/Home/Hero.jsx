@@ -72,7 +72,7 @@ const Hero = () => {
         <div className="pb-[50rem] sm:pb-0" />
       </div>
 
-      {/* Desktop / Tablet Layout */}
+      
       <div className="hidden sm:block relative w-full">
         <div className="w-full h-screen px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20 pt-24 pb-0 grid grid-cols-12 gap-4 lg:gap-8 items-center">
           {/* Image left */}
