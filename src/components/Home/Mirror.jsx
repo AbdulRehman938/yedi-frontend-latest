@@ -64,9 +64,9 @@ const Mirror = () => {
         {/* Mirror container */}
         <motion.div
           id="mirror"
-          className="w-[95%] sm:w-[90%] md:w-[85%] lg:w-[95%] xl:w-[85%] 2xl:w-[95%] max-w-[1440px] z-30 2xl:mt-[-20rem]
+          className="w-[95%] sm:w-[90%] md:w-[85%] lg:w-[95%] xl:w-[85%] 2xl:w-[95%] max-w-[1440px] z-30 2xl:mt-[-20rem] hidden sm:block
                      h-[35rem] sm:h-[28rem] md:h-[30rem] lg:h-[38rem] xl:h-[46rem] 2xl:h-[45rem] xs:top-[-20rem] 
-                     bg-transparent relative -mt-20 sm:-mt-10 lg:-mt-32 rounded-[50rem] overflow-hidden flex justify-center items-center"
+                     bg-transparent relative -mt-20 sm:-mt-10 lg:-mt-32 rounded-[50rem] overflow-hidden justify-center items-center"
           variants={fadeVariant}
           initial="hidden"
           whileInView="visible"
@@ -83,21 +83,10 @@ const Mirror = () => {
             exit="exit"
             viewport={{ once: false, amount: 0.2 }}
           />
-          {/* <div className="w-[90%] h-full bg-[#4c4c4c57] relative z-10"></div> */}
-          {/* <motion.h1
-            className="absolute text-white text-[2rem] font-black z-10 text-center lg:text-[4rem] md:text-[3rem] 2xl:text-[7rem]"
-            variants={fadeVariant}
-            initial="hidden"
-            whileInView="visible"
-            exit="exit"
-            viewport={{ once: false, amount: 0.2 }}
-          >
-            Your key to <br /> Exceptional Success
-          </motion.h1> */}
         </motion.div>
 
         {/* Sections */}
-        <div id="second" className="w-[100vw] relative z-20 flex flex-col overflow-visible mt-[20rem] 2xl:mt-[20rem] xl:mt-[-10rem] 3xl:mt-[20rem] ">
+        <div id="second" className="w-[100vw] relative z-20 flex-col overflow-visible mt-[20rem] 2xl:mt-[20rem] xl:mt-[-10rem] 3xl:mt-[20rem] hidden sm:block ">
           {/* Mirror background for desktop */}
           <img
             src="/Mirror2.svg"
@@ -185,6 +174,65 @@ const Mirror = () => {
           </motion.div>
         </div>
       </div>
+
+      {/* ===== Mobile Layout for Mirror (below all desktop content) ===== */}
+      <div className="sm:hidden flex flex-col items-center justify-start w-full px-4 text-center mt-12 pt-4 max-w-screen-sm mx-auto min-h-[265vh] pb-16 relative z-50">
+        {/* Mirror container */}
+        <motion.div
+          id="mirror"
+          className="w-full h-[40rem] bg-transparent relative rounded-[50rem] overflow-hidden flex justify-center items-center mt-[-30rem]"
+          variants={fadeVariant}
+          initial="hidden"
+          whileInView="visible"
+          exit="exit"
+          viewport={{ once: false, amount: 0.2 }}
+        >
+          <motion.img
+            src="/mirror-thing2.svg"
+            alt="mirror"
+            className="w-full h-full z-0 object-fill relative"
+            variants={fadeVariant}
+            initial="hidden"
+            whileInView="visible"
+            exit="exit"
+            viewport={{ once: false, amount: 0.2 }}
+          />
+        </motion.div>
+        <div id="second" className="w-[100vw] relative z-20 flex flex-col overflow-visible mt-[20rem] sm:hidden">
+          <div className="absolute z-10 top-[-30rem] w-full h-[10rem] flex flex-col items-center -space-y-[80px] md:hidden">
+            <img src="/brownmobile4.svg" alt="Mirror part 4" className="brownmobile4 w-full  max-h-[30rem] mt-[1rem] object-cover" />
+            <img src="/brownmobile1.svg" alt="Mirror part 1" className="brownmobile1 w-full max-h-[30rem] mt-[80rem] relative top-[7rem] object-cover" />
+            <img src="/brownmobile2.svg" alt="Mirror part 2" className="brownmobile2 w-full  max-h-[30rem] mt-[60rem] relative top-[35rem] object-cover" />
+            <img src="/brownmobile3.svg" alt="Mirror part 3" className="brownmobile3 w-full  max-h-[30rem] mt-[60rem]  relative top-[45rem] object-cover" />
+          </div>
+          {/* Section 1 */}
+          <motion.div
+            className="relative z-30 w-[80%] ml-28 flex flex-col items-center justify-between gap-10 mt-[-12rem]"
+            variants={fadeVariant}
+            initial="hidden"
+            whileInView="visible"
+            exit="exit"
+            viewport={{ once: false, amount: 0.2 }}
+          >
+            <div className="w-[100vw] flex flex-col gap-4 text-center px-2 ml-[-8rem]">
+              <h1 className="text-5xl text-primary font-bold">
+                We've all been there
+              </h1>
+              <p className="w-[80vw] text-gray-500 font-medium ml-[2rem]">
+                You're away from home and unsure where you can <span className="text-black font-medium">go</span>.
+              </p>
+            </div>
+            <div className="w-full flex justify-center ml-[-9rem] mt-[3rem]">
+              <img src="/Home-character2.svg" alt="char2" className="w-[55%] max-w-md" />
+            </div>
+          </motion.div>
+
+
+        </div>
+
+
+      </div>
+
     </div>
   )
 }
