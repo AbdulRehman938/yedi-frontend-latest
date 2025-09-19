@@ -110,10 +110,10 @@ const Mirror = () => {
 
           {/* Brownmobile pieces for small screens */}
           <div className="absolute z-10 top-[-30rem] w-full h-[10rem] flex flex-col items-center -space-y-[80px] md:hidden">
-            <img src="/brownmobile4.svg" alt="Mirror part 4" className="brownmobile4 w-full max-h-[30rem] mt-[-24rem] object-cover" />
-            <img src="/brownmobile1.svg" alt="Mirror part 1" className="brownmobile1 w-full  max-h-[30rem] mt-[-20rem] object-cover" />
-            <img src="/brownmobile2.svg" alt="Mirror part 2" className="brownmobile2 w-full  max-h-[30rem] mt-[20rem] relative top-[20rem] object-cover" />
-            <img src="/brownmobile3.svg" alt="Mirror part 3" className="brownmobile3 w-full  max-h-[30rem] mt-[-20rem]  relative top-[30rem] object-cover" />
+            <img src="/brownmobile4.svg" alt="Mirror part 4" className="brownmobile4 w-full max-h-[30rem] mt-[-24rem] z-40 object-cover" />
+            <img src="/brownmobile1.svg" alt="Mirror part 1" className="brownmobile1 w-full  max-h-[30rem] mt-[-20rem] z-40 object-cover" />
+            <img src="/brownmobile2.svg" alt="Mirror part 2" className="brownmobile2 w-full  max-h-[30rem] mt-[20rem] relative top-[20rem] z-40 object-cover" />
+            <img src="/brownmobile3.svg" alt="Mirror part 3" className="brownmobile3 w-full  max-h-[30rem] mt-[-20rem]  relative top-[30rem] z-40 object-cover" />
           </div>
 
           {/* Section 1 */}
