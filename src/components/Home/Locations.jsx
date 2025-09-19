@@ -50,14 +50,14 @@ const Locations = () => {
     }, [])
 
     return (
-        <div className='locations-container w-full h-screen relative flex flex-col justify-center items-start bg-white 2xl:h-[90rem]'>
+        <div className=' w-full min-h-screen relative flex flex-col justify-start items-start bg-white overflow-hidden py-16 lg:py-24'>
             {/* Gradient BG */}
-            <div className='locations-bg-top absolute w-full h-[10rem] -top-10 bg-gradient-to-t from-white to-background 2xl:mt-[-10rem] 2xl:h-[30rem]'></div>
-            <div className='absolute w-full h-[10rem] bg-third bottom-0'></div>
+            <div className='locations-bg-top absolute w-full h-[10rem] -top-10 bg-gradient-to-t from-white to-background'></div>
+            <div className='locations-bg-bottom absolute w-full h-[10rem] bg-third bottom-0'></div>
 
             {/* Locations Section */}
             <motion.div
-                className='locations-section w-full max-w-7xl mx-auto px-4 lg:px-8 flex flex-col justify-start items-start bg-transparent z-10 lg:ml-20 lg:mt-[-20rem] 2xl:pt-[20rem]'
+                className='locations-section w-full max-w-7xl mx-auto px-4 lg:px-8 flex flex-col justify-start items-start bg-white z-10 overflow-hidden'
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"
@@ -67,22 +67,22 @@ const Locations = () => {
                 <p className='locations-subtext text-lg lg:text-xl font-semibold text-gray-500'>Discover Yedi in your City</p>
 
                 <motion.div
-                    className='city-carousel relative w-[100vw] mt-12 lg:mt-16 2xl:w-[100vw] '
+                    className='city-carousel relative w-full mt-12 lg:mt-16'
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.2 }}
                 >
-                    <div className="overflow-hidden 2xl:overflow-visible">
+                    <div className="overflow-hidden">
                         <div
                             id="city-container"
                             className="city-list flex transition-transform duration-500 ease-in-out gap-4 lg:gap-6"
-                            style={{ transform: `translateX(-${index * 18}rem)` }}
+                            style={{ transform: `translateX(-${index * (window.innerWidth < 1024 ? 280 : 320)}px)` }}
                         >
                             {cities.map((city, i) => (
                                 <motion.div
                                     key={i}
-                                    className="city-card h-[16rem] lg:h-[20rem] w-[16rem] lg:w-[15rem] xl:w-[20rem] flex-shrink-0 2xl:w-[22rem] "
+                                    className="city-card h-[16rem] lg:h-[20rem] w-[16rem] lg:w-[18rem] xl:w-[20rem] flex-shrink-0"
                                     variants={fadeVariant}
                                     initial="hidden"
                                     whileInView="visible"
@@ -110,7 +110,7 @@ const Locations = () => {
                     </div>
 
                     {/* Arrows */}
-                    <div className='city-arrows flex justify-center gap-4 lg:gap-6 items-center mt-6 lg:mt-8 2xl:ml-[50rem] lg:ml-[30rem]'>
+                    <div className='city-arrows flex justify-center gap-4 lg:gap-6 items-center mt-6 lg:mt-8'>
                         <button
                             onClick={scrollLeft}
                             className='arrow-left w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300'
@@ -139,7 +139,7 @@ const Locations = () => {
 
             {/* Newsletter Section with Formik */}
             <motion.div
-                className='newsletter-section w-full bg-secondary rounded-t-[3rem] z-40 flex flex-col justify-center items-center gap-8 2xl:h-[50rem] lg:p-10 lg:h-[30rem] lg:my-5 lg:flex-row lg:justify-between lg:items-center lg:gap-0 lg:rounded-[5rem] px-6 py-10 2xl:px-20 2xl:py-16 2xl:mt-[5rem]'
+                className='newsletter-section w-full bg-secondary rounded-t-[3rem] lg:rounded-t-[6rem] mt-16 lg:mt-24 px-4 lg:px-8 py-12 lg:py-16 flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-8 lg:gap-12'
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"

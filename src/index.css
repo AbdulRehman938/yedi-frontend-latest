@@ -4,3 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-dotted-line {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #55887c 0,
+    #55887c 2px,
+    transparent 2px,
+    transparent 6px
+  );
+}
