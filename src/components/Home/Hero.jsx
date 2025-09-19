@@ -109,7 +109,7 @@ const Hero = () => {
               <AnimatedItem>
                 <button className="bg-primary/80 font-medium text-white rounded-[2rem]
                     hover:bg-primary hover:scale-105 ease-in-out duration-300 2xl:px-14
-                    px-4 py-2 sm:text-sm xs:text-lg text-sm lg:text-base whitespace-nowrap">
+                    px-4 py-2 sm:text-sm xs:text-xs text-sm xs:bg-red-700 lg:text-base whitespace-nowrap">
                   DOWNLOAD APP
                 </button>
               </AnimatedItem>
@@ -131,14 +131,14 @@ const Hero = () => {
           <AnimatedItem>
             <button className="bg-transparent font-medium border border-primary text-primary rounded-[2rem]
               hover:bg-[#b1b1b128] hover:scale-105 ease-in-out duration-300
-              py-2 px-8 text-sm">
+              py-2 px-8 text-sm xs:px-6">
               LOCATIONS
             </button>
           </AnimatedItem>
           <AnimatedItem>
             <button className="bg-primary/80 font-medium text-white rounded-[2rem]
               hover:bg-primary hover:scale-105 ease-in-out duration-300
-              py-2 px-4 text-sm">
+              py-2 px-4 text-sm xs:text-xs xs:py-3 ">
               DOWNLOAD APP
             </button>
           </AnimatedItem>
