@@ -52,8 +52,8 @@ const Locations = () => {
     return (
         <div className=' w-full min-h-screen relative flex flex-col justify-start items-start bg-white overflow-hidden py-16 lg:py-24'>
             {/* Gradient BG */}
-            <div className='locations-bg-top absolute w-full h-[10rem] -top-10 bg-gradient-to-t from-white to-background'></div>
-            <div className='locations-bg-bottom absolute w-full h-[10rem] bg-third bottom-0'></div>
+            <div className='locations-bg-top absolute w-full h-[10rem] -top-20 bg-gradient-to-t from-white to-background'></div>
+            <div className='locations-bg-bottom absolute w-full z-30 h-[10rem] bg-third bottom-0'></div>
 
             {/* Locations Section */}
             <motion.div
@@ -82,7 +82,7 @@ const Locations = () => {
                             {cities.map((city, i) => (
                                 <motion.div
                                     key={i}
-                                    className="city-card h-[16rem] lg:h-[20rem] w-[16rem] lg:w-[18rem] xl:w-[20rem] flex-shrink-0"
+                                    className="city-card h-[16rem] lg:h-[20rem] w-[15rem] lg:w-[18rem] xl:w-[20rem] flex-shrink-0"
                                     variants={fadeVariant}
                                     initial="hidden"
                                     whileInView="visible"
@@ -110,7 +110,7 @@ const Locations = () => {
                     </div>
 
                     {/* Arrows */}
-                    <div className='city-arrows flex justify-center gap-4 lg:gap-6 items-center mt-6 lg:mt-8'>
+                    <div className='city-arrow s flex justify-center gap-4 lg:gap-6 items-center mt-6 lg:mt-8 ml-[10rem]'>
                         <button
                             onClick={scrollLeft}
                             className='arrow-left w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300'
@@ -129,7 +129,7 @@ const Locations = () => {
                 </motion.div>
             </motion.div>
 
-            <motion.div className="w-full flex justify-center mt-8 lg:mt-12">
+            <motion.div className="w-full flex justify-center mt-10 lg:mt-12">
                 <button
                     className='learn-more-btn text-gray-600 px-8 py-3 border-2 border-gray-500 text-base lg:text-lg cursor-pointer hover:bg-secondary hover:scale-105 transition duration-300 hover:border-transparent rounded-3xl flex justify-center items-center'
                 >
@@ -139,7 +139,7 @@ const Locations = () => {
 
             {/* Newsletter Section with Formik */}
             <motion.div
-                className='newsletter-section w-full bg-secondary rounded-t-[3rem] lg:rounded-t-[6rem] mt-16 lg:mt-24 px-4 lg:px-8 py-12 lg:py-16 flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-8 lg:gap-12'
+                className='newsletter-section w-full z-40 bg-secondary rounded-[3rem] lg:rounded-t-[6rem] mt-16 lg:mt-24 px-4 lg:px-8 py-12 lg:py-16 flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-8 lg:gap-12'
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"
@@ -190,6 +190,66 @@ const Locations = () => {
                     )}
                 </Formik>
             </motion.div>
+
+            {/* ===== Mobile-only Layout ===== */}
+            {/* ===== Mobile-only Carousel ===== */}
+            {/* <motion.div
+                className="city-carousel sm:hidden relative w-full mt-12"
+                variants={fadeVariant}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.2 }}
+            >
+                <div className="overflow-hidden">
+                    <div
+                        className="city-list flex transition-transform duration-500 ease-in-out gap-4"
+                        style={{
+                            transform: `translateX(-${index * 280}px)` // fixed width for mobile cards
+                        }}
+                    >
+                        {cities.map((city, i) => (
+                            <div
+                                key={i}
+                                className="h-[14rem] w-[14rem] flex-shrink-0"
+                            >
+                                <div className="h-[85%] w-full rounded-2xl overflow-hidden relative">
+                                    <img
+                                        src={city.img}
+                                        alt={city.name}
+                                        className={`w-full h-full object-cover ${i > 1 ? 'filter grayscale' : ''}`}
+                                    />
+                                    {i > 1 && (
+                                        <div className="absolute inset-0 bg-black/40 flex justify-center items-center">
+                                            <span className="text-white font-bold tracking-widest">
+                                                COMING SOON
+                                            </span>
+                                        </div>
+                                    )}
+                                </div>
+                                <p className="text-sm mt-1 text-center">{city.name}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="flex justify-center gap-4 mt-4">
+                    <button
+                        onClick={scrollLeft}
+                        disabled={index === 0}
+                        className="w-10 h-10 rounded-full bg-background text-white flex items-center justify-center hover:bg-primary disabled:opacity-50"
+                    >
+                        <FaChevronLeft />
+                    </button>
+                    <button
+                        onClick={scrollRight}
+                        disabled={index >= cities.length - 1}
+                        className="w-10 h-10 rounded-full bg-background text-white flex items-center justify-center hover:bg-primary disabled:opacity-50"
+                    >
+                        <FaChevronRight />
+                    </button>
+                </div>
+            </motion.div> */}
+
         </div>
     )
 }

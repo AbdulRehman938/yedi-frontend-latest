@@ -200,7 +200,7 @@ const Work = () => {
                 </motion.div>
 
                 {/* extra image for mobile only */}
-                <div className="sm:hidden w-[100vw] h-f mt-[-8rem]">
+                <div className="sm:hidden w-[100vw] h-full mt-[-15rem] ml-[-3rem]">
                     <img
                         src="/charslidemobile.png"
                         alt="Character Slide"

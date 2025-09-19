@@ -117,7 +117,7 @@ const Header = () => {
 
             {/* Mobile Menu - Animated dropdown */}
             <div
-                className={`fixed top-0 ${scrolled ? 'right-4 w-[calc(50%-1rem)]' : 'right-0 w-[50%]'} h-auto rounded-b-3xl bg-white shadow-lg sm:w-[40%] md:w-[35%] z-40 transform transition-all duration-500 ease-in-out flex flex-col items-start lg:hidden ${menuOpen
+                className={`fixed z-50 top-0 ${scrolled ? 'right-4 w-[calc(60%-1rem)]' : 'right-0 w-[70%]'} h-auto rounded-b-3xl bg-white w-[60%] shadow-lg sm:w-[40%] md:w-[35%] z-50 transform transition-all duration-500 ease-in-out flex flex-col items-start lg:hidden ${menuOpen
                     ? 'opacity-100 translate-y-[4rem]'
                     : 'opacity-0 -translate-y-full pointer-events-none'
                     }`}

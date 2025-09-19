@@ -196,7 +196,7 @@ const Mirror = () => {
       {/* ===== Mobile Layout Wrapper with secondary-background ===== */}
       <div className="sm:hidden w-full bg-secondary h-[124rem]">
         {/* Existing mobile layout */}
-        <div className="flex flex-col items-center justify-start w-full px-4 text-center pt-4 max-w-screen-sm mx-auto min-h-[200vh] pb-16 relative z-50">
+        <div className="flex flex-col items-center justify-start w-full px-4 text-center pt-4 max-w-screen-sm mx-auto min-h-[200vh] pb-16 relative z-40">
           <motion.img
             src="/Mirror1.png"
             alt="mirror1"
@@ -212,7 +212,7 @@ const Mirror = () => {
             viewport={{ once: false, amount: 0.2 }}
           />
 
-          <motion.div
+          <div
             id="mirror"
             className="w-full h-auto bg-transparent relative rounded-[50rem] overflow-hidden flex justify-center items-center mt-[-20rem]"
             variants={fadeVariant}
@@ -221,7 +221,7 @@ const Mirror = () => {
             exit="exit"
             viewport={{ once: false, amount: 0.2 }}
           >
-            <motion.img
+            <img
               src="/mirror-thing2.svg"
               alt="mirror"
               className="w-full h-full z-20 object-fill relative"
@@ -231,7 +231,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             />
-          </motion.div>
+          </div>
 
           <div id="second" className="w-[100vw] relative z-30 h-[100rem] flex flex-col overflow-visible mt-[20rem] sm:hidden">
             <div className="absolute z-10 top-[-30rem] w-full h-[10rem] flex flex-col items-center -space-y-[80px] md:hidden">
