@@ -47,7 +47,7 @@ const Mirror = () => {
           alt="mirror1"
           className="
     mirror1-img 
-    w-full h-auto object-contain inset-0 z-30 absolute 
+    w-full h-auto object-contain inset-0 z-30 absolute top-[-25rem]
     xss:top-[-20rem]
     xs:top-[-25rem]
     2xl:mt-[2rem] 
@@ -65,9 +65,9 @@ const Mirror = () => {
         {/* Mirror container */}
         <motion.div
           id="mirror"
-          className="w-[95%] sm:w-[90%] md:w-[85%] lg:w-[95%] xl:w-[85%] 2xl:w-[95%] max-w-[1440px] z-30 2xl:mt-[-20rem]
+          className="w-[95%] mt-[-25rem] sm:w-[90%] md:w-[85%] lg:w-[95%] xl:w-[85%] 2xl:w-[95%] max-w-[1440px] z-30 2xl:mt-[-20rem]
                      h-[35rem] sm:h-[28rem] md:h-[30rem] lg:h-[38rem] xl:h-[46rem] 2xl:h-[45rem] xs:top-[-20rem] xss:top-[-20rem] xss:h-[30rem] xss:w-[95vw]
-                     bg-transparent relative -mt-20 sm:-mt-10 lg:-mt-32 rounded-[50rem] overflow-hidden flex justify-center items-center"
+                     bg-transparent relative sm:-mt-10 lg:-mt-32 rounded-[50rem] overflow-hidden flex justify-center items-center"
           variants={fadeVariant}
           initial="hidden"
           whileInView="visible"
@@ -105,12 +105,12 @@ const Mirror = () => {
             src="/Mirror2.svg"
             alt="Mirror desktop"
             className="hidden sm:block w-full h-auto object-contain absolute z-10
-      top-[-20rem] 2xl:top-[-40rem] xl:top-[-10rem] lg:top-[-42rem] md:top-[-12rem] sm:top-[-10rem] 3xl:w-[120vw]"
+      top-[20rem] 2xl:top-[-40rem] xl:top-[-10rem] lg:top-[-42rem] md:top-[-12rem] sm:top-[-10rem] 3xl:w-[120vw]"
           />
 
           {/* Brownmobile pieces for small screens */}
           <div className="absolute z-10 top-[-30rem] w-full h-[10rem] flex flex-col items-center -space-y-[80px] md:hidden">
-            <img src="/brownmobile4.svg" alt="Mirror part 4" className="brownmobile4 w-full max-h-[30rem] mt-[-24rem] z-40 object-cover" />
+            <img src="/brownmobile4.svg" alt="Mirror part 4" className="brownmobile4 w-full max-h-[30rem] mt-[3rem] z-40 object-cover" />
             <img src="/brownmobile1.svg" alt="Mirror part 1" className="brownmobile1 w-full  max-h-[30rem] mt-[-20rem] z-40 object-cover" />
             <img src="/brownmobile2.svg" alt="Mirror part 2" className="brownmobile2 w-full  max-h-[30rem] xs:top-[15rem] relative top-[20rem] z-40 object-cover" />
             <img src="/brownmobile3.svg" alt="Mirror part 3" className="brownmobile3 w-full  max-h-[30rem] xss:top-[25rem] xs:top-[12rem]  relative top-[30rem] z-40 object-cover" />
@@ -118,7 +118,7 @@ const Mirror = () => {
 
           {/* Section 1 */}
           <motion.div
-            className="relative z-30 w-[80%] ml-28 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mt-[8rem] 3xl:mt-40 xs:ml-[3.5rem] xs:relative xs:top-[-45rem] xss:top-[-46rem] xss:ml-[2rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
+            className="relative z-30 w-[80%] ml-14 mt-[-10rem] flex flex-col md:flex-row items-center md:items-start justify-between gap-10 3xl:mt-40 xs:ml-[3.5rem] xs:relative xs:top-[-45rem] xss:top-[-46rem] xss:ml-[2rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
@@ -126,21 +126,21 @@ const Mirror = () => {
             viewport={{ once: false, amount: 0.2 }}
           >
             <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 xl:mt-[0rem] xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[1rem] 3xl:ml-[15rem] 3xl:mt-[1rem] xxs:w-[100vw] ">
-              <h1 className="3xl:text-7xl 3xl:ml-10 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl xs:text-3xl text-primary font-bold xss:text-4xl xss:w-[100vw] xss:ml-[-2.5rem]">
+              <h1 className="mt-[-2rem] text-5xl w-[100vw] ml-[-3rem] 3xl:text-7xl 3xl:ml-10 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl xs:text-3xl text-primary font-bold xss:text-4xl xss:w-[100vw] xss:ml-[-2.5rem]">
                 We've all been there
               </h1>
-              <p className="3xl:ml-[2.5rem] 3xl:w-[33rem] 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm xs:text-xl text-gray-500 font-medium xss:w-[100vw] xss:ml-[-2.5rem]">
+              <p className="text-xs 3xl:ml-[2.5rem] 3xl:w-[33rem] 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm xs:text-xl text-gray-500 font-medium xss:w-[100vw] xss:ml-[-2.5rem]">
                 You're away from home and unsure <br className="xs:hidden" /> where you can <span className="text-black font-medium">go</span>.
               </p>
             </div>
             <div className="w-full md:w-1/2 flex justify-center md:justify-end xl:mt-[5rem] lg:mt-[2rem] 2xl:mt-[6rem] 3xl:mt-[6rem] xss:mt-[2rem] ">
-              <img src="/Home-character2.svg" alt="char2" className="w-2/3 xs:w-[60%] lg:w-[55%] xl:w-[50%] 2xl:w-[50%] 3xl:w-[60%] max-w-md" />
+              <img src="/Home-character2.svg" alt="char2" className="w-[50%] mt-[1rem] xs:w-[60%] lg:w-[55%] xl:w-[50%] 2xl:w-[50%] 3xl:w-[60%] max-w-md" />
             </div>
           </motion.div>
 
           {/* Section 2 */}
           <motion.div
-            className="relative z-30 w-full flex flex-col md:flex-row-reverse items-center md:items-start justify-between gap-10 py-24 xs:relative xs:top-[3rem] xl:mt-[5rem] 3xl:mt-[6rem] xss:mt-[-45rem]"
+            className="relative z-30 w-full flex flex-col md:flex-row-reverse items-center md:items-start justify-between gap-10 py-24 xs:relative xs:top-[3rem] xl:mt-[5rem] 3xl:mt-[6rem] xss:mt-[-43rem]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
