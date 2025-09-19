@@ -48,6 +48,7 @@ const Mirror = () => {
           className="
     mirror1-img 
     w-full h-auto object-contain inset-0 z-30 absolute 
+    xss:top-[-25rem]
     xs:top-[-25rem]
     2xl:mt-[2rem] 
     lg:mt-[8rem]
@@ -65,7 +66,7 @@ const Mirror = () => {
         <motion.div
           id="mirror"
           className="w-[95%] sm:w-[90%] md:w-[85%] lg:w-[95%] xl:w-[85%] 2xl:w-[95%] max-w-[1440px] z-30 2xl:mt-[-20rem]
-                     h-[35rem] sm:h-[28rem] md:h-[30rem] lg:h-[38rem] xl:h-[46rem] 2xl:h-[45rem] xs:top-[-20rem] 
+                     h-[35rem] sm:h-[28rem] md:h-[30rem] lg:h-[38rem] xl:h-[46rem] 2xl:h-[45rem] xs:top-[-20rem] xss:top-[-20rem] xss:h-[30rem] xss:w-[95vw]
                      bg-transparent relative -mt-20 sm:-mt-10 lg:-mt-32 rounded-[50rem] overflow-hidden flex justify-center items-center"
           variants={fadeVariant}
           initial="hidden"
@@ -76,24 +77,25 @@ const Mirror = () => {
           <motion.img
             src="/mirror thing.svg"
             alt="mirror"
-            className="mirror-svg w-auto h-full z-0 object-cover absolute max-w-[1440px]"
+            className="mirror-svg w-auto h-full z-0 object-cover absolute max-w-[1440px] hidden lg:block"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
             exit="exit"
             viewport={{ once: false, amount: 0.2 }}
           />
-          {/* <div className="w-[90%] h-full bg-[#4c4c4c57] relative z-10"></div> */}
-          {/* <motion.h1
-            className="absolute text-white text-[2rem] font-black z-10 text-center lg:text-[4rem] md:text-[3rem] 2xl:text-[7rem]"
+
+          <motion.img
+            src="/mirror-thing2.svg"
+            alt="mirror mobile"
+            className="mirror-svg-mobile w-full h-full z-0 object-cover absolute lg:hidden"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
             exit="exit"
             viewport={{ once: false, amount: 0.2 }}
-          >
-            Your key to <br /> Exceptional Success
-          </motion.h1> */}
+          />
+
         </motion.div>
 
         {/* Sections */}
@@ -116,18 +118,18 @@ const Mirror = () => {
 
           {/* Section 1 */}
           <motion.div
-            className="relative z-30 w-[80%] ml-28 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mt-[8rem] 3xl:mt-40 xs:ml-[3.5rem] xs:relative xs:top-[-30rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
+            className="relative z-30 w-[80%] ml-28 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mt-[8rem] 3xl:mt-40 xs:ml-[3.5rem] xs:relative xs:top-[-30rem] xss:top-[-42rem] xss:ml-[2rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
             exit="exit"
             viewport={{ once: false, amount: 0.2 }}
           >
-            <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 xl:mt-[0rem] xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[1rem] 3xl:ml-[15rem] 3xl:mt-[1rem] ">
-              <h1 className="3xl:text-7xl 3xl:ml-10 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl xs:text-3xl text-primary font-bold">
+            <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 xl:mt-[0rem] xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[1rem] 3xl:ml-[15rem] 3xl:mt-[1rem] xxs:w-[100vw] ">
+              <h1 className="3xl:text-7xl 3xl:ml-10 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl xs:text-3xl text-primary font-bold xss:text-3xl xss:w-[100vw] xss:ml-[-2.5rem]">
                 We've all been there
               </h1>
-              <p className="3xl:ml-[2.5rem] 3xl:w-[33rem] 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm xs:text-xl text-gray-500 font-medium">
+              <p className="3xl:ml-[2.5rem] 3xl:w-[33rem] 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm xs:text-xl text-gray-500 font-medium xss:w-[100vw] xss:ml-[-2.5rem]">
                 You're away from home and unsure <br className="xs:hidden" /> where you can <span className="text-black font-medium">go</span>.
               </p>
             </div>
