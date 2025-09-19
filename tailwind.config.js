@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      xs: "320px", // Mobile-Small
+      xs: "375px", // Mobile-Small
       sm: "640px", // Mobile-Large
       md: "768px", // Tablet
       lg: "1024px", // Laptop
