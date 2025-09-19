@@ -118,7 +118,7 @@ const Mirror = () => {
 
           {/* Section 1 */}
           <motion.div
-            className="relative z-30 w-[80%] ml-14 mt-[-10rem] flex flex-col md:flex-row items-center md:items-start justify-between gap-10 3xl:mt-40 xs:ml-[3.5rem] xs:relative xs:top-[-45rem] xss:top-[-46rem] xss:ml-[2rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
+            className="relative z-30 w-[80%] ml-12 mt-[-10rem] flex flex-col md:flex-row items-center md:items-start justify-between gap-10 3xl:mt-40 xs:ml-[3.5rem] xs:relative xs:top-[-45rem] xss:top-[-46rem] xss:ml-[2rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
