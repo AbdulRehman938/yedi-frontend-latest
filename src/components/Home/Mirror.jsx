@@ -133,14 +133,14 @@ const Mirror = () => {
                 You're away from home and unsure <br className="xs:hidden" /> where you can <span className="text-black font-medium">go</span>.
               </p>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center md:justify-end xl:mt-[5rem] lg:mt-[2rem] 2xl:mt-[6rem] 3xl:mt-[6rem] xss:mt-[-2rem] ">
+            <div className="w-full md:w-1/2 flex justify-center md:justify-end xl:mt-[5rem] lg:mt-[2rem] 2xl:mt-[6rem] 3xl:mt-[6rem] xss:mt-[2rem] ">
               <img src="/Home-character2.svg" alt="char2" className="w-2/3 xs:w-[60%] lg:w-[55%] xl:w-[50%] 2xl:w-[50%] 3xl:w-[60%] max-w-md" />
             </div>
           </motion.div>
 
           {/* Section 2 */}
           <motion.div
-            className="relative z-30 w-full flex flex-col md:flex-row-reverse items-center md:items-start justify-between gap-10 py-24 xs:relative xs:top-[3rem] xl:mt-[5rem] 3xl:mt-[6rem] xss:mt-[-44rem]"
+            className="relative z-30 w-full flex flex-col md:flex-row-reverse items-center md:items-start justify-between gap-10 py-24 xs:relative xs:top-[3rem] xl:mt-[5rem] 3xl:mt-[6rem] xss:mt-[-40rem]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
