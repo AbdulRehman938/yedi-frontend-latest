@@ -140,7 +140,7 @@ const Mirror = () => {
 
           {/* Section 2 */}
           <motion.div
-            className="relative z-30 w-full flex flex-col md:flex-row-reverse items-center md:items-start justify-between gap-10 py-24 xs:relative xs:top-[3rem] xl:mt-[5rem] 3xl:mt-[6rem] xss:mt-[-40rem]"
+            className="relative z-30 w-full flex flex-col md:flex-row-reverse items-center md:items-start justify-between gap-10 py-24 xs:relative xs:top-[3rem] xl:mt-[5rem] 3xl:mt-[6rem] xss:mt-[-45rem]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
