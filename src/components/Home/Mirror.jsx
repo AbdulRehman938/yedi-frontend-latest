@@ -113,12 +113,12 @@ const Mirror = () => {
             <img src="/brownmobile4.svg" alt="Mirror part 4" className="brownmobile4 w-full max-h-[30rem] mt-[-24rem] z-40 object-cover" />
             <img src="/brownmobile1.svg" alt="Mirror part 1" className="brownmobile1 w-full  max-h-[30rem] mt-[-20rem] z-40 object-cover" />
             <img src="/brownmobile2.svg" alt="Mirror part 2" className="brownmobile2 w-full  max-h-[30rem] mt-[20rem] relative top-[20rem] z-40 object-cover" />
-            <img src="/brownmobile3.svg" alt="Mirror part 3" className="brownmobile3 w-full  max-h-[30rem] mt-[-20rem]  relative top-[30rem] z-40 object-cover" />
+            <img src="/brownmobile3.svg" alt="Mirror part 3" className="brownmobile3 w-full  max-h-[30rem] xss:top-[25rem]  relative top-[30rem] z-40 object-cover" />
           </div>
 
           {/* Section 1 */}
           <motion.div
-            className="relative z-30 w-[80%] ml-28 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mt-[8rem] 3xl:mt-40 xs:ml-[3.5rem] xs:relative xs:top-[-30rem] xss:top-[-42rem] xss:ml-[2rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
+            className="relative z-30 w-[80%] ml-28 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mt-[8rem] 3xl:mt-40 xs:ml-[3.5rem] xs:relative xs:top-[-30rem] xss:top-[-46rem] xss:ml-[2rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
@@ -140,18 +140,18 @@ const Mirror = () => {
 
           {/* Section 2 */}
           <motion.div
-            className="relative z-30 w-full flex flex-col md:flex-row-reverse items-center md:items-start justify-between gap-10 py-24 xs:relative xs:top-[-25rem] xl:mt-[5rem] 3xl:mt-[6rem] "
+            className="relative z-30 w-full flex flex-col md:flex-row-reverse items-center md:items-start justify-between gap-10 py-24 xs:relative xs:top-[-25rem] xl:mt-[5rem] 3xl:mt-[6rem] xss:mt-[-40rem] "
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
             exit="exit"
             viewport={{ once: false, amount: 0.2 }}
           >
-            <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 2xl:w-[40%] xl:mr-[5rem] xl:mt-[-8rem] lg:mt-[-5rem] 3xl:mr-[8rem]">
-              <h1 className="2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl  text-primary font-bold xs:text-3xl">
-                A tiny ask shouldn't <br className="xs:hidden" /> feel so big.
+            <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 2xl:w-[40%] xl:mr-[5rem] xl:mt-[-8rem] lg:mt-[-5rem] 3xl:mr-[8rem] xss:w-[100vw]">
+              <h1 className="2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl  text-primary font-bold xs:text-3xl xss:text-3xl">
+                A tiny ask shouldn't <br /> feel so big.
               </h1>
-              <p className="2xl:text-2xl xl:text-sm lg:text-lg md:text-base sm:text-sm xs:text-xs text-gray-500 font-medium">
+              <p className="2xl:text-2xl xl:text-sm lg:text-lg md:text-base sm:text-sm xs:text-xs text-gray-500 font-medium xss:w-[100vw] xss:text-sm">
                 Waiting in line, holding it in, just to <span className="text-black font-medium">beg</span> <br className="xs:hidden" />
                 for a restroom key. It's awkward. I don't <br className="xs:hidden" />
                 want to tell someone I have to evacuate <br className="xs:hidden" /> my bowels.
@@ -164,7 +164,7 @@ const Mirror = () => {
 
           {/* Section 3 */}
           <motion.div
-            className="relative z-30 w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-10 py-24 xl:mt-[-25rem] 2xl:mt-[-20rem] 2xl:px-[5rem] 3xl:mt-[-15rem] lg:mt-[-30rem] lg:pr-[5rem]"
+            className="relative z-30 w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-10 py-24 xl:mt-[-25rem] 2xl:mt-[-20rem] 2xl:px-[5rem] 3xl:mt-[-15rem] lg:mt-[-30rem] lg:pr-[5rem] xss:mt-[-8rem]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
@@ -172,7 +172,7 @@ const Mirror = () => {
             viewport={{ once: false, amount: 0.2 }}
           >
             <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 2xl:mt-[-10rem] xl:mt-[-7rem] 3xl:ml-[10rem] lg:mt-[-4rem] lg:ml-[8rem] ">
-              <h1 className="3xl:text-6xl 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-primary font-bold">
+              <h1 className="3xl:text-6xl 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-primary font-bold xss:text-3xl">
                 No more asking permission
               </h1>
               <p className="2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm xs:text-xs text-gray-500 font-medium">
@@ -182,7 +182,7 @@ const Mirror = () => {
               </p>
             </div>
             <div className="w-full md:w-1/2 flex justify-center md:justify-end 3xl:mr-[10rem] lg:mt-[4rem] 2xl:mt-[-1rem] 3xl:mt-[1rem] ">
-              <img src="/Home-character4.svg" alt="char4" className="w-2/3 sm:w-1/2 lg:w-[60%] xl:w-[50%] 2xl:w-[45%] 2xl:mt-10 3xl:w-[55%] max-w-md" />
+              <img src="/Home-character4.svg" alt="char4" className="w-2/3 sm:w-1/2 lg:w-[60%] xl:w-[50%] 2xl:w-[45%] 2xl:mt-10 3xl:w-[55%] max-w-md xss:w-[65%]" />
             </div>
           </motion.div>
         </div>
