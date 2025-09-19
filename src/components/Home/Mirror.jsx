@@ -112,13 +112,13 @@ const Mirror = () => {
           <div className="absolute z-10 top-[-30rem] w-full h-[10rem] flex flex-col items-center -space-y-[80px] md:hidden">
             <img src="/brownmobile4.svg" alt="Mirror part 4" className="brownmobile4 w-full max-h-[30rem] mt-[-24rem] z-40 object-cover" />
             <img src="/brownmobile1.svg" alt="Mirror part 1" className="brownmobile1 w-full  max-h-[30rem] mt-[-20rem] z-40 object-cover" />
-            <img src="/brownmobile2.svg" alt="Mirror part 2" className="brownmobile2 w-full  max-h-[30rem] mt-[20rem] relative top-[20rem] z-40 object-cover" />
-            <img src="/brownmobile3.svg" alt="Mirror part 3" className="brownmobile3 w-full  max-h-[30rem] xss:top-[25rem]  relative top-[30rem] z-40 object-cover" />
+            <img src="/brownmobile2.svg" alt="Mirror part 2" className="brownmobile2 w-full  max-h-[30rem] xs:top-[15rem] relative top-[20rem] z-40 object-cover" />
+            <img src="/brownmobile3.svg" alt="Mirror part 3" className="brownmobile3 w-full  max-h-[30rem] xss:top-[25rem] xs:top-[12rem]  relative top-[30rem] z-40 object-cover" />
           </div>
 
           {/* Section 1 */}
           <motion.div
-            className="relative z-30 w-[80%] ml-28 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mt-[8rem] 3xl:mt-40 xs:ml-[3.5rem] xs:relative xs:top-[-30rem] xss:top-[-46rem] xss:ml-[2rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
+            className="relative z-30 w-[80%] ml-28 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mt-[8rem] 3xl:mt-40 xs:ml-[3.5rem] xs:relative xs:top-[-45rem] xss:top-[-46rem] xss:ml-[2rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
@@ -140,7 +140,7 @@ const Mirror = () => {
 
           {/* Section 2 */}
           <motion.div
-            className="relative z-30 w-full flex flex-col md:flex-row-reverse items-center md:items-start justify-between gap-10 py-24 xs:relative xs:top-[-25rem] xl:mt-[5rem] 3xl:mt-[6rem] xss:mt-[-44rem]"
+            className="relative z-30 w-full flex flex-col md:flex-row-reverse items-center md:items-start justify-between gap-10 py-24 xs:relative xs:top-[3rem] xl:mt-[5rem] 3xl:mt-[6rem] xss:mt-[-44rem]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
@@ -157,14 +157,14 @@ const Mirror = () => {
                 want to tell someone I have to evacuate <br className="xs:hidden" /> my bowels.
               </p>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center md:justify-start xl:ml-[3rem] lg:mt-[-1rem] 2xl:mt-[-2rem] 3xl:ml-[5rem] 3xl:mt-[-3rem] xss:mt-[-3rem] ">
-              <img src="/Home-character3.svg" alt="char3" className="w-2/3 sm:w-1/2 lg:w-[45%] lg:ml-[10rem] xl:w-[40%] 2xl:w-[35%] 2xl:ml-[10rem] 2xl:mt-[5rem] max-w-md" />
+            <div className="w-full md:w-1/2 flex justify-center md:justify-start xl:ml-[3rem] lg:mt-[-1rem] 2xl:mt-[-2rem] 3xl:ml-[5rem] 3xl:mt-[-3rem] xss:mt-[-3rem] xs:mt-[-2rem] ">
+              <img src="/Home-character3.svg" alt="char3" className="w-2/3 sm:w-1/2 lg:w-[45%] lg:ml-[10rem] xl:w-[40%] 2xl:w-[35%] 2xl:ml-[10rem] 2xl:mt-[5rem] max-w-md xs:w-[50%]" />
             </div>
           </motion.div>
 
           {/* Section 3 */}
           <motion.div
-            className="relative z-30 w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-10 py-24 xl:mt-[-25rem] 2xl:mt-[-20rem] 2xl:px-[5rem] 3xl:mt-[-15rem] lg:mt-[-30rem] lg:pr-[5rem] xss:mt-[-10rem]"
+            className="relative z-30 w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-10 py-24 xl:mt-[-25rem] 2xl:mt-[-20rem] 2xl:px-[5rem] 3xl:mt-[-15rem] lg:mt-[-30rem] lg:pr-[5rem] xss:mt-[-10rem] xs:mt-[-3rem]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
@@ -172,7 +172,7 @@ const Mirror = () => {
             viewport={{ once: false, amount: 0.2 }}
           >
             <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 2xl:mt-[-10rem] xl:mt-[-7rem] 3xl:ml-[10rem] lg:mt-[-4rem] lg:ml-[8rem] ">
-              <h1 className="3xl:text-6xl 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-primary font-bold xss:text-4xl">
+              <h1 className="3xl:text-6xl 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-primary font-bold xss:text-4xl xs:text-3xl">
                 No more asking permission
               </h1>
               <p className="2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm xs:text-xs text-gray-500 font-medium">
@@ -182,7 +182,7 @@ const Mirror = () => {
               </p>
             </div>
             <div className="w-full md:w-1/2 flex justify-center md:justify-end 3xl:mr-[10rem] lg:mt-[4rem] 2xl:mt-[-1rem] 3xl:mt-[1rem] xss:mt-[-2rem] ">
-              <img src="/Home-character4.svg" alt="char4" className="w-2/3 sm:w-1/2 lg:w-[60%] xl:w-[50%] 2xl:w-[45%] 2xl:mt-10 3xl:w-[55%] max-w-md xss:w-[65%]" />
+              <img src="/Home-character4.svg" alt="char4" className="w-2/3 sm:w-1/2 lg:w-[60%] xl:w-[50%] 2xl:w-[45%] 2xl:mt-10 3xl:w-[55%] max-w-md xss:w-[65%] xs:w-[50%]" />
             </div>
           </motion.div>
         </div>
