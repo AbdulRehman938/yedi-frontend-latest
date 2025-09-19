@@ -48,7 +48,7 @@ const Mirror = () => {
           className="
     mirror1-img 
     w-full h-auto object-contain inset-0 z-30 absolute 
-    xss:top-[-25rem]
+    xss:top-[-20rem]
     xs:top-[-25rem]
     2xl:mt-[2rem] 
     lg:mt-[8rem]
