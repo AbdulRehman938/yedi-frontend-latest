@@ -109,7 +109,7 @@ const Hero = () => {
               <AnimatedItem>
                 <button className="bg-primary/80 font-medium text-white rounded-[2rem]
                     hover:bg-primary hover:scale-105 ease-in-out duration-300 2xl:px-14
-                    px-4 py-2 sm:text-sm xs:text-xs text-sm xs:bg-red-700 lg:text-base whitespace-nowrap">
+                    px-4 py-2 sm:text-sm xs:text-xs text-sm lg:text-base whitespace-nowrap">
                   DOWNLOAD APP
                 </button>
               </AnimatedItem>
@@ -127,7 +127,7 @@ const Hero = () => {
         <AnimatedItem>
           <img src="/Home-character.svg" alt="character" className="relative w-[65%] ml-6 left-4 max-w-[250px] mt-10 mb-5 bottom-4 z-20" />
         </AnimatedItem>
-        <div className="flex justify-between items-center w-[90%] gap-8 z-10 xss:ml-[-2rem]">
+        <div className="flex justify-between items-center w-[90%] gap-8 z-10">
           <AnimatedItem>
             <button className="bg-transparent font-medium border border-primary text-primary rounded-[2rem]
               hover:bg-[#b1b1b128] hover:scale-105 ease-in-out duration-300
