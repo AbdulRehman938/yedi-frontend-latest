@@ -181,7 +181,6 @@ const Work = () => {
                 </motion.div>
 
                 {/* Step 3 */}
-                {/* Step 3 */}
                 <motion.div className="grid grid-cols-[auto_1fr] gap-4 relative">
                     <div className="flex flex-col items-center">
                         <div className="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full font-bold">
