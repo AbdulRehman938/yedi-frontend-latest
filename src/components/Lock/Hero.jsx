@@ -6,6 +6,9 @@ import {
   UnlockContent,
   IntegrateContent,
 } from './PanelContent';
+import LockMover from './LockMover';
+import LockFeatures from './LockFeatures';
+import Methods from './Methods';
 
 const panels = [
   {
@@ -47,7 +50,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-secondary text-white mt-[-5rem] w-full flex flex-col items-center overflow-hidden relative">
+    <div className="bg-[#ebebeb] text-white mt-[-5rem] w-full flex flex-col items-center overflow-hidden relative">
       {/* Main Title */}
       <div className="w-full h-[50rem] flex items-center justify-center">
         <h1 className="text-9xl text-white font-black leading-[10rem] w-[70%] text-center">
@@ -57,11 +60,11 @@ const Hero = () => {
       <img
         src="/Yedi-Lock1.svg"
         alt="lock1"
-        className="w-[50%] h-full object-contain absolute z-10 top-[-10rem] right-[15rem]"
+        className="w-[50%] h-full object-contain absolute z-10 top-[-140rem] right-[15rem]"
       />
 
       {/* Panels */}
-      <div className="w-full mt-[25rem] flex flex-col items-center gap-[5rem] bg-[#6FA598] rounded-t-[5rem] pt-[5rem] relative z-30">
+      <div className="w-full mt-[25rem] flex flex-col items-center gap-[5rem] overflow-hidden rounded-b-[4rem] bg-[#6FA598] rounded-t-[5rem] pt-[5rem] relative z-30">
         <h1 className="text-5xl font-semibold w-[60%] text-center leading-tight">
           It’s still your bathroom, but better. With the Yedi platform you have more control, cleaner
           experiences, and better conditions for staff.
@@ -77,8 +80,8 @@ const Hero = () => {
             const headerColor = isOpen
               ? panel.activeColor
               : isHovered
-              ? panel.hoverColor
-              : panel.color;
+                ? panel.hoverColor
+                : panel.color;
 
             return (
               <div key={index} className="overflow-hidden transition-all duration-500">
@@ -99,9 +102,8 @@ const Hero = () => {
 
                 {/* Content (always base color) */}
                 <div
-                  className={`${panel.color} px-20 transition-all duration-500 ease-in-out ${
-                    isOpen ? 'max-h-[100rem] opacity-100 py-8' : 'max-h-0 opacity-0 py-0'
-                  }`}
+                  className={`${panel.color} px-20 transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[100rem] opacity-100 py-8 rounded-b-[4rem]' : 'max-h-0 opacity-0 py-0'
+                    }`}
                 >
                   <Content />
                 </div>
@@ -109,6 +111,21 @@ const Hero = () => {
             );
           })}
         </div>
+      </div>
+
+      <LockMover />
+      <div className='w-[93%] h-[7rem] bg-[#f9f9f9] rounded-3xl shadow-lg flex justify-between items-center px-5'>
+        <p className='text-black text-2xl'>Want to learn more? Schedule an appointment and see the lock in action.</p>
+        <button className="px-12 py-4 bg-[#bab5a2] hover:bg-gray-500 text-white rounded-full transition-all">
+          BOOK A DEMO
+        </button>
+      </div>
+      <div className='text-black w-[95%] h-[150rem] mt-20 flex flex-col justify-between items-center rounded-[4rem] overflow-hidden'>
+        <LockFeatures />
+      </div>
+
+      <div className='w-full h-[160rem] bg-transparent text-black mt-20 flex flex-col justify-between items-center overflow-hidden'>
+        <Methods />
       </div>
     </div>
   );
