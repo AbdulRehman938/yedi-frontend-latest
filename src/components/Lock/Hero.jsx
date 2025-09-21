@@ -60,7 +60,7 @@ const Hero = () => {
       <img
         src="/Yedi-Lock1.svg"
         alt="lock1"
-        className="w-[50%] h-full object-contain absolute z-10 top-[-140rem] right-[15rem]"
+        className="w-[50%] h-full object-contain absolute z-10 top-[-200rem] right-[15rem]"
       />
 
       {/* Panels */}
