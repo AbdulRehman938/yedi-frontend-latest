@@ -110,7 +110,7 @@ const Locations = () => {
                     </div>
 
                     {/* Arrows */}
-                    <div className='city-arrow s flex justify-center gap-4 lg:gap-6 items-center mt-6 lg:mt-8 ml-[10rem]'>
+                    <div className='city-arrow s flex justify-center gap-4 lg:gap-6 items-center mt-6 lg:mt-8 xl:ml-[50rem] ml-[10rem]'>
                         <button
                             onClick={scrollLeft}
                             className='arrow-left w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300'
