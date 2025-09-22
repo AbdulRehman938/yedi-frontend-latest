@@ -20,13 +20,14 @@ const Work = () => {
 
     return (
         <>
-            <div className="work-container w-full h-[120rem] pt-20 bg-background relative justify-center items-start 3xl:mt-[-4rem] 2xl:mt-[1rem] xl:mt-[-10rem] hidden sm:block">
-                <div className="w-[70%] h-[15%] bg-background absolute z-20 top-20 right-[45rem] xl:left-[-20rem] 3xl:h-[18%] lg:left-[-10rem]"></div>
+            {/* ===== Desktop / Larger Screens ===== */}
+            <div className="work-container w-full mt-[-10rem] h-[120rem] pt-20 bg-background relative justify-center items-start hidden sm:block">
+                <div className="w-[70%] h-[15%] bg-background absolute z-20 top-20 right-[45rem]"></div>
 
                 <motion.img
                     src="/HomeWorkSlide.svg"
                     alt="slide"
-                    className="work-main-slide w-full h-full object-fill absolute z-30 3xl:mt-[5rem] 3xl:z-40"
+                    className="work-main-slide w-full h-full object-fill absolute z-30"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
@@ -35,7 +36,7 @@ const Work = () => {
                 />
 
                 <motion.div
-                    className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[105rem] left-[63.2rem] xl:top-[120rem] xl:left-[53rem] rounded-3xl overflow-hidden flex justify-end items-end 3xl:mt-[-2rem] 3xl:ml-[13.8rem] 2xl:ml-[11.5rem] 2xl:mt-[-10rem] 2xl:z-10 lg:z-20 lg:left-[45rem] lg:mt-[-25vh]"
+                    className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-20 top-[96rem] left-[54.8rem] rounded-3xl overflow-hidden flex justify-end items-end"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
@@ -45,11 +46,10 @@ const Work = () => {
                     <div className="work-decor-inner w-[90%] h-full bg-[#77b0d2] rounded-tl-3xl rounded-bl-3xl"></div>
                 </motion.div>
 
-
-                <div className="work-sections w-[80%] h-[55%] mt-[12rem] absolute z-40 gap-10 xl:ml-[10rem] flex flex-col justify-between items-center">
+                <div className="work-sections w-[80%] h-[55%] mt-[12rem] absolute z-40 ml-[10%] gap-10 flex flex-col justify-between items-center">
                     {/* Section 1 */}
                     <motion.div
-                        className="work-section1 w-full h-[40%]  flex flex-row justify-center items-center"
+                        className="work-section1 w-full h-[40%] flex flex-row justify-center items-center"
                         variants={fadeVariant}
                         initial="hidden"
                         whileInView="visible"
@@ -64,7 +64,7 @@ const Work = () => {
                             />
                         </div>
                         <div className="work-section1-text w-[48%] ml-5 mt-[-13rem] h-full flex flex-col justify-start items-start">
-                            <h1 className="work-section1-title text-primary font-bold text-[4rem] relative bottom-[2rem] lg:text-[3rem]">
+                            <h1 className="work-section1-title text-primary font-bold text-[4rem] relative bottom-[2rem]">
                                 How it works
                             </h1>
                             <div className="work-step1 w-full ml-10 h-[15rem] flex justify-between items-start">
@@ -143,7 +143,6 @@ const Work = () => {
                         </div>
                     </motion.div>
                 </div>
-
             </div>
 
             {/* ===== Mobile-only Layout ===== */}
@@ -152,12 +151,10 @@ const Work = () => {
 
                 {/* Step 1 */}
                 <motion.div className="grid grid-cols-[auto_1fr] gap-4 relative">
-                    {/* Number + line */}
                     <div className="flex flex-col items-center">
                         <div className="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full font-bold">1</div>
                         <div className="w-px flex-1 bg-dotted-line mt-2"></div>
                     </div>
-                    {/* Text + Image */}
                     <div className="flex flex-col items-start">
                         <h2 className="text-primary font-bold text-4xl mb-1">Find</h2>
                         <p className="text-gray-600 text-lg mb-4">
@@ -185,10 +182,7 @@ const Work = () => {
                 {/* Step 3 */}
                 <motion.div className="grid grid-cols-[auto_1fr] gap-4 relative">
                     <div className="flex flex-col items-center">
-                        <div className="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full font-bold">
-                            3
-                        </div>
-                        {/* continue dotted line */}
+                        <div className="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full font-bold">3</div>
                         <div className="w-px h-[21rem] bg-dotted-line mt-2"></div>
                     </div>
                     <div className="flex flex-col items-start">
@@ -200,7 +194,7 @@ const Work = () => {
                     </div>
                 </motion.div>
 
-                {/* extra image for mobile only */}
+                {/* Extra image for mobile */}
                 <div className="sm:hidden w-[100vw] h-full mt-[-15rem] ml-[-3rem]">
                     <img
                         src="/charslidemobile.png"
@@ -208,9 +202,7 @@ const Work = () => {
                         className="w-[100vw] object-cover h-auto"
                     />
                 </div>
-
             </motion.div>
-
         </>
     )
 }

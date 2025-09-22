@@ -1,25 +1,18 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
+import React from 'react'
+import { Formik, Form, Field, ErrorMessage } from 'formik'
+import * as Yup from 'yup'
 
 const validationSchema = Yup.object({
   email: Yup.string().email('Invalid email').required('Email is required'),
   city: Yup.string().min(2, 'Too short').required('City is required'),
-});
+})
 
-const HomeForm = ({ fadeVariant }) => {
+const HomeForm = () => {
   return (
     <>
-
       {/* Newsletter Form Section */}
-      <motion.div
-        className="newsletter-section w-full z-40 bg-secondary rounded-[3rem] lg:rounded-t-[6rem] mt-16 lg:mt-24 px-4 lg:px-8 py-12 lg:py-16 flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-8 lg:gap-12"
-        variants={fadeVariant}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
-      >
+      <div className="newsletter-section w-full z-40 bg-secondary rounded-[3rem] lg:rounded-t-[6rem] mt-16 lg:mt-24 px-4 lg:px-8 py-12 lg:py-16 flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-8 lg:gap-12">
+        {/* Text content */}
         <div className="newsletter-text w-full lg:w-[45%] flex flex-col gap-4 lg:gap-6 text-center lg:text-left">
           <h1 className="newsletter-heading text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-primary">
             Yedi News Alerts!
@@ -30,12 +23,13 @@ const HomeForm = ({ fadeVariant }) => {
           </p>
         </div>
 
+        {/* Form */}
         <Formik
           initialValues={{ email: '', city: '' }}
           validationSchema={validationSchema}
           onSubmit={(values, { resetForm }) => {
-            alert(`Submitted: ${JSON.stringify(values, null, 2)}`);
-            resetForm();
+            alert(`Submitted: ${JSON.stringify(values, null, 2)}`)
+            resetForm()
           }}
         >
           {() => (
@@ -75,9 +69,9 @@ const HomeForm = ({ fadeVariant }) => {
             </Form>
           )}
         </Formik>
-      </motion.div>
+      </div>
     </>
-  );
-};
+  )
+}
 
-export default HomeForm;
+export default HomeForm

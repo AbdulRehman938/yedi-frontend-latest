@@ -73,7 +73,7 @@ const Mirror = () => {
           <motion.img
             src="/mirror thing.svg"
             alt="mirror"
-            className="mirror-svg w-auto h-full z-0 object-cover absolute max-w-[1440px]"
+            className="mirror-svg w-[90%] h-full z-0 object-cover absolute max-w-[1440px]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
