@@ -20,7 +20,7 @@ const Work = () => {
 
     return (
         <>
-            <div className="work-container w-full h-[120rem] pt-20 bg-background relative justify-center items-start 3xl:mt-[-4rem] 2xl:mt-[1rem] hidden sm:block">
+            <div className="work-container w-full h-[120rem] pt-20 bg-background relative justify-center items-start 3xl:mt-[-4rem] 2xl:mt-[1rem] xl:mt-[-10rem] hidden sm:block">
                 <div className="w-[70%] h-[15%] bg-background absolute z-20 top-20 right-[45rem] xl:left-[-20rem] 3xl:h-[18%] lg:left-[-10rem]"></div>
 
                 <motion.img
@@ -35,7 +35,7 @@ const Work = () => {
                 />
 
                 <motion.div
-                    className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[105rem] left-[63.2rem] rounded-3xl overflow-hidden flex justify-end items-end 3xl:mt-[-2rem] 3xl:ml-[13.8rem] 2xl:ml-[11.5rem] 2xl:mt-[-10rem] 2xl:z-10 lg:z-20 lg:left-[45rem] lg:mt-[-25vh]"
+                    className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-30 top-[105rem] left-[63.2rem] xl:top-[120rem] xl:left-[53rem] rounded-3xl overflow-hidden flex justify-end items-end 3xl:mt-[-2rem] 3xl:ml-[13.8rem] 2xl:ml-[11.5rem] 2xl:mt-[-10rem] 2xl:z-10 lg:z-20 lg:left-[45rem] lg:mt-[-25vh]"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
@@ -45,7 +45,8 @@ const Work = () => {
                     <div className="work-decor-inner w-[90%] h-full bg-[#77b0d2] rounded-tl-3xl rounded-bl-3xl"></div>
                 </motion.div>
 
-                <div className="work-sections w-[80%] h-[55%] mt-[12rem] absolute z-40 gap-10 flex flex-col justify-between items-center">
+
+                <div className="work-sections w-[80%] h-[55%] mt-[12rem] absolute z-40 gap-10 xl:ml-[10rem] flex flex-col justify-between items-center">
                     {/* Section 1 */}
                     <motion.div
                         className="work-section1 w-full h-[40%]  flex flex-row justify-center items-center"
@@ -142,6 +143,7 @@ const Work = () => {
                         </div>
                     </motion.div>
                 </div>
+
             </div>
 
             {/* ===== Mobile-only Layout ===== */}
