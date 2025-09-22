@@ -55,7 +55,7 @@ const Hero = () => {
       <div className="hidden sm:flex flex-col items-center w-full">
         {/* Main Title */}
         <div className="w-full h-[50rem] flex items-center justify-center">
-          <h1 className="text-9xl text-white font-black leading-[10rem] w-[70%] text-center">
+          <h1 className="text-[10rem] text-white font-black leading-[10rem] w-[70%] text-center">
             Restrooms Reimagined
           </h1>
         </div>
@@ -89,7 +89,7 @@ const Hero = () => {
                 <div key={index} className="overflow-hidden transition-all duration-500">
                   {/* Header */}
                   <div
-                    className={`flex justify-between items-center px-20 py-24 cursor-pointer transition-colors duration-300 ${headerColor}`}
+                    className={`flex justify-between items-center px-20 py-16 cursor-pointer transition-colors duration-300 ${headerColor}`}
                     onClick={() => togglePanel(index)}
                     onMouseEnter={() => setHoverIndex(index)}
                     onMouseLeave={() => setHoverIndex(null)}
