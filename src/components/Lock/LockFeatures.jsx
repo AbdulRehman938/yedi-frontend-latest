@@ -1,132 +1,156 @@
-import React from 'react'
-import { Formik, Form, Field, ErrorMessage } from 'formik'
-import * as Yup from 'yup'
+import React from 'react';
+import { CiVolumeHigh } from 'react-icons/ci';
+import { FaBluetoothB, FaMobileAlt } from 'react-icons/fa';
+import { TbRadar2 } from 'react-icons/tb';
 
-const validationSchema = Yup.object({
-    email: Yup.string().email('Invalid email').required('Email is required'),
-    city: Yup.string().min(2, 'Too short').required('City is required'),
-})
-
-const HomeForm = () => {
+const LockFeatures = () => {
     return (
         <>
             {/* Desktop & Tablet Layout */}
-            <div className="hidden sm:flex w-full bg-transparent justify-center items-center py-16">
-                <div className="w-full max-w-5xl bg-secondary rounded-[3rem] px-8 py-12 shadow-md flex flex-col items-center">
-                    <h1 className="text-5xl font-black text-primary mb-4">
-                        Yedi News Alerts!
-                    </h1>
-                    <p className="text-xl text-gray-600 mb-8 text-center">
-                        Be the first to know when Yedi comes to your town, get special offers and discounts
-                        from partners, and more!
-                    </p>
+            <div className="hidden sm:flex w-full h-full flex-col bg-transparent justify-between items-center">
+                {/* First Feature */}
+                <div
+                    id="first"
+                    className="w-full h-[32%] bg-white flex justify-between items-center rounded-[4rem] pl-20 shadow-md"
+                >
+                    {/* Left Content */}
+                    <div className="flex flex-col items-start justify-center w-[45%] space-y-4">
+                        <div className="flex items-center gap-4 text-gray-400 text-5xl">
+                            <FaBluetoothB />
+                            <FaMobileAlt />
+                        </div>
+                        <h3 className="text-6xl font-semibold text-[#55887c]">
+                            Bluetooth & NFC for tap-and-Go entry
+                        </h3>
+                        <p className="text-gray-500 text-2xl">
+                            Our lock responds instantly to your phone's NFC scan—fast,
+                            contactless, and friction-free.
+                        </p>
+                    </div>
 
-                    <Formik
-                        initialValues={{ email: '', city: '' }}
-                        validationSchema={validationSchema}
-                        onSubmit={(values, { resetForm }) => {
-                            alert(`Submitted: ${JSON.stringify(values, null, 2)}`)
-                            resetForm()
-                        }}
-                    >
-                        {() => (
-                            <Form className="flex flex-col gap-4 w-[60%]">
-                                <div>
-                                    <Field
-                                        type="email"
-                                        name="email"
-                                        placeholder="Email Address"
-                                        className="py-3 px-4 w-full border-2 border-third text-third text-lg rounded-full bg-transparent focus:outline-none focus:border-primary"
-                                    />
-                                    <ErrorMessage
-                                        name="email"
-                                        component="div"
-                                        className="text-red-500 text-sm mt-1 ml-4"
-                                    />
-                                </div>
-                                <div>
-                                    <Field
-                                        type="text"
-                                        name="city"
-                                        placeholder="City"
-                                        className="py-3 px-4 w-full border-2 border-third text-third text-lg rounded-full bg-transparent focus:outline-none focus:border-primary"
-                                    />
-                                    <ErrorMessage
-                                        name="city"
-                                        component="div"
-                                        className="text-red-500 text-sm mt-1 ml-4"
-                                    />
-                                </div>
-                                <button
-                                    type="submit"
-                                    className="py-3 px-8 text-white text-lg rounded-full bg-primary hover:bg-third transition duration-300 self-center"
-                                >
-                                    SUBMIT
-                                </button>
-                            </Form>
-                        )}
-                    </Formik>
+                    {/* Right Image */}
+                    <div className="flex justify-center w-1/2">
+                        <img
+                            src="/Feature1.svg"
+                            alt="Feature"
+                            className="h-full w-full relative top-0 object-contain"
+                        />
+                    </div>
+                </div>
+
+                {/* Second Feature */}
+                <div
+                    id="second"
+                    className="w-full h-[32%] bg-white flex justify-between items-center rounded-[4rem] pr-12 shadow-md"
+                >
+                    <div className="flex justify-center w-1/2">
+                        <img
+                            src="/Feature2.svg"
+                            alt="Feature"
+                            className="h-full w-full relative top-10 object-contain"
+                        />
+                    </div>
+                    <div className="flex flex-col items-start justify-center w-[45%] space-y-4">
+                        <div className="flex items-center gap-4 text-gray-400 text-5xl">
+                            <TbRadar2 />
+                        </div>
+                        <h3 className="text-6xl font-semibold text-[#55887c]">
+                            Infrared Presence Sensor
+                        </h3>
+                        <p className="text-gray-500 text-2xl">
+                            Built-in infrared sensors detect when the space is occupied—keeping entries smart and informed.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Third Feature */}
+                <div
+                    id="third"
+                    className="w-full h-[32%] bg-white flex justify-between items-center rounded-[4rem] pl-20 shadow-md"
+                >
+                    <div className="flex flex-col items-start justify-center w-[45%] space-y-4">
+                        <div className="flex items-center gap-4 text-gray-400 text-5xl">
+                            <CiVolumeHigh />
+                        </div>
+                        <h3 className="text-6xl font-semibold text-[#55887c]">
+                            Built-in audio feedback for seamless interactions
+                        </h3>
+                        <p className="text-gray-500 text-2xl">
+                            Know when you’ve locked, unlocked, or pressed a button—with tactile precision built into every interaction.
+                        </p>
+                    </div>
+
+                    <div className="flex justify-center w-1/2">
+                        <img
+                            src="/Feature3.svg"
+                            alt="Feature"
+                            className="h-full w-full relative top-0 object-contain"
+                        />
+                    </div>
                 </div>
             </div>
 
             {/* Mobile Layout */}
-            <div className="sm:hidden w-full flex flex-col gap-6 px-4 py-12 bg-secondary rounded-2xl shadow-md">
-                <h2 className="text-3xl font-black text-primary text-center">
-                    Yedi News Alerts!
-                </h2>
-                <p className="text-base text-gray-600 text-center">
-                    Be the first to know when Yedi comes to your town, get special offers and discounts
-                    from partners, and more!
-                </p>
+            <div className="sm:hidden w-full flex flex-col gap-8">
+                {/* Feature 1 */}
+                <div className="bg-white rounded-2xl shadow-md flex flex-col items-start pb-10">
+                    <img
+                        src="/Feature1.svg"
+                        alt="Feature"
+                        className="w-[50rem] rounded-xl object-contain"
+                    />
+                    <div className="flex items-center gap-3 text-gray-400 text-4xl mb-4 px-5">
+                        <FaBluetoothB />
+                        <FaMobileAlt />
+                    </div>
+                    <h3 className="text-2xl text-left font-semibold text-[#55887c] mb-2 px-5">
+                        Bluetooth & NFC for tap-and-Go entry
+                    </h3>
+                    <p className="text-gray-500 text-base text-left px-5">
+                        Our lock responds instantly to your phone's NFC scan—fast, contactless, and friction-free.
+                    </p>
+                </div>
 
-                <Formik
-                    initialValues={{ email: '', city: '' }}
-                    validationSchema={validationSchema}
-                    onSubmit={(values, { resetForm }) => {
-                        alert(`Submitted: ${JSON.stringify(values, null, 2)}`)
-                        resetForm()
-                    }}
-                >
-                    {() => (
-                        <Form className="flex flex-col gap-4">
-                            <div>
-                                <Field
-                                    type="email"
-                                    name="email"
-                                    placeholder="Email Address"
-                                    className="py-3 px-4 w-full border-2 border-third text-third text-base rounded-full bg-transparent focus:outline-none focus:border-primary"
-                                />
-                                <ErrorMessage
-                                    name="email"
-                                    component="div"
-                                    className="text-red-500 text-sm mt-1 ml-4"
-                                />
-                            </div>
-                            <div>
-                                <Field
-                                    type="text"
-                                    name="city"
-                                    placeholder="City"
-                                    className="py-3 px-4 w-full border-2 border-third text-third text-base rounded-full bg-transparent focus:outline-none focus:border-primary"
-                                />
-                                <ErrorMessage
-                                    name="city"
-                                    component="div"
-                                    className="text-red-500 text-sm mt-1 ml-4"
-                                />
-                            </div>
-                            <button
-                                type="submit"
-                                className="py-3 px-6 text-white text-base rounded-full bg-primary hover:bg-third transition duration-300 self-center"
-                            >
-                                SUBMIT
-                            </button>
-                        </Form>
-                    )}
-                </Formik>
+                {/* Feature 2 */}
+                <div className="bg-white rounded-2xl shadow-md flex flex-col items-start pb-10">
+                    <img
+                        src="/Feature2.svg"
+                        alt="Feature"
+                        className="w-[50rem] rounded-xl object-contain"
+                    />
+                    <div className="flex items-center gap-3 text-gray-400 text-4xl mb-4 px-5">
+                        <TbRadar2 />
+                    </div>
+                    <h3 className="text-2xl text-left font-semibold text-[#55887c] mb-2 px-5">
+                        Infrared Presence Sensor
+                    </h3>
+                    <p className="text-gray-500 text-base text-left px-5">
+                        Built-in infrared sensors detect when the space is occupied—keeping entries smart and informed.
+                    </p>
+                </div>
+
+                {/* Feature 3 */}
+                <div className="bg-white rounded-2xl shadow-md flex flex-col items-start pt-10">
+                    
+                    <div className="flex items-center gap-3 text-gray-400 text-4xl mb-4 px-5">
+                        <CiVolumeHigh />
+                    </div>
+                    <h3 className="text-2xl text-left font-semibold text-[#55887c] mb-2 px-5">
+                        Built-in audio feedback for seamless interactions
+                    </h3>
+                    <p className="text-gray-500 text-base text-left px-5">
+                        Know when you’ve locked, unlocked, or pressed a button—with tactile precision built into every interaction.
+                    </p>
+                    <img
+                        src="/Feature3.svg"
+                        alt="Feature"
+                        className="w-[50rem] rounded-xl object-contain"
+                    />
+                </div>
             </div>
-        </>
-    )
-}
 
-export default HomeForm
+        </>
+    );
+};
+
+export default LockFeatures;
