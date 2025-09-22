@@ -57,7 +57,7 @@ const Mirror = () => {
   }, [])
 
   return (
-    <div className="w-full bg-secondary mt-[10rem]  flex flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[15rem] lg:pt-[10rem] 3xl:mt-[40rem]">
+    <div className="w-full bg-secondary mt-[10rem] flex flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[15rem] xl:mt-10rem] lg:pt-[10rem] 3xl:mt-[40rem]">
       <div className="w-full relative flex flex-col items-center px-4 sm:px-6 lg:px-8 overflow-visible">
         {/* Top overflowing mirror image */}
         <motion.img
@@ -94,7 +94,7 @@ const Mirror = () => {
           <motion.img
             src="/mirror thing.svg"
             alt="mirror"
-            className="mirror-svg w-auto h-full z-0 object-cover absolute max-w-[1440px]"
+            className="mirror-svg w-auto xl:ml-[-10rem] h-full z-0 object-cover absolute max-w-[1440px]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"

@@ -76,7 +76,7 @@ const Hero = () => {
       <div className="hidden sm:block relative w-full">
         <div className="w-full h-screen px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20 pt-24 pb-0 grid grid-cols-12 gap-4 lg:gap-8 items-center max-w-[1536px] mx-auto ">
           {/* Image left */}
-          <AnimatedItem className="col-span-5 flex justify-center items-center relative z-10 xl:mt-[-2rem] 2xl:mt-[-5] 3xl:mt-[5rem]">
+          <AnimatedItem className="col-span-5 flex justify-center items-center relative z-10 xl:mt-[4rem] 2xl:mt-[-5] 3xl:mt-[5rem]">
             <img src="/Home-character.svg" alt="character" className="w-[70%] sm:w-[65%] md:w-[75%] lg:w-[85%] xl:w-[75%] 3xl:w-[120%] 3xl:mt-[-5rem] 2xl:w-[120%] 2xl:mt-[-5rem] max-w-[300px] lg:max-w-[350px] xl:max-w-[400px] 2xl:max-w-[450px]" />
           </AnimatedItem>
           {/* Text right */}
