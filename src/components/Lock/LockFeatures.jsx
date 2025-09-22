@@ -7,7 +7,7 @@ const LockFeatures = () => {
     return (
         <>
             {/* Desktop & Tablet Layout */}
-            <div className="hidden sm:flex w-full h-full flex-col bg-transparent justify-between items-center">
+            <div className="hidden sm:flex w-full h-[128vh] flex-col bg-transparent justify-between items-center">
                 {/* First Feature */}
                 <div
                     id="first"
@@ -72,7 +72,7 @@ const LockFeatures = () => {
                         <div className="flex items-center gap-4 text-gray-400 text-5xl">
                             <CiVolumeHigh />
                         </div>
-                        <h3 className="text-6xl font-semibold text-[#55887c]">
+                        <h3 className="text-5xl font-semibold text-[#55887c]">
                             Built-in audio feedback for seamless interactions
                         </h3>
                         <p className="text-gray-500 text-2xl">

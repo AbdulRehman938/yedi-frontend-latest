@@ -50,11 +50,11 @@ const Methods = () => {
             <div className="hidden sm:block">
                 {/* Access Methods Section */}
                 <div className="mb-8 w-[95%] ">
-                    <h2 className="text-6xl font-medium text-primary mb-4">Access Methods</h2>
+                    <h2 className="text-5xl font-medium text-primary mb-4">Access Methods</h2>
 
                     <div className="grid grid-cols-2 gap-4 mb-6 mt-10">
                         {/* QR Scan */}
-                        <div className="bg-[#e1e1e1] rounded-3xl p-4 flex items-center gap-3 shadow-sm">
+                        <div className="bg-[#e1e1e1] rounded-3xl px-4 py-2 flex items-center gap-3 shadow-sm">
                             <div className="w-20 h-20 flex items-center border-r-2 border-white justify-center">
                                 <MdQrCodeScanner className="w-10 h-10 text-gray-600" />
                             </div>
@@ -62,7 +62,7 @@ const Methods = () => {
                         </div>
 
                         {/* NFC Tap */}
-                        <div className="bg-[#e1e1e1] rounded-3xl p-4 flex items-center gap-3 shadow-sm">
+                        <div className="bg-[#e1e1e1] rounded-3xl px-4 py-2 flex items-center gap-3 shadow-sm">
                             <div className="w-20 h-20 flex items-center border-r-2 border-white justify-center">
                                 <MdNfc className="w-10 h-10 text-gray-600" />
                             </div>
@@ -70,7 +70,7 @@ const Methods = () => {
                         </div>
 
                         {/* Keypad Code */}
-                        <div className="bg-[#e1e1e1] rounded-3xl p-4 flex items-center gap-3 shadow-sm">
+                        <div className="bg-[#e1e1e1] rounded-3xl px-4 py-2 flex items-center gap-3 shadow-sm">
                             <div className="w-20 h-20 flex items-center border-r-2 border-white justify-center">
                                 <BiGridAlt className="w-10 h-10 text-gray-600" />
                             </div>
@@ -78,7 +78,7 @@ const Methods = () => {
                         </div>
 
                         {/* Master Key */}
-                        <div className="bg-[#e1e1e1] rounded-3xl p-4 flex items-center gap-3 shadow-sm">
+                        <div className="bg-[#e1e1e1] rounded-3xl px-4 py-2 flex items-center gap-3 shadow-sm">
                             <div className="w-20 h-20 flex items-center border-r-2 border-white justify-center">
                                 <HiOutlineKey className="w-10 h-10 text-gray-600" />
                             </div>
@@ -89,24 +89,24 @@ const Methods = () => {
 
                 {/* Product Details Section */}
                 <div className='mt-20 w-[95%]'>
-                    <h2 className="text-7xl font-medium text-primary mb-8">Product Details</h2>
+                    <h2 className="text-5xl font-medium text-primary mb-8">Product Details</h2>
 
                     <div className="bg-transparent rounded-lg overflow-hidden">
                         {/* Finish */}
-                        <div className="flex justify-start items-start h-48 gap-[37%] pt-10 pl-2 border-b border-gray-700 border-t">
-                            <span className="text-gray-500 font-medium text-5xl">Finish</span>
-                            <span className="text-gray-500 text-3xl text-left ">Matte Black</span>
+                        <div className="flex justify-start items-start h-40 gap-[37%] pt-10 pl-2 border-b border-gray-700 border-t">
+                            <span className="text-gray-500 font-medium text-4xl">Finish</span>
+                            <span className="text-gray-500 text-2xl text-left ">Matte Black</span>
                         </div>
 
                         {/* Material */}
-                        <div className="flex justify-start items-start h-48 gap-[36%] pt-10 pl-2 border-b border-gray-700 border-t">
+                        <div className="flex justify-start items-start h-40 gap-[33%] pt-10 pl-2 border-b border-gray-700">
                             <span className="text-gray-500 font-medium text-4xl">Material</span>
                             <span className="text-gray-500 text-2xl text-left">Vibranium Exterior</span>
                         </div>
 
                         {/* Dimensions */}
                         <div className="pl-2 border-b border-gray-700">
-                            <div className="flex justify-start h-72 gap-[33%] pt-10 items-start mb-2">
+                            <div className="flex justify-start h-72 gap-[28%] pt-10 items-start mb-2">
                                 <span className="text-gray-500 font-medium text-4xl">Dimensions</span>
                                 <div className="text-gray-500 text-left text-2xl">
                                     <div className="font-medium mb-1">External (W x H x D)</div>
@@ -121,7 +121,7 @@ const Methods = () => {
                         </div>
 
                         {/* Battery */}
-                        <div className="flex justify-start h-52 gap-[38%] items-start pt-10 pl-2 border-b border-gray-700">
+                        <div className="flex justify-start h-52 gap-[34%] items-start pt-10 pl-2 border-b border-gray-700">
                             <span className="text-gray-500 font-medium text-4xl">Battery</span>
                             <span className="text-gray-500 text-2xl text-left max-w-xs">
                                 Not sure if we actually want to put battery information but its here just in case.
@@ -130,7 +130,7 @@ const Methods = () => {
 
                         {/* What's Included */}
                         <div className="pl-2">
-                            <div className="flex justify-start h-64 gap-[28%] items-start pt-10">
+                            <div className="flex justify-start h-64 gap-[21%] items-start pt-10">
                                 <span className="text-gray-500 font-medium text-4xl">What's Included</span>
                                 <div className="text-gray-500 text-2xl text-left">
                                     <div>Yedi Zen Lock</div>
@@ -145,7 +145,7 @@ const Methods = () => {
                     </div>
                 </div>
 
-                <div className='w-full min-h-screen relative flex flex-col justify-start rounded-t-[4rem] items-start bg-white overflow-hidden py-16 lg:py-24'>
+                <div className='w-full min-h-screen relative flex flex-col justify-start rounded-t-[4rem] mt-20 items-start bg-white overflow-hidden py-16 lg:py-24'>
                     {/* Locations Section */}
                     <motion.div
                         className='locations-section w-full max-w-7xl mx-auto px-4 lg:px-8 flex flex-col justify-start items-start bg-white z-10 overflow-hidden'
@@ -201,7 +201,7 @@ const Methods = () => {
                             </div>
 
                             {/* Arrows */}
-                            <div className='city-arrow s flex justify-center gap-4 lg:gap-6 items-center mt-6 lg:mt-8 ml-[10rem]'>
+                            <div className='city-arrow s flex justify-center gap-4 lg:gap-6 items-center mt-6 lg:mt-8 ml-[60rem]'>
                                 <button
                                     onClick={scrollLeft}
                                     className='arrow-left w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300'

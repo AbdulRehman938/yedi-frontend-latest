@@ -62,7 +62,7 @@ const Hero = () => {
         <img
           src="/Yedi-Lock1.svg"
           alt="lock1"
-          className="w-[50%] h-full object-contain absolute z-10 top-[-200rem] right-[15rem]"
+          className="w-[50%] h-full object-contain absolute z-10 top-[-180rem] right-[12rem]"
         />
 
         {/* Panels */}
@@ -127,7 +127,7 @@ const Hero = () => {
           </button>
         </div>
 
-        <div className="text-black w-[95%] h-[150rem] mt-20 flex flex-col justify-between items-center rounded-[4rem] overflow-hidden">
+        <div className="text-black w-[95%] h-[120rem] mt-20 flex flex-col justify-between items-center rounded-[4rem] overflow-hidden">
           <LockFeatures />
         </div>
 
@@ -203,7 +203,7 @@ const Hero = () => {
         <LockMover />
 
         {/* Lock Features Mobile */}
-        <div className="w-full mt-20 mb-8">
+        <div className="w-full">
           <LockFeatures />
         </div>
 
