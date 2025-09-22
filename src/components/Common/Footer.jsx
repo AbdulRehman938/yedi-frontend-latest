@@ -97,17 +97,17 @@ const Footer = () => {
       </div>
 
       {/* ===== Mobile Footer ===== */}
-      <div className="flex sm:hidden flex-col items-center w-full px-2 py-10 gap-6 text-center h-[100vh]">
-        <h1 className="text-6xl text-[#91bab0] font-black mt-[-2rem]">Find Your Restroom</h1>
+      <div className="flex sm:hidden flex-col h-[40rem] pt-20 relative items-center w-full py-10 gap-6 text-center">
+        <h1 className="text-4xl text-[#91bab0] font-black">Find Your Restroom</h1>
 
         <Link
           to="/partner"
-          className="rounded-full border border-white px-10 py-4 text-white text-base mt-10"
+          className="rounded-full border border-white px-8 py-3 text-white text-sm"
         >
           BECOME A PARTNER
         </Link>
 
-        <div className="flex flex-wrap justify-center gap-4 text-white text-sm mt-4">
+        <div className="flex flex-wrap justify-center gap-4 text-white text-xs mt-4">
           <Link to="/">HOME</Link>
           <Link to="/locks">OUR LOCKS</Link>
           <Link to="/locations">LOCATIONS</Link>
@@ -117,16 +117,20 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center gap-6 mt-6">
-          <FaFacebook className="text-2xl text-white" />
-          <FaXTwitter className="text-2xl text-white" />
-          <FaInstagram className="text-2xl text-white" />
-          <FaLinkedin className="text-2xl text-white" />
+          <FaFacebook className="text-xl text-white" />
+          <FaXTwitter className="text-xl text-white" />
+          <FaInstagram className="text-xl text-white" />
+          <FaLinkedin className="text-xl text-white" />
         </div>
 
-        <img src="/FooterMobile.svg" alt="Footer" className="w-[100vw] h-[40rem] mt-[-6rem] object-contain" />
-        <div className="flex justify-between items-center w-full text-white mt-8 text-sm">
-          <img src="/whitelogo.svg" alt="logo" className="h-8" />
-          <p className='text-xl'>© 2025</p>
+        <img
+          src="/FooterMobile.svg"
+          alt="Footer"
+          className="w-[100vw] h-[20rem] object-contain mt-[-7rem]"
+        />
+        <div className="flex justify-between items-center px-4 w-full text-white text-xs">
+          <img src="/whitelogo.svg" alt="logo" className="h-6" />
+          <p>© 2025</p>
         </div>
       </div>
     </div>

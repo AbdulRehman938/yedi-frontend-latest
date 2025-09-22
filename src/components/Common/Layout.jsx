@@ -10,7 +10,6 @@ const Layout = () => {
             <main className="w-full flex-grow pt-20 lg:pt-20 overflow-hidden">
                 <Outlet />
             </main>
-
             <Footer />
         </div>
     );
