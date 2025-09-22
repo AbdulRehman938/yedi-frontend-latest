@@ -83,7 +83,7 @@ const Hero = () => {
           <AnimatedItem className="col-span-7 flex flex-col items-start justify-center z-10 pl-4 lg:pl-0 xl:mt-[-30rem] 3xl:ml-[13rem] 3xl:mb-[-15rem] 2xl:mt-[-30rem] 2xl:ml-[10rem] lg:mt-[-35rem] lg:ml-[6rem]  ">
             <h1 className="text-primary font-bold leading-tight
                 sm:text-[2.5rem] sm:leading-[2.2rem]
-                md:text-[3.5rem] md:leading-[3rem]
+                md:text-[20rem] md:leading-[3rem]
                 lg:text-[6rem] lg:leading-[5rem]
                 xl:text-[5.5rem] xl:leading-[5rem]
                 2xl:text-[8rem] 2xl:leading-[7rem]
