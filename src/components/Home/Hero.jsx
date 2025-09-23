@@ -86,7 +86,7 @@ const Hero = () => {
             </p>
             <div className="flex justify-start items-center gap-4 mt-6 flex-wrap">
               <div>
-                <button className="bg-transparent font-medium border border-primary text-primary rounded-[2rem] hover:bg-[#b1b1b128] hover:scale-105 ease-in-out duration-300 px-4 py-1 text-sm whitespace-nowrap">
+                <button className="bg-transparent font-medium border border-primary text-primary rounded-[2rem] hover:bg-[#b1b1b128] hover:scale-105 ease-in-out duration-300 px-5 py-2 text-sm whitespace-nowrap">
                   LOCATIONS
                 </button>
               </div>
