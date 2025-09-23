@@ -122,7 +122,7 @@ const Mirror = () => {
 
           {/* Section 2 */}
           <motion.div
-            className="relative z-30 w-full flex items-center justify-between gap-10 py-24"
+            className="relative top-[-5rem] z-30 w-full flex items-center justify-between gap-10 py-24"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
@@ -145,7 +145,7 @@ const Mirror = () => {
 
           {/* Section 3 */}
           <motion.div
-            className="relative z-30 w-full flex items-center justify-between gap-10 py-24 mt-[-5rem]"
+            className="relative top-[-5rem] z-30 w-full flex items-center justify-between gap-10 py-24 mt-[-5rem]"
             variants={fadeVariant}
             initial="hidden"
             whileInView="visible"
