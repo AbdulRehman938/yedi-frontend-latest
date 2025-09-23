@@ -123,7 +123,7 @@ const Header = () => {
                     }`}
                 style={{ maxHeight: menuOpen ? '40%' : '0' }}
             >
-                <nav className="w-full flex flex-col items-start p-6 gap-4">
+                <nav className="w-full flex flex-col items-start p-10 gap-4">
                     <Link to="/" className="text-primary font-semibold hover:scale-110 transition-all duration-300 pl-2" onClick={() => setMenuOpen(false)}>HOME</Link>
                     <Link to="/locations" className="text-primary font-semibold hover:scale-110 transition-all duration-300 pl-2" onClick={() => setMenuOpen(false)}>LOCATIONS</Link>
                     <Link to="/locks" className="text-primary font-semibold hover:scale-110 transition-all duration-300 pl-2" onClick={() => setMenuOpen(false)}>OUR LOCKS</Link>
@@ -134,7 +134,7 @@ const Header = () => {
                         style={{ width: 'clamp(10rem, 60%, 14rem)' }}
                         onClick={() => setMenuOpen(false)}
                     >
-                        <span className="whitespace-nowrap text-sm">BECOME A PARTNER</span>
+                        <span className="whitespace-nowrap text-xs">BECOME A PARTNER</span>
                     </Link>
                 </nav>
             </div>
