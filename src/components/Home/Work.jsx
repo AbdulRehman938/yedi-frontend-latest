@@ -36,7 +36,7 @@ const Work = () => {
                 />
 
                 <motion.div
-                    className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-20 top-[96rem] left-[52rem] rounded-3xl overflow-hidden flex justify-end items-end"
+                    className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-20 top-[96rem] left-[53rem] rounded-3xl overflow-hidden flex justify-end items-end"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
