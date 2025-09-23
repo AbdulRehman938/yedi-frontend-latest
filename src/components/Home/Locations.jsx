@@ -60,12 +60,12 @@ const Locations = () => {
                         {cities.map((city, i) => (
                             <div
                                 key={i}
-                                className="flex-shrink-0 relative w-[60%] flex flex-col items-start"
+                                className="flex-shrink-0 relative w-[60%] h-[100%] flex flex-col items-start"
                             >
                                 <img
                                     src={city.img}
                                     alt={city.name}
-                                    className={`w-full h-40 object-cover rounded-xl ${i > 1 ? 'grayscale' : ''
+                                    className={`w-full h-[100%] object-cover rounded-xl ${i > 1 ? 'grayscale' : ''
                                         }`}
                                 />
                                 {i > 1 && (
@@ -122,7 +122,7 @@ const Locations = () => {
                         {cities.map((city, i) => (
                             <div
                                 key={i}
-                                className="flex-shrink-0 w-[18rem] h-[20rem] relative"
+                                className="flex-shrink-0 w-[16rem] h-[25rem] relative"
                             >
                                 <img
                                     src={city.img}
