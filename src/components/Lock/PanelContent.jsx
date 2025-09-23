@@ -236,7 +236,7 @@ export const UnlockContent = () => (
             {/* Right Side - Demo Image */}
             <div className="flex-1 flex justify-center lg:justify-end">
                 <img
-                    src="/Lock3.svg"
+                    src="/Lock4.svg"
                     alt="Lock demo"
                     className="rounded-xl shadow-lg object-cover"
                 />

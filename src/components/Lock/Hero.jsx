@@ -46,6 +46,7 @@ const Hero = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
 
   const togglePanel = (index) => {
+    console.log('Toggle panel called with index:', index, 'Current openIndex:', openIndex);
     setOpenIndex(openIndex === index ? null : index);
   };
 
@@ -105,7 +106,7 @@ const Hero = () => {
                   {/* Content */}
                   <div
                     className={`${panel.color} px-20 transition-all duration-500 ease-in-out ${isOpen
-                      ? 'max-h-[150rem] sm:max-h-[100rem] opacity-100 py-8 rounded-b-[4rem]'
+                      ? `max-h-[150rem] sm:max-h-[100rem] opacity-100 py-8 ${index === 3 ? 'rounded-b-[4rem]' : ''}`
                       : 'max-h-0 opacity-0 py-0'
                       }`}
                   >
@@ -149,7 +150,7 @@ const Hero = () => {
         </div>
 
         {/* Fixed the container - removed fixed height and overflow-hidden */}
-      <div className='relative mt-[19rem] min-h-[40rem] sm:min-h-[51rem] w-[100vw] rounded-t-[3rem] pt-20 bg-primary'>
+        <div className='relative mt-[19rem] min-h-[40rem] sm:min-h-[51rem] w-[100vw] rounded-t-[3rem] pt-20 bg-primary'>
           {/* Subtitle Section */}
           <div className="mb-12 px-2">
             <h2 className="text-white text-3xl font-semibold leading-tight mb-4">
