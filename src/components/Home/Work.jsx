@@ -21,8 +21,8 @@ const Work = () => {
     return (
         <>
             {/* ===== Desktop / Larger Screens ===== */}
-            <div className="work-container w-full mt-[-10rem] h-[120rem] lg:mt-[-17rem] pt-20 bg-background relative justify-center items-start hidden sm:block">
-                <div className="w-[70%] h-[15%] bg-background absolute z-20 top-20 right-[45rem]"></div>
+            <div className="work-container w-full lg:mt-[-20rem] lg:h-[120rem] pt-20 bg-background relative justify-center items-start hidden sm:block">
+                <div className="w-[70%] h-[15%] bg-background absolute z-20 lg:top-[15rem] lg:right-[45rem]"></div>
 
                 <motion.img
                     src="/HomeWorkSlide.svg"
@@ -36,7 +36,7 @@ const Work = () => {
                 />
 
                 <motion.div
-                    className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-20 lg:top-[92rem] lg:left-[52.8rem] rounded-3xl overflow-hidden flex justify-end items-end"
+                    className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-20 lg:top-[92rem] lg:left-[62rem] rounded-3xl overflow-hidden flex justify-end items-end"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
