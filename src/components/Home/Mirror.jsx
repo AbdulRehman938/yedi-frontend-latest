@@ -208,7 +208,7 @@ const Mirror = () => {
               <motion.img
                 src="/Mobile-mirror.svg"
                 alt="mirror"
-                className="mirror-svg w-auto h-full z-0 object-contain absolute max-w-[1440px]"
+                className="mirror-svg w-auto h-full z-20 object-contain absolute max-w-[1440px]"
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"
@@ -221,10 +221,10 @@ const Mirror = () => {
             <div id="second-mobile" className="w-full relative z-20 flex flex-col overflow-visible top-[-6rem] mt-[15rem]">
               {/* Brownmobile pieces */}
               <div className="absolute z-10 top-[-20rem] w-[100vw] -right-4 h-[10rem] flex flex-col items-center -space-y-[80px]">
-                <img src="/brownmobile4.svg" alt="Mirror part 4" className="brownmobile4 w-full max-h-[35rem] mt-[2rem] object-cover" />
-                <img src="/brownmobile1.svg" alt="Mirror part 1" className="brownmobile1 w-full max-h-[30rem] mt-[-20rem] object-cover" />
-                <img src="/brownmobile2.svg" alt="Mirror part 2" className="brownmobile2 w-full max-h-[30rem] mt-[20rem] relative top-[20rem] object-cover" />
-                <img src="/brownmobile3.svg" alt="Mirror part 3" className="brownmobile3 w-full max-h-[30rem] mt-[-20rem] relative top-[30rem] object-cover" />
+                <img src="/brownmobile4.svg" alt="Mirror part 4" className="brownmobile4 w-full max-h-[35rem] relative z-10 mt-[2rem] object-cover" />
+                <img src="/brownmobile1.svg" alt="Mirror part 1" className="brownmobile1 w-full max-h-[30rem] relative z-50 mt-[-20rem] object-cover" />
+                <img src="/brownmobile2.svg" alt="Mirror part 2" className="brownmobile2 w-full max-h-[30rem] relative z-10 mt-[20rem] top-[20rem] object-cover" />
+                <img src="/brownmobile3.svg" alt="Mirror part 3" className="brownmobile3 w-full max-h-[30rem] relative z-10 mt-[-20rem] top-[30rem] object-cover" />
               </div>
 
               {/* Section 1 */}
