@@ -198,7 +198,7 @@ const Mirror = () => {
             {/* Mirror container */}
             <motion.div
               id="mirror-mobile"
-              className="w-[95%] max-w-[1440px] z-30 mt-[-62rem] h-[35rem] bg-transparent relative rounded-[50rem] overflow-hidden flex justify-center items-center"
+              className="w-[90vw] max-w-[1440px] z-30 mt-[-62rem] h-[35rem] bg-transparent relative rounded-[50rem] overflow-hidden flex justify-center items-center"
               variants={fadeVariant}
               initial="hidden"
               whileInView="visible"
@@ -237,7 +237,7 @@ const Mirror = () => {
                 viewport={{ once: false, amount: 0.2 }}
               >
                 <div className="w-full flex flex-col gap-4 text-center px-2">
-                  <h1 className="text-5xl text-primary font-bold">We've all been there</h1>
+                  <h1 className="text-4xl text-primary font-bold">We've all been there</h1>
                   <p className="text-gray-500 font-medium">
                     You're away from home and unsure where you can <span className="text-black font-medium">go</span>.
                   </p>
@@ -249,7 +249,7 @@ const Mirror = () => {
 
               {/* Section 2 */}
               <motion.div
-                className="relative z-30 w-full flex flex-col items-center justify-between gap-10 py-24 mt-20"
+                className="relative z-30 w-full flex flex-col items-center justify-between gap-10 py-24 mt-16"
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"
@@ -258,7 +258,7 @@ const Mirror = () => {
               >
                 <div className="w-full flex flex-col gap-4 text-center px-2">
                   <h1 className="text-3xl text-primary font-bold">A tiny ask shouldn't feel so big.</h1>
-                  <p className="text-gray-500 font-medium">
+                  <p className="text-gray-500 font-medium text-sm">
                     Waiting in line, holding it in, just to <span className="text-black font-medium">beg</span> for a restroom key.
                     It's awkward. I don't want to tell someone I have to evacuate my bowels.
                   </p>
@@ -270,7 +270,7 @@ const Mirror = () => {
 
               {/* Section 3 */}
               <motion.div
-                className="relative z-30 w-full flex flex-col items-center justify-between gap-10 py-24 -mt-10"
+                className="relative z-30 w-full flex flex-col items-center justify-between gap-10 py-24 -mt-5"
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"
