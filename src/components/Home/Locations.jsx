@@ -36,9 +36,17 @@ const Locations = () => {
     }, [])
 
     const prev = () =>
-        setActiveIndex((prev) => (prev === 0 ? cities.length - 1 : prev - 1))
+        setActiveIndex((prev) => {
+            if (prev <= 0) return prev // already at the start
+            return prev - 1
+        })
+
     const next = () =>
-        setActiveIndex((prev) => (prev === cities.length - 1 ? 0 : prev + 1))
+        setActiveIndex((prev) => {
+            if (prev >= cities.length - 1) return prev // already at the end, don’t move
+            return prev + 1
+        })
+
 
     return (
         <div className="w-full min-h-screen bg-white flex flex-col items-center rounded-[3rem] relative z-40 pt-12">
@@ -106,15 +114,15 @@ const Locations = () => {
             </div>
 
             {/* ====== DESKTOP VIEW ====== */}
-            <div className="hidden sm:flex flex-col h-[100vh] items-start w-full max-w-7xl px-8">
+            <div className="hidden sm:flex flex-col h-[150vh] items-start w-full max-w-7xl px-8">
                 <h1 className="text-5xl font-black text-primary mb-6">Locations</h1>
                 <p className="text-lg text-gray-500 mb-8">
                     Discover Yedi in your City
                 </p>
 
-                <div className="relative w-full overflow-hidden">
+                <div className="relative w-full left-[13rem] overflow-hidden">
                     <div
-                        className="flex gap-6 transition-transform duration-500 ease-in-out"
+                        className="flex gap-6 h-[20rem] transition-transform duration-500 ease-in-out"
                         style={{
                             transform: `translateX(-${activeIndex * 320}px)`,
                         }}
@@ -122,7 +130,7 @@ const Locations = () => {
                         {cities.map((city, i) => (
                             <div
                                 key={i}
-                                className="flex-shrink-0 w-[16rem] h-[25rem] relative"
+                                className="flex-shrink-0 w-[16rem] h-[20rem] relative"
                             >
                                 <img
                                     src={city.img}
@@ -143,21 +151,21 @@ const Locations = () => {
                     </div>
                 </div>
 
-                 {/* Arrows */}
-                    <div className="relative w-full left-[85%] top-10 flex gap-4">
-                        <button
-                            onClick={prev}
-                            className="bg-primary/50 text-white hover:bg-primary rounded-full p-5"
-                        >
-                            <FaChevronLeft />
-                        </button>
-                        <button
-                            onClick={next}
-                            className="bg-primary/50 hover:bg-primary text-white rounded-full p-5"
-                        >
-                            <FaChevronRight />
-                        </button>
-                    </div>
+                {/* Arrows */}
+                <div className="relative w-full left-[85%] top-10 flex gap-4">
+                    <button
+                        onClick={prev}
+                        className="bg-primary/50 text-white hover:bg-primary rounded-full p-5"
+                    >
+                        <FaChevronLeft />
+                    </button>
+                    <button
+                        onClick={next}
+                        className="bg-primary/50 hover:bg-primary text-white rounded-full p-5"
+                    >
+                        <FaChevronRight />
+                    </button>
+                </div>
 
                 {/* Learn More Button */}
                 <div className="ml-[43%] mt-[10%]">
