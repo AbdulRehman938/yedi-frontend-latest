@@ -105,7 +105,7 @@ const Hero = () => {
 
       {/* Mobile Layout */}
       <div className="sm:hidden flex flex-col items-center justify-start w-full px-4 text-center mt-0 pt-4 max-w-screen-sm mx-auto min-h-[85vh] pb-16">
-        <AnimatedItem className="z-10 flex flex-col items-center bg-transparent mt-20">
+        <AnimatedItem className="z-10 flex flex-col items-center bg-transparent mt-[10rem]">
           <h1 className="text-primary text-5xl font-bold leading-tight mb-4">Find Your Restroom</h1>
           <p className="text-black text-xl mb-8">Find. Scan. Unlock</p>
         </AnimatedItem>
