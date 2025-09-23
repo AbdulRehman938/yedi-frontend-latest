@@ -50,11 +50,13 @@ const Locations = () => {
 
     return (
         <section className="w-full flex flex-col relative z-20 items-center pt-16 bg-gradient-to-b from-transparent to-[#f8fafc]">
-            <div className='absolute w-full h-[100%] -z-10 top-[-10rem] bg-white blur-3xl'></div>
+            <div className='hidden md:flex absolute w-full h-[100%] -z-10 top-[-10rem] bg-white blur-3xl'></div>
 
             {/* ====== MOBILE VIEW ====== */}
-            <div className="sm:hidden w-full flex flex-col items-start mt-[22rem] px-4">
-                <h2 className="text-3xl font-bold text-primary mb-2">Locations</h2>
+            <div className="sm:hidden w-full flex flex-col items-start mt-[0rem] px-4">
+                <div className='sm:flex absolute w-[100vw] ml-[-1rem] h-[40%] -z-10 top-[2rem] bg-white blur-xl'></div>
+                <div className='sm:flex absolute w-[100vw] ml-[-1rem] h-[40%] -z-10 top-[13rem] bg-white'></div>
+                <h2 className="text-3xl font-bold mt-10 text-primary mb-2">Locations</h2>
                 <p className="text-gray-600 text-sm mb-4">
                     Discover Yedi in your City
                 </p>
@@ -107,7 +109,7 @@ const Locations = () => {
 
                 {/* Learn More Button */}
                 <div className="w-full flex justify-center mt-24">
-                    <button className="px-6 py-3 bg-primary text-white rounded-full hover:bg-third">
+                    <button className="px-10 py-3 bg-transparent border-2 border-third text-third rounded-full hover:bg-third">
                         LEARN MORE
                     </button>
                 </div>

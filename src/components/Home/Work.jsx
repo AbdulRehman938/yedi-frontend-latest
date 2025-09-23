@@ -22,7 +22,7 @@ const Work = () => {
         <>
             {/* ===== Desktop / Larger Screens ===== */}
             <div className="work-container w-full lg:mt-[-20rem] lg:h-[120rem] pt-20 bg-background relative justify-center items-start hidden sm:block">
-                <div className="w-[70%] h-[15%] bg-background absolute z-20 lg:top-[15rem] lg:right-[45rem]"></div>
+                <div className="hidden sm:flex w-[70%] h-[15%] bg-background absolute z-20 lg:top-[15rem] lg:right-[45rem]"></div>
 
                 <motion.img
                     src="/HomeWorkSlide.svg"
