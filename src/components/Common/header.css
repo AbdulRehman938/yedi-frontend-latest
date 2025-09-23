@@ -38,3 +38,60 @@
 #partner-btn .btn-fill {
   top: auto;
 }
+
+
+.blink-border {
+  border-width: 2px !important;
+  border-style: solid !important;
+  animation: blink-border 0.8s infinite;
+  border-color: #55887c;
+}
+
+/* Mobile menu styles */
+.mobile-menu-item {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.mobile-menu-item:active {
+  transform: scale(0.98);
+}
+
+/* Ensure mobile menu is always clickable */
+.mobile-menu {
+  pointer-events: auto !important;
+}
+
+.mobile-menu * {
+  pointer-events: auto !important;
+}
+
+/* Partner dialog mobile scroll styles */
+@media (max-width: 768px) {
+  .partner-dialog-container {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+  
+  .partner-dialog-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .partner-dialog-body {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+}
+
+/* Prevent body scroll when dialog is open */
+.no-scroll {
+  overflow: hidden !important;
+  position: fixed !important;
+  width: 100% !important;
+}
+
