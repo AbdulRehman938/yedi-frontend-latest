@@ -8,7 +8,7 @@ export default {
       md: "768px", // Tablet
       lg: "1024px", // Laptop
       xl: "1280px", // Laptop-Large
-      "2xl": "1440px",  // default
+      "2xl": "1440px",  
       "3xl": "1536px"
     },
     extend: {
