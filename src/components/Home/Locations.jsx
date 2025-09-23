@@ -116,12 +116,12 @@ const Locations = () => {
 
             {/* ====== DESKTOP VIEW ====== */}
             <div className="hidden sm:flex flex-col h-[40rem] items-start w-full max-w-7xl px-8">
-                <h1 className="text-5xl font-black text-primary mb-6 ml-[3rem]">Locations</h1>
-                <p className="text-lg text-gray-500 mb-8 ml-[3rem]">
+                <h1 className="text-5xl font-black text-primary mb-6 ml-[6rem]">Locations</h1>
+                <p className="text-lg text-gray-500 mb-8 ml-[6rem]">
                     Discover Yedi in your City
                 </p>
 
-                <div className="relative w-full left-[10rem] overflow-hidden">
+                <div className="relative w-full left-[6rem] overflow-hidden">
                     <div
                         className="flex gap-6 h-[20rem] transition-transform duration-500 ease-in-out"
                         style={{
