@@ -73,7 +73,7 @@ const Hero = () => {
       <div className="hidden sm:block relative w-full">
         <div className="w-full h-screen px-4 pt-24 pb-0 grid grid-cols-12 gap-4 items-center max-w-[1536px] mx-auto">
           {/* Image left */}
-          <div className="col-span-5 flex justify-center items-center relative md:mt-[-2rem] lg:mt-[18rem] mt-16 z-10">
+          <div className="col-span-5 flex justify-center items-center relative md:mt-[-2rem] lg:mt-[18rem] mt-10 z-10">
             <img src="/Home-character.svg" alt="character" className="w-[45%] max-w-[400px]" />
           </div>
           {/* Text right */}
