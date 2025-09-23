@@ -66,9 +66,6 @@ const Hero = () => {
         <AnimatedItem className="absolute inset-0">
           <img src="/path.svg" alt="path" className="hidden sm:block w-full h-full min-h-screen object-cover" />
         </AnimatedItem>
-        <AnimatedItem className="absolute inset-0">
-          <img src="/pathHomeMobile.svg" alt="path mobile" className="sm:hidden w-full h-[50rem] object-contain" />
-        </AnimatedItem>
         <div className="pb-[50rem] sm:pb-0" />
       </div>
 
@@ -105,21 +102,24 @@ const Hero = () => {
 
       {/* Mobile Layout */}
       <div className="sm:hidden flex flex-col items-center justify-start w-full px-4 text-center mt-0 pt-4 max-w-screen-sm mx-auto min-h-[85vh] pb-16">
-        <AnimatedItem className="z-10 flex flex-col items-center bg-transparent mt-[10rem]">
-          <h1 className="text-primary text-5xl font-bold leading-tight mb-4">Find Your Restroom</h1>
-          <p className="text-black text-xl mb-8">Find. Scan. Unlock</p>
+        <AnimatedItem className="absolute inset-0">
+          <img src="/pathHomeMobile.svg" alt="path mobile" className="sm:hidden w-full h-[50rem] object-contain" />
+        </AnimatedItem>
+        <AnimatedItem className="z-10 flex flex-col items-center bg-transparent mt-[2rem]">
+          <h1 className="text-primary text-5xl font-black leading-[3.5rem] mb-4 mt-[4rem]">Find Your <br /> Restroom</h1>
+          <p className="text-[#676666] text-xl mb-8">Find. Scan. Unlock</p>
         </AnimatedItem>
         <AnimatedItem>
-          <img src="/Home-character.svg" alt="character" className="relative w-[65%] ml-6 max-w-[250px] mt-10 mb-5 z-20" />
+          <img src="/Home-character.svg" alt="character" className="relative w-[50%] ml-[4.5rem] max-w-[250px] -mt-3 mb-5 z-20" />
         </AnimatedItem>
-        <div className="flex justify-between items-center w-[90%] gap-8 z-10">
+        <div className="flex justify-between items-center w-[100%] mt-5 gap-8 z-10">
           <AnimatedItem>
-            <button className="bg-transparent font-medium border border-primary text-primary rounded-[2rem] hover:bg-[#b1b1b128] hover:scale-105 ease-in-out duration-300 py-2 px-8 text-sm">
+            <button className="bg-transparent font-medium border border-primary text-primary rounded-[3rem] hover:bg-[#b1b1b128] hover:scale-105 ease-in-out duration-300 py-3 px-9 text-sm">
               LOCATIONS
             </button>
           </AnimatedItem>
           <AnimatedItem>
-            <button className="bg-primary/80 font-medium whitespace-nowrap text-white rounded-[2rem] hover:bg-primary hover:scale-105 ease-in-out duration-300 py-2 px-4 text-sm">
+            <button className="bg-primary/80 font-medium whitespace-nowrap text-white rounded-[3rem] hover:bg-primary hover:scale-105 ease-in-out duration-300 py-3 px-6 text-sm">
               DOWNLOAD APP
             </button>
           </AnimatedItem>
