@@ -120,7 +120,7 @@ const Locations = () => {
                     Discover Yedi in your City
                 </p>
 
-                <div className="relative w-full left-[13rem] overflow-hidden">
+                <div className="relative w-full left-[10rem] overflow-hidden">
                     <div
                         className="flex gap-6 h-[20rem] transition-transform duration-500 ease-in-out"
                         style={{
@@ -130,7 +130,7 @@ const Locations = () => {
                         {cities.map((city, i) => (
                             <div
                                 key={i}
-                                className="flex-shrink-0 w-[16rem] h-[20rem] relative"
+                                className="flex-shrink-0 w-[16rem] h-[15rem] relative"
                             >
                                 <img
                                     src={city.img}
