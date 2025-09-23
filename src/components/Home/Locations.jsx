@@ -49,22 +49,21 @@ const Locations = () => {
 
 
     return (
-        <section className="w-full flex flex-col relative z-20 items-center py-16 bg-gradient-to-b from-transparent to-[#f8fafc]">
+        <section className="w-full flex flex-col relative z-20 items-center pt-16 bg-gradient-to-b from-transparent to-[#f8fafc]">
             <div className='absolute w-full h-[100%] -z-10 top-[-10rem] bg-white blur-3xl'></div>
+
             {/* ====== MOBILE VIEW ====== */}
-            <div className="sm:hidden w-full flex flex-col items-start px-4">
+            <div className="sm:hidden w-full flex flex-col items-start mt-[22rem] px-4">
                 <h2 className="text-3xl font-bold text-primary mb-2">Locations</h2>
                 <p className="text-gray-600 text-sm mb-4">
                     Discover Yedi in your City
                 </p>
 
                 {/* Mobile carousel */}
-                <div className="relative w-full overflow-hidden">
+                <div className="relative h-[19rem] w-full overflow-hidden">
                     <div
                         className="flex transition-transform duration-500 ease-in-out gap-4"
-                        style={{
-                            transform: `translateX(-${activeIndex * 60}%)`,
-                        }}
+                        style={{ transform: `translateX(-${activeIndex * 60}%)` }}
                     >
                         {cities.map((city, i) => (
                             <div
@@ -90,16 +89,16 @@ const Locations = () => {
                     </div>
 
                     {/* Arrows */}
-                    <div className="absolute bottom-2 left-0 right-0 flex justify-between px-4">
+                    <div className="absolute bottom-2 left-0 right-[-10rem] top-[15.5rem] flex justify-center gap-10 px-4">
                         <button
                             onClick={prev}
-                            className="bg-black/40 text-white rounded-full p-2"
+                            className="bg-primary/50 active:bg-primary text-white rounded-full p-4"
                         >
                             <FaChevronLeft />
                         </button>
                         <button
                             onClick={next}
-                            className="bg-black/40 text-white rounded-full p-2"
+                            className="bg-primary/50 active:bg-primary text-white rounded-full p-4"
                         >
                             <FaChevronRight />
                         </button>
@@ -107,12 +106,67 @@ const Locations = () => {
                 </div>
 
                 {/* Learn More Button */}
-                <div className="w-full flex justify-center mt-8">
-                    <button className="px-6 py-2 bg-primary text-white rounded-full hover:bg-third">
+                <div className="w-full flex justify-center mt-24">
+                    <button className="px-6 py-3 bg-primary text-white rounded-full hover:bg-third">
                         LEARN MORE
                     </button>
                 </div>
+
+                {/* ====== NEWSLETTER (MOBILE ONLY) ====== */}
+                <div className="w-[100vw] ml-[-1rem] mt-[2rem] h-[30rem] bg-secondary rounded-3xl relative z-20 px-4 py-8 flex flex-col items-center">
+                    <h3 className="text-4xl font-bold text-primary mb-2">Yedi News Alerts!</h3>
+                    <p className="text-gray-600 text-center mt-10 mb-6">
+                        Be the first to know when Yedi comes to your town, get special offers, and more!
+                    </p>
+
+                    <Formik
+                        initialValues={{ email: '', city: '' }}
+                        validationSchema={validationSchema}
+                        onSubmit={(values, { resetForm }) => {
+                            alert(`Submitted: ${JSON.stringify(values, null, 2)}`)
+                            resetForm()
+                        }}
+                    >
+                        {() => (
+                            <Form className="flex flex-col gap-4 mt-10 w-full max-w-sm">
+                                <div>
+                                    <Field
+                                        name="email"
+                                        type="email"
+                                        placeholder="Email Address"
+                                        className="w-full border-2 border-third rounded-full px-4 py-3"
+                                    />
+                                    <ErrorMessage
+                                        name="email"
+                                        component="div"
+                                        className="text-red-500 text-sm mt-1 ml-2"
+                                    />
+                                </div>
+                                <div>
+                                    <Field
+                                        name="city"
+                                        type="text"
+                                        placeholder="City"
+                                        className="w-full border-2 border-third rounded-full px-4 py-3"
+                                    />
+                                    <ErrorMessage
+                                        name="city"
+                                        component="div"
+                                        className="text-red-500 text-sm mt-1 ml-2"
+                                    />
+                                </div>
+                                <button
+                                    type="submit"
+                                    className="px-8 py-3 bg-primary w-[70%] ml-10 text-white rounded-full hover:bg-third"
+                                >
+                                    SUBMIT
+                                </button>
+                            </Form>
+                        )}
+                    </Formik>
+                </div>
             </div>
+
 
             {/* ====== DESKTOP VIEW ====== */}
             <div className="hidden sm:flex flex-col h-[40rem] items-start w-full max-w-7xl px-8">
@@ -177,7 +231,7 @@ const Locations = () => {
             </div>
 
             {/* ====== NEWSLETTER FORM ====== */}
-            <div className="w-full bg-secondary h-[60vh] z-40 rounded-3xl mt-16 px-4 lg:px-8 py-12 flex flex-col lg:flex-row items-center justify-around gap-8">
+            <div className="hidden sm:flex w-full bg-secondary h-[70vh] z-40 rounded-3xl mt-16 px-4 lg:px-8 py-12flex-col lg:flex-row items-center justify-around gap-8">
                 <div className="flex flex-col gap-4 text-left mt-[-10rem] lg:text-left">
                     <h1 className="text-3xl lg:text-5xl font-black text-primary">
                         Yedi News Alerts!

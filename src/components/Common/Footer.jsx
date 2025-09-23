@@ -97,7 +97,7 @@ const Footer = () => {
       </div>
 
       {/* ===== Mobile Footer ===== */}
-      <div className="flex sm:hidden flex-col h-[40rem] pt-20 relative items-center w-full py-10 gap-6 text-center">
+      <div className="flex sm:hidden flex-col h-[40rem] pt-20 relative z-10 items-center w-full py-10 gap-6 text-center">
         <h1 className="text-4xl text-[#91bab0] font-black">Find Your Restroom</h1>
 
         <Link
