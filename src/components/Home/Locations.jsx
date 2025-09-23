@@ -49,7 +49,8 @@ const Locations = () => {
 
 
     return (
-        <div className="w-full min-h-screen bg-white flex flex-col items-center rounded-[3rem] relative z-40 pt-12">
+        <section className="w-full flex flex-col relative z-20 items-center py-16 bg-gradient-to-b from-transparent to-[#f8fafc]">
+            <div className='absolute w-full h-[100%] -z-10 top-[-10rem] bg-white blur-3xl'></div>
             {/* ====== MOBILE VIEW ====== */}
             <div className="sm:hidden w-full flex flex-col items-start px-4">
                 <h2 className="text-3xl font-bold text-primary mb-2">Locations</h2>
@@ -114,7 +115,7 @@ const Locations = () => {
             </div>
 
             {/* ====== DESKTOP VIEW ====== */}
-            <div className="hidden sm:flex flex-col h-[150vh] items-start w-full max-w-7xl px-8">
+            <div className="hidden sm:flex flex-col h-[40rem] items-start w-full max-w-7xl px-8">
                 <h1 className="text-5xl font-black text-primary mb-6 ml-[3rem]">Locations</h1>
                 <p className="text-lg text-gray-500 mb-8 ml-[3rem]">
                     Discover Yedi in your City
@@ -233,7 +234,7 @@ const Locations = () => {
                     )}
                 </Formik>
             </div>
-        </div>
+        </section>
     )
 }
 
