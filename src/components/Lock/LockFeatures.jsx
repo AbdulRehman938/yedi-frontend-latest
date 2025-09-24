@@ -16,13 +16,13 @@ const LockFeatures = () => {
                     {/* Left Content */}
                     <div className="flex flex-col items-start justify-center w-[45%] space-y-4">
                         <div className="flex items-center gap-4 text-gray-400 text-5xl">
-                            <FaBluetoothB />
-                            <FaMobileAlt />
+                            <img src="/Bluetooth.svg" alt="Bluetooth" className='w-14 h-14'  />
+                             <img src="/Mobile wifi.svg" alt="Mobile Wifi" className='w-14 h-14' />
                         </div>
-                        <h3 className="text-6xl font-semibold text-[#55887c]">
+                        <h3 className="text-5xl font-semibold text-[#55887c]">
                             Bluetooth & NFC for tap-and-Go entry
                         </h3>
-                        <p className="text-gray-500 text-2xl">
+                        <p className="text-gray-500 text-xl">
                             Our lock responds instantly to your phone's NFC scan—fast,
                             contactless, and friction-free.
                         </p>
@@ -52,12 +52,12 @@ const LockFeatures = () => {
                     </div>
                     <div className="flex flex-col items-start justify-center w-[45%] space-y-4">
                         <div className="flex items-center gap-4 text-gray-400 text-5xl">
-                            <TbRadar2 />
+                           <img src="/wifi.svg" alt="WiFi" className='w-14 h-14' />
                         </div>
-                        <h3 className="text-6xl font-semibold text-[#55887c]">
+                        <h3 className="text-5xl font-semibold text-[#55887c]">
                             Infrared Presence Sensor
                         </h3>
-                        <p className="text-gray-500 text-2xl">
+                        <p className="text-gray-500 text-xl">
                             Built-in infrared sensors detect when the space is occupied—keeping entries smart and informed.
                         </p>
                     </div>
@@ -70,12 +70,12 @@ const LockFeatures = () => {
                 >
                     <div className="flex flex-col items-start justify-center w-[45%] space-y-4">
                         <div className="flex items-center gap-4 text-gray-400 text-5xl">
-                            <CiVolumeHigh />
+                           <img src="/Speaker.svg" alt="speaker" className='w-14 h-14' />
                         </div>
-                        <h3 className="text-6xl font-semibold text-[#55887c]">
+                        <h3 className="text-5xl font-semibold text-[#55887c]">
                             Built-in audio feedback for seamless interactions
                         </h3>
-                        <p className="text-gray-500 text-2xl">
+                        <p className="text-gray-500 text-xl">
                             Know when you’ve locked, unlocked, or pressed a button—with tactile precision built into every interaction.
                         </p>
                     </div>

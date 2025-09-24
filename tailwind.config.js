@@ -8,8 +8,8 @@ export default {
       md: "768px", // Tablet
       lg: "1024px", // Laptop
       xl: "1280px", // Laptop-Large
-      "2xl": "1440px",  
-      "3xl": "1536px"
+      "2xl": "1440px",
+      "3xl": "1536px",
     },
     extend: {
       colors: {
@@ -18,10 +18,11 @@ export default {
         secondary: "#efece9",
         third: "#4C4C4C",
       },
+      fontFamily: {
+        sans: ['"Kumbh Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
+        kumbh: ['"Kumbh Sans"', "sans-serif"],
+      },
     },
   },
   plugins: [],
 };
-
-
-

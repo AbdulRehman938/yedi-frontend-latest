@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ensure Kumbh Sans is applied globally */
+* {
+  font-family: 'Kumbh Sans', ui-sans-serif, system-ui, sans-serif !important;
+}
+
 .bg-dotted-line {
   background-image: repeating-linear-gradient(
     to bottom,

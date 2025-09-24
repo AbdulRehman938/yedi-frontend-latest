@@ -43,14 +43,14 @@ const LockMover = () => {
             onClick={prevImage}
             className="absolute left-10 text-gray-600 font-thin hover:text-black text-7xl z-50 pointer-events-auto"
           >
-            <BsChevronLeft />
+            <img src="/Left arrow.svg" alt="left" className='w-20 h-20' />
           </button>
 
           <button
             onClick={nextImage}
             className="absolute right-10 text-gray-600 font-thin hover:text-black text-7xl z-50 pointer-events-auto"
           >
-            <BsChevronRight />
+            <img id='right-arrow' src="/Left arrow.svg" alt="right" className='w-20 h-20 rotate-180' />
           </button>
 
           <div className="flex gap-6 mt-10">
@@ -104,13 +104,13 @@ const LockMover = () => {
             onClick={prevImage}
             className="absolute -left-6 top-1/2 -translate-y-1/2 text-gray-600 hover:text-black text-4xl z-50"
           >
-            <BsChevronLeft />
+            <img src="/Left arrow.svg" alt="left" className='w-10 h-10' />
           </button>
           <button
             onClick={nextImage}
             className="absolute -right-6 top-1/2 -translate-y-1/2 text-gray-600 hover:text-black text-4xl z-50"
           >
-            <BsChevronRight />
+           <img src="/Left arrow.svg" alt="left" className='w-10 h-10 rotate-180' />
           </button>
         </div>
 

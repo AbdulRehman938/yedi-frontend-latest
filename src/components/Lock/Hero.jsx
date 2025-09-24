@@ -58,7 +58,7 @@ const Hero = () => {
       <div className="hidden sm:flex flex-col items-center w-full">
         {/* Main Title */}
         <div className="w-full h-[50rem] flex items-center justify-center">
-          <h1 className="text-[10rem] text-white font-black leading-[10rem] w-[70%] text-center">
+          <h1 className="text-[12rem] font-kumbh text-white font-black leading-[10rem] w-[70%] text-center">
             Restrooms Reimagined
           </h1>
         </div>
@@ -99,10 +99,19 @@ const Hero = () => {
                   >
                     <h2 className="text-white font-bold text-4xl">{panel.title}</h2>
                     {isOpen ? (
-                      <PiMinusThin className="text-white text-5xl font-thin transition-transform duration-300" />
+                      <img
+                        src="/Minus sign.svg"
+                        alt="Open"
+                        className="w-12 h-12 transition-transform duration-300"
+                      />
                     ) : (
-                      <BsPlusLg className="text-white text-5xl font-thin transition-transform duration-300" />
+                      <img
+                        src="/plus sign.svg"
+                        alt="Open"
+                        className="w-12 h-12 transition-transform duration-300"
+                      />
                     )}
+
                   </div>
 
                   {/* Content */}
@@ -179,9 +188,17 @@ const Hero = () => {
                   >
                     <h3 className="text-white font-bold text-2xl">{panel.title}</h3>
                     {isOpen ? (
-                      <PiMinusThin className="text-white text-xl transition-transform duration-300" />
+                      <img
+                        src="/Minus sign.svg"
+                        alt="Open"
+                        className="w-12 h-12 transition-transform duration-300"
+                      />
                     ) : (
-                      <FaPlus className="text-white text-xl transition-transform duration-300" />
+                      <img
+                        src="/plus sign.svg"
+                        alt="Open"
+                        className="w-12 h-12 transition-transform duration-300"
+                      />
                     )}
                   </div>
 
