@@ -88,7 +88,7 @@ const Mirror = () => {
           </motion.div>
 
           {/* Sections */}
-          <div id="second" className="w-[100vw] relative z-20 flex flex-col overflow-visible lg:top-[-6rem] mt-[15rem] lg:mt-[15rem] 2xl:mt-[15rem] xl:mt-[-10rem] 3xl:mt-[15rem] ">
+          <div id="second" className="w-[100vw] relative z-20 flex flex-col overflow-visible lg:top-[6rem] mt-[15rem] lg:mt-[15rem] 2xl:mt-[15rem] xl:mt-[-10rem] 3xl:mt-[15rem] ">
             {/* Mirror background for desktop */}
             <img
               src="/Mirror2.svg"
