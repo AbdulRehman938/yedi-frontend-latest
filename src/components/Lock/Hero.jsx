@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FaPlus, FaMinus } from 'react-icons/fa';
 import {
   ControlContent,
   EarnContent,
@@ -9,8 +8,6 @@ import {
 import LockMover from './LockMover';
 import LockFeatures from './LockFeatures';
 import Methods from './Methods';
-import { BsPlusLg } from 'react-icons/bs';
-import { PiMinusThin } from 'react-icons/pi';
 
 const panels = [
   {

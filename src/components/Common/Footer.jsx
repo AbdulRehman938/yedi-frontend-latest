@@ -10,7 +10,7 @@ const Footer = () => {
       {/* ===== Desktop / Tablet Footer ===== */}
       <div className="hidden sm:flex w-full h-[30rem] justify-center items-start relative">
         <img
-          src="/FooterLine.svg"
+          src="/FooterLine.png"
           alt="Footer"
           className="absolute w-full h-[90%] mt-5 z-20 lg:object-fill"
         />
@@ -29,7 +29,7 @@ const Footer = () => {
                   height: '2.8rem',
                 }}
               >
-                <span className="btn-text whitespace-nowrap">
+                <span className="btn-text text-black whitespace-nowrap">
                   BECOME A PARTNER
                 </span>
                 <span className="btn-fill" />
@@ -82,7 +82,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <div className="w-[20%] h-[3rem] flex justify-between items-center mt-3">
+            <div className="w-[20%] h-[3rem] flex justify-between gap-3 items-center mt-3">
               <FaFacebook className="text-white text-2xl hover:scale-105 cursor-pointer ease-in-out duration-300 hover:text-primary" />
               <FaXTwitter className="text-white text-2xl hover:scale-105 cursor-pointer ease-in-out duration-300 hover:text-primary" />
               <FaInstagram className="text-white text-2xl hover:scale-105 cursor-pointer ease-in-out duration-300 hover:text-primary" />
@@ -90,7 +90,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-[90%] h-[7%] absolute bottom-0 z-30 flex justify-between items-center text-white px-10">
+        <div className="w-[90%] h-[7%] absolute bottom-3 z-30 flex justify-between items-center text-white px-10">
           <img src="/whitelogo.svg" alt="logo" />
           <p>© 2025</p>
         </div>
@@ -102,7 +102,7 @@ const Footer = () => {
 
         <Link
           to="/partner"
-          className="rounded-full border border-white px-8 py-3 text-white text-sm"
+          className="rounded-full border border-white px-8 py-3 text-black text-sm"
         >
           BECOME A PARTNER
         </Link>

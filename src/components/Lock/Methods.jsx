@@ -154,8 +154,8 @@ const Methods = () => {
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.2 }}
                     >
-                        <h1 className='locations-heading text-primary text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black mb-4 lg:mb-6'>Locations</h1>
-                        <p className='locations-subtext text-lg lg:text-xl font-semibold text-gray-500'>Discover Yedi in your City</p>
+                        <h1 className='locations-heading text-primary text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-medium mb-4 lg:mb-6'>Locations</h1>
+                        <p className='locations-subtext text-lg lg:text-2xl font-medium text-gray-500'>Discover Yedi in your City</p>
 
                         <motion.div
                             className='city-carousel relative w-full mt-12 lg:mt-16'
@@ -188,8 +188,8 @@ const Methods = () => {
                                                 />
                                                 {i > 1 && (
                                                     <div className="city-coming-soon absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center">
-                                                        <span className="city-coming-soon-text text-white text-lg lg:text-2xl xl:text-3xl font-bold tracking-widest">
-                                                            COMING SOON
+                                                        <span className="city-coming-soon-text text-black h-[30%] flex justify-center items-center bg-white/70 w-full text-lg lg:text-xl xl:text-2xl font-bold tracking-widest">
+                                                            Coming Soon
                                                         </span>
                                                     </div>
                                                 )}
