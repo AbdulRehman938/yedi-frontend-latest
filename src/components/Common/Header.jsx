@@ -118,9 +118,9 @@ const Header = () => {
         <>
             <ToastContainer position="top-right" autoClose={3000} />
             {/* Header */}
-            <div className="fixed top-0 left-0 z-50 w-full mx-20 flex justify-center">
+            <div className="fixed top-0 left-0 z-50 w-full flex justify-center items-center px-2 sm:px-4 lg:px-6 xl:px-8">
                 <div
-                    className={`w-[97%] max-w-[1440px] flex justify-between items-center px-4 lg:px-8 xl:px-12 
+                    className={`w-full max-w-[1440px] flex justify-between items-center px-4 sm:px-6 lg:px-8 xl:px-12 
           transition-all ease-in-out ${scrolled ? 'py-2 bg-transparent' : 'rounded-xl py-2 mt-2 bg-white'}`}
                     style={{ minHeight: '4rem' }}
                 >
@@ -128,8 +128,8 @@ const Header = () => {
                         <img src="/Logo.svg" alt="logo" className="w-full h-full object-contain" />
                     </div>
 
-                    <div id="navbar" className="hidden lg:flex items-center justify-center flex-1 mx-8 xl:mx-12">
-                        <nav ref={navRef} className="flex justify-center relative gap-6 xl:gap-8 2xl:gap-10">
+                    <div id="navbar" className="hidden lg:flex items-center justify-center flex-1 mx-4 lg:mx-6 xl:mx-8">
+                        <nav ref={navRef} className="flex justify-center relative gap-4 lg:gap-6 xl:gap-8 2xl:gap-10">
                             {navLinks.map((link, idx) => (
                                 <Link
                                     key={link.path}
@@ -174,7 +174,7 @@ const Header = () => {
                     {menuOpen && (
                         <div
                             ref={menuRef}
-                            className="mobile-menu lg:hidden fixed top-16 right-0 w-[60%] rounded-3xl h-1/2 bg-white shadow-xl z-50 flex flex-col justify-start px-2"
+                            className="mobile-menu lg:hidden fixed top-16 right-2 sm:right-4 w-[60%] max-w-[300px] rounded-3xl h-1/2 bg-white shadow-xl z-50 flex flex-col justify-start px-2"
                         >
                             <nav className="flex flex-col p-5 pt-10 space-y-4">
                                 {navLinks.map((link) => (
@@ -210,7 +210,7 @@ const Header = () => {
                     )}
                 </div>
             </div>
-                    
+
             {/* Partner Dialog */}
             {partnerOpen && (
                 <div
