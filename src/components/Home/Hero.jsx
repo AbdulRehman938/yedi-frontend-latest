@@ -64,7 +64,7 @@ const Hero = () => {
       {/* Background Images */}
       <div className="absolute w-full h-full">
         <AnimatedItem className="absolute inset-0">
-          <img src="/path.svg" alt="path" className="hidden sm:block w-full h-full min-h-screen object-cover" />
+          <img src="/path.png" alt="path" className="hidden sm:block w-full h-full min-h-screen object-cover" />
         </AnimatedItem>
         <div className="pb-[50rem] sm:pb-0" />
       </div>
@@ -74,11 +74,11 @@ const Hero = () => {
         <div className="w-full h-screen px-4 pt-24 pb-0 grid grid-cols-12 gap-4 items-center max-w-[1536px] mx-auto">
           {/* Image left */}
           <div className="col-span-5 flex justify-center items-center relative lg:mt-[18rem] mt-20 z-10">
-            <img src="/Home-character.svg" alt="character" className="w-[45%] max-w-[400px]" />
+           
           </div>
           {/* Text right */}
           <div className="col-span-7 flex flex-col items-start justify-center z-10 ml-[15vw] mt-[-50vh] pl-4">
-            <h1 className="text-primary font-bold leading-[6vw] text-8xl">
+            <h1 className="text-primary font-bold leading-[10vh] text-8xl">
               Find Your <br /> Restroom
             </h1>
             <p className="text-black mt-4 text-xl">
