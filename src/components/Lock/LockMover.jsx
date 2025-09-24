@@ -72,16 +72,16 @@ const LockMover = () => {
           id="right"
           className="w-[45%] h-full flex flex-col justify-center items-start px-10 space-y-12 text-gray-700"
         >
-          <h2 className="text-7xl font-semibold text-third">Zen Lock</h2>
+          <h2 className="text-6xl font-semibold text-third">Zen Lock</h2>
           <hr className="w-full border-gray-700" />
-          <p className="text-3xl text-third/80 font-bold">A smart lock for inner peace.</p>
-          <p className="text-2xl leading-relaxed">
+          <p className="text-2xl text-third/80 font-bold">A smart lock for inner peace.</p>
+          <p className="text-xl leading-relaxed">
             Automate, monitor, and manage your restrooms with the Yedi Zen Lock.
             Our lock offers frictionless restroom entry with app-based or QR code unlock.
             Designed for reliability and ease, it ensures controlled access without the need
             for staff intervention.
           </p>
-          <p className="text-2xl leading-relaxed">
+          <p className="text-xl leading-relaxed">
             The Yedi Zen Lock, combined with CleanSense and the entire Yedi Platform, are a
             state-of-the-art solution for America’s public/private restroom access crisis.
           </p>

@@ -55,7 +55,7 @@ const Hero = () => {
       <div className="hidden sm:flex flex-col items-center w-full">
         {/* Main Title */}
         <div className="w-full h-[50rem] flex items-center justify-center">
-          <h1 className="text-[12rem] font-kumbh text-white font-black leading-[10rem] w-[70%] text-center">
+          <h1 className="text-9xl font-kumbh text-white font-black leading-[15vh] w-[70%] text-center">
             Restrooms Reimagined
           </h1>
         </div>
@@ -94,18 +94,18 @@ const Hero = () => {
                     onMouseEnter={() => setHoverIndex(index)}
                     onMouseLeave={() => setHoverIndex(null)}
                   >
-                    <h2 className="text-white font-bold text-4xl">{panel.title}</h2>
+                    <h2 className="text-white font-medium text-3xl">{panel.title}</h2>
                     {isOpen ? (
                       <img
                         src="/Minus sign.svg"
                         alt="Open"
-                        className="w-12 h-12 transition-transform duration-300"
+                        className="w-10 h-10 transition-transform duration-300"
                       />
                     ) : (
                       <img
                         src="/plus sign.svg"
                         alt="Open"
-                        className="w-12 h-12 transition-transform duration-300"
+                        className="w-10 h-10 transition-transform duration-300"
                       />
                     )}
 

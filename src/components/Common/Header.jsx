@@ -134,7 +134,7 @@ const Header = () => {
                                 <Link
                                     key={link.path}
                                     to={link.path}
-                                    className="nav-link text-primary font-semibold transition-all duration-300 hover:scale-110 text-sm xl:text-base whitespace-nowrap"
+                                    className="nav-link text-third font-medium transition-all duration-300 hover:scale-110 text-sm xl:text-base whitespace-nowrap"
                                     onMouseEnter={() => setHoverIdx(idx)}
                                     onMouseLeave={() => setHoverIdx(null)}
                                     onClick={() => setActiveIdx(idx)}
@@ -144,7 +144,7 @@ const Header = () => {
                             ))}
                             <div
                                 className="absolute bg-primary rounded transition-all duration-300"
-                                style={{ left: barStyle.left, width: barStyle.width, height: '2px', bottom: '-8px' }}
+                                style={{ left: barStyle.left, width: barStyle.width, height: '1.5px', bottom: '-8px' }}
                             />
                         </nav>
                     </div>
