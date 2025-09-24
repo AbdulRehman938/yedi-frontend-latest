@@ -40,14 +40,14 @@ const LockMover = () => {
 
           <button
             onClick={prevImage}
-            className="absolute left-10 text-gray-600 hover:text-black text-7xl z-50 pointer-events-auto"
+            className="absolute left-10 text-gray-600 font-thin hover:text-black text-7xl z-50 pointer-events-auto"
           >
             <FaChevronLeft />
           </button>
 
           <button
             onClick={nextImage}
-            className="absolute right-10 text-gray-600 hover:text-black text-7xl z-50 pointer-events-auto"
+            className="absolute right-10 text-gray-600 font-thin hover:text-black text-7xl z-50 pointer-events-auto"
           >
             <FaChevronRight />
           </button>
@@ -72,7 +72,7 @@ const LockMover = () => {
           id="right"
           className="w-[45%] h-full flex flex-col justify-center items-start px-10 space-y-12 text-gray-700"
         >
-          <h2 className="text-8xl font-semibold text-third">Zen Lock</h2>
+          <h2 className="text-7xl font-semibold text-third">Zen Lock</h2>
           <hr className="w-full border-gray-700" />
           <p className="text-3xl text-third/80 font-bold">A smart lock for inner peace.</p>
           <p className="text-2xl leading-relaxed">

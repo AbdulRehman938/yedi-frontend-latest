@@ -68,7 +68,7 @@ const Hero = () => {
 
         {/* Panels */}
         <div className="w-full mt-[25rem] flex flex-col items-center gap-[5rem] overflow-visible sm:overflow-hidden rounded-b-[4rem] bg-[#6FA598] rounded-t-[5rem] pt-[5rem] relative z-30">
-          <h1 className="text-5xl font-semibold w-[60%] text-center leading-tight">
+          <h1 className="text-4xl font-semibold w-[60%] text-center leading-tight">
             It's still your bathroom, but better. With the Yedi platform you have more control, cleaner
             experiences, and better conditions for staff.
           </h1>
@@ -95,11 +95,11 @@ const Hero = () => {
                     onMouseEnter={() => setHoverIndex(index)}
                     onMouseLeave={() => setHoverIndex(null)}
                   >
-                    <h2 className="text-white font-bold text-5xl">{panel.title}</h2>
+                    <h2 className="text-white font-bold text-4xl">{panel.title}</h2>
                     {isOpen ? (
-                      <FaMinus className="text-white text-5xl transition-transform duration-300" />
+                      <FaMinus className="text-white text-4xl font-thin transition-transform duration-300" />
                     ) : (
-                      <FaPlus className="text-white text-5xl transition-transform duration-300" />
+                      <FaPlus className="text-white text-4xl font-thin transition-transform duration-300" />
                     )}
                   </div>
 

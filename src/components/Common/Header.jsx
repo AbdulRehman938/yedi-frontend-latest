@@ -118,9 +118,9 @@ const Header = () => {
         <>
             <ToastContainer position="top-right" autoClose={3000} />
             {/* Header */}
-            <div className="fixed top-0 left-0 z-50 w-full flex justify-center">
+            <div className="fixed top-0 left-0 z-50 w-full mx-20 flex justify-center">
                 <div
-                    className={`w-full max-w-[1440px] flex justify-between items-center px-4 lg:px-8 xl:px-12 
+                    className={`w-[97%] max-w-[1440px] flex justify-between items-center px-4 lg:px-8 xl:px-12 
           transition-all ease-in-out ${scrolled ? 'py-2 bg-transparent' : 'rounded-xl py-2 mt-2 bg-white'}`}
                     style={{ minHeight: '4rem' }}
                 >
@@ -210,7 +210,7 @@ const Header = () => {
                     )}
                 </div>
             </div>
-
+                    
             {/* Partner Dialog */}
             {partnerOpen && (
                 <div
