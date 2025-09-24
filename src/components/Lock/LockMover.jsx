@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const demoImages = [
@@ -34,7 +35,7 @@ const LockMover = () => {
             <img
               src={demoImages[activeIndex]}
               alt="Zen Lock"
-              className="h-[35rem] object-contain"
+              className="h-[40rem] object-contain"
             />
           </div>
 
@@ -42,14 +43,14 @@ const LockMover = () => {
             onClick={prevImage}
             className="absolute left-10 text-gray-600 font-thin hover:text-black text-7xl z-50 pointer-events-auto"
           >
-            <FaChevronLeft />
+            <BsChevronLeft />
           </button>
 
           <button
             onClick={nextImage}
             className="absolute right-10 text-gray-600 font-thin hover:text-black text-7xl z-50 pointer-events-auto"
           >
-            <FaChevronRight />
+            <BsChevronRight />
           </button>
 
           <div className="flex gap-6 mt-10">
@@ -58,9 +59,8 @@ const LockMover = () => {
                 key={index}
                 src={img}
                 alt={`thumbnail-${index}`}
-                className={`w-20 h-20 object-contain rounded-2xl cursor-pointer border-4 border-third transition-colors ${
-                  activeIndex === index ? 'border-gray-700' : 'border-transparent'
-                }`}
+                className={`w-28 h-28 object-contain rounded-2xl cursor-pointer border-4 border-third transition-colors ${activeIndex === index ? 'border-gray-700' : 'border-transparent'
+                  } ${index < 3 ? 'bg-white p-2' : ''}`}
                 onClick={() => setActiveIndex(index)}
               />
             ))}
@@ -104,13 +104,13 @@ const LockMover = () => {
             onClick={prevImage}
             className="absolute -left-6 top-1/2 -translate-y-1/2 text-gray-600 hover:text-black text-4xl z-50"
           >
-            <FaChevronLeft />
+            <BsChevronLeft />
           </button>
           <button
             onClick={nextImage}
             className="absolute -right-6 top-1/2 -translate-y-1/2 text-gray-600 hover:text-black text-4xl z-50"
           >
-            <FaChevronRight />
+            <BsChevronRight />
           </button>
         </div>
 
@@ -121,9 +121,8 @@ const LockMover = () => {
               key={index}
               src={img}
               alt={`thumbnail-${index}`}
-              className={`w-16 h-16 object-contain rounded-xl cursor-pointer border-2 transition-colors ${
-                activeIndex === index ? 'border-gray-700' : 'border-transparent'
-              }`}
+              className={`w-16 h-16 object-contain rounded-xl cursor-pointer border-2 transition-colors ${activeIndex === index ? 'border-gray-700' : 'border-transparent'
+                }`}
               onClick={() => setActiveIndex(index)}
             />
           ))}
@@ -131,7 +130,7 @@ const LockMover = () => {
 
         {/* Zen Lock Heading */}
         <h2 className="text-5xl font-bold text-third text-left mt-6">Zen Lock</h2>
-          <hr className='text-black bg-black w-[100vw] ml-[-2rem] h-[0.1rem]' />
+        <hr className='text-black bg-black w-[100vw] ml-[-2rem] h-[0.1rem]' />
         {/* Text Content */}
         <p className="text-xl font-semibold text-third/80">A smart lock for inner peace.</p>
         <p className="text-base text-gray-600 font-medium leading-relaxed px-2">

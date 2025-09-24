@@ -9,6 +9,8 @@ import {
 import LockMover from './LockMover';
 import LockFeatures from './LockFeatures';
 import Methods from './Methods';
+import { BsPlusLg } from 'react-icons/bs';
+import { PiMinusThin } from 'react-icons/pi';
 
 const panels = [
   {
@@ -97,9 +99,9 @@ const Hero = () => {
                   >
                     <h2 className="text-white font-bold text-4xl">{panel.title}</h2>
                     {isOpen ? (
-                      <FaMinus className="text-white text-4xl font-thin transition-transform duration-300" />
+                      <PiMinusThin className="text-white text-5xl font-thin transition-transform duration-300" />
                     ) : (
-                      <FaPlus className="text-white text-4xl font-thin transition-transform duration-300" />
+                      <BsPlusLg className="text-white text-5xl font-thin transition-transform duration-300" />
                     )}
                   </div>
 
@@ -177,7 +179,7 @@ const Hero = () => {
                   >
                     <h3 className="text-white font-bold text-2xl">{panel.title}</h3>
                     {isOpen ? (
-                      <FaMinus className="text-white text-xl transition-transform duration-300" />
+                      <PiMinusThin className="text-white text-xl transition-transform duration-300" />
                     ) : (
                       <FaPlus className="text-white text-xl transition-transform duration-300" />
                     )}
