@@ -339,7 +339,7 @@ const Methods = () => {
                                                 }`}
                                         />
                                         {i > 1 && (
-                                            <span className="absolute bottom-16 left-1/2 -translate-x-1/2 text-[20px] text-white bg-black/60 px-2 w-full py-2 rounded">
+                                            <span className="absolute bottom-16 left-1/2 -translate-x-1/2 text-[20px] text-white bg-white/60 px-2 w-full py-2 rounded">
                                                 COMING SOON
                                             </span>
                                         )}
