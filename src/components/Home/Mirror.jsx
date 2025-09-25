@@ -41,7 +41,7 @@ const Mirror = () => {
   return (
     <>
       {/* Desktop version */}
-      <div className="hidden sm:block w-full bg-secondary flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[40rem]">
+      <div className="hidden sm:block w-full bg-secondary h-[360vh] flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[40rem]">
         <div className="w-full relative flex flex-col items-center px-4 sm:px-6 lg:px-8 overflow-visible">
           {/* Top overflowing mirror image */}
           <motion.img
@@ -88,7 +88,7 @@ const Mirror = () => {
           </motion.div>
 
           {/* Sections */}
-          <div id="second" className="w-[100vw] relative z-20 flex flex-col overflow-visible lg:top-[-6rem] mt-[15rem] lg:mt-[15rem] 2xl:mt-[15rem] xl:mt-[-10rem] 3xl:mt-[15rem] ">
+          <div id="second" className="w-[100vw] h-[175vh] relative z-20 flex flex-col overflow-visible lg:top-[-6rem] mt-[15rem] lg:mt-[15rem] 2xl:mt-[15rem] xl:mt-[-10rem] 3xl:mt-[15rem] ">
             {/* Mirror background for desktop */}
             <img
               src="/Mirror2.png"
@@ -107,14 +107,14 @@ const Mirror = () => {
 
             {/* Section 1 */}
             <motion.div
-              className="relative z-30 w-[80%] ml-28 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mt-[8rem] 3xl:mt-40 xs:ml-[3.5rem] xs:relative xs:top-[-30rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
+              className="relative z-30 w-[80%] ml-28 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mt-[10rem] 3xl:mt-48 xs:ml-[3.5rem] xs:relative xs:top-[-30rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
               variants={fadeVariant}
               initial="hidden"
               whileInView="visible"
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 xl:mt-[0rem] xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[1rem] 3xl:ml-[15rem] 3xl:mt-[1rem] ">
+              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 xl:mt-[1rem] xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[1rem] 3xl:ml-[15rem] 3xl:mt-[1rem] ">
                 <h1 className="3xl:text-7xl 3xl:ml-10 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl xs:text-3xl text-primary font-bold">
                   We've all been there
                 </h1>
@@ -129,14 +129,14 @@ const Mirror = () => {
 
             {/* Section 2 */}
             <motion.div
-              className="relative z-30 w-full flex flex-col md:flex-row-reverse items-center md:items-start justify-between gap-10 py-24 xs:relative xs:top-[-25rem] xl:mt-[5rem] 3xl:mt-[6rem] "
+              className="relative z-30 w-full flex flex-col top-[20rem] md:flex-row-reverse items-center md:items-start justify-between gap-10 py-24 xs:relative xs:top-[-25rem] xl:mt-[8rem] 3xl:mt-[10rem] "
               variants={fadeVariant}
               initial="hidden"
               whileInView="visible"
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 2xl:w-[40%] xl:mr-[5rem] xl:mt-[-8rem] lg:mt-[-5rem] 3xl:mr-[8rem]">
+              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center xl:mt-[-1rem] md:text-left px-2 2xl:w-[40%] xl:mr-[5rem]  lg:mt-[-5rem] 3xl:mr-[8rem]">
                 <h1 className="2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl  text-primary font-bold xs:text-3xl">
                   A tiny ask shouldn't <br className="xs:hidden" /> feel so big.
                 </h1>
@@ -153,7 +153,7 @@ const Mirror = () => {
 
             {/* Section 3 */}
             <motion.div
-              className="relative z-30 w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-10 py-24 xl:mt-[-25rem] 2xl:mt-[-20rem] 2xl:px-[5rem] 3xl:mt-[-15rem] lg:mt-[-30rem] lg:pr-[5rem]"
+              className="relative z-30 w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-10 py-24 xl:mt-[-10rem] 2xl:mt-[-20rem] 2xl:px-[5rem] 3xl:mt-[-15rem] lg:mt-[-30rem] lg:pr-[5rem]"
               variants={fadeVariant}
               initial="hidden"
               whileInView="visible"
