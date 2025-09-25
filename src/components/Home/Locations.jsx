@@ -62,28 +62,32 @@ const Locations = () => {
                 </p>
 
                 {/* Mobile carousel */}
-                <div className="relative h-[19rem] w-full overflow-hidden">
+                <div className="relative w-full overflow-hidden h-[17rem] mt-8">
                     <div
-                        className="flex transition-transform duration-500 ease-in-out gap-4"
-                        style={{ transform: `translateX(-${activeIndex * 60}%)` }}
+                        className="flex transition-transform duration-500 ease-in-out gap-4 px-4"
+                        style={{ transform: `translateX(-${activeIndex * 70}%)` }}
                     >
                         {cities.map((city, i) => (
                             <div
                                 key={i}
-                                className="flex-shrink-0 relative w-[60%] h-[100%] flex flex-col items-start"
+                                className="flex-shrink-0 w-[70%] flex flex-col items-start relative"
                             >
-                                <img
-                                    src={city.img}
-                                    alt={city.name}
-                                    className={`w-full h-[100%] object-cover rounded-xl ${i > 1 ? 'grayscale' : ''
-                                        }`}
-                                />
-                                {i > 1 && (
-                                    <span className="absolute top-2 right-2 bg-black/50 text-white text-[10px] px-2 py-0.5 rounded">
-                                        COMING SOON
-                                    </span>
-                                )}
-                                <span className="mt-2 text-base font-medium text-gray-700">
+                                {/* Image wrapper with aspect ratio */}
+                                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
+                                    <img
+                                        src={city.img}
+                                        alt={city.name}
+                                        className={`w-full h-full object-cover ${i > 1 ? 'grayscale' : ''}`}
+                                    />
+                                    {i > 1 && (
+                                        <span className="absolute bottom-20 w-full text-center left-1/2 -translate-x-1/2 text-[14px] text-white bg-black/60 px-3 py-2 rounded">
+                                            COMING SOON
+                                        </span>
+                                    )}
+                                </div>
+
+                                {/* City name */}
+                                <span className="text-sm font-medium mt-2 text-gray-700">
                                     {city.name}
                                 </span>
                             </div>
@@ -91,21 +95,22 @@ const Locations = () => {
                     </div>
 
                     {/* Arrows */}
-                    <div className="absolute bottom-2 left-0 right-[-10rem] top-[15.5rem] flex justify-center gap-10 px-4">
+                    <div className="flex justify-center gap-10 w-full absolute bottom-[0.5rem] left-24">
                         <button
                             onClick={prev}
-                            className="bg-primary/50 active:bg-primary text-white rounded-full p-4"
+                            className="bg-primary/30 hover:bg-primary text-white rounded-full p-3"
                         >
                             <FaChevronLeft />
                         </button>
                         <button
                             onClick={next}
-                            className="bg-primary/50 active:bg-primary text-white rounded-full p-4"
+                            className="bg-primary/30 hover:bg-primary text-white rounded-full p-3"
                         >
                             <FaChevronRight />
                         </button>
                     </div>
                 </div>
+
 
                 {/* Learn More Button */}
                 <div className="w-full flex justify-center mt-24">
