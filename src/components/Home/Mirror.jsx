@@ -42,7 +42,7 @@ const Mirror = () => {
     <>
       {/* Desktop version */}
       <div className="hidden sm:flex w-full bg-secondary flex-col items-center relative pt-56 
-  lg:mt-[30rem] lg:pt-[10rem] lg:min-h-[150rem] 
+  lg:mt-[30rem] lg:pt-[10rem] lg:min-h-[147rem] 
   xl:mt-[30rem] xl:h-[332vh] 
   2xl:mt-[30rem] 
   3xl:mt-[40rem] 3xl:h-[210vh]">
