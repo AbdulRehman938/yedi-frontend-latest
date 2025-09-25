@@ -88,10 +88,10 @@ const Mirror = () => {
           </motion.div>
 
           {/* Sections */}
-          <div id="second" className="w-[100vw] relative z-20 flex flex-col overflow-visible lg:top-[6rem] mt-[15rem] lg:mt-[15rem] 2xl:mt-[15rem] xl:mt-[-10rem] 3xl:mt-[15rem] ">
+          <div id="second" className="w-[100vw] relative z-20 flex flex-col overflow-visible lg:top-[-6rem] mt-[15rem] lg:mt-[15rem] 2xl:mt-[15rem] xl:mt-[-10rem] 3xl:mt-[15rem] ">
             {/* Mirror background for desktop */}
             <img
-              src="/Mirror2.svg"
+              src="/Mirror2.png"
               alt="Mirror desktop"
               className="hidden sm:block w-full h-auto object-contain absolute z-10
       top-[-20rem] 2xl:top-[-40rem] xl:top-[-10rem] lg:top-[-42rem] md:top-[-12rem] sm:top-[-10rem] 3xl:w-[120vw]"
@@ -123,7 +123,7 @@ const Mirror = () => {
                 </p>
               </div>
               <div className="w-full md:w-1/2 flex justify-center md:justify-end xl:mt-[5rem] lg:mt-[2rem] 2xl:mt-[6rem] 3xl:mt-[6rem] ">
-                <img src="/Home-character2.svg" alt="char2" className="w-2/3 xs:w-[60%] lg:w-[55%] xl:w-[50%] 2xl:w-[50%] 3xl:w-[60%] max-w-md" />
+                {/* <img src="/Home-character2.svg" alt="char2" className="w-2/3 xs:w-[60%] lg:w-[55%] xl:w-[50%] 2xl:w-[50%] 3xl:w-[60%] max-w-md" /> */}
               </div>
             </motion.div>
 
@@ -147,7 +147,7 @@ const Mirror = () => {
                 </p>
               </div>
               <div className="w-full md:w-1/2 flex justify-center md:justify-start xl:ml-[3rem] lg:mt-[-1rem] 2xl:mt-[-2rem] 3xl:ml-[5rem] 3xl:mt-[-3rem] ">
-                <img src="/Home-character3.svg" alt="char3" className="w-2/3 sm:w-1/2 lg:w-[45%] lg:ml-[10rem] xl:w-[40%] 2xl:w-[35%] 2xl:ml-[10rem] 2xl:mt-[5rem] max-w-md" />
+                {/* <img src="/Home-character3.svg" alt="char3" className="w-2/3 sm:w-1/2 lg:w-[45%] lg:ml-[10rem] xl:w-[40%] 2xl:w-[35%] 2xl:ml-[10rem] 2xl:mt-[5rem] max-w-md" /> */}
               </div>
             </motion.div>
 
@@ -171,7 +171,7 @@ const Mirror = () => {
                 </p>
               </div>
               <div className="w-full md:w-1/2 flex justify-center md:justify-end 3xl:mr-[10rem] lg:mt-[4rem] 2xl:mt-[-1rem] 3xl:mt-[1rem] ">
-                <img src="/Home-character4.svg" alt="char4" className="w-2/3 sm:w-1/2 lg:w-[60%] xl:w-[50%] 2xl:w-[45%] 2xl:mt-10 3xl:w-[55%] max-w-md" />
+                {/* <img src="/Home-character4.svg" alt="char4" className="w-2/3 sm:w-1/2 lg:w-[60%] xl:w-[50%] 2xl:w-[45%] 2xl:mt-10 3xl:w-[55%] max-w-md" /> */}
               </div>
             </motion.div>
           </div>
