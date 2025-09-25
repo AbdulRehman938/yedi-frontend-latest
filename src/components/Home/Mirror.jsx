@@ -42,7 +42,7 @@ const Mirror = () => {
     <>
       {/* Desktop version */}
       <div className="hidden sm:flex w-full bg-secondary flex-col items-center relative pt-56 
-  lg:mt-[30rem] lg:pt-[10rem] lg:min-h-[160rem] 
+  lg:mt-[30rem] lg:pt-[10rem] lg:min-h-[150rem] 
   xl:mt-[30rem] xl:h-[332vh] 
   2xl:mt-[30rem] 
   3xl:mt-[40rem] 3xl:h-[210vh]">
@@ -165,7 +165,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 3xl:mt-[10rem] xl:mt-[5.5rem] 3xl:ml-[10rem] lg:ml-[8rem] lg:!mt-[-10rem]">
+              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 3xl:mt-[10rem] xl:mt-[5.5rem] 3xl:ml-[10rem] lg:ml-[8rem] lg:!mt-[-8rem]">
                 <h1 className="3xl:text-6xl 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-primary font-bold">
                   No more asking permission
                 </h1>
