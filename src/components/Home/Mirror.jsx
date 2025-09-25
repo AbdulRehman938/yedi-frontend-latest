@@ -93,7 +93,7 @@ const Mirror = () => {
           </motion.div>
 
           {/* Sections */}
-          <div id="second" className="w-[100vw] h-[175vh] relative z-20 flex flex-col overflow-visible lg:top-[-2rem] mt-[18rem] lg:mt-[5rem] 2xl:mt-[20rem] xl:mt-[-5rem] 3xl:mt-[20rem] ">
+          <div id="second" className="w-[100vw] h-[175vh] relative z-20 flex flex-col overflow-visible lg:top-[-10rem] mt-[18rem] lg:mt-[10rem] 2xl:mt-[20rem] xl:mt-[-5rem] 3xl:mt-[20rem] ">
             {/* Mirror background for desktop */}
             <img
               src="/Mirror2.png"
@@ -165,7 +165,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 3xl:mt-[10rem] xl:mt-[5.5rem] 3xl:ml-[10rem] lg:ml-[8rem] lg:!mt-[-10rem]">
+              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 3xl:mt-[10rem] xl:mt-[5.5rem] 3xl:ml-[10rem] lg:ml-[8rem] lg:!mt-[-15rem]">
                 <h1 className="3xl:text-6xl 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-primary font-bold">
                   No more asking permission
                 </h1>
