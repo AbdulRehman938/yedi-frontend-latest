@@ -35,7 +35,7 @@ const LockMover = () => {
             <img
               src={demoImages[activeIndex]}
               alt="Zen Lock"
-              className="h-[40rem] object-contain"
+              className="h-[30rem] object-contain"
             />
           </div>
 
@@ -43,14 +43,14 @@ const LockMover = () => {
             onClick={prevImage}
             className="absolute left-10 text-gray-600 font-thin hover:text-black text-7xl z-50 pointer-events-auto"
           >
-            <img src="/Left arrow.svg" alt="left" className='w-20 h-20' />
+            <img src="/Left arrow.svg" alt="left" className='w-16 h-16' />
           </button>
 
           <button
             onClick={nextImage}
             className="absolute right-10 text-gray-600 font-thin hover:text-black text-7xl z-50 pointer-events-auto"
           >
-            <img id='right-arrow' src="/Left arrow.svg" alt="right" className='w-20 h-20 rotate-180' />
+            <img id='right-arrow' src="/Left arrow.svg" alt="right" className='w-16 h-16 rotate-180' />
           </button>
 
           <div className="flex gap-6 mt-10">
@@ -59,7 +59,7 @@ const LockMover = () => {
                 key={index}
                 src={img}
                 alt={`thumbnail-${index}`}
-                className={`w-28 h-28 object-contain rounded-2xl cursor-pointer border-4 border-third transition-colors ${activeIndex === index ? 'border-gray-700' : 'border-transparent'
+                className={`w-24 h-24 object-contain rounded-2xl cursor-pointer border-4 border-third transition-colors ${activeIndex === index ? 'border-gray-700' : 'border-transparent'
                   } ${index < 3 ? 'bg-white p-2' : ''}`}
                 onClick={() => setActiveIndex(index)}
               />
