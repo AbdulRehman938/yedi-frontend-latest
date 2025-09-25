@@ -114,7 +114,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 xl:mt-[1rem] xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[1rem] 3xl:ml-[15rem] 3xl:mt-[1rem] ">
+              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 xl:mt-[1rem] lg:mt-[1rem] xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[1rem] 3xl:ml-[15rem] 3xl:mt-[1rem] ">
                 <h1 className="3xl:text-7xl 3xl:ml-10 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl xs:text-3xl text-primary font-bold">
                   We've all been there
                 </h1>
@@ -136,7 +136,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center xl:mt-[-1rem] md:text-left px-2 2xl:w-[40%] xl:mr-[5rem]  lg:mt-[-5rem] 3xl:mr-[8rem]">
+              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center xl:mt-[-1rem] md:text-left px-2 2xl:w-[40%] xl:mr-[5rem] lg:mt-[1rem] 3xl:mr-[8rem]">
                 <h1 className="2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl  text-primary font-bold xs:text-3xl">
                   A tiny ask shouldn't <br className="xs:hidden" /> feel so big.
                 </h1>
@@ -160,7 +160,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 2xl:mt-[-10rem] xl:mt-[-7rem] 3xl:ml-[10rem] lg:mt-[-4rem] lg:ml-[8rem] ">
+              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 2xl:mt-[-10rem] lg:mt-[1rem] xl:mt-[-7rem] 3xl:ml-[10rem] lg:ml-[8rem] ">
                 <h1 className="3xl:text-6xl 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-primary font-bold">
                   No more asking permission
                 </h1>
