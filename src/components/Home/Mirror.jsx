@@ -41,7 +41,7 @@ const Mirror = () => {
   return (
     <>
       {/* Desktop version */}
-      <div className="hidden sm:block w-full bg-secondary 3xl:h-[210vh] xl:h-[332vh] lg:h-[240vh] lg:bg-black flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[40rem]">
+      <div className="hidden sm:block w-full bg-secondary 3xl:h-[210vh] xl:h-[332vh] lg:h-[280vh] flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[40rem]">
         <div className="w-full relative flex flex-col items-center px-4 sm:px-6 lg:px-8 overflow-visible">
           {/* Top overflowing mirror image */}
           <motion.img
@@ -160,7 +160,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 lg:mt-[1rem] 3xl:mt-[10rem] xl:mt-[5.5rem] 3xl:ml-[10rem] lg:ml-[8rem] ">
+              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 lg:mt-[-5rem] 3xl:mt-[10rem] xl:mt-[5.5rem] 3xl:ml-[10rem] lg:ml-[8rem] ">
                 <h1 className="3xl:text-6xl 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-primary font-bold">
                   No more asking permission
                 </h1>
