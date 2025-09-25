@@ -188,13 +188,13 @@ const Hero = () => {
                       <img
                         src="/Minus sign.svg"
                         alt="Open"
-                        className="w-12 h-12 transition-transform duration-300"
+                        className="w-5 h-5 transition-transform duration-300"
                       />
                     ) : (
                       <img
                         src="/plus sign.svg"
                         alt="Open"
-                        className="w-12 h-12 transition-transform duration-300"
+                        className="w-5 h-5 transition-transform duration-300"
                       />
                     )}
                   </div>
