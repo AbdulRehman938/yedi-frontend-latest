@@ -29,9 +29,9 @@ const Header = () => {
 
     const navLinks = [
         { name: 'HOME', path: '/' },
-        { name: 'LOCATIONS', path: '/locations' },
+        { name: 'LOCATIONS',  },
         { name: 'OUR LOCKS', path: '/locks' },
-        { name: 'ABOUT US', path: '/about' },
+        { name: 'ABOUT US',  },
     ];
 
     const [activeIdx, setActiveIdx] = useState(0);
