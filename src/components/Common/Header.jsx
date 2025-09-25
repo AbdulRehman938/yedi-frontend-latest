@@ -151,7 +151,7 @@ const Header = () => {
 
                     <button
                         onClick={() => setPartnerOpen(true)}
-                        className="hidden lg:flex items-center justify-center rounded-full bg-[#B8B8A7] text-white font-semibold px-4 py-2 transition hover:scale-105"
+                        className="hidden lg:flex text-sm items-center justify-center rounded-full bg-[#B8B8A7] text-white font-normal px-6 py-4 transition hover:scale-105"
                     >
                         BECOME A PARTNER
                     </button>
@@ -202,7 +202,7 @@ const Header = () => {
                                     setMenuOpen(false);
                                     setPartnerOpen(true);
                                 }}
-                                className="mobile-menu-item text-sm whitespace-nowrap mt-[2rem] rounded-full bg-[#B8B8A7] text-white font-semibold py-4 hover:bg-[#9a9a88] transition cursor-pointer"
+                                className="mobile-menu-item text-xs whitespace-nowrap mt-[2rem] rounded-full bg-[#B8B8A7] text-white font-semibold py-4 hover:bg-[#9a9a88] transition cursor-pointer"
                             >
                                 BECOME A PARTNER
                             </button>
