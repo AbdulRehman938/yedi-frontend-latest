@@ -128,8 +128,8 @@ const Header = () => {
                         <img src="/Logo.svg" alt="logo" className="w-full h-full object-contain" />
                     </div>
 
-                    <div id="navbar" className="hidden lg:flex items-center justify-center flex-1 mx-4 lg:mx-6 xl:mx-8">
-                        <nav ref={navRef} className="flex justify-center relative gap-4 lg:gap-6 xl:gap-8 2xl:gap-10">
+                    <div id="navbar" className="hidden lg:flex items-center justify-center text-center flex-1 mx-4 lg:mx-6 xl:mx-8">
+                        <nav ref={navRef} className="flex justify-center relative ml-10 gap-4 lg:gap-6 xl:gap-8 2xl:gap-10">
                             {navLinks.map((link, idx) => (
                                 <Link
                                     key={link.path}
@@ -151,7 +151,7 @@ const Header = () => {
 
                     <button
                         onClick={() => setPartnerOpen(true)}
-                        className="hidden lg:flex text-sm items-center justify-center rounded-full bg-[#B8B8A7] text-white font-normal px-6 py-4 transition hover:scale-105"
+                        className="hidden lg:flex text-sm items-center justify-center rounded-full bg-[#B8B8A7] text-white font-normal px-10 py-4 transition hover:scale-105"
                     >
                         BECOME A PARTNER
                     </button>
