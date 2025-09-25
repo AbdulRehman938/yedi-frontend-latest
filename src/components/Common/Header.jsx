@@ -1,6 +1,6 @@
 import Lenis from '@studio-freight/lenis';
 import React, { useEffect, useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { ToastContainer, toast } from 'react-toastify';
@@ -8,6 +8,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import '../../components/Common/header.css';
 
 const Header = () => {
+    const location = useLocation();
+
     useEffect(() => {
         const lenis = new Lenis({
             duration: 1.8,
@@ -29,12 +31,19 @@ const Header = () => {
 
     const navLinks = [
         { name: 'HOME', path: '/' },
-        { name: 'LOCATIONS',  },
+        { name: 'LOCATIONS', },
         { name: 'OUR LOCKS', path: '/locks' },
         { name: 'ABOUT US',  },
     ];
 
-    const [activeIdx, setActiveIdx] = useState(0);
+    // Function to get active index based on current location
+    const getActiveIndex = () => {
+        const currentPath = location.pathname;
+        const index = navLinks.findIndex(link => link.path === currentPath);
+        return index !== -1 ? index : 0; // Default to 0 (HOME) if no match
+    };
+
+    const [activeIdx, setActiveIdx] = useState(getActiveIndex());
     const [hoverIdx, setHoverIdx] = useState(null);
     const [barStyle, setBarStyle] = useState({ left: 0, width: 0 });
     const navRef = useRef();
@@ -43,6 +52,11 @@ const Header = () => {
     const [partnerOpen, setPartnerOpen] = useState(false);
     const partnerRef = useRef(null);
     const menuRef = useRef(null);
+
+    // Update active index when location changes
+    useEffect(() => {
+        setActiveIdx(getActiveIndex());
+    }, [location.pathname]);
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20);

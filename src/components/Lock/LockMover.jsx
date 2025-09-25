@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-
 const demoImages = [
   '/MoveLock1.svg',
   '/MoveLock2.svg',
@@ -35,7 +32,7 @@ const LockMover = () => {
             <img
               src={demoImages[activeIndex]}
               alt="Zen Lock"
-              className="h-[30rem] object-contain"
+              className={`h-[30rem] object-contain ${activeIndex === 3 ? 'h-[25rem]' : ''}`}
             />
           </div>
 
@@ -53,14 +50,14 @@ const LockMover = () => {
             <img id='right-arrow' src="/Left arrow.svg" alt="right" className='w-16 h-16 rotate-180' />
           </button>
 
-          <div className="flex gap-6 mt-10">
+          <div className="flex gap-6 mt-10 relative z-30">
             {demoImages.map((img, index) => (
               <img
                 key={index}
                 src={img}
                 alt={`thumbnail-${index}`}
-                className={`w-24 h-24 object-contain rounded-2xl cursor-pointer border-4 border-third transition-colors ${activeIndex === index ? 'border-gray-700' : 'border-transparent'
-                  } ${index < 3 ? 'bg-white p-2' : ''}`}
+                className={`w-24 h-24 object-contain rounded-2xl cursor-pointer border-2 border-third transition-colors ${activeIndex === index ? 'border-gray-700' : 'border-transparent'
+                  } ${index < 3 ? 'bg-white p-2' : 'bg-gray-100'}`}
                 onClick={() => setActiveIndex(index)}
               />
             ))}
@@ -110,7 +107,7 @@ const LockMover = () => {
             onClick={nextImage}
             className="absolute -right-6 top-1/2 -translate-y-1/2 text-gray-600 hover:text-black text-4xl z-50"
           >
-           <img src="/Left arrow.svg" alt="left" className='w-10 h-10 rotate-180' />
+            <img src="/Left arrow.svg" alt="left" className='w-10 h-10 rotate-180' />
           </button>
         </div>
 
