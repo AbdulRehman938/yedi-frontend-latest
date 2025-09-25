@@ -71,7 +71,7 @@ const Hero = () => {
             It's still your bathroom, but better. With <br /> the Yedi platform you have more control <br /> over your bathroom, cleaner
             experiences <br /> for your customers, and better conditions <br /> for your staff.
           </h1>
-          <button className='bg-transparent cursor-pointer hover:bg-[#656565] border-2 border-white text-white font-normal py-5 px-16 rounded-full'>ABOUT US</button>
+          <button className='bg-transparent cursor-pointer hover:bg-[#656565] border-2 border-white text-white font-normal py-3 px-20 rounded-full'>ABOUT US</button>
           <div className="w-full flex flex-col">
             {panels.map((panel, index) => {
               const isOpen = openIndex === index;
