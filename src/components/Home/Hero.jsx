@@ -78,7 +78,7 @@ const Hero = () => {
           </div>
           {/* Text right */}
           <div className="col-span-7 flex flex-col items-start justify-center z-10 ml-[15vw] mt-[-50vh] pl-4">
-            <h1 className="text-primary font-bold leading-[13vh] text-8xl">
+            <h1 className="text-primary font-bold leading-[15vh] text-8xl">
               Find Your <br /> Restroom
             </h1>
             <p className="text-black mt-4 text-xl">
@@ -86,12 +86,12 @@ const Hero = () => {
             </p>
             <div className="flex justify-start items-center gap-4 mt-6 flex-wrap">
               <div>
-                <button className="bg-transparent font-medium border border-primary text-primary rounded-[2rem] hover:bg-[#b1b1b128] hover:scale-105 ease-in-out duration-300 px-8 py-2 text-sm whitespace-nowrap">
+                <button className="bg-transparent font-normal border border-primary text-primary rounded-[2rem] hover:bg-[#b1b1b128] hover:scale-105 ease-in-out duration-300 px-16 py-3 text-sm whitespace-nowrap">
                   LOCATIONS
                 </button>
               </div>
               <div>
-                <button className="bg-primary/80 font-medium text-white rounded-[2rem] hover:bg-primary hover:scale-105 ease-in-out duration-300 px-4 py-2 text-sm whitespace-nowrap">
+                <button className="bg-primary/80 font-normal text-white rounded-[2rem] hover:bg-primary hover:scale-105 ease-in-out duration-300 px-12 py-3 text-sm whitespace-nowrap">
                   DOWNLOAD APP
                 </button>
               </div>

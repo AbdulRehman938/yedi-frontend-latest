@@ -151,7 +151,7 @@ const Header = () => {
 
                     <button
                         onClick={() => setPartnerOpen(true)}
-                        className="hidden lg:flex text-sm items-center justify-center rounded-full bg-[#B8B8A7] text-white font-normal px-10 py-4 transition hover:scale-105"
+                        className="hidden lg:flex text-sm items-center justify-center rounded-full bg-[#B8B8A7] text-white font-normal px-10 py-3 transition hover:scale-105"
                     >
                         BECOME A PARTNER
                     </button>
