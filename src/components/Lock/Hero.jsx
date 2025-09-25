@@ -67,11 +67,11 @@ const Hero = () => {
 
         {/* Panels */}
         <div className="w-full mt-[25rem] flex flex-col items-center gap-[5rem] overflow-visible sm:overflow-hidden rounded-b-[4rem] bg-[#6FA598] rounded-t-[5rem] pt-[5rem] relative z-30">
-          <h1 className="text-4xl font-semibold w-[60%] text-center leading-tight">
-            It's still your bathroom, but better. With the Yedi platform you have more control, cleaner
-            experiences, and better conditions for staff.
+          <h1 className="text-4xl font-medium w-[60%] text-center leading-tight">
+            It's still your bathroom, but better. With <br /> the Yedi platform you have more control <br /> over your bathroom, cleaner
+            experiences <br /> for your customers, and better conditions <br /> for your staff.
           </h1>
-          <button className='bg-transparent cursor-pointer hover:bg-[#656565] border-2 border-white text-white font-bold py-5 px-16 rounded-full'>ABOUT US</button>
+          <button className='bg-transparent cursor-pointer hover:bg-[#656565] border-2 border-white text-white font-normal py-5 px-16 rounded-full'>ABOUT US</button>
           <div className="w-full flex flex-col">
             {panels.map((panel, index) => {
               const isOpen = openIndex === index;
