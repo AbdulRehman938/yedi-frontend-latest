@@ -43,11 +43,11 @@ const LockFeatures = () => {
                     id="second"
                     className="w-full h-[32%] bg-white flex justify-between items-center rounded-[4rem] pr-12 shadow-md"
                 >
-                    <div className="flex justify-center w-1/2">
+                    <div className="flex justify-center w-1/2 overflow-hidden">
                         <img
                             src="/Feature2.svg"
                             alt="Feature"
-                            className="h-full w-full relative top-10 object-contain"
+                            className="h-[50%] w-auto relative top-6 object-contain"
                         />
                     </div>
                     <div className="flex flex-col items-start justify-center w-[45%] space-y-4">
