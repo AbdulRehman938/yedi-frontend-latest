@@ -94,7 +94,7 @@ const Hero = () => {
                     onMouseEnter={() => setHoverIndex(index)}
                     onMouseLeave={() => setHoverIndex(null)}
                   >
-                    <h2 className="text-white font-medium text-3xl">{panel.title}</h2>
+                    <h2 className="text-white font-extrabold text-3xl">{panel.title}</h2>
                     {isOpen ? (
                       <img
                         src="/Minus sign.svg"

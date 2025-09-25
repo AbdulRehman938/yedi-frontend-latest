@@ -12,7 +12,7 @@ export const ControlContent = () => (
                 {/* Heading with Icon */}
                 <div className="flex items-center gap-6 ml-[-3rem]">
                     <FaLock className="text-white text-7xl" />
-                    <h3 className="text-5xl font-semibold">
+                    <h3 className="text-5xl font-medium">
                         Keep restrooms secure and staff focused.
                     </h3>
                 </div>
@@ -120,7 +120,7 @@ export const EarnContent = () => (
                 {/* Heading with Icon */}
                 <div className="flex items-center gap-6 ml-[-5rem]">
                     <LuBadgeDollarSign className="text-white text-9xl" />
-                    <h3 className="text-5xl font-semibold">
+                    <h3 className="text-5xl font-medium">
                         Turn your restroom into a passive revenue stream
                     </h3>
                 </div>
@@ -204,7 +204,7 @@ export const UnlockContent = () => (
                 {/* Heading with Icon */}
                 <div className="flex items-center gap-6 ml-[-5rem]">
                     <BsGraphUpArrow className="text-white text-8xl" />
-                    <h3 className="text-5xl font-semibold">
+                    <h3 className="text-5xl font-medium">
                         Track, learn, and improve with real-time restroom data.
                     </h3>
                 </div>
