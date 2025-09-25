@@ -80,7 +80,7 @@ const Locations = () => {
                                         className={`w-full h-full object-cover ${i > 1 ? 'grayscale' : ''}`}
                                     />
                                     {i > 1 && (
-                                        <span className="absolute bottom-20 w-full text-center left-1/2 -translate-x-1/2 text-[14px] text-white bg-black/60 px-3 py-2 rounded">
+                                        <span className="absolute bottom-14 w-full text-center left-1/2 -translate-x-1/2 text-[14px] text-white bg-black/60 px-3 py-2 rounded">
                                             COMING SOON
                                         </span>
                                     )}
