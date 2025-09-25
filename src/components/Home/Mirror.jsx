@@ -41,7 +41,7 @@ const Mirror = () => {
   return (
     <>
       {/* Desktop version */}
-      <div className="hidden sm:block w-full bg-secondary 3xl:h-[210vh] xl:h-[340vh] lg:h-[240vh] flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[40rem]">
+      <div className="hidden sm:block w-full bg-secondary 3xl:h-[210vh] xl:h-[330vh] lg:h-[240vh] flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[40rem]">
         <div className="w-full relative flex flex-col items-center px-4 sm:px-6 lg:px-8 overflow-visible">
           {/* Top overflowing mirror image */}
           <motion.img
@@ -107,14 +107,14 @@ const Mirror = () => {
 
             {/* Section 1 */}
             <motion.div
-              className="relative z-30 w-[80%] ml-28 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mt-[10rem] 3xl:mt-48 xs:ml-[3.5rem] xs:relative xs:top-[-30rem] lg:mt-[-1rem] xl:mt-[35rem] 2xl:mt-[5rem]"
+              className="relative z-30 w-[80%] ml-28 flex flex-col md:flex-row items-center md:items-start justify-between gap-10 mt-[10rem] 3xl:mt-48 xs:ml-[3.5rem] xs:relative xs:top-[-30rem] lg:mt-[-1rem] xl:mt-[36rem] 2xl:mt-[5rem]"
               variants={fadeVariant}
               initial="hidden"
               whileInView="visible"
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[1rem] lg:mt-[1rem] xl:mt-[-1rem] 3xl:ml-[15rem] 3xl:mt-[-5rem] ">
+              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[1rem] lg:mt-[1rem] 3xl:ml-[15rem] 3xl:mt-[-5rem] ">
                 <h1 className="3xl:text-7xl 3xl:ml-10 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl xs:text-3xl text-primary font-bold">
                   We've all been there
                 </h1>
