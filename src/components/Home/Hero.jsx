@@ -78,7 +78,7 @@ const Hero = () => {
           </div>
           {/* Text right */}
           <div className="col-span-7 flex flex-col items-start justify-center z-10 ml-[15vw] mt-[-50vh] pl-4">
-            <h1 className="text-primary font-bold leading-[10vh] text-8xl">
+            <h1 className="text-primary font-bold leading-[13vh] text-8xl">
               Find Your <br /> Restroom
             </h1>
             <p className="text-black mt-4 text-xl">
