@@ -141,7 +141,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 2xl:w-[40%] xl:mr-[5rem] xl:mt-[1rem] lg:mt-[2rem] lg:!w-1/2 3xl:mr-[8rem]">
+              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 2xl:w-[40%] xl:mr-[5rem] xl:mt-[1rem] lg:mt-[2rem] 3xl:mr-[8rem]">
                 <h1 className="2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl  text-primary font-bold xs:text-3xl">
                   A tiny ask shouldn't <br className="xs:hidden" /> feel so big.
                 </h1>
