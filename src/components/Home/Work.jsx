@@ -25,7 +25,7 @@ const Work = () => {
                 <div className="hidden sm:flex w-[70%] h-[15%] bg-background absolute z-20 lg:top-[15rem] lg:right-[45rem]"></div>
 
                 <motion.img
-                    src="/HomeWorkSlide.svg"
+                    src="/HomeWorkSlide.png"
                     alt="slide"
                     className="work-main-slide w-full h-full object-fill absolute z-30"
                     variants={fadeVariant}
@@ -35,7 +35,7 @@ const Work = () => {
                     viewport={{ once: false, amount: 0.2 }}
                 />
 
-                <motion.div
+                {/* <motion.div
                     className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-20 lg:top-[92rem] lg:left-[62rem] rounded-3xl overflow-hidden flex justify-end items-end"
                     variants={fadeVariant}
                     initial="hidden"
@@ -44,7 +44,7 @@ const Work = () => {
                     viewport={{ once: false, amount: 0.2 }}
                 >
                     <div className="work-decor-inner w-[90%] h-full bg-[#77b0d2] rounded-tl-3xl rounded-bl-3xl"></div>
-                </motion.div>
+                </motion.div> */}
 
                 <div className="work-sections w-[80%] h-[55%] mt-[12rem] absolute z-40 ml-[10%] gap-10 flex flex-col justify-between items-center">
                     {/* Section 1 */}
