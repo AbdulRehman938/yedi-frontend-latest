@@ -102,7 +102,7 @@ const Footer = () => {
 
         <Link
           to="/partner"
-          className="rounded-full border border-white px-8 py-3 text-black text-sm"
+          className="rounded-full border border-transparent px-8 py-3 text-black bg-[#bab5a2] text-sm"
         >
           BECOME A PARTNER
         </Link>
