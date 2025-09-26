@@ -120,7 +120,7 @@ export const EarnContent = () => (
             {/* Right Side - Text */}
             <div className="flex-1 text-left space-y-10 lg:mr-16">
                 {/* Heading with Icon */}
-                <div className="flex items-center gap-6 ml-[-5rem]">
+                <div className="flex items-center gap-6">
                     <img src="/dollar-icon.svg" alt="dollar icon" className='w-12 h-12 object-contain' />
                     <h3 className="text-4xl font-medium">
                         Turn your restroom into a passive revenue stream
