@@ -201,10 +201,10 @@ const Methods = () => {
                             </div>
 
                             {/* Arrows */}
-                            <div className='city-arrow s flex justify-center gap-4 lg:gap-6 items-center mt-6 lg:mt-8 ml-[60rem]'>
+                            <div className='flex justify-center gap-4 lg:gap-6 items-center mt-6 lg:mt-8 ml-[60rem] lg-xl:ml-[50rem]'>
                                 <button
                                     onClick={scrollLeft}
-                                    className='arrow-left w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300'
+                                    className='arrow-left w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300 '
                                     disabled={index === 0}
                                 >
                                     <FaChevronLeft className='arrow-icon text-white text-lg lg:text-xl' />

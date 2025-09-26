@@ -54,8 +54,8 @@ const Hero = () => {
       {/* Desktop Layout - Hidden on mobile */}
       <div className="hidden sm:flex flex-col items-center w-full">
         {/* Main Title */}
-        <div className="w-full h-[50rem] flex items-center justify-center">
-          <h1 className="text-9xl font-kumbh text-white font-black leading-[15vh] w-[70%] lg-xl:!w-[90%] text-center">
+        <div className="w-[100vw] h-[50rem] flex items-center justify-center">
+          <h1 className="text-9xl font-kumbh text-white font-black leading-[15vh] w-[70%] text-center">
             Restrooms Reimagined
           </h1>
         </div>
@@ -68,7 +68,7 @@ const Hero = () => {
 
         {/* Panels */}
         <div className="w-full mt-[25rem] flex flex-col items-center gap-[5rem] overflow-visible sm:overflow-hidden rounded-b-[4rem] bg-[#6FA598] rounded-t-[5rem] pt-[5rem] relative z-30">
-          <h1 className="text-4xl font-medium w-[60%] text-center leading-tight">
+          <h1 className="text-4xl font-medium w-[60%] text-center leading-tight lg-xl:w-[90%]">
             It's still your bathroom, but better. With <br /> the Yedi platform you have more control <br /> over your bathroom, cleaner
             experiences <br /> for your customers, and better conditions <br /> for your staff.
           </h1>
@@ -131,10 +131,10 @@ const Hero = () => {
 
         <LockMover />
         <div className="w-[93%] h-[7rem] bg-[#f9f9f9] rounded-3xl shadow-lg flex justify-between items-center px-5">
-          <p className="text-[#4c4c4c] text-2xl">
+          <p className="text-[#4c4c4c] text-2xl lg-xl:text-xl">
             Want to learn more? Schedule an appointment and see the lock in action.
           </p>
-          <button className="px-12 py-4 bg-[#bab5a2] hover:bg-gray-500 text-white rounded-full transition-all">
+          <button className="px-12 py-4 bg-[#bab5a2] hover:bg-gray-500 text-white rounded-full transition-all lg-xl:px-8 lg-xl:py-3">
             BOOK A DEMO
           </button>
         </div>

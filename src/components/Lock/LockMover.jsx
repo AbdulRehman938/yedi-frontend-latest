@@ -33,7 +33,7 @@ const LockMover = () => {
               src={demoImages[activeIndex]}
               loading="lazy"
               alt="Zen Lock"
-              className={`h-[30rem] object-contain ${activeIndex === 3 ? 'h-[25rem]' : ''}`}
+              className={`h-[30rem] object-contain lg-xl:h-[25rem] ${activeIndex === 3 ? 'h-[25rem] lg-xl:h-[20rem]' : ''}`}
             />
           </div>
 
