@@ -11,6 +11,7 @@ const Footer = () => {
       <div className="hidden sm:flex w-full h-[30rem] justify-center items-start relative">
         <img
           src="/FooterLine.png"
+          loading="lazy" 
           alt="Footer"
           className="absolute w-full h-[90%] mt-5 z-20 lg:object-fill"
         />
@@ -91,7 +92,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-[90%] h-[7%] absolute bottom-3 z-30 flex justify-between items-center text-white px-10">
-          <img src="/whitelogo.svg" alt="logo" />
+          <img loading="lazy"  src="/whitelogo.svg" alt="logo" />
           <p>© 2025</p>
         </div>
       </div>
@@ -125,11 +126,12 @@ const Footer = () => {
 
         <img
           src="/FooterMobile.svg"
+          loading="lazy" 
           alt="Footer"
           className="w-[100vw] h-[20rem] object-contain mt-[-7rem]"
         />
         <div className="flex justify-between items-center px-4 w-full text-white text-xs">
-          <img src="/whitelogo.svg" alt="logo" className="h-6" />
+          <img loading="lazy" src="/whitelogo.svg" alt="logo" className="h-6" />
           <p>© 2025</p>
         </div>
       </div>

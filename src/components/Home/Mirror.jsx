@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import Lenis from '@studio-freight/lenis'
 
 const fadeVariant = {
   hidden: { opacity: 0, y: 40 },
@@ -19,25 +18,6 @@ const Mirror = () => {
   }
   const mobileStyle = marginTop ? { marginTop } : {}
 
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.8,
-      smoothWheel: true,
-      smoothTouch: true,
-      gestureOrientation: 'vertical',
-      syncTouch: true,
-      touchMultiplier: 1.5,
-      wheelMultiplier: 1.2,
-      lerp: 0.15,
-    })
-    const raf = (time) => {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-    requestAnimationFrame(raf)
-    return () => lenis.destroy()
-  }, [])
-
   return (
     <>
       {/* Desktop version */}
@@ -47,6 +27,7 @@ const Mirror = () => {
           <motion.img
             src="/Mirror1.png"
             alt="mirror1"
+            loading="lazy" 
             className="
     mirror1-img 
     w-full h-auto object-contain inset-0 z-30 absolute 
@@ -78,6 +59,7 @@ const Mirror = () => {
             <motion.img
               src="/mirror thing.svg"
               alt="mirror"
+              loading="lazy" 
               className="mirror-svg w-auto h-auto lg:h-[35rem] z-0 object-contain absolute max-w-[1440px]"
               variants={fadeVariant}
               initial="hidden"
@@ -92,6 +74,7 @@ const Mirror = () => {
             {/* Mirror background for desktop */}
             <img
               src="/Mirror2.png"
+              loading="lazy" 
               alt="Mirror desktop"
               className="hidden sm:block w-full h-auto object-contain absolute z-10
       top-[-20rem] 2xl:top-[-40rem] xl:top-[-10rem] lg:top-[-42rem] md:top-[-12rem] sm:top-[-10rem] 3xl:w-[120vw]"
@@ -99,10 +82,10 @@ const Mirror = () => {
 
             {/* Brownmobile pieces for small screens */}
             <div className="absolute z-10 top-[-30rem] w-full h-[10rem] flex flex-col items-center -space-y-[80px] md:hidden">
-              <img src="/brownmobile4.svg" alt="Mirror part 4" className="brownmobile4 w-full max-h-[30rem] mt-[-10rem] object-cover" />
-              <img src="/brownmobile1.svg" alt="Mirror part 1" className="brownmobile1 w-full  max-h-[30rem] mt-[-20rem] object-cover" />
-              <img src="/brownmobile2.svg" alt="Mirror part 2" className="brownmobile2 w-full  max-h-[30rem] mt-[20rem] relative top-[20rem] object-cover" />
-              <img src="/brownmobile3.svg" alt="Mirror part 3" className="brownmobile3 w-full  max-h-[30rem] mt-[-20rem]  relative top-[30rem] object-cover" />
+              <img src="/brownmobile4.svg" loading="lazy"  alt="Mirror part 4" className="brownmobile4 w-full max-h-[30rem] mt-[-10rem] object-cover" />
+              <img src="/brownmobile1.svg" loading="lazy"  alt="Mirror part 1" className="brownmobile1 w-full  max-h-[30rem] mt-[-20rem] object-cover" />
+              <img src="/brownmobile2.svg" loading="lazy"  alt="Mirror part 2" className="brownmobile2 w-full  max-h-[30rem] mt-[20rem] relative top-[20rem] object-cover" />
+              <img src="/brownmobile3.svg" loading="lazy"  alt="Mirror part 3" className="brownmobile3 w-full  max-h-[30rem] mt-[-20rem]  relative top-[30rem] object-cover" />
             </div>
 
             {/* Section 1 */}
@@ -187,6 +170,7 @@ const Mirror = () => {
             <motion.img
               src="/Mirror1.png"
               alt="mirror1"
+              loading="lazy" 
               className="mirror1-img h-auto object-contain inset-0 z-30 absolute top-[-48rem] mt-[2rem] w-[120vw]"
               variants={fadeVariant}
               initial="hidden"
@@ -208,6 +192,7 @@ const Mirror = () => {
               <motion.img
                 src="/Mobile-mirror.svg"
                 alt="mirror"
+                loading="lazy" 
                 className="mirror-svg w-auto h-full z-20 object-contain absolute max-w-[1440px]"
                 variants={fadeVariant}
                 initial="hidden"
@@ -221,10 +206,10 @@ const Mirror = () => {
             <div id="second-mobile" className="w-full relative z-20 flex flex-col overflow-visible top-[-6rem] mt-[15rem]">
               {/* Brownmobile pieces */}
               <div className="absolute z-10 top-[-20rem] w-[100vw] -right-4 h-[10rem] flex flex-col items-center -space-y-[80px]">
-                <img src="/brownmobile4.svg" alt="Mirror part 4" className="brownmobile4 w-full max-h-[35rem] relative z-10 mt-[2rem] object-cover" />
-                <img src="/brownmobile1.svg" alt="Mirror part 1" className="brownmobile1 w-full max-h-[30rem] relative z-50 mt-[-20rem] object-cover" />
-                <img src="/brownmobile2.svg" alt="Mirror part 2" className="brownmobile2 w-full max-h-[30rem] relative z-10 mt-[20rem] top-[20rem] object-cover" />
-                <img src="/brownmobile3.svg" alt="Mirror part 3" className="brownmobile3 w-full max-h-[30rem] relative z-10 mt-[-20rem] top-[30rem] object-cover" />
+                <img src="/brownmobile4.svg" loading="lazy"  alt="Mirror part 4" className="brownmobile4 w-full max-h-[35rem] relative z-10 mt-[2rem] object-cover" />
+                <img src="/brownmobile1.svg" loading="lazy"  alt="Mirror part 1" className="brownmobile1 w-full max-h-[30rem] relative z-50 mt-[-20rem] object-cover" />
+                <img src="/brownmobile2.svg" loading="lazy"  alt="Mirror part 2" className="brownmobile2 w-full max-h-[30rem] relative z-10 mt-[20rem] top-[20rem] object-cover" />
+                <img src="/brownmobile3.svg" loading="lazy"  alt="Mirror part 3" className="brownmobile3 w-full max-h-[30rem] relative z-10 mt-[-20rem] top-[30rem] object-cover" />
               </div>
 
               {/* Section 1 */}
@@ -243,7 +228,7 @@ const Mirror = () => {
                   </p>
                 </div>
                 <div className="w-full flex justify-center">
-                  <img src="/Home-character2.svg" alt="char2" className="w-2/3 max-w-md" />
+                  <img loading="lazy"  src="/Home-character2.svg" alt="char2" className="w-2/3 max-w-md" />
                 </div>
               </motion.div>
 
@@ -264,7 +249,7 @@ const Mirror = () => {
                   </p>
                 </div>
                 <div className="w-full flex justify-center">
-                  <img src="/Home-character3.svg" alt="char3" className="w-2/3 max-w-md" />
+                  <img loading="lazy"  src="/Home-character3.svg" alt="char3" className="w-2/3 max-w-md" />
                 </div>
               </motion.div>
 
@@ -284,7 +269,7 @@ const Mirror = () => {
                   </p>
                 </div>
                 <div className="w-full flex justify-center">
-                  <img src="/Home-character4.svg" alt="char4" className="w-2/3 max-w-md" />
+                  <img loading="lazy"  src="/Home-character4.svg" alt="char4" className="w-2/3 max-w-md" />
                 </div>
               </motion.div>
             </div>

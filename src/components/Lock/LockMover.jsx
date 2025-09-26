@@ -31,6 +31,7 @@ const LockMover = () => {
           <div className="pointer-events-none relative">
             <img
               src={demoImages[activeIndex]}
+              loading="lazy" 
               alt="Zen Lock"
               className={`h-[30rem] object-contain ${activeIndex === 3 ? 'h-[25rem]' : ''}`}
             />
@@ -40,20 +41,21 @@ const LockMover = () => {
             onClick={prevImage}
             className="absolute left-10 text-gray-600 font-thin hover:text-black text-7xl z-50 pointer-events-auto"
           >
-            <img src="/Left arrow.svg" alt="left" className='w-16 h-16' />
+            <img loading="lazy"  src="/Left arrow.svg" alt="left" className='w-16 h-16' />
           </button>
 
           <button
             onClick={nextImage}
             className="absolute right-10 text-gray-600 font-thin hover:text-black text-7xl z-50 pointer-events-auto"
           >
-            <img id='right-arrow' src="/Left arrow.svg" alt="right" className='w-16 h-16 rotate-180' />
+            <img loading="lazy"  id='right-arrow' src="/Left arrow.svg" alt="right" className='w-16 h-16 rotate-180' />
           </button>
 
           <div className="flex gap-6 mt-10 relative z-30">
             {demoImages.map((img, index) => (
               <img
                 key={index}
+                loading="lazy" 
                 src={img}
                 alt={`thumbnail-${index}`}
                 className={`w-24 h-24 object-contain rounded-2xl cursor-pointer border-2 border-third transition-colors ${activeIndex === index ? 'border-gray-700' : 'border-transparent'
@@ -94,6 +96,7 @@ const LockMover = () => {
         <div className="relative w-full flex justify-center">
           <img
             src={demoImages[activeIndex]}
+            loading="lazy" 
             alt="Zen Lock"
             className="w-[90%] h-[20rem] object-contain"
           />
@@ -101,13 +104,13 @@ const LockMover = () => {
             onClick={prevImage}
             className="absolute -left-6 top-1/2 -translate-y-1/2 text-gray-600 hover:text-black text-4xl z-50"
           >
-            <img src="/Left arrow.svg" alt="left" className='w-10 h-10' />
+            <img loading="lazy"  src="/Left arrow.svg" alt="left" className='w-10 h-10' />
           </button>
           <button
             onClick={nextImage}
             className="absolute -right-6 top-1/2 -translate-y-1/2 text-gray-600 hover:text-black text-4xl z-50"
           >
-            <img src="/Left arrow.svg" alt="left" className='w-10 h-10 rotate-180' />
+            <img loading="lazy"  src="/Left arrow.svg" alt="left" className='w-10 h-10 rotate-180' />
           </button>
         </div>
 
@@ -117,6 +120,7 @@ const LockMover = () => {
             <img
               key={index}
               src={img}
+              loading="lazy" 
               alt={`thumbnail-${index}`}
               className={`w-16 h-16 object-contain rounded-xl cursor-pointer border-2 transition-colors ${activeIndex === index ? 'border-gray-700' : 'border-transparent'
                 }`}

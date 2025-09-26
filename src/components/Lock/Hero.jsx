@@ -61,6 +61,7 @@ const Hero = () => {
         </div>
         <img
           src="/Yedi-Lock1.svg"
+          loading="lazy" 
           alt="lock1"
           className="w-[50%] h-full object-contain absolute z-10 top-[-180rem] right-[12rem]"
         />
@@ -98,12 +99,14 @@ const Hero = () => {
                     {isOpen ? (
                       <img
                         src="/Minus sign.svg"
+                        loading="lazy" 
                         alt="Open"
                         className="w-10 h-10 transition-transform duration-300"
                       />
                     ) : (
                       <img
                         src="/plus sign.svg"
+                        loading="lazy" 
                         alt="Open"
                         className="w-10 h-10 transition-transform duration-300"
                       />
@@ -154,7 +157,7 @@ const Hero = () => {
 
         {/* Hero Image */}
         <div className="w-full flex justify-center mb-8 mt-[20rem] ml-28 absolute">
-          <img src="/Yedi-Lock1.svg" alt="lock1" className="w-[90%] max-w-[300px] h-auto object-contain" />
+          <img loading="lazy"  src="/Yedi-Lock1.svg" alt="lock1" className="w-[90%] max-w-[300px] h-auto object-contain" />
         </div>
 
         {/* Fixed the container - removed fixed height and overflow-hidden */}
@@ -187,12 +190,14 @@ const Hero = () => {
                     {isOpen ? (
                       <img
                         src="/Minus sign.svg"
+                        loading="lazy" 
                         alt="Open"
                         className="w-5 h-5 transition-transform duration-300"
                       />
                     ) : (
                       <img
                         src="/plus sign.svg"
+                        loading="lazy" 
                         alt="Open"
                         className="w-5 h-5 transition-transform duration-300"
                       />

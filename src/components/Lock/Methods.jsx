@@ -333,6 +333,7 @@ const Methods = () => {
                                     {/* Image wrapper with fixed size */}
                                     <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
                                         <img
+                                        loading="lazy" 
                                             src={city.img}
                                             alt={city.name}
                                             className={`w-full h-full object-cover ${i > 1 ? 'grayscale' : ''

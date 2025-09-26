@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import Lenis from '@studio-freight/lenis'
 
 const fadeVariant = {
   hidden: { opacity: 0, y: 40 },
@@ -43,28 +42,13 @@ const AnimatedItem = ({ children, className }) => {
 }
 
 const Hero = () => {
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.8,
-      smoothWheel: true,
-      smoothTouch: true,
-      gestureOrientation: 'vertical',
-      syncTouch: true,
-      touchMultiplier: 1.5,
-      wheelMultiplier: 1.2,
-      lerp: 0.15,
-    })
-    const raf = (time) => { lenis.raf(time); requestAnimationFrame(raf) }
-    requestAnimationFrame(raf)
-    return () => lenis.destroy()
-  }, [])
 
   return (
     <div className="w-full overflow-hidden bg-transparent min-h-screen">
       {/* Background Images */}
       <div className="absolute w-full h-full">
         <AnimatedItem className="absolute inset-0">
-          <img src="/path.png" alt="path" className="hidden sm:block w-full h-full min-h-screen object-cover" />
+          <img loading="lazy" src="/path.png" alt="path" className="hidden sm:block w-full h-full min-h-screen object-cover" />
         </AnimatedItem>
         <div className="pb-[50rem] sm:pb-0" />
       </div>
@@ -103,14 +87,14 @@ const Hero = () => {
       {/* Mobile Layout */}
       <div className="sm:hidden flex flex-col items-center justify-start w-full px-4 text-center mt-0 pt-4 max-w-screen-sm mx-auto min-h-[85vh] pb-16">
         <AnimatedItem className="absolute inset-0">
-          <img src="/pathHomeMobile.svg" alt="path mobile" className="sm:hidden w-full h-[50rem] object-contain" />
+          <img loading="lazy"  src="/pathHomeMobile.svg" alt="path mobile" className="sm:hidden w-full h-[50rem] object-contain" />
         </AnimatedItem>
         <AnimatedItem className="z-10 flex flex-col items-center bg-transparent mt-[2rem]">
           <h1 className="text-primary text-5xl font-black leading-[3.5rem] mb-4 mt-[4rem]">Find Your <br /> Restroom</h1>
           <p className="text-[#676666] text-xl mb-8">Find. Scan. Unlock</p>
         </AnimatedItem>
         <AnimatedItem>
-          <img src="/Home-character.svg" alt="character" className="relative w-[50%] ml-[4.5rem] max-w-[250px] -mt-3 mb-5 z-20" />
+          <img loading="lazy"  src="/Home-character.svg" alt="character" className="relative w-[50%] ml-[4.5rem] max-w-[250px] -mt-3 mb-5 z-20" />
         </AnimatedItem>
         <div className="flex justify-between items-center w-[100%] mt-5 gap-8 z-10">
           <AnimatedItem>

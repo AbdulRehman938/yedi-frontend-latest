@@ -11,7 +11,7 @@ export const ControlContent = () => (
             <div className="flex-1 text-left space-y-10 lg:ml-16">
                 {/* Heading with Icon */}
                 <div className="flex justify-center items-center gap-6">
-                    <img src="/lock-icon.svg" alt="lock icon" className='w-12 h-12 object-contain' />
+                    <img loading="lazy"  src="/lock-icon.svg" alt="lock icon" className='w-12 h-12 object-contain' />
                     <h3 className="text-4xl font-medium">
                         Keep restrooms secure and staff focused.
                     </h3>
@@ -47,6 +47,7 @@ export const ControlContent = () => (
             <div className="flex-1 flex justify-center lg:justify-end">
                 <img
                     src="/Lock2.svg"
+                    loading="lazy" 
                     alt="Lock demo"
                     className="rounded-xl shadow-lg object-cover"
                 />
@@ -57,7 +58,7 @@ export const ControlContent = () => (
         <div className="sm:hidden flex flex-col items-center gap-6 py-6">
             {/* Heading with Icon */}
             <div className="flex justify-between items-center gap-4 text-left">
-                <img src="/lock-icon.svg" alt="lock icon" className='w-8 h-8 object-contain' />
+                <img loading="lazy"  src="/lock-icon.svg" alt="lock icon" className='w-8 h-8 object-contain' />
                 <h3 className="text-xl font-semibold leading-tight">
                     Keep restrooms secure and staff focused.
                 </h3>
@@ -94,6 +95,7 @@ export const ControlContent = () => (
             <div className="w-full flex justify-center mb-4">
                 <img
                     src="/Lock2.svg"
+                    loading="lazy" 
                     alt="Lock demo"
                     className="w-[98%] h-[17rem] rounded-xl shadow-lg object-cover"
                 />
@@ -112,6 +114,7 @@ export const EarnContent = () => (
             <div className="flex-1 flex justify-center lg:justify-start">
                 <img
                     src="/Lock3.svg"
+                    loading="lazy" 
                     alt="Lock demo"
                     className="rounded-xl shadow-lg object-cover"
                 />
@@ -121,7 +124,7 @@ export const EarnContent = () => (
             <div className="flex-1 text-left space-y-10 lg:mr-16">
                 {/* Heading with Icon */}
                 <div className="flex items-center gap-6">
-                    <img src="/dollar-icon.svg" alt="dollar icon" className='w-12 h-12 object-contain' />
+                    <img loading="lazy"  src="/dollar-icon.svg" alt="dollar icon" className='w-12 h-12 object-contain' />
                     <h3 className="text-4xl font-medium">
                         Turn your restroom into a passive revenue stream
                     </h3>
@@ -158,7 +161,7 @@ export const EarnContent = () => (
         <div className="sm:hidden flex flex-col items-center gap-6 py-6">
             {/* Heading */}
             <div className="flex items-center gap-4 text-left">
-                <img src="/dollar-icon.svg" alt="dollar icon" className='w-8 h-8 object-contain' />
+                <img loading="lazy"  src="/dollar-icon.svg" alt="dollar icon" className='w-8 h-8 object-contain' />
                 <h3 className="text-xl font-semibold leading-tight">
                     Turn your restroom into a passive revenue stream
                 </h3>
@@ -190,6 +193,7 @@ export const EarnContent = () => (
             <div className="w-full flex justify-center mb-4">
                 <img
                     src="/Lock3.svg"
+                    loading="lazy" 
                     alt="Lock demo"
                     className="w-[98%] h-[17rem] rounded-xl shadow-lg object-cover"
                 />
@@ -206,8 +210,8 @@ export const UnlockContent = () => (
             {/* Left Side - Text */}
             <div className="flex-1 text-left space-y-10 lg:ml-16">
                 {/* Heading with Icon */}
-                <div className="flex items-center gap-6 ml-[-5rem]">
-                    <BsGraphUpArrow className="text-white text-8xl" />
+                <div className="flex items-center gap-6">
+                    <img loading="lazy"  src="/stock-up.svg" alt="stock" className='w-12 h-12 object-contain' />
                     <h3 className="text-4xl font-medium">
                         Track, learn, and improve with real-time restroom data.
                     </h3>
@@ -243,6 +247,7 @@ export const UnlockContent = () => (
             <div className="flex-1 flex justify-center lg:justify-end">
                 <img
                     src="/Lock4.svg"
+                    loading="lazy" 
                     alt="Lock demo"
                     className="rounded-xl shadow-lg object-cover"
                 />
@@ -252,8 +257,8 @@ export const UnlockContent = () => (
         <div className="sm:hidden flex flex-col items-center gap-6 py-6">
             {/* Heading */}
             <div className="flex items-center gap-4 text-left">
-                <BsGraphUpArrow className="text-white text-5xl" />
-                <h3 className="text-2xl font-semibold leading-tight">
+                <img loading="lazy"  src="/stock-up.svg" alt="stock" className='w-8 h-8 object-contain' />
+                <h3 className="text-xl font-semibold leading-tight">
                     Track, learn, and improve with real-time restroom data.
                 </h3>
             </div>
@@ -284,6 +289,7 @@ export const UnlockContent = () => (
             <div className="w-full flex justify-center mb-4">
                 <img
                     src="/Lock4.svg"
+                    loading="lazy" 
                     alt="Lock demo"
                     className="w-[98%] h-[17rem] rounded-xl shadow-lg object-cover"
                 />
@@ -301,6 +307,7 @@ export const IntegrateContent = () => (
             <div className="flex-1 flex justify-center lg:justify-start">
                 <img
                     src="/Lock5.svg"
+                    loading="lazy" 
                     alt="Lock demo"
                     className="rounded-xl shadow-lg object-cover"
                 />
@@ -309,8 +316,8 @@ export const IntegrateContent = () => (
             {/* Right Side - Text */}
             <div className="flex-1 text-left space-y-10 lg:mr-16">
                 {/* Heading with Icon */}
-                <div className="flex items-center gap-6 ml-[-5rem]">
-                    <FaUnlockAlt className="text-white text-8xl" />
+                <div className="flex items-center gap-6">
+                    <img loading="lazy"  src="/lock-icon2.svg" alt="lock" className='w-12 h-12 object-contain' />
                     <h3 className="text-4xl font-semibold">
                         Connect with your systems, customers, and tools.
                     </h3>
@@ -347,8 +354,8 @@ export const IntegrateContent = () => (
         <div className="sm:hidden flex flex-col items-center gap-6 py-6">
             {/* Heading */}
             <div className="flex items-center gap-4 text-left">
-                <FaUnlockAlt className="text-white text-5xl" />
-                <h3 className="text-2xl font-semibold leading-tight">
+                <img loading="lazy"  src="/lock-icon2.svg" alt="lock" className='w-8 h-8 object-contain' />
+                <h3 className="text-xl font-semibold leading-tight">
                     Connect with your systems, customers, and tools.
                 </h3>
             </div>
@@ -379,6 +386,7 @@ export const IntegrateContent = () => (
             <div className="w-full flex justify-center mb-4">
                 <img
                     src="/Lock5.svg"
+                    loading="lazy" 
                     alt="Lock demo"
                     className="w-[98%] h-[17rem] rounded-xl shadow-lg object-cover"
                 />

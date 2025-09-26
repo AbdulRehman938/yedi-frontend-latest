@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import Lenis from '@studio-freight/lenis'
 
 const fadeVariant = {
     hidden: { opacity: 0, y: 40 },
@@ -9,14 +8,6 @@ const fadeVariant = {
 }
 
 const Work = () => {
-    useEffect(() => {
-        const lenis = new Lenis({ lerp: 0.1, smoothWheel: true })
-        function raf(time) {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
-        }
-        requestAnimationFrame(raf)
-    }, [])
 
     return (
         <>
@@ -26,6 +17,7 @@ const Work = () => {
 
                 <motion.img
                     src="/HomeWorkSlide.png"
+                    loading="lazy" 
                     alt="slide"
                     className="work-main-slide w-full h-full object-fill absolute z-30"
                     variants={fadeVariant}
@@ -59,6 +51,7 @@ const Work = () => {
                         <div className="work-section1-img w-[50%] h-full">
                             <img
                                 src="/HomeMobile.svg"
+                                loading="lazy" 
                                 alt="mobile"
                                 className="work-section1-image w-full h-full object-contain"
                             />
@@ -93,6 +86,7 @@ const Work = () => {
                         <div className="work-section2-img w-[50%] h-full">
                             <img
                                 src="/HomeMobile2.svg"
+                                loading="lazy" 
                                 alt="Mobile2"
                                 className="work-section2-image w-full h-full object-contain"
                             />
@@ -124,6 +118,7 @@ const Work = () => {
                         <div className="work-section3-img w-[50%] h-full">
                             <img
                                 src="/HomeMobile3.svg"
+                                loading="lazy" 
                                 alt="Mobile3"
                                 className="work-section3-image w-full h-full object-contain"
                             />
@@ -160,7 +155,7 @@ const Work = () => {
                         <p className="text-gray-600 text-lg mb-4">
                             Browse the map to find nearby restrooms with details like distance, availability, and amenities.
                         </p>
-                        <img src="/HomeMobile.svg" alt="Find" className="rounded-md w-[98%] mb-8" />
+                        <img loading="lazy"  src="/HomeMobile.svg" alt="Find" className="rounded-md w-[98%] mb-8" />
                     </div>
                 </motion.div>
 
@@ -175,7 +170,7 @@ const Work = () => {
                         <p className="text-gray-600 text-lg mb-4">
                             At the door, scan the QR code for instant access.
                         </p>
-                        <img src="/HomeMobile2.svg" alt="Scan" className="rounded-md w-[98%] mb-8" />
+                        <img loading="lazy"  src="/HomeMobile2.svg" alt="Scan" className="rounded-md w-[98%] mb-8" />
                     </div>
                 </motion.div>
 
@@ -190,7 +185,7 @@ const Work = () => {
                         <p className="text-gray-600 text-lg mb-4">
                             When the light blinks green, turn the handle and enjoy a clean, comfortable restroom.
                         </p>
-                        <img src="/HomeMobile3.svg" alt="Unlock" className="rounded-md w-[98%] mb-8" />
+                        <img loading="lazy"  src="/HomeMobile3.svg" alt="Unlock" className="rounded-md w-[98%] mb-8" />
                     </div>
                 </motion.div>
 
@@ -198,6 +193,7 @@ const Work = () => {
                 <div className="sm:hidden w-[100vw] h-full mt-[-15rem] ml-[-3rem]">
                     <img
                         src="/charslidemobile.png"
+                        loading="lazy" 
                         alt="Character Slide"
                         className="w-[100vw] object-cover h-auto"
                     />

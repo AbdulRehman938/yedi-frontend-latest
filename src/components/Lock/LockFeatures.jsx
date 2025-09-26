@@ -16,8 +16,8 @@ const LockFeatures = () => {
                     {/* Left Content */}
                     <div className="flex flex-col items-start justify-center w-[45%] space-y-4">
                         <div className="flex items-center gap-4 text-gray-400 text-5xl">
-                            <img src="/Bluetooth.svg" alt="Bluetooth" className='w-14 h-14'  />
-                             <img src="/Mobile wifi.svg" alt="Mobile Wifi" className='w-14 h-14' />
+                            <img loading="lazy"  src="/Bluetooth.svg" alt="Bluetooth" className='w-14 h-14'  />
+                             <img loading="lazy"  src="/Mobile wifi.svg" alt="Mobile Wifi" className='w-14 h-14' />
                         </div>
                         <h3 className="text-5xl font-semibold text-[#55887c]">
                             Bluetooth & NFC for tap-and-Go entry
@@ -31,6 +31,7 @@ const LockFeatures = () => {
                     {/* Right Image */}
                     <div className="flex justify-center w-1/2">
                         <img
+                        loading="lazy" 
                             src="/Feature1.svg"
                             alt="Feature"
                             className="h-full w-full relative top-0 object-contain"
@@ -45,6 +46,7 @@ const LockFeatures = () => {
                 >
                     <div className="flex justify-center w-1/2 overflow-hidden">
                         <img
+                        loading="lazy" 
                             src="/Feature2.svg"
                             alt="Feature"
                             className="h-[50%] w-auto relative top-6 object-contain"
@@ -52,7 +54,7 @@ const LockFeatures = () => {
                     </div>
                     <div className="flex flex-col items-start justify-center w-[45%] space-y-4">
                         <div className="flex items-center gap-4 text-gray-400 text-5xl">
-                           <img src="/wifi.svg" alt="WiFi" className='w-14 h-14' />
+                           <img loading="lazy"  src="/wifi.svg" alt="WiFi" className='w-14 h-14' />
                         </div>
                         <h3 className="text-5xl font-semibold text-[#55887c]">
                             Infrared Presence Sensor
@@ -70,7 +72,7 @@ const LockFeatures = () => {
                 >
                     <div className="flex flex-col items-start justify-center w-[45%] space-y-4">
                         <div className="flex items-center gap-4 text-gray-400 text-5xl">
-                           <img src="/Speaker.svg" alt="speaker" className='w-14 h-14' />
+                           <img loading="lazy"  src="/Speaker.svg" alt="speaker" className='w-14 h-14' />
                         </div>
                         <h3 className="text-5xl font-semibold text-[#55887c]">
                             Built-in audio feedback for seamless interactions
@@ -83,6 +85,7 @@ const LockFeatures = () => {
                     <div className="flex justify-center w-1/2">
                         <img
                             src="/Feature3.svg"
+                            loading="lazy" 
                             alt="Feature"
                             className="h-full w-full relative top-0 object-contain"
                         />
@@ -96,6 +99,7 @@ const LockFeatures = () => {
                 <div className="bg-white rounded-2xl shadow-md flex flex-col items-start pb-10">
                     <img
                         src="/Feature1.svg"
+                        loading="lazy" 
                         alt="Feature"
                         className="w-[50rem] rounded-xl object-contain"
                     />
@@ -115,6 +119,7 @@ const LockFeatures = () => {
                 <div className="bg-white rounded-2xl shadow-md flex flex-col items-start pb-10">
                     <img
                         src="/Feature2.svg"
+                        loading="lazy" 
                         alt="Feature"
                         className="w-[50rem] rounded-xl object-contain"
                     />
@@ -143,6 +148,7 @@ const LockFeatures = () => {
                     </p>
                     <img
                         src="/Feature3.svg"
+                        loading="lazy" 
                         alt="Feature"
                         className="w-[50rem] rounded-xl object-contain"
                     />

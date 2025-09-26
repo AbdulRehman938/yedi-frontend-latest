@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
-import Lenis from '@studio-freight/lenis'
 
 const cities = [
     { name: 'Washington, D.C.', img: '/Washington.svg' },
@@ -21,20 +20,6 @@ const validationSchema = Yup.object({
 const Locations = () => {
     const [activeIndex, setActiveIndex] = useState(0)
 
-    useEffect(() => {
-        const lenis = new Lenis({
-            duration: 1.5,
-            smoothWheel: true,
-            smoothTouch: true,
-        })
-        const raf = (time) => {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
-        }
-        requestAnimationFrame(raf)
-        return () => lenis.destroy()
-    }, [])
-
     const prev = () =>
         setActiveIndex((prev) => {
             if (prev <= 0) return prev // already at the start
@@ -43,7 +28,7 @@ const Locations = () => {
 
     const next = () =>
         setActiveIndex((prev) => {
-            if (prev >= cities.length - 1) return prev // already at the end, don’t move
+            if (prev >= cities.length - 1) return prev 
             return prev + 1
         })
 
@@ -77,6 +62,7 @@ const Locations = () => {
                                     <img
                                         src={city.img}
                                         alt={city.name}
+                                        loading="lazy" 
                                         className={`w-full h-full object-cover ${i > 1 ? 'grayscale' : ''}`}
                                     />
                                     {i > 1 && (
@@ -197,6 +183,7 @@ const Locations = () => {
                                 <img
                                     src={city.img}
                                     alt={city.name}
+                                    loading="lazy" 
                                     className={`w-full h-full object-cover rounded-2xl ${i > 1 ? 'grayscale' : ''
                                         }`}
                                 />
