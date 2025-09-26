@@ -34,7 +34,7 @@ const LockFeatures = () => {
                         loading="lazy" 
                             src="/Feature1.svg"
                             alt="Feature"
-                            className="h-full w-full relative top-0 object-contain lg-xl:-top-5"
+                            className="h-full w-full relative top-0 object-contain"
                         />
                     </div>
                 </div>
@@ -49,7 +49,7 @@ const LockFeatures = () => {
                         loading="lazy" 
                             src="/Feature2.svg"
                             alt="Feature"
-                            className="h-[50%] w-auto relative top-6 object-contain lg-xl:-top-7"
+                            className="h-[50%] w-auto relative top-6 object-contain"
                         />
                     </div>
                     <div className="flex flex-col items-start justify-center w-[45%] space-y-4">
@@ -87,7 +87,7 @@ const LockFeatures = () => {
                             src="/Feature3.svg"
                             loading="lazy" 
                             alt="Feature"
-                            className="h-full w-full relative top-0 object-contain lg-xl:top-9"
+                            className="h-full w-full relative top-0 object-contain"
                         />
                     </div>
                 </div>
