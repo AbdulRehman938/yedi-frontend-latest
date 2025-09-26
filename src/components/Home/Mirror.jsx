@@ -227,12 +227,15 @@ const Mirror = () => {
                 exit="exit"
                 viewport={{ once: false, amount: 0.2 }}
               >
-                <div className="w-full flex flex-col gap-4 text-center px-2">
+                <div className="w-full flex flex-col gap-4 text-center px-2 
+  order-2 md:order-2 lg:order-1">
                   <h1 className="text-4xl text-primary font-bold">We've all been there</h1>
                   <p className="text-gray-500 font-medium">
-                    You're away from home and unsure where you can <span className="text-[#4c4c4c] font-medium">go</span>.
+                    You're away from home and unsure where you can
+                    <span className="text-[#4c4c4c] font-medium">go</span>.
                   </p>
                 </div>
+
                 <div className="w-full flex justify-center">
                   <img loading="lazy" src="/Home-character2.svg" alt="char2" className="w-2/3 max-w-md" />
                 </div>

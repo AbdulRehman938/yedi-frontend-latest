@@ -48,7 +48,7 @@ const Hero = () => {
       {/* Background Images */}
       <div className="absolute w-full h-full">
         <AnimatedItem className="absolute inset-0">
-          <img loading="lazy" src="/path.png" alt="path" className="hidden sm:block w-full h-full min-h-screen object-cover" />
+          <img loading="lazy" src="https://cdn-editing-temp.picsart.com/editing-temp-landings/5e1e6a9b-9121-4935-b9b6-ed1d68c56fa7.png" alt="path" className="hidden sm:block w-full h-full min-h-screen object-cover" />
         </AnimatedItem>
         <div className="pb-[50rem] sm:pb-0" />
       </div>

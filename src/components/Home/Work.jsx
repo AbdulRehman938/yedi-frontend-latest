@@ -37,7 +37,7 @@ const Work = () => {
                     <div className="work-decor-inner w-[90%] h-full bg-[#77b0d2] rounded-tl-3xl rounded-bl-3xl"></div>
                 </motion.div> */}
 
-                <div className="work-sections w-[80%] h-[55%] mt-[12rem] absolute z-40 ml-[10%] gap-10 flex flex-col justify-between items-center">
+                <div className="work-sections w-[80%] h-[55%] mt-[17rem] absolute z-40 ml-[10%] gap-10 flex flex-col justify-between items-center">
                     {/* Section 1 */}
                     <motion.div
                         className="work-section1 w-full h-[40%] flex flex-row justify-center items-center"
