@@ -57,8 +57,8 @@ export const ControlContent = () => (
         <div className="sm:hidden flex flex-col items-center gap-6 py-6">
             {/* Heading with Icon */}
             <div className="flex justify-between items-center gap-4 text-left">
-                <h3 className="text-2xl font-semibold leading-tight">
-                    <img src="/lock-icon.svg" alt="lock icon" className='w-8 h-8 object-contain' />
+                <img src="/lock-icon.svg" alt="lock icon" className='w-8 h-8 object-contain' />
+                <h3 className="text-xl font-semibold leading-tight">
                     Keep restrooms secure and staff focused.
                 </h3>
             </div>
@@ -159,7 +159,7 @@ export const EarnContent = () => (
             {/* Heading */}
             <div className="flex items-center gap-4 text-left">
                 <img src="/dollar-icon.svg" alt="dollar icon" className='w-8 h-8 object-contain' />
-                <h3 className="text-2xl font-semibold leading-tight">
+                <h3 className="text-xl font-semibold leading-tight">
                     Turn your restroom into a passive revenue stream
                 </h3>
             </div>
