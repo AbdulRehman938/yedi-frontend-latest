@@ -10,9 +10,9 @@ export const ControlContent = () => (
             {/* Left Side - Text */}
             <div className="flex-1 text-left space-y-10 lg:ml-16">
                 {/* Heading with Icon */}
-                <div className="flex items-center gap-6 ml-[-3rem]">
-                    <FaLock className="text-white text-7xl" />
-                    <h3 className="text-5xl font-medium">
+                <div className="flex justify-center items-center gap-6">
+                    <img src="/lock-icon.svg" alt="lock icon" className='w-12 h-12 object-contain' />
+                    <h3 className="text-4xl font-medium">
                         Keep restrooms secure and staff focused.
                     </h3>
                 </div>
@@ -20,21 +20,23 @@ export const ControlContent = () => (
 
                 {/* Features */}
                 <div className="space-y-6 text-2xl">
-                    <div className="flex justify-between border-b-[0.1rem] border-b-white pb-5">
-                        <span className="font-medium">Rotating Codes</span>
-                        <span className="w-1/2 text-left">
+                    <div className="flex justify-between pb-5">
+                        <span className="font-medium text-2xl">Rotating Codes</span>
+                        <span className="w-1/2 font-normal text-xl text-left">
                             Issue rotating access codes to customers to prevent code sharing and bad actors.
                         </span>
                     </div>
-                    <div className="flex justify-between border-b-[0.1rem] border-b-white pb-5">
-                        <span className="font-medium">Protect Your Space</span>
-                        <span className="w-1/2 text-left">
+                    <hr className="border-white/40" />
+                    <div className="flex justify-between pb-5">
+                        <span className="font-medium text-2xl">Protect Your Space</span>
+                        <span className="w-1/2 font-normal text-xl text-left">
                             Prevent loitering, misuse, and vandalism.
                         </span>
                     </div>
+                    <hr className="border-white/40" />
                     <div className="flex justify-between">
-                        <span className="font-medium">Free Up Staff</span>
-                        <span className="w-1/2 text-left">
+                        <span className="font-medium text-2xl">Free Up Staff</span>
+                        <span className="w-1/2 font-normal text-xl text-left">
                             Let your team focus on service, not gatekeeping.
                         </span>
                     </div>
@@ -54,9 +56,9 @@ export const ControlContent = () => (
         {/* Mobile Layout - Only visible on mobile */}
         <div className="sm:hidden flex flex-col items-center gap-6 py-6">
             {/* Heading with Icon */}
-            <div className="flex items-center gap-4 text-left">
-                <FaLock className="text-white text-5xl" />
+            <div className="flex justify-between items-center gap-4 text-left">
                 <h3 className="text-2xl font-semibold leading-tight">
+                    <img src="/lock-icon.svg" alt="lock icon" className='w-8 h-8 object-contain' />
                     Keep restrooms secure and staff focused.
                 </h3>
             </div>
@@ -119,8 +121,8 @@ export const EarnContent = () => (
             <div className="flex-1 text-left space-y-10 lg:mr-16">
                 {/* Heading with Icon */}
                 <div className="flex items-center gap-6 ml-[-5rem]">
-                    <LuBadgeDollarSign className="text-white text-9xl" />
-                    <h3 className="text-5xl font-medium">
+                    <img src="/dollar-icon.svg" alt="dollar icon" className='w-12 h-12 object-contain' />
+                    <h3 className="text-4xl font-medium">
                         Turn your restroom into a passive revenue stream
                     </h3>
                 </div>
@@ -128,21 +130,23 @@ export const EarnContent = () => (
 
                 {/* Features */}
                 <div className="space-y-6 text-2xl">
-                    <div className="flex justify-between border-b-[0.1rem] border-b-white pb-5">
-                        <span className="font-medium">Revenue Sharing</span>
-                        <span className="w-1/2 text-left">
+                    <div className="flex justify-between pb-5">
+                        <span className="font-medium text-2xl">Revenue Sharing</span>
+                        <span className="w-1/2 font-normal text-xl text-left">
                             Earn from Yedi subscribers and walk-in users.
                         </span>
                     </div>
-                    <div className="flex justify-between border-b-[0.1rem] border-b-white pb-5">
-                        <span className="font-medium">Operational Efficiency</span>
-                        <span className="w-1/2 text-left">
+                    <hr className="border-white/40" />
+                    <div className="flex justify-between pb-5">
+                        <span className="font-medium text-2xl">Operational Efficiency</span>
+                        <span className="w-1/2 font-normal text-xl text-left">
                             Reduce time staff spends unlocking restrooms and managing access.
                         </span>
                     </div>
+                    <hr className="border-white/40" />
                     <div className="flex justify-between">
-                        <span className="font-medium">Employee Incentives</span>
-                        <span className="w-1/2 text-left">
+                        <span className="font-medium text-2xl">Employee Incentives</span>
+                        <span className="w-1/2 font-normal text-xl text-left">
                             Share restroom revenue with staff to encourage cleanings.
                         </span>
                     </div>
@@ -154,7 +158,7 @@ export const EarnContent = () => (
         <div className="sm:hidden flex flex-col items-center gap-6 py-6">
             {/* Heading */}
             <div className="flex items-center gap-4 text-left">
-                <LuBadgeDollarSign className="text-white text-5xl" />
+                <img src="/dollar-icon.svg" alt="dollar icon" className='w-8 h-8 object-contain' />
                 <h3 className="text-2xl font-semibold leading-tight">
                     Turn your restroom into a passive revenue stream
                 </h3>
@@ -204,7 +208,7 @@ export const UnlockContent = () => (
                 {/* Heading with Icon */}
                 <div className="flex items-center gap-6 ml-[-5rem]">
                     <BsGraphUpArrow className="text-white text-8xl" />
-                    <h3 className="text-5xl font-medium">
+                    <h3 className="text-4xl font-medium">
                         Track, learn, and improve with real-time restroom data.
                     </h3>
                 </div>
@@ -212,21 +216,23 @@ export const UnlockContent = () => (
 
                 {/* Features */}
                 <div className="space-y-6 text-2xl">
-                    <div className="flex justify-between border-b-[0.1rem] border-b-white pb-5">
-                        <span className="font-medium">Usage Tracking</span>
-                        <span className="w-1/2 text-left">
+                    <div className="flex justify-between pb-5">
+                        <span className="font-medium text-2xl">Usage Tracking</span>
+                        <span className="w-1/2 font-normal text-xl text-left">
                             Leverage restroom usage data for better planning, inventory management, and staff scheduling.
                         </span>
                     </div>
-                    <div className="flex justify-between border-b-[0.1rem] border-b-white pb-5">
-                        <span className="font-medium">Performance Dashboard</span>
-                        <span className="w-1/2 text-left">
+                    <hr className="border-white/40" />
+                    <div className="flex justify-between pb-5">
+                        <span className="font-medium text-2xl">Performance Dashboard</span>
+                        <span className="w-1/2 font-normal text-xl text-left">
                             Monitor cleanings, earnings, and access trends.
                         </span>
                     </div>
+                    <hr className="border-white/40" />
                     <div className="flex justify-between">
-                        <span className="font-medium">Custom Reporting</span>
-                        <span className="w-1/2 text-left">
+                        <span className="font-medium text-2xl">Custom Reporting</span>
+                        <span className="w-1/2 font-normal text-xl text-left">
                             Access tailored data insights by request.
                         </span>
                     </div>
@@ -305,7 +311,7 @@ export const IntegrateContent = () => (
                 {/* Heading with Icon */}
                 <div className="flex items-center gap-6 ml-[-5rem]">
                     <FaUnlockAlt className="text-white text-8xl" />
-                    <h3 className="text-5xl font-semibold">
+                    <h3 className="text-4xl font-semibold">
                         Connect with your systems, customers, and tools.
                     </h3>
                 </div>
@@ -313,21 +319,23 @@ export const IntegrateContent = () => (
 
                 {/* Features */}
                 <div className="space-y-6 text-2xl">
-                    <div className="flex justify-between border-b-[0.1rem] border-b-white pb-5">
-                        <span className="font-medium">Multiple Access Methods</span>
-                        <span className="w-1/2 text-left">
+                    <div className="flex justify-between pb-5">
+                        <span className="font-medium text-2xl">Multiple Access Methods</span>
+                        <span className="w-1/2 font-normal text-xl text-left">
                             Allow restroom entry via printed code, QR scan, NFC, or integrated app.
                         </span>
                     </div>
-                    <div className="flex justify-between border-b-[0.1rem] border-b-white pb-5">
-                        <span className="font-medium">Deeper Integration</span>
-                        <span className="w-1/2 text-left">
+                    <hr className="border-white/40" />
+                    <div className="flex justify-between pb-5">
+                        <span className="font-medium text-2xl">Deeper Integration</span>
+                        <span className="w-1/2 font-normal text-xl text-left">
                             Sync access with your rewards or point-of-sale systems.
                         </span>
                     </div>
+                    <hr className="border-white/40" />
                     <div className="flex justify-between">
-                        <span className="font-medium">CRM and Rewards</span>
-                        <span className="w-1/2 text-left">
+                        <span className="font-medium text-2xl">CRM and Rewards</span>
+                        <span className="w-1/2 font-normal text-xl text-left">
                             Future iterations of Yedi will allow for deep customer rewards integration, coupons, and in-store promotions.
                         </span>
                     </div>
