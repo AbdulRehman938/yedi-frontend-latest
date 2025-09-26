@@ -27,7 +27,7 @@ const Mirror = () => {
           <motion.img
             src="/Mirror1.png"
             alt="mirror1"
-            loading="lazy" 
+            loading="lazy"
             className="
     mirror1-img 
     w-full h-auto object-contain inset-0 z-30 absolute 
@@ -59,7 +59,7 @@ const Mirror = () => {
             <motion.img
               src="/mirror thing.svg"
               alt="mirror"
-              loading="lazy" 
+              loading="lazy"
               className="mirror-svg w-auto h-auto lg:h-[35rem] z-0 object-contain absolute max-w-[1440px]"
               variants={fadeVariant}
               initial="hidden"
@@ -74,7 +74,7 @@ const Mirror = () => {
             {/* Mirror background for desktop */}
             <img
               src="/Mirror2.png"
-              loading="lazy" 
+              loading="lazy"
               alt="Mirror desktop"
               className="hidden sm:block w-full h-auto object-contain absolute z-10
       top-[-20rem] 2xl:top-[-40rem] xl:top-[-10rem] lg:top-[-42rem] md:top-[-12rem] sm:top-[-10rem] 3xl:w-[120vw]"
@@ -82,10 +82,10 @@ const Mirror = () => {
 
             {/* Brownmobile pieces for small screens */}
             <div className="absolute z-10 top-[-30rem] w-full h-[10rem] flex flex-col items-center -space-y-[80px] md:hidden">
-              <img src="/brownmobile4.svg" loading="lazy"  alt="Mirror part 4" className="brownmobile4 w-full max-h-[30rem] mt-[-10rem] object-cover" />
-              <img src="/brownmobile1.svg" loading="lazy"  alt="Mirror part 1" className="brownmobile1 w-full  max-h-[30rem] mt-[-20rem] object-cover" />
-              <img src="/brownmobile2.svg" loading="lazy"  alt="Mirror part 2" className="brownmobile2 w-full  max-h-[30rem] mt-[20rem] relative top-[20rem] object-cover" />
-              <img src="/brownmobile3.svg" loading="lazy"  alt="Mirror part 3" className="brownmobile3 w-full  max-h-[30rem] mt-[-20rem]  relative top-[30rem] object-cover" />
+              <img src="/brownmobile4.svg" loading="lazy" alt="Mirror part 4" className="brownmobile4 w-full max-h-[30rem] mt-[-10rem] object-cover" />
+              <img src="/brownmobile1.svg" loading="lazy" alt="Mirror part 1" className="brownmobile1 w-full  max-h-[30rem] mt-[-20rem] object-cover" />
+              <img src="/brownmobile2.svg" loading="lazy" alt="Mirror part 2" className="brownmobile2 w-full  max-h-[30rem] mt-[20rem] relative top-[20rem] object-cover" />
+              <img src="/brownmobile3.svg" loading="lazy" alt="Mirror part 3" className="brownmobile3 w-full  max-h-[30rem] mt-[-20rem]  relative top-[30rem] object-cover" />
             </div>
 
             {/* Section 1 */}
@@ -102,7 +102,7 @@ const Mirror = () => {
                   We've all been there
                 </h1>
                 <p className="3xl:ml-[2.5rem] 3xl:w-[33rem] 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm xs:text-xl text-gray-500 font-medium">
-                  You're away from home and unsure <br className="xs:hidden" /> where you can <span className="text-black font-medium">go</span>.
+                  You're away from home and unsure <br className="xs:hidden" /> where you can <span className="text-[#4c4c4c] font-medium">go</span>.
                 </p>
               </div>
               <div className="w-full md:w-1/2 flex justify-center md:justify-end xl:mt-[5rem] lg:mt-[2rem] 2xl:mt-[6rem] 3xl:mt-[6rem] ">
@@ -124,7 +124,7 @@ const Mirror = () => {
                   A tiny ask shouldn't <br className="xs:hidden" /> feel so big.
                 </h1>
                 <p className="2xl:text-2xl xl:text-sm lg:text-lg md:text-base sm:text-sm xs:text-xs text-gray-500 font-medium">
-                  Waiting in line, holding it in, just to <span className="text-black font-medium">beg</span> <br className="xs:hidden" />
+                  Waiting in line, holding it in, just to <span className="text-[#4c4c4c] font-medium">beg</span> <br className="xs:hidden" />
                   for a restroom key. It's awkward. I don't <br className="xs:hidden" />
                   want to tell someone I have to evacuate <br className="xs:hidden" /> my bowels.
                 </p>
@@ -150,7 +150,7 @@ const Mirror = () => {
                 <p className="2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm xs:text-xs text-gray-500 font-medium">
                   With Yedi, it's easy go straight in and <br className="xs:hidden" />
                   find the bathroom door, scan and <br className="xs:hidden" />
-                  unlock to find <span className="text-black font-medium">relief</span>.
+                  unlock to find <span className="text-[#4c4c4c] font-medium">relief</span>.
                 </p>
               </div>
               <div className="w-full md:w-1/2 flex justify-center md:justify-end 3xl:mr-[10rem] lg:mt-[4rem] 2xl:mt-[-1rem] 3xl:mt-[1rem] ">
@@ -170,7 +170,7 @@ const Mirror = () => {
             <motion.img
               src="/Mirror1.png"
               alt="mirror1"
-              loading="lazy" 
+              loading="lazy"
               className="mirror1-img h-auto object-contain inset-0 z-30 absolute top-[-48rem] mt-[2rem] w-[120vw]"
               variants={fadeVariant}
               initial="hidden"
@@ -192,7 +192,7 @@ const Mirror = () => {
               <motion.img
                 src="/Mobile-mirror.svg"
                 alt="mirror"
-                loading="lazy" 
+                loading="lazy"
                 className="mirror-svg w-auto h-full z-20 object-contain absolute max-w-[1440px]"
                 variants={fadeVariant}
                 initial="hidden"
@@ -206,10 +206,10 @@ const Mirror = () => {
             <div id="second-mobile" className="w-full relative z-20 flex flex-col overflow-visible top-[-6rem] mt-[15rem]">
               {/* Brownmobile pieces */}
               <div className="absolute z-10 top-[-20rem] w-[100vw] -right-4 h-[10rem] flex flex-col items-center -space-y-[80px]">
-                <img src="/brownmobile4.svg" loading="lazy"  alt="Mirror part 4" className="brownmobile4 w-full max-h-[35rem] relative z-10 mt-[2rem] object-cover" />
-                <img src="/brownmobile1.svg" loading="lazy"  alt="Mirror part 1" className="brownmobile1 w-full max-h-[30rem] relative z-50 mt-[-20rem] object-cover" />
-                <img src="/brownmobile2.svg" loading="lazy"  alt="Mirror part 2" className="brownmobile2 w-full max-h-[30rem] relative z-10 mt-[20rem] top-[20rem] object-cover" />
-                <img src="/brownmobile3.svg" loading="lazy"  alt="Mirror part 3" className="brownmobile3 w-full max-h-[30rem] relative z-10 mt-[-20rem] top-[30rem] object-cover" />
+                <img src="/brownmobile4.svg" loading="lazy" alt="Mirror part 4" className="brownmobile4 w-full max-h-[35rem] relative z-10 mt-[2rem] object-cover" />
+                <img src="/brownmobile1.svg" loading="lazy" alt="Mirror part 1" className="brownmobile1 w-full max-h-[30rem] relative z-50 mt-[-20rem] object-cover" />
+                <img src="/brownmobile2.svg" loading="lazy" alt="Mirror part 2" className="brownmobile2 w-full max-h-[30rem] relative z-10 mt-[20rem] top-[20rem] object-cover" />
+                <img src="/brownmobile3.svg" loading="lazy" alt="Mirror part 3" className="brownmobile3 w-full max-h-[30rem] relative z-10 mt-[-20rem] top-[30rem] object-cover" />
               </div>
 
               {/* Section 1 */}
@@ -224,11 +224,11 @@ const Mirror = () => {
                 <div className="w-full flex flex-col gap-4 text-center px-2">
                   <h1 className="text-4xl text-primary font-bold">We've all been there</h1>
                   <p className="text-gray-500 font-medium">
-                    You're away from home and unsure where you can <span className="text-black font-medium">go</span>.
+                    You're away from home and unsure where you can <span className="text-[#4c4c4c] font-medium">go</span>.
                   </p>
                 </div>
                 <div className="w-full flex justify-center">
-                  <img loading="lazy"  src="/Home-character2.svg" alt="char2" className="w-2/3 max-w-md" />
+                  <img loading="lazy" src="/Home-character2.svg" alt="char2" className="w-2/3 max-w-md" />
                 </div>
               </motion.div>
 
@@ -244,12 +244,12 @@ const Mirror = () => {
                 <div className="w-full flex flex-col gap-4 text-center px-2">
                   <h1 className="text-3xl text-primary font-bold">A tiny ask shouldn't feel so big.</h1>
                   <p className="text-gray-500 font-medium text-sm">
-                    Waiting in line, holding it in, just to <span className="text-black font-medium">beg</span> for a restroom key.
+                    Waiting in line, holding it in, just to <span className="text-[#4c4c4c] font-medium">beg</span> for a restroom key.
                     It's awkward. I don't want to tell someone I have to evacuate my bowels.
                   </p>
                 </div>
                 <div className="w-full flex justify-center">
-                  <img loading="lazy"  src="/Home-character3.svg" alt="char3" className="w-2/3 max-w-md" />
+                  <img loading="lazy" src="/Home-character3.svg" alt="char3" className="w-2/3 max-w-md" />
                 </div>
               </motion.div>
 
@@ -265,11 +265,11 @@ const Mirror = () => {
                 <div className="w-full flex flex-col gap-4 text-center px-2">
                   <h1 className="text-3xl text-primary font-bold">No more asking permission</h1>
                   <p className="text-gray-500 font-medium">
-                    With Yedi, it's easy—go straight in, find the bathroom door, scan, and unlock to find <span className="text-black font-medium">relief</span>.
+                    With Yedi, it's easy—go straight in, find the bathroom door, scan, and unlock to find <span className="text-[#4c4c4c] font-medium">relief</span>.
                   </p>
                 </div>
                 <div className="w-full flex justify-center">
-                  <img loading="lazy"  src="/Home-character4.svg" alt="char4" className="w-2/3 max-w-md" />
+                  <img loading="lazy" src="/Home-character4.svg" alt="char4" className="w-2/3 max-w-md" />
                 </div>
               </motion.div>
             </div>

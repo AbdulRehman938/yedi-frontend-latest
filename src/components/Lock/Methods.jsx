@@ -187,8 +187,8 @@ const Methods = () => {
                                                     className={`city-img w-full h-full object-cover transition duration-300 ${i > 1 ? 'filter grayscale' : ''}`}
                                                 />
                                                 {i > 1 && (
-                                                    <div className="city-coming-soon absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center">
-                                                        <span className="city-coming-soon-text text-black h-[30%] flex justify-center items-center bg-white/70 w-full text-lg lg:text-xl xl:text-2xl font-bold tracking-widest">
+                                                    <div className="city-coming-soon absolute inset-0 bg-[#4c4c4c] bg-opacity-40 flex justify-center items-center">
+                                                        <span className="city-coming-soon-text text-[#4c4c4c] h-[30%] flex justify-center items-center bg-white/70 w-full text-lg lg:text-xl xl:text-2xl font-bold tracking-widest">
                                                             Coming Soon
                                                         </span>
                                                     </div>
@@ -333,7 +333,7 @@ const Methods = () => {
                                     {/* Image wrapper with fixed size */}
                                     <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
                                         <img
-                                        loading="lazy" 
+                                            loading="lazy"
                                             src={city.img}
                                             alt={city.name}
                                             className={`w-full h-full object-cover ${i > 1 ? 'grayscale' : ''

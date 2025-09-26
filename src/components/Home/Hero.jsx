@@ -58,14 +58,14 @@ const Hero = () => {
         <div className="w-full h-screen px-4 pt-24 pb-0 grid grid-cols-12 gap-4 items-center max-w-[1536px] mx-auto">
           {/* Image left */}
           <div className="col-span-5 flex justify-center items-center relative lg:mt-[18rem] mt-20 z-10">
-           
+
           </div>
           {/* Text right */}
           <div className="col-span-7 flex flex-col items-start justify-center z-10 ml-[15vw] mt-[-50vh] pl-4">
-            <h1 className="text-primary font-bold leading-[15vh] text-8xl">
+            <h1 className="text-primary font-bold text-8xl">
               Find Your <br /> Restroom
             </h1>
-            <p className="text-black mt-4 text-xl">
+            <p className="text-[#4c4c4c] mt-4 text-xl">
               Find. Scan. Unlock
             </p>
             <div className="flex justify-start items-center gap-4 mt-6 flex-wrap">
@@ -87,14 +87,14 @@ const Hero = () => {
       {/* Mobile Layout */}
       <div className="sm:hidden flex flex-col items-center justify-start w-full px-4 text-center mt-0 pt-4 max-w-screen-sm mx-auto min-h-[85vh] pb-16">
         <AnimatedItem className="absolute inset-0">
-          <img loading="lazy"  src="/pathHomeMobile.svg" alt="path mobile" className="sm:hidden w-full h-[50rem] object-contain" />
+          <img loading="lazy" src="/pathHomeMobile.svg" alt="path mobile" className="sm:hidden w-full h-[50rem] object-contain" />
         </AnimatedItem>
         <AnimatedItem className="z-10 flex flex-col items-center bg-transparent mt-[2rem]">
-          <h1 className="text-primary text-5xl font-black leading-[3.5rem] mb-4 mt-[4rem]">Find Your <br /> Restroom</h1>
+          <h1 className="text-primary text-5xl font-[#4c4c4c] leading-[3.5rem] mb-4 mt-[4rem]">Find Your <br /> Restroom</h1>
           <p className="text-[#676666] text-xl mb-8">Find. Scan. Unlock</p>
         </AnimatedItem>
         <AnimatedItem>
-          <img loading="lazy"  src="/Home-character.svg" alt="character" className="relative w-[50%] ml-[4.5rem] max-w-[250px] -mt-3 mb-5 z-20" />
+          <img loading="lazy" src="/Home-character.svg" alt="character" className="relative w-[50%] ml-[4.5rem] max-w-[250px] -mt-3 mb-5 z-20" />
         </AnimatedItem>
         <div className="flex justify-between items-center w-[100%] mt-5 gap-8 z-10">
           <AnimatedItem>

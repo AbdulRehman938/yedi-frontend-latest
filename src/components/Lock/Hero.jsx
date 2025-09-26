@@ -55,13 +55,13 @@ const Hero = () => {
       <div className="hidden sm:flex flex-col items-center w-full">
         {/* Main Title */}
         <div className="w-full h-[50rem] flex items-center justify-center">
-          <h1 className="text-9xl font-kumbh text-white font-black leading-[15vh] w-[70%] text-center">
+          <h1 className="text-9xl font-kumbh text-white font-[#4c4c4c] leading-[15vh] w-[70%] text-center">
             Restrooms Reimagined
           </h1>
         </div>
         <img
           src="/Yedi-Lock1.svg"
-          loading="lazy" 
+          loading="lazy"
           alt="lock1"
           className="w-[50%] h-full object-contain absolute z-10 top-[-180rem] right-[12rem]"
         />
@@ -99,14 +99,14 @@ const Hero = () => {
                     {isOpen ? (
                       <img
                         src="/Minus sign.svg"
-                        loading="lazy" 
+                        loading="lazy"
                         alt="Open"
                         className="w-10 h-10 transition-transform duration-300"
                       />
                     ) : (
                       <img
                         src="/plus sign.svg"
-                        loading="lazy" 
+                        loading="lazy"
                         alt="Open"
                         className="w-10 h-10 transition-transform duration-300"
                       />
@@ -131,7 +131,7 @@ const Hero = () => {
 
         <LockMover />
         <div className="w-[93%] h-[7rem] bg-[#f9f9f9] rounded-3xl shadow-lg flex justify-between items-center px-5">
-          <p className="text-black text-2xl">
+          <p className="text-[#4c4c4c] text-2xl">
             Want to learn more? Schedule an appointment and see the lock in action.
           </p>
           <button className="px-12 py-4 bg-[#bab5a2] hover:bg-gray-500 text-white rounded-full transition-all">
@@ -139,11 +139,11 @@ const Hero = () => {
           </button>
         </div>
 
-        <div className="text-black w-[95%] h-[120rem] mt-20 flex flex-col justify-between items-center rounded-[4rem] overflow-hidden">
+        <div className="text-[#4c4c4c] w-[95%] h-[120rem] mt-20 flex flex-col justify-between items-center rounded-[4rem] overflow-hidden">
           <LockFeatures />
         </div>
 
-        <div className="w-full h-[160rem] bg-transparent text-black mt-20 flex flex-col justify-between items-center overflow-hidden">
+        <div className="w-full h-[160rem] bg-transparent text-[#4c4c4c] mt-20 flex flex-col justify-between items-center overflow-hidden">
           <Methods />
         </div>
       </div>
@@ -157,7 +157,7 @@ const Hero = () => {
 
         {/* Hero Image */}
         <div className="w-full flex justify-center mb-8 mt-[20rem] ml-28 absolute">
-          <img loading="lazy"  src="/Yedi-Lock1.svg" alt="lock1" className="w-[90%] max-w-[300px] h-auto object-contain" />
+          <img loading="lazy" src="/Yedi-Lock1.svg" alt="lock1" className="w-[90%] max-w-[300px] h-auto object-contain" />
         </div>
 
         {/* Fixed the container - removed fixed height and overflow-hidden */}
@@ -190,14 +190,14 @@ const Hero = () => {
                     {isOpen ? (
                       <img
                         src="/Minus sign.svg"
-                        loading="lazy" 
+                        loading="lazy"
                         alt="Open"
                         className="w-5 h-5 transition-transform duration-300"
                       />
                     ) : (
                       <img
                         src="/plus sign.svg"
-                        loading="lazy" 
+                        loading="lazy"
                         alt="Open"
                         className="w-5 h-5 transition-transform duration-300"
                       />

@@ -28,7 +28,7 @@ const Locations = () => {
 
     const next = () =>
         setActiveIndex((prev) => {
-            if (prev >= cities.length - 1) return prev 
+            if (prev >= cities.length - 1) return prev
             return prev + 1
         })
 
@@ -62,7 +62,7 @@ const Locations = () => {
                                     <img
                                         src={city.img}
                                         alt={city.name}
-                                        loading="lazy" 
+                                        loading="lazy"
                                         className={`w-full h-full object-cover ${i > 1 ? 'grayscale' : ''}`}
                                     />
                                     {i > 1 && (
@@ -163,7 +163,7 @@ const Locations = () => {
 
             {/* ====== DESKTOP VIEW ====== */}
             <div className="hidden sm:flex flex-col h-[40rem] items-start w-full max-w-7xl px-8">
-                <h1 className="text-5xl font-black text-primary mb-6 ml-[6rem]">Locations</h1>
+                <h1 className="text-5xl font-[#4c4c4c] text-primary mb-6 ml-[6rem]">Locations</h1>
                 <p className="text-lg text-gray-500 mb-8 ml-[6rem]">
                     Discover Yedi in your City
                 </p>
@@ -183,12 +183,12 @@ const Locations = () => {
                                 <img
                                     src={city.img}
                                     alt={city.name}
-                                    loading="lazy" 
+                                    loading="lazy"
                                     className={`w-full h-full object-cover rounded-2xl ${i > 1 ? 'grayscale' : ''
                                         }`}
                                 />
                                 {i > 1 && (
-                                    <div className="absolute inset-0 rounded-2xl bg-black/40 flex items-center justify-center">
+                                    <div className="absolute inset-0 rounded-2xl bg-[#4c4c4c]/40 flex items-center justify-center">
                                         <span className="text-white text-xl font-bold tracking-widest">
                                             COMING SOON
                                         </span>
@@ -227,7 +227,7 @@ const Locations = () => {
             {/* ====== NEWSLETTER FORM ====== */}
             <div className="hidden sm:flex w-full bg-secondary h-[70vh] z-40 rounded-3xl mt-16 px-4 lg:px-8 py-12flex-col lg:flex-row items-center justify-around gap-8">
                 <div className="flex flex-col gap-4 text-left mt-[-10rem] lg:text-left">
-                    <h1 className="text-3xl lg:text-5xl font-black text-primary">
+                    <h1 className="text-3xl lg:text-5xl font-[#4c4c4c] text-primary">
                         Yedi News Alerts!
                     </h1>
                     <p className="text-gray-600 text-base lg:text-lg">

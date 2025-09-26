@@ -11,13 +11,13 @@ const Footer = () => {
       <div className="hidden sm:flex w-full h-[30rem] justify-center items-start relative">
         <img
           src="/FooterLine.png"
-          loading="lazy" 
+          loading="lazy"
           alt="Footer"
           className="absolute w-full h-[90%] mt-5 z-20 lg:object-fill"
         />
         <div className="absolute w-[90%] h-[50%] bottom-36 z-30 flex justify-between items-center">
           <div className="h-[80%] w-[25%] flex flex-col justify-between items-start mt-10 lg:ml-[-2rem] lg:mt-[5rem]">
-            <h1 className="text-6xl text-primary font-black">
+            <h1 className="text-6xl text-primary font-[#4c4c4c]">
               Find Your <br /> Restroom
             </h1>
             <nav className="w-full flex flex-col items-start p-6 gap-4">
@@ -30,7 +30,7 @@ const Footer = () => {
                   height: '2.8rem',
                 }}
               >
-                <span className="btn-text text-black whitespace-nowrap">
+                <span className="btn-text text-[#4c4c4c] whitespace-nowrap">
                   BECOME A PARTNER
                 </span>
                 <span className="btn-fill" />
@@ -92,18 +92,18 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-[90%] h-[7%] absolute bottom-3 z-30 flex justify-between items-center text-white px-10">
-          <img loading="lazy"  src="/whitelogo.svg" alt="logo" />
+          <img loading="lazy" src="/whitelogo.svg" alt="logo" />
           <p>© 2025</p>
         </div>
       </div>
 
       {/* ===== Mobile Footer ===== */}
       <div className="flex sm:hidden flex-col h-[40rem] pt-20 relative z-10 items-center w-full py-10 gap-6 text-center">
-        <h1 className="text-4xl text-[#91bab0] font-black">Find Your Restroom</h1>
+        <h1 className="text-4xl text-[#91bab0] font-[#4c4c4c]">Find Your Restroom</h1>
 
         <Link
           to="/partner"
-          className="rounded-full border border-transparent px-8 py-3 text-black bg-[#bab5a2] text-sm"
+          className="rounded-full border border-transparent px-8 py-3 text-[#4c4c4c] bg-[#bab5a2] text-sm"
         >
           BECOME A PARTNER
         </Link>
@@ -126,7 +126,7 @@ const Footer = () => {
 
         <img
           src="/FooterMobile.svg"
-          loading="lazy" 
+          loading="lazy"
           alt="Footer"
           className="w-[100vw] h-[20rem] object-contain mt-[-7rem]"
         />

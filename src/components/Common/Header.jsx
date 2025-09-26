@@ -33,7 +33,7 @@ const Header = () => {
         { name: 'HOME', path: '/' },
         { name: 'LOCATIONS', },
         { name: 'OUR LOCKS', path: '/locks' },
-        { name: 'ABOUT US',  },
+        { name: 'ABOUT US', },
     ];
 
     // Function to get active index based on current location
@@ -139,7 +139,7 @@ const Header = () => {
                     style={{ minHeight: '4rem' }}
                 >
                     <div className="h-12 w-16 sm:w-20 lg:w-24 xl:w-28 flex items-center flex-shrink-0">
-                        <img loading="lazy"  src="/Logo.svg" alt="logo" className="w-full h-full object-contain" />
+                        <img loading="lazy" src="/Logo.svg" alt="logo" className="w-full h-full object-contain" />
                     </div>
 
                     <div id="navbar" className="hidden lg:flex items-center justify-center text-center flex-1 mx-4 lg:mx-6 xl:mx-8">
@@ -228,7 +228,7 @@ const Header = () => {
             {/* Partner Dialog */}
             {partnerOpen && (
                 <div
-                    className="fixed inset-0 z-[60] bg-black/40 flex justify-center items-center md:items-center"
+                    className="fixed inset-0 z-[60] bg-[#4c4c4c]/40 flex justify-center items-center md:items-center"
                     onTouchMove={(e) => e.preventDefault()}
                 >
                     <div
@@ -241,10 +241,10 @@ const Header = () => {
                     >
                         {/* Top head */}
                         <div id="top-head" className="relative w-full h-[20%] md:h-[25%] flex-shrink-0 overflow-hidden">
-                            <img loading="lazy" src="/Partner1.png" alt="Partner Background" className="absolute inset-0 w-full h-full object-cover" />
+                            <img loading="lazy" src="/Partner1.jpg" alt="Partner Background" className="absolute inset-0 w-full h-full object-cover" />
                             <button
                                 onClick={() => setPartnerOpen(false)}
-                                className="absolute top-4 left-4 bg-primary text-white rounded-full p-3 px-4 hover:bg-black/70"
+                                className="absolute top-4 left-4 bg-primary text-white rounded-full p-3 px-4 hover:bg-[#4c4c4c]/70"
                             >
                                 ✕
                             </button>
@@ -261,7 +261,7 @@ const Header = () => {
                                     Experience how our smart lock system works and what it can do for your business. Fill out the form and we’ll be in touch to schedule a quick walkthrough.
                                 </p>
                                 {/* Hide this image on mobile */}
-                                <img loading="lazy"  src="/Dialog_Yedi.svg" alt="dialog-yedi" className="mt-6 w-32 sm:w-40 object-contain hidden md:block" />
+                                <img loading="lazy" src="/Dialog_Yedi.svg" alt="dialog-yedi" className="mt-6 w-32 sm:w-40 object-contain hidden md:block" />
                             </div>
 
                             <Formik

@@ -31,7 +31,7 @@ const LockMover = () => {
           <div className="pointer-events-none relative">
             <img
               src={demoImages[activeIndex]}
-              loading="lazy" 
+              loading="lazy"
               alt="Zen Lock"
               className={`h-[30rem] object-contain ${activeIndex === 3 ? 'h-[25rem]' : ''}`}
             />
@@ -39,23 +39,23 @@ const LockMover = () => {
 
           <button
             onClick={prevImage}
-            className="absolute left-10 text-gray-600 font-thin hover:text-black text-7xl z-50 pointer-events-auto"
+            className="absolute left-10 text-gray-600 font-thin hover:text-[#4c4c4c] text-7xl z-50 pointer-events-auto"
           >
-            <img loading="lazy"  src="/Left arrow.svg" alt="left" className='w-16 h-16' />
+            <img loading="lazy" src="/Left arrow.svg" alt="left" className='w-16 h-16' />
           </button>
 
           <button
             onClick={nextImage}
-            className="absolute right-10 text-gray-600 font-thin hover:text-black text-7xl z-50 pointer-events-auto"
+            className="absolute right-10 text-gray-600 font-thin hover:text-[#4c4c4c] text-7xl z-50 pointer-events-auto"
           >
-            <img loading="lazy"  id='right-arrow' src="/Left arrow.svg" alt="right" className='w-16 h-16 rotate-180' />
+            <img loading="lazy" id='right-arrow' src="/Left arrow.svg" alt="right" className='w-16 h-16 rotate-180' />
           </button>
 
           <div className="flex gap-6 mt-10 relative z-30">
             {demoImages.map((img, index) => (
               <img
                 key={index}
-                loading="lazy" 
+                loading="lazy"
                 src={img}
                 alt={`thumbnail-${index}`}
                 className={`w-24 h-24 object-contain rounded-2xl cursor-pointer border-2 border-third transition-colors ${activeIndex === index ? 'border-gray-700' : 'border-transparent'
@@ -96,21 +96,21 @@ const LockMover = () => {
         <div className="relative w-full flex justify-center">
           <img
             src={demoImages[activeIndex]}
-            loading="lazy" 
+            loading="lazy"
             alt="Zen Lock"
             className="w-[90%] h-[20rem] object-contain"
           />
           <button
             onClick={prevImage}
-            className="absolute -left-6 top-1/2 -translate-y-1/2 text-gray-600 hover:text-black text-4xl z-50"
+            className="absolute -left-6 top-1/2 -translate-y-1/2 text-gray-600 hover:text-[#4c4c4c] text-4xl z-50"
           >
-            <img loading="lazy"  src="/Left arrow.svg" alt="left" className='w-10 h-10' />
+            <img loading="lazy" src="/Left arrow.svg" alt="left" className='w-10 h-10' />
           </button>
           <button
             onClick={nextImage}
-            className="absolute -right-6 top-1/2 -translate-y-1/2 text-gray-600 hover:text-black text-4xl z-50"
+            className="absolute -right-6 top-1/2 -translate-y-1/2 text-gray-600 hover:text-[#4c4c4c] text-4xl z-50"
           >
-            <img loading="lazy"  src="/Left arrow.svg" alt="left" className='w-10 h-10 rotate-180' />
+            <img loading="lazy" src="/Left arrow.svg" alt="left" className='w-10 h-10 rotate-180' />
           </button>
         </div>
 
@@ -120,7 +120,7 @@ const LockMover = () => {
             <img
               key={index}
               src={img}
-              loading="lazy" 
+              loading="lazy"
               alt={`thumbnail-${index}`}
               className={`w-16 h-16 object-contain rounded-xl cursor-pointer border-2 transition-colors ${activeIndex === index ? 'border-gray-700' : 'border-transparent'
                 }`}
@@ -131,7 +131,7 @@ const LockMover = () => {
 
         {/* Zen Lock Heading */}
         <h2 className="text-5xl font-bold text-third text-left mt-6">Zen Lock</h2>
-        <hr className='text-black bg-black w-[100vw] ml-[-2rem] h-[0.1rem]' />
+        <hr className='text-[#4c4c4c] bg-[#4c4c4c] w-[100vw] ml-[-2rem] h-[0.1rem]' />
         {/* Text Content */}
         <p className="text-xl font-semibold text-third/80">A smart lock for inner peace.</p>
         <p className="text-base text-gray-600 font-medium leading-relaxed px-2">
