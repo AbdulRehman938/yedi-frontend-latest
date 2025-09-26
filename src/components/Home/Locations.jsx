@@ -189,7 +189,7 @@ const Locations = () => {
                                 />
                                 {i > 1 && (
                                     <div className="absolute inset-0 rounded-2xl bg-[#4c4c4c]/40 flex items-center justify-center">
-                                        <span className="text-white text-xl font-bold tracking-widest">
+                                        <span className="text-[#4c4c4c] w-full text-center py-4 bg-white/60 text-xl font-bold tracking-widest">
                                             COMING SOON
                                         </span>
                                     </div>
