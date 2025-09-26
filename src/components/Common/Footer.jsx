@@ -13,7 +13,7 @@ const Footer = () => {
           src="/FooterLine.png"
           loading="lazy"
           alt="Footer"
-          className="absolute w-full h-[90%] mt-5 z-20 lg:object-fill"
+          className="absolute w-full h-[90%] mt-5 z-20 lg:object-fill lg-xl:object-cover lg-xl:h-[80%] lg-xl:mt-10"
         />
         <div className="absolute w-[90%] h-[50%] bottom-36 z-30 flex justify-between items-center">
           <div className="h-[80%] w-[25%] flex flex-col justify-between items-start mt-10 lg:ml-[-2rem] lg:mt-[5rem]">

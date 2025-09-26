@@ -55,7 +55,7 @@ const Hero = () => {
       <div className="hidden sm:flex flex-col items-center w-full">
         {/* Main Title */}
         <div className="w-full h-[50rem] flex items-center justify-center">
-          <h1 className="text-9xl font-kumbh text-white font-[#4c4c4c] leading-[15vh] w-[70%] text-center">
+          <h1 className="text-9xl font-kumbh text-white font-black leading-[15vh] w-[70%] lg-xl:!w-[90%] text-center">
             Restrooms Reimagined
           </h1>
         </div>
