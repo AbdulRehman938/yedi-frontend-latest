@@ -13,7 +13,7 @@ const Footer = () => {
           src="/FooterLine.png"
           loading="lazy"
           alt="Footer"
-          className="absolute w-full h-[90%] mt-5 z-20 lg:object-fill lg-xl:object-cover lg-xl:h-[80%] lg-xl:mt-10"
+          className="absolute w-full h-[85%] mt-5 z-40 lg:object-fill lg-xl:object-cover lg-xl:h-[80%] lg-xl:mt-10"
         />
         <div className="absolute w-[90%] h-[50%] bottom-36 z-30 flex justify-between items-center">
           <div className="h-[80%] w-[25%] flex flex-col justify-between items-start mt-10 lg:ml-[-2rem] lg:mt-[5rem]">
@@ -91,7 +91,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-[90%] h-[7%] absolute bottom-3 z-30 flex justify-between items-center text-white px-10">
+        <div className="w-[90%] h-[7%] absolute bottom-3 z-30 flex justify-between items-start text-white px-10">
           <img loading="lazy" src="/whitelogo.svg" alt="logo" />
           <p>© 2025</p>
         </div>
