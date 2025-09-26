@@ -12,20 +12,19 @@ const Work = () => {
     return (
         <>
             {/* ===== Desktop / Larger Screens ===== */}
-            <div className="work-container w-full lg:mt-[-13rem] lg:h-[120rem] pt-20 bg-background relative justify-center items-start hidden sm:block">
-                <div className="hidden sm:flex w-[70%] h-[15%] bg-background absolute z-20 lg:top-[15rem] lg:right-[45rem]"></div>
-
+            <div className="work-container w-full lg:mt-[-13rem] lg:h-[120rem]  bg-background relative justify-center items-start hidden sm:block">
                 <motion.img
                     src="/HomeWorkSlide.png"
-                    loading="lazy" 
+                    loading="lazy"
                     alt="slide"
-                    className="work-main-slide w-full h-full object-fill absolute z-30"
+                    className="work-main-slide w-[100vw] h-[130%] object-contain absolute z-30"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
                     exit="exit"
                     viewport={{ once: false, amount: 0.2 }}
                 />
+                <div className="hidden sm:flex w-[70%] h-[15%] bg-background absolute z-20 lg:top-[15rem] lg:right-[45rem]"></div>
 
                 {/* <motion.div
                     className="work-decor-box w-[15%] h-[15%] bg-[#b8dbef] absolute z-20 lg:top-[92rem] lg:left-[62rem] rounded-3xl overflow-hidden flex justify-end items-end"
@@ -51,7 +50,7 @@ const Work = () => {
                         <div className="work-section1-img w-[50%] h-full">
                             <img
                                 src="/HomeMobile.svg"
-                                loading="lazy" 
+                                loading="lazy"
                                 alt="mobile"
                                 className="work-section1-image w-full h-full object-contain"
                             />
@@ -86,7 +85,7 @@ const Work = () => {
                         <div className="work-section2-img w-[50%] h-full">
                             <img
                                 src="/HomeMobile2.svg"
-                                loading="lazy" 
+                                loading="lazy"
                                 alt="Mobile2"
                                 className="work-section2-image w-full h-full object-contain"
                             />
@@ -118,7 +117,7 @@ const Work = () => {
                         <div className="work-section3-img w-[50%] h-full">
                             <img
                                 src="/HomeMobile3.svg"
-                                loading="lazy" 
+                                loading="lazy"
                                 alt="Mobile3"
                                 className="work-section3-image w-full h-full object-contain"
                             />
@@ -155,7 +154,7 @@ const Work = () => {
                         <p className="text-gray-600 text-lg mb-4">
                             Browse the map to find nearby restrooms with details like distance, availability, and amenities.
                         </p>
-                        <img loading="lazy"  src="/HomeMobile.svg" alt="Find" className="rounded-md w-[98%] mb-8" />
+                        <img loading="lazy" src="/HomeMobile.svg" alt="Find" className="rounded-md w-[98%] mb-8" />
                     </div>
                 </motion.div>
 
@@ -170,7 +169,7 @@ const Work = () => {
                         <p className="text-gray-600 text-lg mb-4">
                             At the door, scan the QR code for instant access.
                         </p>
-                        <img loading="lazy"  src="/HomeMobile2.svg" alt="Scan" className="rounded-md w-[98%] mb-8" />
+                        <img loading="lazy" src="/HomeMobile2.svg" alt="Scan" className="rounded-md w-[98%] mb-8" />
                     </div>
                 </motion.div>
 
@@ -185,7 +184,7 @@ const Work = () => {
                         <p className="text-gray-600 text-lg mb-4">
                             When the light blinks green, turn the handle and enjoy a clean, comfortable restroom.
                         </p>
-                        <img loading="lazy"  src="/HomeMobile3.svg" alt="Unlock" className="rounded-md w-[98%] mb-8" />
+                        <img loading="lazy" src="/HomeMobile3.svg" alt="Unlock" className="rounded-md w-[98%] mb-8" />
                     </div>
                 </motion.div>
 
@@ -193,7 +192,7 @@ const Work = () => {
                 <div className="sm:hidden w-[100vw] h-full mt-[-15rem] ml-[-3rem]">
                     <img
                         src="/charslidemobile.png"
-                        loading="lazy" 
+                        loading="lazy"
                         alt="Character Slide"
                         className="w-[100vw] object-cover h-auto"
                     />

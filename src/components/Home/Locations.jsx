@@ -162,7 +162,7 @@ const Locations = () => {
 
 
             {/* ====== DESKTOP VIEW ====== */}
-            <div className="hidden sm:flex flex-col h-[40rem] items-start w-full max-w-7xl px-8">
+            <div className="hidden sm:flex flex-col h-[40rem] items-start w-full mt-[20%] max-w-7xl px-8">
                 <h1 className="text-5xl font-[#4c4c4c] text-primary mb-6 ml-[6rem]">Locations</h1>
                 <p className="text-lg text-gray-500 mb-8 ml-[6rem]">
                     Discover Yedi in your City

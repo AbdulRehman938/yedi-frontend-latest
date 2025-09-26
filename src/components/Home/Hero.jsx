@@ -62,9 +62,11 @@ const Hero = () => {
           </div>
           {/* Text right */}
           <div className="col-span-7 flex flex-col items-start justify-center z-10 ml-[15vw] mt-[-50vh] pl-4">
-            <h1 className="text-primary font-bold text-8xl">
+            <h1 className="text-primary font-bold 
+  text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
               Find Your <br /> Restroom
             </h1>
+
             <p className="text-[#4c4c4c] mt-4 text-xl">
               Find. Scan. Unlock
             </p>

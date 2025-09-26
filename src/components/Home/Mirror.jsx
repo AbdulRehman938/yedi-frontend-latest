@@ -60,13 +60,19 @@ const Mirror = () => {
               src="/mirror thing.svg"
               alt="mirror"
               loading="lazy"
-              className="mirror-svg w-auto h-auto lg:h-[35rem] z-0 object-contain absolute max-w-[1440px]"
+              className="
+    mirror-svg 
+    w-auto 
+    h-[15rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[40rem] 
+    z-0 object-contain absolute max-w-[1440px]
+  "
               variants={fadeVariant}
               initial="hidden"
               whileInView="visible"
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             />
+
           </motion.div>
 
           {/* Sections */}
