@@ -184,42 +184,64 @@ const Header = () => {
                             </svg>
                         </button>
                     </div>
-
                     {menuOpen && (
                         <div
                             ref={menuRef}
-                            className="mobile-menu lg:hidden fixed top-16 right-2 sm:right-4 w-[60%] max-w-[300px] rounded-3xl h-1/2 bg-white shadow-xl z-50 flex flex-col justify-start px-2"
+                            className="mobile-menu lg:hidden fixed top-16 right-2 sm:right-4 w-[80%] max-w-[300px] rounded-3xl h-auto bg-white shadow-xl z-50 flex flex-col justify-start px-6 py-6"
                         >
-                            <nav className="flex flex-col p-5 pt-10 space-y-4">
-                                {navLinks.map((link) => (
-                                    <Link
-                                        key={link.path}
-                                        to={link.path}
-                                        className="mobile-menu-item text-primary font-semibold text-lg cursor-pointer hover:text-[#55887c] transition-colors duration-200"
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            e.stopPropagation();
-                                            setMenuOpen(false);
-                                            setTimeout(() => {
-                                                window.location.href = link.path;
-                                            }, 100);
-                                        }}
-                                    >
-                                        {link.name}
-                                    </Link>
-                                ))}
-                            </nav>
+                            {/* Close button */}
                             <button
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    e.stopPropagation();
-                                    setMenuOpen(false);
-                                    setPartnerOpen(true);
-                                }}
-                                className="mobile-menu-item text-xs whitespace-nowrap mt-[2rem] rounded-full bg-[#B8B8A7] text-white font-semibold py-4 hover:bg-[#9a9a88] transition cursor-pointer"
+                                onClick={() => setMenuOpen(false)}
+                                className="self-end mb-6 text-gray-600 hover:text-gray-800 transition-colors"
+                                aria-label="Close menu"
                             >
-                                BECOME A PARTNER
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                    <line x1="18" y1="6" x2="6" y2="18" />
+                                    <line x1="6" y1="6" x2="18" y2="18" />
+                                </svg>
                             </button>
+                            <hr className="border-gray-200 mt-5 mb-10" />
+
+                            {/* Navigation links */}
+                            <nav className="flex flex-col space-y-6 mb-8">
+                                {navLinks.map((link, index) => {
+                                    const isActive = link.path === location.pathname || (link.path === '/' && location.pathname === '/');
+                                    return (
+                                        <Link
+                                            key={link.path}
+                                            to={link.path}
+                                            className={`text-gray-700 font-medium text-lg cursor-pointer transition-colors duration-200 ${isActive ? 'text-gray-700 border-b-2 border-[#6fa598] pb-1 w-fit' : ''
+                                                }`}
+                                            onClick={() => setMenuOpen(false)}
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    );
+                                })}
+                            </nav>
+
+                            <hr className="border-gray-200 mt-5 mb-10" />
+
+                            {/* Action buttons */}
+                            <div className="flex flex-col space-y-4">
+                                <button
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        setMenuOpen(false);
+                                        setPartnerOpen(true);
+                                    }}
+                                    className="w-full rounded-full bg-[#bab5a2] text-white font-medium py-4 px-6 hover:bg-[#9a9a88] transition-colors duration-200"
+                                >
+                                    BECOME A PARTNER
+                                </button>
+                                <button
+                                    onClick={() => setMenuOpen(false)}
+                                    className="w-full rounded-full bg-[#6fa598] text-white font-medium py-4 px-6 hover:bg-[#6A9A9A] transition-colors duration-200"
+                                >
+                                    DOWNLOAD APP
+                                </button>
+                            </div>
                         </div>
                     )}
                 </div>
