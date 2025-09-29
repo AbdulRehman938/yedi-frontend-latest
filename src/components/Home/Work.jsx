@@ -56,7 +56,7 @@ const Work = () => {
                             />
                         </div>
                         <div className="work-section1-text w-[48%] ml-5 mt-[-13rem] h-full flex flex-col justify-start items-start">
-                            <h1 className="work-section1-title text-primary font-black text-[4.5rem] relative bottom-[2rem]">
+                            <h1 className="3xl:font-black work-section1-title text-primary font-black text-[4.5rem] relative bottom-[2rem]">
                                 How it works
                             </h1>
                             <div className="work-step1 w-full ml-10 mt-10 h-[15rem] flex justify-between items-start">

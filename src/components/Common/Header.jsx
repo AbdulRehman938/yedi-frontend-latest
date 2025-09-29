@@ -255,9 +255,9 @@ const Header = () => {
                 >
                     <div
                         ref={partnerRef}
-                        className="partner-dialog-container relative bg-[#ebebeb] w-[90%] md:w-[70%] h-[90%] md:h-[85%] 3xl:h-[80%] rounded-[2rem] flex flex-col
+                        className="partner-dialog-container relative bg-[#ebebeb] w-[90%] md:w-[70%] h-[90%] md:h-[85%] 3xl:h-[85%] rounded-[2rem] flex flex-col
                                    overflow-y-auto md:overflow-y-auto 3xl:overflow-hidden
-                                   max-h-[95vh] md:max-h-none"
+                                   max-h-[100vh] md:max-h-none"
                         onTouchMove={(e) => e.stopPropagation()}
                         onWheel={(e) => e.stopPropagation()}
                     >

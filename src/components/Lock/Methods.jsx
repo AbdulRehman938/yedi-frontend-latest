@@ -152,22 +152,22 @@ const Methods = () => {
                     </div>
                 </div>
 
-                <div className='w-[100%] 3xl:h-[103vh] flex flex-col justify-around absolute z-[1100] rounded-[4rem] bottom-0 left-0 items-start py-5 bg-white overflow-hidden lg-xl:h-[85vh] '>
+                <div className='w-[100%] 3xl:h-[110vh] flex flex-col justify-around absolute z-[1100] rounded-[4rem] bottom-0 left-0 3xl:mt-[20rem] items-start py-5 bg-white overflow-hidden lg-xl:h-[100vh] '>
                     {/* Locations Section */}
                     <motion.div
-                        className='locations-section w-full max-w-7xl mx-auto mr-0 pl-4 lg:px-8 flex flex-col justify-start items-start bg-white z-10 3xl:ml-[8rem]'
+                        className='locations-section w-full max-w-7xl h-full mx-auto mr-0 pl-4 lg:px-8 flex flex-col justify-start items-start bg-white z-10 3xl:ml-[8rem]'
                         variants={fadeVariant}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.2 }}
                     >
-                        <h1 className='locations-heading text-primary text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-semibold mb-4 lg:mb-6'>Locations</h1>
+                        <h1 className='locations-heading text-primary text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-semibold 3xl:mb-4 3xl:mt-10 lg:mb-6'>Locations</h1>
                         <p className='locations-subtext text-lg lg:text-2xl font-medium text-gray-500'>Discover Yedi in your City</p>
 
 
-                        <div className="relative w-full h-[25rem] top-[1rem] left-[0rem]">
+                        <div className="relative w-full h-[20rem] top-[5rem] left-[0rem]">
                             <div
-                                className="flex w-[100vw] gap-6 h-[20rem] transition-transform duration-500 ease-in-out"
+                                className="flex w-[100vw] gap-6 h-[15rem] transition-transform duration-500 ease-in-out"
                                 style={{
                                     transform: `translateX(-${index * (20 * 16 + 24)}px)`,
                                     // 20rem = 20*16px = 320px + gap-6(24px)
@@ -176,7 +176,7 @@ const Methods = () => {
                                 {cities.map((city, i) => (
                                     <div
                                         key={i}
-                                        className="flex-shrink-0 w-[22rem] h-[22rem] relative"
+                                        className="flex-shrink-0 w-[22rem] h-[18rem] relative"
                                     >
                                         <img
                                             src={city.img}
@@ -199,10 +199,10 @@ const Methods = () => {
                         </div>
 
                         {/* Arrows */}
-                        <div className='flex justify-center gap-4 lg:gap-6 items-center mt-6 ml-[60rem] lg:mt-8 lg-xl:ml-[65rem]'>
+                        <div className='flex justify-center gap-4 lg:gap-6 items-center mt-20 ml-[60rem] 3xl:mt-[8rem] lg:mt-8 lg-xl:ml-[65rem] lg-xl:mt-[8rem]'>
                             <button
                                 onClick={scrollLeft}
-                                className='arrow-left w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#569b69]/50 hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300 disabled:opacity-50 disabled:hover:bg-gray-200 disabled:hover:scale-100 disabled:cursor-not-allowed'
+                                className='arrow-left w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#91bab0]/50 hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300 disabled:opacity-50 disabled:hover:bg-gray-200 disabled:hover:scale-100 disabled:cursor-not-allowed'
                                 disabled={index === 0}
 
                             >
@@ -210,7 +210,7 @@ const Methods = () => {
                             </button>
                             <button
                                 onClick={scrollRight}
-                                className='arrow-right w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#569b69]/50 hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300 disabled:opacity-50 disabled:hover:bg-gray-200 disabled:hover:scale-100 disabled:cursor-not-allowed'
+                                className='arrow-right w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#91bab0]/50 hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300 disabled:opacity-50 disabled:hover:bg-gray-200 disabled:hover:scale-100 disabled:cursor-not-allowed'
                                 disabled={index >= cities.length - 3}
                             >
                                 <FaChevronRight className='arrow-icon text-white hover:text-white text-lg lg:text-xl' />
@@ -219,7 +219,7 @@ const Methods = () => {
                     </motion.div>
 
 
-                    <motion.div className="w-full flex justify-center mt-10 lg:mt-12">
+                    <motion.div className="w-full flex justify-center 3xl:mt-[-1rem] lg:mt-12 mr-10 relative z-50">
                         <button
                             className='learn-more-btn text-gray-600 px-8 py-3 border-2 border-gray-500 text-base lg:text-lg cursor-pointer hover:bg-secondary hover:scale-105 transition duration-300 hover:border-transparent rounded-3xl flex justify-center items-center'
                         >
