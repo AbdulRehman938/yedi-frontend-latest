@@ -145,7 +145,7 @@ const Methods = () => {
                     </div>
                 </div>
 
-                <div className='w-[97%] h-[60vh] flex flex-col justify-around z-[200] rounded-[4rem] mt-20 items-start py-10 bg-white overflow-hidden'>
+                <div className='w-[100%] h-[60vh] flex flex-col justify-around absolute z-50 rounded-[4rem] mt-20 left-0 items-start py-10 bg-white overflow-hidden'>
                     {/* Locations Section */}
                     <motion.div
                         className='locations-section w-full max-w-7xl mx-auto mr-0 pl-4 lg:px-8 flex flex-col justify-start items-start bg-white z-10 overflow-hidden'

@@ -143,7 +143,7 @@ const Hero = () => {
           <LockFeatures />
         </div>
 
-        <div className="w-full h-[150rem] bg-transparent text-[#4c4c4c] mt-20 flex flex-col justify-between items-center overflow-hidden">
+        <div className="w-full h-[150rem] bg-transparent text-[#4c4c4c] mt-20 flex flex-col justify-between items-center overflow-visible relative">
           <Methods />
         </div>
       </div>

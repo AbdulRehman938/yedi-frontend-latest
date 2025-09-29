@@ -162,7 +162,7 @@ const Locations = () => {
 
 
             {/* ====== DESKTOP VIEW ====== */}
-            <div className="hidden sm:flex flex-col h-[80rem] items-start w-full mt-[30%] max-w-7xl px-8 z-40">
+            <div className="hidden sm:flex flex-col h-[90rem] items-start w-full mt-[30%] max-w-7xl px-8 z-40">
                 <h1 className="text-5xl font-[#4c4c4c] text-primary font-black mb-6 ml-[6rem]">Locations</h1>
                 <p className="text-xl text-gray-500 mb-8 ml-[6rem]">
                     Discover Yedi in your City
@@ -225,7 +225,7 @@ const Locations = () => {
             </div>
 
             {/* ====== NEWSLETTER FORM ====== */}
-            <div className="hidden sm:flex w-full bg-[#f7f6f4] h-[60vh] rounded-[5rem] absolute bottom-[-5rem] left-0 right-0 z-[200] mt-16 px-4 lg:px-8 py-12 flex-col lg:flex-row items-center justify-around gap-8">
+            <div className="hidden sm:flex w-full bg-[#f7f6f4] h-[50vh] rounded-[5rem] absolute bottom-[-5rem] left-0 right-0 z-[200] mt-16 px-4 lg:px-8 py-12 flex-col lg:flex-row items-center justify-around gap-8">
                 <div className="flex flex-col gap-10 text-left mt-[-15rem] lg:text-left">
                     <h1 className="text-5xl lg:text-7xl font-[#4c4c4c] font-black text-[#6fa598]">
                         Yedi News <br /> Alerts!

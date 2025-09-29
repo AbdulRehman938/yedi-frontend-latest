@@ -6,7 +6,7 @@ import { FaXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <div className="bg-third w-full relative h-[45rem] pt-16 z-10 overflow-hidden">
+    <div className="bg-third w-full relative h-[45rem] pt-16 z-5 overflow-hidden">
       {/* ===== Desktop / Tablet Footer ===== */}
       <div className="hidden sm:flex w-full h-[40rem] justify-center items-start relative z-0 pt-16">
         <img
