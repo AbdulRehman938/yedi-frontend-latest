@@ -95,7 +95,7 @@ const Hero = () => {
                     onMouseEnter={() => setHoverIndex(index)}
                     onMouseLeave={() => setHoverIndex(null)}
                   >
-                    <h2 className="text-white font-extrabold text-3xl">{panel.title}</h2>
+                    <h2 className="text-white font-extrabold text-4xl">{panel.title}</h2>
                     {isOpen ? (
                       <img
                         src="/Minus sign.svg"
@@ -143,7 +143,7 @@ const Hero = () => {
           <LockFeatures />
         </div>
 
-        <div className="w-full h-[160rem] bg-transparent text-[#4c4c4c] mt-20 flex flex-col justify-between items-center overflow-hidden">
+        <div className="w-full h-[150rem] bg-transparent text-[#4c4c4c] mt-20 flex flex-col justify-between items-center overflow-hidden">
           <Methods />
         </div>
       </div>

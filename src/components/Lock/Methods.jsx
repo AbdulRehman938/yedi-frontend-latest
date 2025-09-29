@@ -56,7 +56,7 @@ const Methods = () => {
                         {/* QR Scan */}
                         <div className="bg-[#e1e1e1] rounded-3xl px-4 py-2 flex items-center gap-3 shadow-sm">
                             <div className="w-20 h-20 flex items-center border-r-2 border-white justify-center">
-                                <MdQrCodeScanner className="w-10 h-10 text-gray-600" />
+                                <img src="/QR Scan.svg" alt="QR Scan" className='w-10 h-10 object-contain' />
                             </div>
                             <span className="text-gray-800 text-2xl ml-[1rem] font-medium">QR Scan</span>
                         </div>
@@ -64,7 +64,7 @@ const Methods = () => {
                         {/* NFC Tap */}
                         <div className="bg-[#e1e1e1] rounded-3xl px-4 py-2 flex items-center gap-3 shadow-sm">
                             <div className="w-20 h-20 flex items-center border-r-2 border-white justify-center">
-                                <MdNfc className="w-10 h-10 text-gray-600" />
+                                <img src="/NFC Tap.svg" alt="NFC Tap" className='w-10 h-10 object-contain' />
                             </div>
                             <span className="text-gray-800 text-2xl ml-[1rem] font-medium">NFC Tap</span>
                         </div>
@@ -72,7 +72,7 @@ const Methods = () => {
                         {/* Keypad Code */}
                         <div className="bg-[#e1e1e1] rounded-3xl px-4 py-2 flex items-center gap-3 shadow-sm">
                             <div className="w-20 h-20 flex items-center border-r-2 border-white justify-center">
-                                <BiGridAlt className="w-10 h-10 text-gray-600" />
+                                <img src="/Keypad Code.svg" alt="Keypad Code" className='w-10 h-10 object-contain' />
                             </div>
                             <span className="text-gray-800 text-2xl ml-[1rem] font-medium">Keypad Code</span>
                         </div>
@@ -80,7 +80,7 @@ const Methods = () => {
                         {/* Master Key */}
                         <div className="bg-[#e1e1e1] rounded-3xl px-4 py-2 flex items-center gap-3 shadow-sm">
                             <div className="w-20 h-20 flex items-center border-r-2 border-white justify-center">
-                                <HiOutlineKey className="w-10 h-10 text-gray-600" />
+                                <img src="/Master Key.svg" alt="Master Key" className='w-10 h-10 object-contain' />
                             </div>
                             <span className="text-gray-800 text-2xl ml-[1rem] font-medium">Master Key</span>
                         </div>
@@ -145,80 +145,70 @@ const Methods = () => {
                     </div>
                 </div>
 
-                <div className='w-full min-h-screen relative flex flex-col justify-start rounded-t-[4rem] mt-20 items-start bg-white overflow-hidden py-16 lg:py-24'>
+                <div className='w-[97%] h-[60vh] flex flex-col justify-around z-[200] rounded-[4rem] mt-20 items-start py-10 bg-white overflow-hidden'>
                     {/* Locations Section */}
                     <motion.div
-                        className='locations-section w-full max-w-7xl mx-auto px-4 lg:px-8 flex flex-col justify-start items-start bg-white z-10 overflow-hidden'
+                        className='locations-section w-full max-w-7xl mx-auto mr-0 pl-4 lg:px-8 flex flex-col justify-start items-start bg-white z-10 overflow-hidden'
                         variants={fadeVariant}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.2 }}
                     >
-                        <h1 className='locations-heading text-primary text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-medium mb-4 lg:mb-6'>Locations</h1>
+                        <h1 className='locations-heading text-primary text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-semibold mb-4 lg:mb-6'>Locations</h1>
                         <p className='locations-subtext text-lg lg:text-2xl font-medium text-gray-500'>Discover Yedi in your City</p>
 
-                        <motion.div
-                            className='city-carousel relative w-full mt-12 lg:mt-16'
-                            variants={fadeVariant}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: false, amount: 0.2 }}
-                        >
-                            <div className="overflow-hidden">
-                                <div
-                                    id="city-container"
-                                    className="city-list flex transition-transform duration-500 ease-in-out gap-4 lg:gap-6"
-                                    style={{ transform: `translateX(-${index * (window.innerWidth < 1024 ? 280 : 320)}px)` }}
-                                >
-                                    {cities.map((city, i) => (
-                                        <motion.div
-                                            key={i}
-                                            className="city-card h-[16rem] lg:h-[20rem] w-[15rem] lg:w-[18rem] xl:w-[20rem] flex-shrink-0"
-                                            variants={fadeVariant}
-                                            initial="hidden"
-                                            whileInView="visible"
-                                            viewport={{ once: false, amount: 0.2 }}
-                                        >
-                                            <div className="city-img-wrapper h-[85%] w-full rounded-2xl lg:rounded-3xl overflow-hidden relative">
-                                                <img
-                                                    loading="lazy"
-                                                    src={city.img}
-                                                    alt={city.name}
-                                                    className={`city-img w-full h-full object-cover transition duration-300 ${i > 1 ? 'filter grayscale' : ''}`}
-                                                />
-                                                {i > 1 && (
-                                                    <div className="city-coming-soon absolute inset-0 bg-[#4c4c4c] bg-opacity-40 flex justify-center items-center">
-                                                        <span className="city-coming-soon-text text-[#4c4c4c] h-[30%] flex justify-center items-center bg-white/70 w-full text-lg lg:text-xl xl:text-2xl font-bold tracking-widest">
-                                                            Coming Soon
-                                                        </span>
-                                                    </div>
-                                                )}
-                                            </div>
-                                            <p className="city-name text-base lg:text-lg text-gray-500 mt-2 text-center">{city.name}</p>
-                                        </motion.div>
-                                    ))}
-                                </div>
-                            </div>
 
-                            {/* Arrows */}
-                            <div className='flex justify-center gap-4 lg:gap-6 items-center mt-6 lg:mt-8 ml-[60rem] lg-xl:ml-[50rem]'>
-                                <button
-                                    onClick={scrollLeft}
-                                    className='arrow-left w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300 '
-                                    disabled={index === 0}
-                                >
-                                    <FaChevronLeft className='arrow-icon text-white text-lg lg:text-xl' />
-                                </button>
-                                <button
-                                    onClick={scrollRight}
-                                    className='arrow-right w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300'
-                                    disabled={index >= cities.length - 3}
-                                >
-                                    <FaChevronRight className='arrow-icon text-white text-lg lg:text-xl' />
-                                </button>
+                        <div className="relative w-full top-20 h-[28rem] left-[6rem]">
+                            <div
+                                className="flex gap-6 h-[20rem] transition-transform duration-500 ease-in-out"
+                                style={{
+                                    transform: `translateX(-${activeIndex * 320}px)`,
+                                }}
+                            >
+                                {cities.map((city, i) => (
+                                    <div
+                                        key={i}
+                                        className="flex-shrink-0 w-[20rem] h-[20rem] relative"
+                                    >
+                                        <img
+                                            src={city.img}
+                                            alt={city.name}
+                                            loading="lazy"
+                                            className={`w-full h-full object-cover rounded-2xl ${i > 1 ? 'grayscale' : ''
+                                                }`}
+                                        />
+                                        {i > 1 && (
+                                            <div className="absolute inset-0 rounded-2xl bg-[#4c4c4c]/10 flex items-center justify-center">
+                                                <span className="text-[#4c4c4c] w-full text-center py-4 bg-white/70 text-xl font-medium tracking-widest">
+                                                    COMING SOON
+                                                </span>
+                                            </div>
+                                        )}
+                                        <p className="text-center text-gray-600 mt-2">{city.name}</p>
+                                    </div>
+                                ))}
                             </div>
-                        </motion.div>
+                        </div>
+
+                        {/* Arrows */}
+                        <div className='flex justify-center gap-4 lg:gap-6 items-center mt-6 ml-[60rem] lg:mt-8 lg-xl:ml-[65rem]'>
+                            <button
+                                onClick={scrollLeft}
+                                className='arrow-left w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300 '
+                                disabled={index === 0}
+                            >
+                                <FaChevronLeft className='arrow-icon text-white text-lg lg:text-xl' />
+                            </button>
+                            <button
+                                onClick={scrollRight}
+                                className='arrow-right w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300'
+                                disabled={index >= cities.length - 3}
+                            >
+                                <FaChevronRight className='arrow-icon text-white text-lg lg:text-xl' />
+                            </button>
+                        </div>
                     </motion.div>
+
 
                     <motion.div className="w-full flex justify-center mt-10 lg:mt-12">
                         <button
