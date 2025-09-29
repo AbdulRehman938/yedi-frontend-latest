@@ -21,7 +21,7 @@ const Mirror = () => {
   return (
     <>
       {/* Desktop version */}
-      <div className="hidden sm:flex w-full bg-secondary flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[40rem] lg:h-[190vh] xl:h-[300vh] 2xl:h-[220vh] 3xl:h-[305vh] lg-xl:h-[250vh]">
+      <div className="hidden sm:flex w-full bg-secondary flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[40rem] lg:h-[190vh] xl:h-[300vh] 2xl:h-[242vh] 3xl:h-[305vh] lg-xl:h-[280vh]">
         <div className="w-full relative flex flex-col items-center px-4 sm:px-6 lg:px-8 overflow-visible">
           {/* Top overflowing mirror image */}
           <motion.img

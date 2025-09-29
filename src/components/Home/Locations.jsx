@@ -225,7 +225,7 @@ const Locations = () => {
             </div>
 
             {/* ====== NEWSLETTER FORM ====== */}
-            <div className="hidden sm:flex w-full bg-[#f7f6f4] h-[50vh] 3xl:h-[75vh] 3xl:bottom-[-5rem] rounded-[5rem] absolute bottom-[-8rem] left-0 right-0 z-[1100] mt-16 px-4 lg:px-8 py-12 flex-col lg:flex-row items-center justify-around gap-8">
+            <div className="hidden sm:flex w-full bg-[#f7f6f4] h-[50vh] 3xl:h-[75vh] 3xl:bottom-[-5rem] rounded-[5rem] absolute bottom-[-8rem] left-0 right-0 z-[1100] mt-16 px-4 lg:px-8 py-12 flex-col lg:flex-row items-center justify-around gap-8 2xl:h-[70vh]">
                 <div className="flex flex-col gap-10 text-left mt-[-15rem] lg:text-left">
                     <h1 className="text-5xl lg:text-7xl font-[#4c4c4c] font-black text-[#6fa598]">
                         Yedi News <br /> Alerts!
