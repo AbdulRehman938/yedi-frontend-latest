@@ -31,7 +31,7 @@ const Header = () => {
 
     const navLinks = [
         { name: 'HOME', path: '/' },
-        { name: 'LOCATIONS',path: '/locations' },
+        { name: 'LOCATIONS', path: '/locations' },
         { name: 'OUR LOCKS', path: '/locks' },
         { name: 'ABOUT US', },
     ];
@@ -255,8 +255,8 @@ const Header = () => {
                 >
                     <div
                         ref={partnerRef}
-                        className="partner-dialog-container relative bg-[#ebebeb] w-[90%] md:w-[70%] h-[90%] md:h-[85%] rounded-[2rem] flex flex-col
-                                   overflow-y-auto md:overflow-y-auto
+                        className="partner-dialog-container relative bg-[#ebebeb] w-[90%] md:w-[70%] h-[90%] md:h-[85%] 3xl:h-[80%] rounded-[2rem] flex flex-col
+                                   overflow-y-auto md:overflow-y-auto 3xl:overflow-hidden
                                    max-h-[95vh] md:max-h-none"
                         onTouchMove={(e) => e.stopPropagation()}
                         onWheel={(e) => e.stopPropagation()}
@@ -276,14 +276,14 @@ const Header = () => {
                         </div>
 
                         {/* Body stacked for mobile - scrollable content */}
-                        <div className="partner-dialog-body flex flex-col md:flex-row items-center p-4 md:p-6 space-y-4 md:space-y-0 flex-grow overflow-y-auto md:overflow-visible">
+                        <div className="partner-dialog-body flex flex-col md:flex-row items-center p-4 md:p-6 3xl:p-6 space-y-4 md:space-y-0 flex-grow overflow-y-auto md:overflow-visible 3xl:overflow-visible">
                             <div className="3xl:w-[30%] 3xl:mr-20 3xl:ml-20 md:w-1/2 flex flex-col items-center  text-left md:text-left lg-xl:w-[30%] lg-xl:mr-20 lg-xl:ml-20">
                                 <h2 className="text-2xl sm:text-4xl font-bold text-primary">Request a Demo</h2>
                                 <hr className='h-[0.1rem] bg-[#4c4c4c] w-full my-5' />
                                 <p className="mt-4 text-gray-600 text-base sm:text-lg">
                                     Experience how our smart lock system works and what it can do for your business. Fill out the form and we’ll be in touch to schedule a quick walkthrough.
                                 </p>
-                                
+
                                 {/* Hide this image on mobile */}
                                 <img loading="lazy" src="/Dialog_Yedi.svg" alt="dialog-yedi" className="mt-6 w-32 sm:w-40 object-contain hidden md:block" />
                             </div>
