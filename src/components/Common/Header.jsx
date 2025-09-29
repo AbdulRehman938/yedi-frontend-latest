@@ -262,7 +262,7 @@ const Header = () => {
                         onWheel={(e) => e.stopPropagation()}
                     >
                         {/* Top head */}
-                        <div id="top-head" className="relative w-full h-[20%] md:h-[25%] flex-shrink-0 overflow-hidden">
+                        <div id="top-head" className="relative w-full h-[20%] md:h-[25%] flex-shrink-0 overflow-hidden 3xl:h-[15%] lg-xl:h-[15%]">
                             <img loading="lazy" src="/Partner1.jpg" alt="Partner Background" className="absolute inset-0 w-full h-full object-cover" />
                             <button
                                 onClick={() => setPartnerOpen(false)}
@@ -270,18 +270,20 @@ const Header = () => {
                             >
                                 ✕
                             </button>
-                            <h1 className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-3xl sm:text-5xl font-bold text-[#b3cfc9] drop-shadow-lg text-center">
+                            <h1 className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-3xl sm:text-5xl font-bold text-[#b3cfc9] drop-shadow-lg text-center lg-xl:bottom-8">
                                 Become a Partner
                             </h1>
                         </div>
 
                         {/* Body stacked for mobile - scrollable content */}
                         <div className="partner-dialog-body flex flex-col md:flex-row items-center p-4 md:p-6 space-y-4 md:space-y-0 flex-grow overflow-y-auto md:overflow-visible">
-                            <div className="w-full md:w-1/2 flex flex-col items-center text-center md:text-left">
+                            <div className="3xl:w-[30%] 3xl:mr-20 3xl:ml-20 md:w-1/2 flex flex-col items-center  text-left md:text-left lg-xl:w-[30%] lg-xl:mr-20 lg-xl:ml-20">
                                 <h2 className="text-2xl sm:text-4xl font-bold text-primary">Request a Demo</h2>
+                                <hr className='h-[0.1rem] bg-[#4c4c4c] w-full my-5' />
                                 <p className="mt-4 text-gray-600 text-base sm:text-lg">
                                     Experience how our smart lock system works and what it can do for your business. Fill out the form and we’ll be in touch to schedule a quick walkthrough.
                                 </p>
+                                
                                 {/* Hide this image on mobile */}
                                 <img loading="lazy" src="/Dialog_Yedi.svg" alt="dialog-yedi" className="mt-6 w-32 sm:w-40 object-contain hidden md:block" />
                             </div>

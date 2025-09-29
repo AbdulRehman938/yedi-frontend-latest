@@ -7,7 +7,7 @@ const fadeVariant = {
   exit: { opacity: 0, y: -40, transition: { duration: 1.5, ease: 'easeIn' } }
 }
 
-const AnimatedItem = ({ children, className }) => {
+const AnimatedItem = ({ children, className, disableDrag = false }) => {
   const ref = useRef(null)
   const [inView, setInView] = React.useState(false)
 
@@ -25,8 +25,8 @@ const AnimatedItem = ({ children, className }) => {
       <AnimatePresence>
         {inView && (
           <motion.div
-            drag
-            dragElastic={0.2}
+            drag={!disableDrag}
+            dragElastic={disableDrag ? 0 : 0.2}
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
             variants={fadeVariant}
             initial="hidden"
@@ -44,13 +44,12 @@ const AnimatedItem = ({ children, className }) => {
 const Hero = () => {
 
   return (
-    <div className="w-full overflow-hidden bg-transparent min-h-screen">
+    <div className="w-full overflow-hidden min-h-screen">
       {/* Background Images */}
       <div className="absolute w-full h-full">
-        <AnimatedItem className="absolute inset-0">
-          <img loading="lazy" src="/path.png" alt="path" className="hidden sm:block w-full h-full min-h-screen object-cover" />
+        <AnimatedItem className="absolute inset-0 " disableDrag={true}>
+          <img loading="lazy" src="/path.png" alt="path" className="hidden sm:block w-full h-full object-cover" />
         </AnimatedItem>
-        <div className="pb-[50rem] sm:pb-0" />
       </div>
 
       {/* Desktop / Tablet Layout */}

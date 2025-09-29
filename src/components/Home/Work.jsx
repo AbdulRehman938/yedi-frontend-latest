@@ -12,12 +12,12 @@ const Work = () => {
     return (
         <>
             {/* ===== Desktop / Larger Screens ===== */}
-            <div className="work-container w-full lg:mt-[-13rem] lg:h-[120rem] bg-background relative justify-center items-start hidden sm:block">
+            <div className="work-container w-full lg:mt-[-5rem] 3xl:mt-[-5rem] lg:h-[120rem] bg-background relative justify-center items-start hidden sm:block">
                 <motion.img
                     src="/HomeWorkSlide.png"
                     loading="lazy"
                     alt="slide"
-                    className="work-main-slide w-[100vw] h-[133%] object-contain absolute z-30 top-64 lg-xl:mt-[-15rem]"
+                    className="work-main-slide w-[100vw] h-[133%] object-contain absolute z-30 top-64 lg-xl:mt-[-15rem] 3xl:mt-[-5rem]"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"

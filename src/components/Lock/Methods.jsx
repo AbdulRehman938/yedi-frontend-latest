@@ -22,9 +22,16 @@ const fadeVariant = {
 
 const Methods = () => {
     const [index, setIndex] = useState(0)
-    const [activeIndex, setActiveIndex] = useState(0)
-    const scrollLeft = () => setIndex(prev => Math.max(prev - 1, 0))
-    const scrollRight = () => setIndex(prev => Math.min(prev + 1, cities.length - 3))
+
+    const scrollLeft = () => {
+        setIndex((prev) => Math.max(prev - 1, 0))
+    }
+
+    const scrollRight = () => {
+        setIndex((prev) => Math.min(prev + 1, cities.length - 3))
+    }
+
+
 
     useEffect(() => {
         const lenis = new Lenis({
@@ -93,13 +100,13 @@ const Methods = () => {
 
                     <div className="bg-transparent rounded-lg overflow-hidden">
                         {/* Finish */}
-                        <div className="flex justify-start items-start h-40 gap-[37%] pt-10 pl-2 border-b border-gray-700 border-t">
+                        <div className="flex justify-start items-start h-40 3xl:gap-[35%] pt-10 pl-2 border-b border-gray-700 border-t lg-xl:gap-[35%]">
                             <span className="text-gray-500 font-medium text-4xl">Finish</span>
                             <span className="text-gray-500 text-2xl text-left ">Matte Black</span>
                         </div>
 
                         {/* Material */}
-                        <div className="flex justify-start items-start h-40 gap-[33%] pt-10 pl-2 border-b border-gray-700">
+                        <div className="flex justify-start items-start h-40 3xl:gap-[32%] pt-10 pl-2 border-b border-gray-700 lg-xl:gap-[32%]">
                             <span className="text-gray-500 font-medium text-4xl">Material</span>
                             <span className="text-gray-500 text-2xl text-left">Vibranium Exterior</span>
                         </div>
@@ -121,7 +128,7 @@ const Methods = () => {
                         </div>
 
                         {/* Battery */}
-                        <div className="flex justify-start h-52 gap-[34%] items-start pt-10 pl-2 border-b border-gray-700">
+                        <div className="flex justify-start h-52 3xl:gap-[32%] items-start pt-10 pl-2 border-b border-gray-700 lg-xl:gap-[32%]">
                             <span className="text-gray-500 font-medium text-4xl">Battery</span>
                             <span className="text-gray-500 text-2xl text-left max-w-xs">
                                 Not sure if we actually want to put battery information but its here just in case.
@@ -145,10 +152,10 @@ const Methods = () => {
                     </div>
                 </div>
 
-                <div className='w-[100%] h-[60vh] flex flex-col justify-around absolute z-50 rounded-[4rem] mt-20 left-0 items-start py-10 bg-white overflow-hidden'>
+                <div className='w-[100%] 3xl:h-[103vh] flex flex-col justify-around absolute z-50 rounded-[4rem] mt-20 left-0 items-start py-5 bg-white overflow-hidden lg-xl:h-[85vh] '>
                     {/* Locations Section */}
                     <motion.div
-                        className='locations-section w-full max-w-7xl mx-auto mr-0 pl-4 lg:px-8 flex flex-col justify-start items-start bg-white z-10 overflow-hidden'
+                        className='locations-section w-full max-w-7xl mx-auto mr-0 pl-4 lg:px-8 flex flex-col justify-start items-start bg-white z-10 3xl:ml-[8rem]'
                         variants={fadeVariant}
                         initial="hidden"
                         whileInView="visible"
@@ -158,24 +165,24 @@ const Methods = () => {
                         <p className='locations-subtext text-lg lg:text-2xl font-medium text-gray-500'>Discover Yedi in your City</p>
 
 
-                        <div className="relative w-full top-20 h-[28rem] left-[6rem]">
+                        <div className="relative w-full h-[25rem] top-[1rem] left-[0rem]">
                             <div
-                                className="flex gap-6 h-[20rem] transition-transform duration-500 ease-in-out"
+                                className="flex w-[100vw] gap-6 h-[20rem] transition-transform duration-500 ease-in-out"
                                 style={{
-                                    transform: `translateX(-${activeIndex * 320}px)`,
+                                    transform: `translateX(-${index * (20 * 16 + 24)}px)`,
+                                    // 20rem = 20*16px = 320px + gap-6(24px)
                                 }}
                             >
                                 {cities.map((city, i) => (
                                     <div
                                         key={i}
-                                        className="flex-shrink-0 w-[20rem] h-[20rem] relative"
+                                        className="flex-shrink-0 w-[22rem] h-[22rem] relative"
                                     >
                                         <img
                                             src={city.img}
                                             alt={city.name}
                                             loading="lazy"
-                                            className={`w-full h-full object-cover rounded-2xl ${i > 1 ? 'grayscale' : ''
-                                                }`}
+                                            className={`w-full h-full object-cover rounded-2xl ${i > 1 ? 'grayscale' : ''}`}
                                         />
                                         {i > 1 && (
                                             <div className="absolute inset-0 rounded-2xl bg-[#4c4c4c]/10 flex items-center justify-center">
@@ -188,23 +195,25 @@ const Methods = () => {
                                     </div>
                                 ))}
                             </div>
+
                         </div>
 
                         {/* Arrows */}
                         <div className='flex justify-center gap-4 lg:gap-6 items-center mt-6 ml-[60rem] lg:mt-8 lg-xl:ml-[65rem]'>
                             <button
                                 onClick={scrollLeft}
-                                className='arrow-left w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300 '
+                                className='arrow-left w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#569b69]/50 hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300 disabled:opacity-50 disabled:hover:bg-gray-200 disabled:hover:scale-100 disabled:cursor-not-allowed'
                                 disabled={index === 0}
+
                             >
-                                <FaChevronLeft className='arrow-icon text-white text-lg lg:text-xl' />
+                                <FaChevronLeft className='arrow-icon text-white hover:text-[#ffffff] text-lg lg:text-xl' />
                             </button>
                             <button
                                 onClick={scrollRight}
-                                className='arrow-right w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-background hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300'
+                                className='arrow-right w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#569b69]/50 hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300 disabled:opacity-50 disabled:hover:bg-gray-200 disabled:hover:scale-100 disabled:cursor-not-allowed'
                                 disabled={index >= cities.length - 3}
                             >
-                                <FaChevronRight className='arrow-icon text-white text-lg lg:text-xl' />
+                                <FaChevronRight className='arrow-icon text-gray-600 hover:text-white text-lg lg:text-xl' />
                             </button>
                         </div>
                     </motion.div>
@@ -312,7 +321,8 @@ const Methods = () => {
                         <div
                             className="flex transition-transform duration-500 ease-in-out gap-4 px-4"
                             style={{
-                                transform: `translateX(-${activeIndex * 70}%)`,
+                                transform: `translateX(-${index * 70}%)`
+
                             }}
                         >
                             {cities.map((city, i) => (
@@ -344,10 +354,10 @@ const Methods = () => {
                         </div>
 
                         {/* Arrows */}
-                        <div className="flex justify-center gap-10 w-full absolute bottom-[13rem] left-[5rem]  px-4">
+                        <div className="flex justify-center gap-10 w-full absolute bottom-[13rem] left-[5rem] px-4">
                             <button
                                 onClick={() =>
-                                    setActiveIndex((prev) => (prev === 0 ? cities.length - 1 : prev - 1))
+                                    setIndex((prev) => (prev === 0 ? cities.length - 1 : prev - 1))
                                 }
                                 className="bg-primary/30 hover:bg-primary text-white rounded-full p-5"
                             >
@@ -355,7 +365,7 @@ const Methods = () => {
                             </button>
                             <button
                                 onClick={() =>
-                                    setActiveIndex((prev) =>
+                                    setIndex((prev) =>
                                         prev === cities.length - 1 ? 0 : prev + 1
                                     )
                                 }
@@ -364,6 +374,7 @@ const Methods = () => {
                                 <FaChevronRight />
                             </button>
                         </div>
+
                         <button className='text-primary bg-transparent px-8 py-3 mt-[10rem] text-lg border-2 rounded-[4rem]'>LEARN MORE</button>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
     return (
-        <div className="flex flex-col justify-start w-full overflow-x-visible overflow-hidden min-h-screen">
+        <div className="flex flex-col justify-start w-full overflow-x-hidden min-h-screen">
             <ScrollToTop />
             <Header />
             <main className="w-full flex-grow pt-20 lg:pt-20 overflow-visible">

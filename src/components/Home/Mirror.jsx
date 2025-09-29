@@ -76,7 +76,7 @@ const Mirror = () => {
           </motion.div>
 
           {/* Sections */}
-          <div id="second" className="w-[100vw] h-[175vh] relative z-40 flex flex-col overflow-visible lg:top-[-6rem] mt-[18rem] lg:mt-[23rem] 2xl:mt-[24rem] xl:mt-[-5rem] 3xl:mt-[20rem] ">
+          <div id="second" className="w-[100vw] h-[175vh] relative z-40 flex flex-col overflow-visible lg:top-[-6rem] mt-[18rem] lg:mt-[23rem] 2xl:mt-[24rem] xl:mt-[-5rem] 3xl:mt-[24rem] ">
             {/* Mirror background for desktop */}
             <img
               src="/Mirror2.png"
@@ -103,7 +103,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-10 text-center md:text-left px-2 xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[2rem] lg:mt-[2rem] 3xl:ml-[15rem] 3xl:mt-[-7rem] lg-xl:mt-[4rem]">
+              <div className="w-full md:w-1/2 flex flex-col gap-10 text-center md:text-left px-2 xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[2rem] lg:mt-[2rem] 3xl:ml-[15rem] 3xl:mt-[-5rem] lg-xl:mt-[4rem]">
                 <h1 className="3xl:text-6xl 3xl:ml-10 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl xs:text-3xl text-[#6fa598] font-bold w-full">
                   We've all been there
                 </h1>

@@ -34,8 +34,8 @@ const Locations = () => {
 
 
     return (
-        <section className="w-full flex flex-col relative z-[100] items-center pt-16 bg-gradient-to-b from-transparent to-[#f8fafc] overflow-visible">
-            <div className='hidden md:flex absolute w-full h-[50%] -z-10 bottom-[30rem] bg-white blur-3xl'></div>
+        <section className="w-full flex flex-col relative z-[1000] items-center pt-16 bg-gradient-to-b from-transparent to-[#f8fafc]">
+            <div className='hidden md:flex absolute w-full h-[50%] -z-10 bottom-[30rem] bg-white blur-3xl 3xl:bottom-[20rem]'></div>
 
             {/* ====== MOBILE VIEW ====== */}
             <div className="sm:hidden w-full flex flex-col items-start mt-[0rem] px-4">
@@ -162,13 +162,13 @@ const Locations = () => {
 
 
             {/* ====== DESKTOP VIEW ====== */}
-            <div className="hidden sm:flex flex-col h-[90rem] items-start w-full mt-[30%] max-w-7xl px-8 z-40">
+            <div className="hidden sm:flex flex-col h-[80rem] w-[100vw] ml-12 items-start mt-[30%] max-w-7xl pl-8 z-40 3xl:mt-[50%]">
                 <h1 className="text-5xl font-[#4c4c4c] text-primary font-black mb-6 ml-[6rem]">Locations</h1>
                 <p className="text-xl text-gray-500 mb-8 ml-[6rem]">
                     Discover Yedi in your City
                 </p>
 
-                <div className="relative w-full h-[20rem] left-[6rem]">
+                <div className="relative w-full h-[25rem] left-[6rem] overflow-hidden">
                     <div
                         className="flex gap-6 h-[20rem] transition-transform duration-500 ease-in-out"
                         style={{
@@ -178,7 +178,7 @@ const Locations = () => {
                         {cities.map((city, i) => (
                             <div
                                 key={i}
-                                className="flex-shrink-0 w-[20rem] h-[20rem] relative"
+                                className="flex-shrink-0 w-[23rem] h-[23rem] relative"
                             >
                                 <img
                                     src={city.img}
@@ -225,7 +225,7 @@ const Locations = () => {
             </div>
 
             {/* ====== NEWSLETTER FORM ====== */}
-            <div className="hidden sm:flex w-full bg-[#f7f6f4] h-[50vh] rounded-[5rem] absolute bottom-[-5rem] left-0 right-0 z-[200] mt-16 px-4 lg:px-8 py-12 flex-col lg:flex-row items-center justify-around gap-8">
+            <div className="hidden sm:flex w-full bg-[#f7f6f4] h-[50vh] 3xl:h-[75vh] 3xl:bottom-[-5rem] rounded-[5rem] absolute bottom-[-8rem] left-0 right-0 z-[1100] mt-16 px-4 lg:px-8 py-12 flex-col lg:flex-row items-center justify-around gap-8">
                 <div className="flex flex-col gap-10 text-left mt-[-15rem] lg:text-left">
                     <h1 className="text-5xl lg:text-7xl font-[#4c4c4c] font-black text-[#6fa598]">
                         Yedi News <br /> Alerts!

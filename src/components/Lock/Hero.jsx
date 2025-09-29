@@ -63,7 +63,7 @@ const Hero = () => {
           src="/Yedi-Lock1.svg"
           loading="lazy"
           alt="lock1"
-          className="w-[50%] h-full object-contain absolute z-10 top-[-180rem] right-[12rem]"
+          className="w-[50%] h-full object-contain absolute z-10 top-[-175rem] right-[12rem]"
         />
 
         {/* Panels */}
