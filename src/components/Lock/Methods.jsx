@@ -232,21 +232,22 @@ const Methods = () => {
 
 
             {/** Mobile View */}
-            <div className="sm:hidden mt-12 w-full flex flex-col gap-8 text-sm">
+            <div className="sm:hidden mt-12 h-[110rem]  w-full flex flex-col gap-8 text-sm">
                 {/* Mobile Access Methods */}
                 <div className="flex flex-col gap-4 w-[90vw] ml-[-1.5rem]">
+                    <h1 className='text-2xl font-semibold text-[#55887c] text-left'>Access Methods</h1>
                     {[
-                        { icon: <MdQrCodeScanner className="w-6 h-6 text-gray-600" />, label: 'QR Scan' },
-                        { icon: <MdNfc className="w-6 h-6 text-gray-600" />, label: 'NFC Tap' },
-                        { icon: <BiGridAlt className="w-6 h-6 text-gray-600" />, label: 'Keypad Code' },
-                        { icon: <HiOutlineKey className="w-6 h-6 text-gray-600" />, label: 'Master Key' }
+                        { img: '/QR Scan.svg', label: 'QR Scan' },
+                        { img: '/NFC Tap.svg', label: 'NFC Tap' },
+                        { img: '/Keypad Code.svg', label: 'Keypad Code' },
+                        { img: '/Master Key.svg', label: 'Master Key' }
                     ].map((m, i) => (
                         <div
                             key={i}
                             className="bg-[#e1e1e1] rounded-2xl p-3 flex items-center gap-2 w-full shadow-sm"
                         >
                             <div className="w-10 h-10 flex items-center border-r border-white justify-center">
-                                {m.icon}
+                                <img src={m.img} alt={m.label} className='w-6 h-6 object-contain' />
                             </div>
                             <span className="text-gray-800 text-base ml-3 font-medium">{m.label}</span>
                         </div>
@@ -255,26 +256,26 @@ const Methods = () => {
 
                 {/* Mobile Product Details */}
                 <div className="mt-16 w-[90vw] ml-[-1rem]">
-                    <h2 className="text-3xl font-medium text-primary mb-6">Product Details</h2>
+                    <h2 className="text-2xl font-semibold text-[#55887c] text-left mb-10">Product Details</h2>
 
                     <div className="bg-transparent rounded-lg overflow-hidden">
                         {/* Finish */}
-                        <div className="flex justify-start items-start h-16 gap-[30%] pt-4 pl-2 border-b border-gray-700 border-t">
-                            <span className="text-gray-500 font-medium text-lg">Finish</span>
-                            <span className="text-gray-500 text-sm text-left">Matte Black</span>
+                        <div className="flex justify-start items-start h-20 gap-[30%] pt-4 pl-2 border-b border-gray-700 border-t">
+                            <span className="text-[#4C4C4C] font-medium text-lg">Finish</span>
+                            <span className="text-gray-500 text-lg text-left">Matte Black</span>
                         </div>
 
                         {/* Material */}
-                        <div className="flex justify-start items-start h-16 gap-[23%] pt-4 pl-2 border-b border-gray-700">
-                            <span className="text-gray-500 font-medium text-lg">Material</span>
-                            <span className="text-gray-500 text-sm text-left">Vibranium Exterior</span>
+                        <div className="flex justify-start items-start h-20 gap-[23%] pt-4 pl-2 border-b border-gray-700">
+                            <span className="text-[#4C4C4C] font-medium text-lg">Material</span>
+                            <span className="text-gray-500 text-lg text-left">Vibranium Exterior</span>
                         </div>
 
                         {/* Dimensions */}
                         <div className="pl-1 border-b border-gray-700">
-                            <div className="flex justify-start h-48 gap-[16%] pt-6 items-start mb-2">
-                                <span className="text-gray-500 font-medium text-lg">Dimensions</span>
-                                <div className="text-gray-500 text-left text-sm">
+                            <div className="flex justify-start h-64 gap-[16%] pt-6 items-start mb-2">
+                                <span className="text-[#4C4C4C] font-medium text-lg">Dimensions</span>
+                                <div className="text-gray-500 text-left text-base">
                                     <div className="font-medium mb-1">External (W x H x D)</div>
                                     <div className="mb-1">86mm x 250mm x 45mm</div>
                                     <div className="mb-2">3.39" x 9.84" x 1.93"</div>
@@ -287,17 +288,17 @@ const Methods = () => {
                         </div>
 
                         {/* Battery */}
-                        <div className="flex justify-start h-32 gap-[25%] items-start pt-6 pl-2 border-b border-gray-700">
-                            <span className="text-gray-500 font-medium text-lg">Battery</span>
-                            <span className="text-gray-500 text-sm text-left max-w-xs">
+                        <div className="flex justify-start h-44 gap-[25%] items-start pt-6 pl-2 border-b border-gray-700">
+                            <span className="text-[#4C4C4C] font-medium text-lg">Battery</span>
+                            <span className="text-gray-500 text-base text-left max-w-xs">
                                 Not sure if we actually want to put battery information but its here just in case.
                             </span>
                         </div>
 
                         {/* What's Included */}
                         <div className="">
-                            <div className="flex justify-start h-48 gap-[15%] items-start pt-6">
-                                <span className="text-gray-500 font-medium text-lg">What's Included</span>
+                            <div className="flex justify-start h-48 gap-[10%] items-start pt-6">
+                                <span className="text-[#4C4C4C] font-medium text-lg text-left">What's Included</span>
                                 <div className="text-gray-500 text-sm text-left">
                                     <div>Yedi Zen Lock</div>
                                     <div>Installation Guide</div>
@@ -312,7 +313,7 @@ const Methods = () => {
                 </div>
 
                 {/* Mobile Locations */}
-                <div className="bg-white ml-[-2.4rem] w-[100vw] h-[40rem] rounded-2xl shadow-md flex flex-col items-start pl-5 py-4 sm:hidden">
+                <div className="bg-white ml-[-2.4rem] absolute w-[100vw] bottom-[0rem] h-[35rem] rounded-2xl shadow-md flex flex-col items-start pl-5 py-4 sm:hidden z-[10]">
                     <h3 className="text-4xl font-semibold text-[#55887c] mb-3 ml-3">Locations</h3>
                     <p className="text-gray-500 text-xs mb-3 ml-3">Discover Yedi in your city.</p>
 
@@ -354,7 +355,7 @@ const Methods = () => {
                         </div>
 
                         {/* Arrows */}
-                        <div className="flex justify-center gap-10 w-full absolute bottom-[13rem] left-[5rem] px-4">
+                        <div className="flex justify-center gap-10 w-full absolute bottom-[8rem] left-[5rem] px-4">
                             <button
                                 onClick={() =>
                                     setIndex((prev) => (prev === 0 ? cities.length - 1 : prev - 1))

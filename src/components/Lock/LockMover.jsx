@@ -131,20 +131,20 @@ const LockMover = () => {
 
         {/* Zen Lock Heading */}
         <h2 className="text-5xl font-bold text-third text-left mt-6">Zen Lock</h2>
-        <hr className='text-[#4c4c4c] bg-[#4c4c4c] w-[100vw] ml-[-2rem] h-[0.1rem]' />
+        <hr className='text-[#4c4c4c] bg-[#4c4c4c] w-[90vw] ml-[-1rem] h-[0.1rem]' />
         {/* Text Content */}
         <p className="text-xl font-semibold text-third/80">A smart lock for inner peace.</p>
-        <p className="text-base text-gray-600 font-medium leading-relaxed px-2">
+        <p className="font-normal text-base text-[#676666]">
           Automate, monitor, and manage your restrooms with the Yedi Zen Lock. Our lock offers
           frictionless restroom entry with app-based or QR code unlock. Designed for reliability
           and ease, it ensures controlled access without staff intervention.
         </p>
-        <p className="text-base text-gray-600 font-medium leading-relaxed px-2">
+        <p className="font-normal text-base text-[#676666]">
           The Yedi Zen Lock, combined with CleanSense and the entire Yedi Platform, are a
           state-of-the-art solution for America’s public/private restroom access crisis.
         </p>
 
-        <button className="mt-4 px-10 py-3 bg-[#bab5a2] hover:bg-gray-500 text-white rounded-full transition-all">
+        <button className="mt-4 px-10 py-3 ml-14 bg-[#bab5a2] hover:bg-gray-500 text-white rounded-full transition-all">
           BOOK A DEMO
         </button>
       </div>

@@ -6,7 +6,7 @@ import { FaXTwitter } from 'react-icons/fa6'
 
 const Footer = ({ adjustUpOnLocks = false }) => {
   return (
-    <div className={`bg-third w-full relative h-[45rem] pt-16 z-5 overflow-hidden ${adjustUpOnLocks ? 'lg:mt-[-6rem]' : ''}`}>
+    <div className={`bg-third w-full relative h-[45rem] pt-16 z-5 overflow-hidden ${adjustUpOnLocks ? 'mt-[-5rem] lg:mt-[-3rem]' : ''}`}>
       {/* ===== Desktop / Tablet Footer ===== */}
       <div className="hidden sm:flex w-full h-[40rem] justify-center items-start relative z-0 pt-16">
         <img
@@ -98,8 +98,8 @@ const Footer = ({ adjustUpOnLocks = false }) => {
       </div>
 
       {/* ===== Mobile Footer ===== */}
-      <div className="flex sm:hidden flex-col h-[40rem] pt-20 relative z-[-10] items-center w-full py-10 gap-6 text-center">
-        <h1 className="text-4xl text-[#91bab0] font-[#4c4c4c]">Find Your Restroom</h1>
+      <div className="flex sm:hidden flex-col h-[40rem] pt-20 relative items-center w-full py-10 gap-6 text-center">
+        <h1 className="text-4xl text-[#91bab0] font-black">Find Your Restroom</h1>
 
         <Link
           to="/partner"

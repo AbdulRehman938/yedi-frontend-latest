@@ -96,12 +96,12 @@ const LockFeatures = () => {
             {/* Mobile Layout */}
             <div className="sm:hidden w-full flex flex-col gap-8">
                 {/* Feature 1 */}
-                <div className="bg-white rounded-2xl shadow-md flex flex-col items-start pb-10">
+                <div className="bg-white rounded-[2rem] overflow-hidden shadow-md flex flex-col items-start pb-10">
                     <img
                         src="/Feature1.svg"
                         loading="lazy" 
                         alt="Feature"
-                        className="w-[50rem] rounded-xl object-contain"
+                        className="w-[50rem] ml-6 rounded-xl object-contain"
                     />
                     <div className="flex items-center gap-3 text-gray-400 text-4xl mb-4 px-5">
                         <FaBluetoothB />
@@ -116,12 +116,12 @@ const LockFeatures = () => {
                 </div>
 
                 {/* Feature 2 */}
-                <div className="bg-white rounded-2xl shadow-md flex flex-col items-start pb-10">
+                <div className="bg-white rounded-[2rem] overflow-hidden shadow-md flex flex-col items-start pb-10">
                     <img
                         src="/Feature2.svg"
                         loading="lazy" 
                         alt="Feature"
-                        className="w-[50rem] rounded-xl object-contain"
+                        className="w-[50rem] rounded-xl ml-[-3rem] object-contain"
                     />
                     <div className="flex items-center gap-3 text-gray-400 text-4xl mb-4 px-5">
                         <TbRadar2 />

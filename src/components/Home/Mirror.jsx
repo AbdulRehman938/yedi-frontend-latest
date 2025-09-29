@@ -227,7 +227,7 @@ const Mirror = () => {
                 exit="exit"
                 viewport={{ once: false, amount: 0.2 }}
               >
-                <div className="w-full flex flex-col gap-4 text-center px-2 order-2 md:order-2 lg:order-1">
+                <div className="w-full flex flex-col gap-4 text-center px-2 md:order-2 lg:order-1">
                   <h1 className="text-4xl text-primary font-bold">We've all been there</h1>
                   <p className="text-gray-500 font-medium">
                     You're away from home and unsure where you can
@@ -242,7 +242,7 @@ const Mirror = () => {
 
               {/* Section 2 */}
               <motion.div
-                className="relative z-30 w-full flex flex-col items-center justify-between gap-10 py-24 mt-[4.4rem]"
+                className="relative z-30 w-full flex flex-col items-center justify-between gap-10 py-24 mt-[5rem]"
                 variants={fadeVariant}
                 initial="hidden"
                 whileInView="visible"

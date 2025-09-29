@@ -193,7 +193,7 @@ const Work = () => {
                     <img
                         src="/charslidemobile.png"
                         loading="lazy"
-                        alt="Character Slide"
+                      
                         className="w-[100vw] object-cover h-auto"
                     />
                 </div>

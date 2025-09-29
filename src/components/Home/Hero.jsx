@@ -97,7 +97,7 @@ const Hero = () => {
         <AnimatedItem>
           <img loading="lazy" src="/Home-character.svg" alt="character" className="relative w-[50%] ml-[4.5rem] max-w-[250px] -mt-3 mb-5 z-20" />
         </AnimatedItem>
-        <div className="flex justify-between items-center w-[100%] mt-5 gap-8 z-10">
+        <div className="flex justify-between items-center w-[100%] mt-5 mr-6 gap-8 z-10">
           <AnimatedItem>
             <button className="bg-transparent font-medium border border-primary text-primary rounded-[3rem] hover:bg-[#b1b1b128] hover:scale-105 ease-in-out duration-300 py-3 px-9 text-sm">
               LOCATIONS

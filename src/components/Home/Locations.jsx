@@ -38,75 +38,75 @@ const Locations = () => {
             <div className='hidden md:flex absolute w-full h-[50%] -z-10 bottom-[30rem] bg-white blur-3xl 3xl:bottom-[20rem]'></div>
 
             {/* ====== MOBILE VIEW ====== */}
-            <div className="sm:hidden w-full flex flex-col items-start mt-[0rem] px-4">
-                <div className='sm:flex absolute w-[100vw] ml-[-1rem] h-[40%] -z-10 top-[2rem] bg-white blur-xl'></div>
-                <div className='sm:flex absolute w-[100vw] ml-[-1rem] h-[40%] -z-10 top-[13rem] bg-white'></div>
-                <h2 className="text-3xl font-bold mt-10 text-primary mb-2">Locations</h2>
-                <p className="text-gray-600 text-sm mb-4">
-                    Discover Yedi in your City
-                </p>
+            <div className="sm:hidden w-full flex flex-col items-start mt-[35rem] h-[40rem] px-4">
+                <div className='sm:flex absolute w-[100vw] ml-[-1rem] h-[10%] -z-10 top-[15rem] bg-white blur-xl'></div>
+                <div className='sm:flex absolute w-[100vw] ml-[-1rem] -z-10 top-[20rem] h-[40rem] bg-white'>
+                    <h2 className="text-3xl font-bold mt-10 ml-5 text-primary mb-2">Locations</h2>
+                    <p className="text-gray-600 text-sm mb-4 ml-5">
+                        Discover Yedi in your City
+                    </p>
 
-                {/* Mobile carousel */}
-                <div className="relative w-full overflow-hidden h-[17rem] mt-8">
-                    <div
-                        className="flex transition-transform duration-500 ease-in-out gap-4 px-4"
-                        style={{ transform: `translateX(-${activeIndex * 70}%)` }}
-                    >
-                        {cities.map((city, i) => (
-                            <div
-                                key={i}
-                                className="flex-shrink-0 w-[70%] flex flex-col items-start relative"
-                            >
-                                {/* Image wrapper with aspect ratio */}
-                                <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
-                                    <img
-                                        src={city.img}
-                                        alt={city.name}
-                                        loading="lazy"
-                                        className={`w-full h-full object-cover ${i > 1 ? 'grayscale' : ''}`}
-                                    />
-                                    {i > 1 && (
-                                        <span className="absolute bottom-14 w-full text-center left-1/2 -translate-x-1/2 text-[14px] text-white bg-white/60 px-3 py-2 rounded">
-                                            COMING SOON
-                                        </span>
-                                    )}
+                    {/* Mobile carousel */}
+                    <div className="relative w-full overflow-hidden h-[17rem] mt-8">
+                        <div
+                            className="flex transition-transform duration-500 ease-in-out gap-4 px-4"
+                            style={{ transform: `translateX(-${activeIndex * 70}%)` }}
+                        >
+                            {cities.map((city, i) => (
+                                <div
+                                    key={i}
+                                    className="flex-shrink-0 w-[70%] flex flex-col items-start relative"
+                                >
+                                    {/* Image wrapper with aspect ratio */}
+                                    <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
+                                        <img
+                                            src={city.img}
+                                            alt={city.name}
+                                            loading="lazy"
+                                            className={`w-full h-full object-cover ${i > 1 ? 'grayscale' : ''}`}
+                                        />
+                                        {i > 1 && (
+                                            <span className="absolute bottom-14 w-full text-center left-1/2 -translate-x-1/2 text-[14px] text-white bg-white/60 px-3 py-2 rounded">
+                                                COMING SOON
+                                            </span>
+                                        )}
+                                    </div>
+
+                                    {/* City name */}
+                                    <span className="text-sm font-medium mt-2 text-gray-700">
+                                        {city.name}
+                                    </span>
                                 </div>
+                            ))}
+                        </div>
 
-                                {/* City name */}
-                                <span className="text-sm font-medium mt-2 text-gray-700">
-                                    {city.name}
-                                </span>
-                            </div>
-                        ))}
+                        {/* Arrows */}
+                        <div className="flex justify-center gap-10 w-full absolute bottom-[0.5rem] left-24">
+                            <button
+                                onClick={prev}
+                                className="bg-primary/30 hover:bg-primary text-white rounded-full p-3"
+                            >
+                                <FaChevronLeft />
+                            </button>
+                            <button
+                                onClick={next}
+                                className="bg-primary/30 hover:bg-primary text-white rounded-full p-3"
+                            >
+                                <FaChevronRight />
+                            </button>
+                        </div>
                     </div>
-
-                    {/* Arrows */}
-                    <div className="flex justify-center gap-10 w-full absolute bottom-[0.5rem] left-24">
-                        <button
-                            onClick={prev}
-                            className="bg-primary/30 hover:bg-primary text-white rounded-full p-3"
-                        >
-                            <FaChevronLeft />
-                        </button>
-                        <button
-                            onClick={next}
-                            className="bg-primary/30 hover:bg-primary text-white rounded-full p-3"
-                        >
-                            <FaChevronRight />
+                    {/* Learn More Button */}
+                    <div className="w-full flex justify-center mt-10">
+                        <button className="px-10 py-3 bg-transparent border-2 border-third text-third rounded-full hover:bg-third">
+                            LEARN MORE
                         </button>
                     </div>
                 </div>
 
-
-                {/* Learn More Button */}
-                <div className="w-full flex justify-center mt-24">
-                    <button className="px-10 py-3 bg-transparent border-2 border-third text-third rounded-full hover:bg-third">
-                        LEARN MORE
-                    </button>
-                </div>
 
                 {/* ====== NEWSLETTER (MOBILE ONLY) ====== */}
-                <div className="w-[100vw] ml-[-1rem] mt-[2rem] h-[30rem] bg-secondary rounded-3xl relative z-20 px-4 py-8 flex flex-col items-center">
+                <div className="w-[100vw] ml-[-1rem] mt-[15rem] h-[30rem] bg-secondary rounded-3xl relative z-20 px-4 py-8 flex flex-col items-center">
                     <h3 className="text-4xl font-bold text-primary mb-2">Yedi News Alerts!</h3>
                     <p className="text-gray-600 text-center mt-10 mb-6">
                         Be the first to know when Yedi comes to your town, get special offers, and more!
