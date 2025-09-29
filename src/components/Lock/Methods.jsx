@@ -152,7 +152,7 @@ const Methods = () => {
                     </div>
                 </div>
 
-                <div className='w-[100%] 3xl:h-[103vh] flex flex-col justify-around absolute z-50 rounded-[4rem] mt-20 left-0 items-start py-5 bg-white overflow-hidden lg-xl:h-[85vh] '>
+                <div className='w-[100%] 3xl:h-[103vh] flex flex-col justify-around absolute z-[1100] rounded-[4rem] bottom-0 left-0 items-start py-5 bg-white overflow-hidden lg-xl:h-[85vh] '>
                     {/* Locations Section */}
                     <motion.div
                         className='locations-section w-full max-w-7xl mx-auto mr-0 pl-4 lg:px-8 flex flex-col justify-start items-start bg-white z-10 3xl:ml-[8rem]'
@@ -213,7 +213,7 @@ const Methods = () => {
                                 className='arrow-right w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#569b69]/50 hover:bg-primary flex justify-center items-center cursor-pointer hover:scale-105 transition duration-300 disabled:opacity-50 disabled:hover:bg-gray-200 disabled:hover:scale-100 disabled:cursor-not-allowed'
                                 disabled={index >= cities.length - 3}
                             >
-                                <FaChevronRight className='arrow-icon text-gray-600 hover:text-white text-lg lg:text-xl' />
+                                <FaChevronRight className='arrow-icon text-white hover:text-white text-lg lg:text-xl' />
                             </button>
                         </div>
                     </motion.div>

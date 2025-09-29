@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
-const Footer = () => {
+const Footer = ({ adjustUpOnLocks = false }) => {
   return (
-    <div className="bg-third w-full relative h-[45rem] pt-16 z-5 overflow-hidden">
+    <div className={`bg-third w-full relative h-[45rem] pt-16 z-5 overflow-hidden ${adjustUpOnLocks ? 'lg:mt-[-6rem]' : ''}`}>
       {/* ===== Desktop / Tablet Footer ===== */}
       <div className="hidden sm:flex w-full h-[40rem] justify-center items-start relative z-0 pt-16">
         <img
