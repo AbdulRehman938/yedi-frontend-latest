@@ -62,7 +62,7 @@ const Hero = () => {
           </div>
           {/* Text right */}
           <div className="col-span-7 flex flex-col items-start justify-center z-10 ml-[15vw] mt-[-50vh] pl-4">
-            <h1 className="text-primary font-bold 
+            <h1 className="text-primary font-black 
   text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
               Find Your <br /> Restroom
             </h1>
@@ -92,7 +92,7 @@ const Hero = () => {
           <img loading="lazy" src="/pathHomeMobile.svg" alt="path mobile" className="sm:hidden w-full h-[50rem] object-contain" />
         </AnimatedItem>
         <AnimatedItem className="z-10 flex flex-col items-center bg-transparent mt-[2rem]">
-          <h1 className="text-primary text-5xl font-[#4c4c4c] leading-[3.5rem] mb-4 mt-[4rem]">Find Your <br /> Restroom</h1>
+          <h1 className="text-primary text-5xl font-black font-[#4c4c4c] leading-[3.5rem] mb-4 mt-[4rem]">Find Your <br /> Restroom</h1>
           <p className="text-[#676666] text-xl mb-8">Find. Scan. Unlock</p>
         </AnimatedItem>
         <AnimatedItem>

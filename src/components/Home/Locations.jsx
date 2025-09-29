@@ -34,8 +34,8 @@ const Locations = () => {
 
 
     return (
-        <section className="w-full flex flex-col relative z-20 items-center pt-16 bg-gradient-to-b from-transparent to-[#f8fafc]">
-            <div className='hidden md:flex absolute w-full h-[100%] -z-10 top-[-10rem] bg-white blur-3xl'></div>
+        <section className="w-full flex flex-col relative z-[100] items-center pt-16 bg-gradient-to-b from-transparent to-[#f8fafc] overflow-visible">
+            <div className='hidden md:flex absolute w-full h-[50%] -z-10 bottom-[30rem] bg-white blur-3xl'></div>
 
             {/* ====== MOBILE VIEW ====== */}
             <div className="sm:hidden w-full flex flex-col items-start mt-[0rem] px-4">
@@ -162,13 +162,13 @@ const Locations = () => {
 
 
             {/* ====== DESKTOP VIEW ====== */}
-            <div className="hidden sm:flex flex-col h-[40rem] items-start w-full mt-[20%] max-w-7xl px-8">
-                <h1 className="text-5xl font-[#4c4c4c] text-primary mb-6 ml-[6rem]">Locations</h1>
-                <p className="text-lg text-gray-500 mb-8 ml-[6rem]">
+            <div className="hidden sm:flex flex-col h-[80rem] items-start w-full mt-[30%] max-w-7xl px-8 z-40">
+                <h1 className="text-5xl font-[#4c4c4c] text-primary font-black mb-6 ml-[6rem]">Locations</h1>
+                <p className="text-xl text-gray-500 mb-8 ml-[6rem]">
                     Discover Yedi in your City
                 </p>
 
-                <div className="relative w-full left-[6rem] overflow-hidden">
+                <div className="relative w-full h-[20rem] left-[6rem]">
                     <div
                         className="flex gap-6 h-[20rem] transition-transform duration-500 ease-in-out"
                         style={{
@@ -178,7 +178,7 @@ const Locations = () => {
                         {cities.map((city, i) => (
                             <div
                                 key={i}
-                                className="flex-shrink-0 w-[16rem] h-[15rem] relative"
+                                className="flex-shrink-0 w-[20rem] h-[20rem] relative"
                             >
                                 <img
                                     src={city.img}
@@ -188,8 +188,8 @@ const Locations = () => {
                                         }`}
                                 />
                                 {i > 1 && (
-                                    <div className="absolute inset-0 rounded-2xl bg-[#4c4c4c]/40 flex items-center justify-center">
-                                        <span className="text-[#4c4c4c] w-full text-center py-4 bg-white/60 text-xl font-bold tracking-widest">
+                                    <div className="absolute inset-0 rounded-2xl bg-[#4c4c4c]/10 flex items-center justify-center">
+                                        <span className="text-[#4c4c4c] w-full text-center py-4 bg-white/70 text-xl font-medium tracking-widest">
                                             COMING SOON
                                         </span>
                                     </div>
@@ -201,7 +201,7 @@ const Locations = () => {
                 </div>
 
                 {/* Arrows */}
-                <div className="relative w-full left-[85%] top-10 flex gap-4">
+                <div className="relative w-full left-[85%] top-20 flex gap-4">
                     <button
                         onClick={prev}
                         className="bg-primary/50 text-white hover:bg-primary rounded-full p-5"
@@ -225,14 +225,13 @@ const Locations = () => {
             </div>
 
             {/* ====== NEWSLETTER FORM ====== */}
-            <div className="hidden sm:flex w-full bg-secondary h-[70vh] z-40 rounded-3xl mt-16 px-4 lg:px-8 py-12flex-col lg:flex-row items-center justify-around gap-8">
-                <div className="flex flex-col gap-4 text-left mt-[-10rem] lg:text-left">
-                    <h1 className="text-3xl lg:text-5xl font-[#4c4c4c] text-primary">
-                        Yedi News Alerts!
+            <div className="hidden sm:flex w-full bg-[#f7f6f4] h-[60vh] rounded-[5rem] absolute bottom-[-5rem] left-0 right-0 z-[200] mt-16 px-4 lg:px-8 py-12 flex-col lg:flex-row items-center justify-around gap-8">
+                <div className="flex flex-col gap-10 text-left mt-[-15rem] lg:text-left">
+                    <h1 className="text-5xl lg:text-7xl font-[#4c4c4c] font-black text-[#6fa598]">
+                        Yedi News <br /> Alerts!
                     </h1>
-                    <p className="text-gray-600 text-base lg:text-lg">
-                        Be the first to know when Yedi comes to your town, <br /> get special
-                        offers, and more!
+                    <p className="text-[#676666] text-lg font-normal lg:text-lg">
+                        Be the first to know when Yedi comes to your town, get <br /> special offers and discounts from partners, and more!
                     </p>
                 </div>
 
@@ -245,13 +244,13 @@ const Locations = () => {
                     }}
                 >
                     {() => (
-                        <Form className="flex flex-col mt-20 gap-4 w-full max-w-md">
+                        <Form className="flex flex-col mt-48 gap-4 w-full max-w-md">
                             <div>
                                 <Field
                                     name="email"
                                     type="email"
                                     placeholder="Email Address"
-                                    className="w-full border-2 border-third rounded-full px-4 py-3"
+                                    className="w-[110%] border-2 border-[#676666] bg-transparent rounded-full px-4 py-5"
                                 />
                                 <ErrorMessage
                                     name="email"
@@ -264,7 +263,7 @@ const Locations = () => {
                                     name="city"
                                     type="text"
                                     placeholder="City"
-                                    className="w-full border-2 border-third rounded-full px-4 py-3"
+                                    className="w-[110%] border-2 border-[#676666] bg-transparent rounded-full px-4 py-5"
                                 />
                                 <ErrorMessage
                                     name="city"
@@ -274,7 +273,7 @@ const Locations = () => {
                             </div>
                             <button
                                 type="submit"
-                                className="px-8 py-3 bg-primary text-white rounded-full hover:bg-third"
+                                className="px-5 py-4 w-[40%] bg-[#6fa598] text-white rounded-full text-xl hover:bg-third"
                             >
                                 SUBMIT
                             </button>

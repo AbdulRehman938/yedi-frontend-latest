@@ -6,25 +6,25 @@ import { FaXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <div className="bg-third w-full relative z-10 overflow-hidden">
+    <div className="bg-third w-full relative h-[45rem] pt-16 z-10 overflow-hidden">
       {/* ===== Desktop / Tablet Footer ===== */}
-      <div className="hidden sm:flex w-full h-[30rem] justify-center items-start relative">
+      <div className="hidden sm:flex w-full h-[40rem] justify-center items-start relative z-0 pt-16">
         <img
           src="/FooterLine.png"
           loading="lazy"
           alt="Footer"
-          className="absolute w-full h-[90%] mt-5 z-20 lg:object-fill lg-xl:object-cover lg-xl:h-[80%] lg-xl:mt-0"
+          className="absolute w-full h-[100%] mt-5 z-20 lg:object-fill lg-xl:object-cover lg-xl:h-[80%] lg-xl:mt-0"
         />
         <div className="absolute w-[90%] h-[50%] bottom-36 z-30 flex justify-between items-center">
           <div className="h-[80%] w-[25%] flex flex-col justify-between items-start mt-10 lg:ml-[-2rem] lg:mt-[5rem]">
-            <h1 className="text-6xl text-primary font-[#4c4c4c]">
+            <h1 className="text-6xl text-[#91bab0] font-black leading-tight">
               Find Your <br /> Restroom
             </h1>
             <nav className="w-full flex flex-col items-start p-6 gap-4">
               <Link
                 to="/partner"
                 id="partner-btn"
-                className="flex items-center justify-center rounded-full overflow-hidden relative ml-[-2rem]"
+                className="flex items-center justify-center rounded-full  bg-[#bab5a2] overflow-hidden relative ml-[-2rem]"
                 style={{
                   width: 'clamp(10rem, 12vw, 14rem)',
                   height: '2.8rem',
@@ -98,7 +98,7 @@ const Footer = () => {
       </div>
 
       {/* ===== Mobile Footer ===== */}
-      <div className="flex sm:hidden flex-col h-[40rem] pt-20 relative z-10 items-center w-full py-10 gap-6 text-center">
+      <div className="flex sm:hidden flex-col h-[40rem] pt-20 relative z-[-10] items-center w-full py-10 gap-6 text-center">
         <h1 className="text-4xl text-[#91bab0] font-[#4c4c4c]">Find Your Restroom</h1>
 
         <Link
