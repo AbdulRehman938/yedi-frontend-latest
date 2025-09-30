@@ -21,7 +21,7 @@ const Mirror = () => {
   return (
     <>
       {/* Desktop version */}
-      <div className="hidden sm:flex w-full bg-secondary flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[40rem] lg:h-[190vh] xl:h-[350vh] 2xl:h-[275vh] 3xl:h-[305vh] lg-xl:h-[300vh]">
+      <div className="hidden sm:flex w-full bg-secondary flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[25rem] lg:h-[190vh] xl:h-[350vh] 2xl:h-[275vh] 3xl:h-[226vh] lg-xl:h-[300vh]">
         <div className="w-full relative flex flex-col items-center px-4 sm:px-6 lg:px-8 overflow-visible">
           {/* Top overflowing mirror image */}
           <motion.img
@@ -103,7 +103,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-10 text-center md:text-left px-2 xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[2rem] lg:mt-[2rem] 3xl:ml-[15rem] 3xl:mt-[-5rem] lg-xl:mt-[4rem]">
+              <div className="w-full md:w-1/2 flex flex-col gap-10 text-center md:text-left px-2 xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[2rem] lg:mt-[2rem] 3xl:ml-[15rem] 3xl:mt-[1rem] lg-xl:mt-[4rem]">
                 <h1 className="3xl:text-5xl 2xl:mt-5 3xl:ml-10 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl xs:text-3xl text-[#6fa598] font-bold w-full">
                   We've all been there
                 </h1>
@@ -125,7 +125,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-10 text-center md:text-left px-2 2xl:w-[40%] xl:mr-[-5rem] xl:mt-[-1rem] lg:mt-[2rem] lg:mr-[-6rem] 3xl:mr-[-2rem]">
+              <div className="w-full md:w-1/2 flex flex-col gap-10 text-center md:text-left px-2 2xl:w-[40%] xl:mr-[-5rem] xl:mt-[-1rem] lg:mt-[2rem] lg:mr-[-6rem] 3xl:mr-[-2rem] 3xl:mt-[3rem]">
                 <h1 className="3xl:text-4xl 2xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl  text-[#6fa598] font-bold xs:text-3xl">
                   A tiny ask shouldn't <br className="xs:hidden" /> feel so big.
                 </h1>
@@ -149,7 +149,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 lg:mt-[-1rem] 3xl:mt-[-10rem] xl:mt-[5rem] 3xl:ml-[10rem] lg:ml-[8rem] lg-xl:mt-[5rem]">
+              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 lg:mt-[-1rem] 3xl:mt-[-5rem] xl:mt-[5rem] 3xl:ml-[10rem] lg:ml-[8rem] lg-xl:mt-[5rem]">
                 <h1 className="3xl:text-5xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-3xl xs:text-2xl text-[#6fa598] font-bold">
                   No more asking permission
                 </h1>

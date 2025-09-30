@@ -17,7 +17,7 @@ const Work = () => {
                     src="/HomeWorkSlide.png"
                     loading="lazy"
                     alt="slide"
-                    className="work-main-slide w-[100vw] h-[133%] object-contain absolute z-30 top-64 lg-xl:mt-[-15rem] 3xl:mt-[-5rem]"
+                    className="work-main-slide w-[100vw] h-[133%] object-contain absolute z-30 top-64 lg-xl:mt-[-15rem] 3xl:mt-[-5rem] 3xl:w-[100vw] 3xl:h-[150%]"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
@@ -40,7 +40,7 @@ const Work = () => {
                 <div className="work-sections w-[80%] h-[55%] mt-[19rem] absolute z-40 ml-[10%] gap-10 flex flex-col justify-between items-center">
                     {/* Section 1 */}
                     <motion.div
-                        className="work-section1 w-full h-[40%] flex flex-row justify-center items-center"
+                        className="work-section1 w-full h-[40%] flex flex-row justify-center items-center 3xl:h-[45%]"
                         variants={fadeVariant}
                         initial="hidden"
                         whileInView="visible"
@@ -75,7 +75,7 @@ const Work = () => {
 
                     {/* Section 2 */}
                     <motion.div
-                        className="work-section2 w-full h-[40%] flex flex-row justify-center items-center mt-20"
+                        className="work-section2 w-full h-[40%] flex flex-row justify-center items-center mt-20 3xl:h-[45%]"
                         variants={fadeVariant}
                         initial="hidden"
                         whileInView="visible"
@@ -107,7 +107,7 @@ const Work = () => {
 
                     {/* Section 3 */}
                     <motion.div
-                        className="work-section3 w-full h-[40%] flex flex-row justify-center items-center"
+                        className="work-section3 w-full h-[40%] flex flex-row justify-center items-center 3xl:h-[45%]"
                         variants={fadeVariant}
                         initial="hidden"
                         whileInView="visible"
