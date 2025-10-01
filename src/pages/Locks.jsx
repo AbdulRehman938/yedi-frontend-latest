@@ -4,7 +4,7 @@ import Hero from '../components/Lock/Hero'
 const Locks = () => {
 
   return (
-    <div>
+    <div className="w-full flex flex-col">
       <Hero />
     </div>
   )

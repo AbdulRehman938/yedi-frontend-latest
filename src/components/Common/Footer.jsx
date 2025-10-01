@@ -6,7 +6,7 @@ import { FaXTwitter } from 'react-icons/fa6'
 
 const Footer = ({ adjustUpOnLocks = false, adjustUpOnLocations = false }) => {
   const getMarginClass = () => {
-    if (adjustUpOnLocks) return 'mt-[-5rem] lg:mt-[-3rem]';
+    if (adjustUpOnLocks) return 'mt-[-12rem] lg:mt-[-10rem]';
     if (adjustUpOnLocations) return 'mt-[-8rem] lg:mt-[-6rem]';
     return '2xl:mt-[-1rem]';
   };

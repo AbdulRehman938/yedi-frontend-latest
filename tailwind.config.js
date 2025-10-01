@@ -3,15 +3,16 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      xs: "375px", // Mobile-Small
-      sm: "640px", // Mobile-Large
-      md: "768px", // Tablet
-      lg: "1024px", // Laptop
-      "lg-xl": "1140px", // Custom breakpoint
-      xl: "1280px", // Laptop-Large
+      xs: "375px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      "lg-xl": "1140px",
+      xl: "1280px",
       "2xl": "1440px",
       "3xl": "1536px",
     },
+
     extend: {
       colors: {
         background: "#DEEEF7",
