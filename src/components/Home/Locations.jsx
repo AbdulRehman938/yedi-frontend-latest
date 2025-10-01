@@ -162,13 +162,13 @@ const Locations = () => {
 
 
             {/* ====== DESKTOP VIEW ====== */}
-            <div className="hidden sm:flex flex-col h-[80rem] w-[100vw] ml-12 items-start mt-[30%] max-w-7xl pl-8 z-40 3xl:mt-[50%] 3xl:h-[100rem] 2xl:h-[90rem]">
+            <div className="hidden sm:flex flex-col h-[80rem] w-[100vw] ml-12 items-start mt-[30%] max-w-7xl pl-8 z-40 3xl:mt-[50%] 3xl:h-[100rem] 2xl:h-[90rem] 3xl:w-[100vw]">
                 <h1 className="text-5xl font-[#4c4c4c] text-primary font-black mb-6 ml-[6rem]">Locations</h1>
                 <p className="text-xl text-gray-500 mb-8 ml-[6rem]">
                     Discover Yedi in your City
                 </p>
 
-                <div className="relative w-full h-[25rem] left-[6rem] overflow-hidden">
+                <div className="relative w-full h-[25rem] left-[6rem] overflow-hidden 3xl:w-[100vw]">
                     <div
                         className="flex gap-6 h-[20rem] transition-transform duration-500 ease-in-out"
                         style={{
@@ -225,7 +225,7 @@ const Locations = () => {
             </div>
 
             {/* ====== NEWSLETTER FORM ====== */}
-            <div className="hidden sm:flex w-full bg-[#f7f6f4] h-[50vh] 3xl:h-[70vh] 3xl:bottom-[-5rem] rounded-[3rem] absolute bottom-[-8rem] left-0 right-0 z-[1100] mt-16 px-4 lg:px-8 py-12 flex-col lg:flex-row items-center justify-around gap-8 2xl:h-[65vh] 2xl:mb-10 xl:h-[60vh] xl:mb-10 ">
+            <div className="hidden sm:flex w-full bg-[#f7f6f4] h-[50vh] 3xl:h-[35vw] 3xl:bottom-[-5rem] rounded-[3rem] absolute bottom-[-8rem] left-0 right-0 z-[1100] mt-16 px-4 lg:px-8 py-12 flex-col lg:flex-row items-center justify-around gap-8 2xl:h-[65vh] 2xl:mb-10 xl:h-[60vh] xl:mb-10 ">
                 <div className="flex flex-col gap-10 text-left mt-[-12rem] lg:text-left">
                     <h1 className="text-5xl lg:text-7xl font-[#4c4c4c] font-black text-[#6fa598]">
                         Yedi News <br /> Alerts!

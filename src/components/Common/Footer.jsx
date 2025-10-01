@@ -19,7 +19,7 @@ const Footer = ({ adjustUpOnLocks = false, adjustUpOnLocations = false }) => {
           src="/FooterLine.png"
           loading="lazy"
           alt="Footer"
-          className="absolute w-full h-[100%] mt-5 z-[1] lg:object-fill lg-xl:object-cover lg-xl:h-[80%] lg-xl:mt-0 xl:h-[60%] xl:mt-20"
+          className="absolute w-full h-[100%] mt-5 z-[1] lg:object-fill lg-xl:object-cover lg-xl:h-[80%] lg-xl:mt-0 xl:h-[60%] xl:mt-20 3xl:h-[80%] 3xl:mt-0"
         />
         <div className="absolute w-[90%] h-[50%] bottom-36 z-[2] flex justify-between items-center">
           <div className="h-[80%] w-[25%] flex flex-col justify-between items-start mt-10 lg:ml-[-2rem] lg:mt-[5rem]">

@@ -17,7 +17,7 @@ const Work = () => {
                     src="/HomeWorkSlide.png"
                     loading="lazy"
                     alt="slide"
-                    className="work-main-slide w-[100vw] h-[133%] object-contain absolute z-30 top-64 lg-xl:mt-[-15rem] 3xl:mt-[-5rem] 3xl:w-[100vw] 3xl:h-[150%]"
+                    className="work-main-slide w-[100vw] h-[133%] object-contain absolute z-30 top-64 lg-xl:mt-[-15rem] 3xl:mt-[-5rem] 3xl:w-[100vw] 3xl:ml-[-8em] 3xl:h-[150%]"
                     variants={fadeVariant}
                     initial="hidden"
                     whileInView="visible"
