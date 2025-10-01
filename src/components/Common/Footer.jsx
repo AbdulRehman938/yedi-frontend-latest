@@ -4,16 +4,22 @@ import { Link } from 'react-router-dom'
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
-const Footer = ({ adjustUpOnLocks = false }) => {
+const Footer = ({ adjustUpOnLocks = false, adjustUpOnLocations = false }) => {
+  const getMarginClass = () => {
+    if (adjustUpOnLocks) return 'mt-[-5rem] lg:mt-[-3rem]';
+    if (adjustUpOnLocations) return 'mt-[-8rem] lg:mt-[-6rem]';
+    return '2xl:mt-[-1rem]';
+  };
+
   return (
-    <div className={`bg-[#4c4c4c] w-full relative h-[45rem] pt-16 z-5 overflow-hidden ${adjustUpOnLocks ? 'mt-[-5rem] lg:mt-[-3rem]' : '2xl:mt-[-1rem]'}`}>
+    <div className={`bg-[#4c4c4c] w-full relative h-[45rem] pt-16 z-[1] overflow-hidden ${getMarginClass()}`}>
       {/* ===== Desktop / Tablet Footer ===== */}
       <div className="hidden sm:flex w-full h-[40rem] justify-center items-start relative z-0 pt-16">
         <img
           src="/FooterLine.png"
           loading="lazy"
           alt="Footer"
-          className="absolute w-full h-[100%] mt-5 z-[1] lg:object-fill lg-xl:object-cover lg-xl:h-[80%] lg-xl:mt-0"
+          className="absolute w-full h-[100%] mt-5 z-[1] lg:object-fill lg-xl:object-cover lg-xl:h-[80%] lg-xl:mt-0 xl:h-[60%] xl:mt-20"
         />
         <div className="absolute w-[90%] h-[50%] bottom-36 z-[2] flex justify-between items-center">
           <div className="h-[80%] w-[25%] flex flex-col justify-between items-start mt-10 lg:ml-[-2rem] lg:mt-[5rem]">

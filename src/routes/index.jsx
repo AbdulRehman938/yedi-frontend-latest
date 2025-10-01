@@ -5,7 +5,6 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Locations from "../pages/Locations";
 import Locks from "../pages/Locks";
-import Partner from "../pages/Partner";
 
 
 const AppRoutes = () => {
@@ -16,7 +15,6 @@ const AppRoutes = () => {
         <Route path="about" element={<About />} />
         <Route path="locations" element={<Locations />} />
         <Route path="locks" element={<Locks />} />
-        <Route path="partner" element={<Partner />} />
       </Route>
     </Routes>
   );

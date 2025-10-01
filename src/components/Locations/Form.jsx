@@ -47,7 +47,7 @@ const Form = () => {
             <ToastContainer />
 
             {/* Desktop View - Hidden on mobile */}
-            <div className='hidden sm:flex w-full h-[60vh] bg-[#F7F6F4] items-start rounded-[5rem] relative z-50 bottom-[-4rem] flex-row justify-between px-28 py-16'>
+            <div className='hidden sm:flex w-full h-[60vh] bg-[#F7F6F4] items-start rounded-[5rem] relative z-50 mx-auto max-w-[90%] flex-row justify-between px-28 py-16'>
                 <div className='w-[45%] h-[45%] flex flex-col justify-between items-start text-left'>
                     <h1 className='text-6xl font-black text-[#6FA598]'>Yedi News <br /> Alerts!</h1>
                     <p className='text-xl font-normal text-[#676666]'>Be the first to know when Yedi comes to your town, get <br /> special offers and discounts from partners, and more!</p>

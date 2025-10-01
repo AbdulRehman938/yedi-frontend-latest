@@ -33,7 +33,7 @@ const Header = () => {
         { name: 'HOME', path: '/' },
         { name: 'LOCATIONS', path: '/locations' },
         { name: 'OUR LOCKS', path: '/locks' },
-        { name: 'ABOUT US', },
+        { name: 'ABOUT US', path: '/about' },
     ];
 
     // Function to get active index based on current location

@@ -7,6 +7,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 const Layout = () => {
     const location = useLocation();
     const isLocksPage = location.pathname === '/locks';
+    const isLocationsPage = location.pathname === '/locations';
     return (
         <div className="flex flex-col justify-start w-full overflow-x-hidden min-h-screen">
             <ScrollToTop />
@@ -14,7 +15,7 @@ const Layout = () => {
             <main className="w-full flex-grow pt-20 lg:pt-20 overflow-visible">
                 <Outlet />
             </main>
-            <Footer adjustUpOnLocks={isLocksPage} />
+            <Footer adjustUpOnLocks={isLocksPage} adjustUpOnLocations={isLocationsPage} />
         </div>
     );
 };

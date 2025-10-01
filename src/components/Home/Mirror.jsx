@@ -21,7 +21,7 @@ const Mirror = () => {
   return (
     <>
       {/* Desktop version */}
-      <div className="hidden sm:flex w-full bg-secondary flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[25rem] lg:h-[190vh] xl:h-[350vh] 2xl:h-[230vh] 3xl:h-[226vh] lg-xl:h-[300vh]">
+      <div className="hidden sm:flex w-full bg-secondary flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[25rem] lg:h-[190vh] xl:h-[242vh] xl:mt-[15rem] 2xl:h-[230vh] 3xl:h-[226vh] lg-xl:h-[300vh]">
         <div className="w-full relative flex flex-col items-center px-4 sm:px-6 lg:px-8 overflow-visible">
           {/* Top overflowing mirror image */}
           <motion.img
@@ -76,7 +76,7 @@ const Mirror = () => {
           </motion.div>
 
           {/* Sections */}
-          <div id="second" className="w-[100vw] h-[175vh] relative z-40 flex flex-col overflow-visible lg:top-[-6rem] mt-[18rem] lg:mt-[23rem] 2xl:mt-[24rem] xl:mt-[-5rem] 3xl:mt-[24rem] ">
+          <div id="second" className="w-[100vw] h-[175vh] relative z-40 flex flex-col overflow-visible lg:top-[-6rem] mt-[18rem] lg:mt-[23rem] 2xl:mt-[24rem] xl:mt-[-11rem] 3xl:mt-[24rem] ">
             {/* Mirror background for desktop */}
             <img
               src="/Mirror2.png"
@@ -103,7 +103,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-10 text-center md:text-left px-2 xl:ml-[8rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[2rem] lg:mt-[2rem] 3xl:ml-[15rem] 3xl:mt-[1rem] lg-xl:mt-[4rem]">
+              <div className="w-full md:w-1/2 flex flex-col gap-10 text-center md:text-left px-2 xl:ml-[8rem] xl:mt-[-1rem] lg:ml-[5rem] 2xl:ml-[10rem] 2xl:mt-[2rem] lg:mt-[2rem] 3xl:ml-[15rem] 3xl:mt-[1rem] lg-xl:mt-[4rem]">
                 <h1 className="3xl:text-5xl 2xl:mt-5 3xl:ml-10 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl xs:text-3xl text-[#6fa598] font-bold w-full">
                   We've all been there
                 </h1>
@@ -125,7 +125,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-10 text-center md:text-left px-2 2xl:w-[40%] xl:mr-[-5rem] xl:mt-[-1rem] lg:mt-[2rem] lg:mr-[-6rem] 3xl:mr-[-2rem] 3xl:mt-[3rem]">
+              <div className="w-full md:w-1/2 flex flex-col gap-10 text-center md:text-left px-2 2xl:w-[40%] xl:mr-[-5rem] xl:mt-[1rem] lg:mt-[2rem] lg:mr-[-6rem] 3xl:mr-[-2rem] 3xl:mt-[3rem]">
                 <h1 className="3xl:text-4xl 2xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl  text-[#6fa598] font-bold xs:text-3xl">
                   A tiny ask shouldn't <br className="xs:hidden" /> feel so big.
                 </h1>
@@ -142,7 +142,7 @@ const Mirror = () => {
 
             {/* Section 3 */}
             <motion.div
-              className="relative z-30 w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-10 py-10 xl:mt-[1rem] 2xl:mt-[-18rem] 2xl:px-[5rem] 3xl:mt-[2rem] lg:mt-[-21rem] lg:pr-[5rem]"
+              className="relative z-30 w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-10 py-10 xl:mt-[-15rem] 2xl:mt-[-18rem] 2xl:px-[5rem] 3xl:mt-[2rem] lg:mt-[-21rem] lg:pr-[5rem]"
               variants={fadeVariant}
               initial="hidden"
               whileInView="visible"

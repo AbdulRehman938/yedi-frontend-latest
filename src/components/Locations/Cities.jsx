@@ -5,13 +5,13 @@ const Cities = () => {
   return (
     <>
       {/* Desktop View - Hidden on mobile */}
-      <div className='hidden sm:flex w-[80%] h-[70%] flex-col items-center justify-center gap-20 mb-[10vh]'>
-        <div className='w-full h-[10%] flex justify-between items-center'>
+      <div className='hidden sm:flex w-full max-w-[80%] mx-auto h-auto flex-col items-center justify-center gap-20 py-20'>
+        <div className='w-full flex justify-between items-center'>
           <h1 className='text-5xl font-black text-[#6FA598]'>Current Cities</h1>
           <p className='text-xl font-medium text-[#4C4C4C]'>We’re rolling out city by city, partnering with local <br /> businesses to bring clean, accessible restrooms to the <br /> people who need them. Here’s where you can find us today.</p>
         </div>
-        <div className='w-full h-[80%] flex flex-col justify-between items-center'>
-          <div className='w-full bg-white rounded-[2.5rem] border-b-[1rem] border-[#b8dbef] p-0 h-[22%] flex justify-between items-center'>
+        <div className='w-full flex flex-col justify-center items-center gap-10'>
+          <div className='w-full bg-white rounded-[2.5rem] border-b-[1rem] border-[#b8dbef] p-0 h-[200px] flex justify-between items-center'>
             <div className='h-full w-[35%] p-0 rounded-3xl overflow-hidden'>
               <img src="/Washington.svg" alt="washington" className='w-full h-full object-cover' />
             </div>
@@ -21,7 +21,7 @@ const Cities = () => {
             </div>
           </div>
 
-          <div className='w-full bg-white rounded-[2.5rem] border-b-[1rem] border-[#b8dbef] p-0 h-[22%] flex justify-between items-center'>
+          <div className='w-full bg-white rounded-[2.5rem] border-b-[1rem] border-[#b8dbef] p-0 h-[200px] flex justify-between items-center'>
             <div className='h-full w-[35%] p-0 rounded-3xl overflow-hidden'>
               <img src="/NewYork.svg" alt="new york" className='w-full h-full object-cover' />
             </div>
@@ -31,7 +31,7 @@ const Cities = () => {
             </div>
           </div>
 
-          <div className='w-full bg-white rounded-[2.5rem] border-b-[1rem] border-[#b8dbef] p-0 h-[22%] flex justify-between items-center'>
+          <div className='w-full bg-white rounded-[2.5rem] border-b-[1rem] border-[#b8dbef] p-0 h-[200px] flex justify-between items-center'>
             <div className='h-full w-[35%] p-0 rounded-3xl overflow-hidden relative'>
               <img src="/LosAngeles.svg" alt="los angeles" className='w-full h-full object-cover filter grayscale' />
               <div className='absolute inset-0 bg-black/20 rounded-3xl flex items-center justify-center'>
@@ -45,7 +45,7 @@ const Cities = () => {
 
           </div>
 
-          <div className='w-full bg-white rounded-[2.5rem] border-b-[1rem] border-[#b8dbef] p-0 h-[22%] flex justify-between items-center'>
+          <div className='w-full bg-white rounded-[2.5rem] border-b-[1rem] border-[#b8dbef] p-0 h-[200px] flex justify-between items-center'>
             <div className='h-full w-[35%] p-0 rounded-3xl overflow-hidden relative'>
               <img src="/SanFrancisco.png" alt="san francisco" className='w-full h-full object-cover filter grayscale' />
               <div className='absolute inset-0 bg-black/20  rounded-3xl flex items-center justify-center'>
@@ -67,7 +67,7 @@ const Cities = () => {
           <p className='text-sm font-medium text-[#4C4C4C] leading-relaxed'>We're rolling out city by city, partnering with local businesses to bring clean, accessible restrooms to the people who need them.</p>
         </div>
 
-        <div className='w-full flex flex-col gap-4'>
+        <div className='w-full flex flex-col gap-10'>
           {/* Washington DC */}
           <div className='w-full bg-white rounded-2xl border-b-4 pb-10 border-[#b8dbef] h-[60vh] flex flex-col justify-between items-center'>
             <div className='w-full h-64 rounded-2xl overflow-hidden mb-3'>
