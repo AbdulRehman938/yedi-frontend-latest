@@ -45,7 +45,7 @@ const Contact = () => {
     return (
         <>
             {/* Desktop View */}
-            <div className='hidden sm:flex bg-[#efece9] w-full h-[60vw] rounded-b-[5rem] relative z-50 mb-[-10rem] mt-[-5rem]'>
+            <div className='hidden sm:flex bg-[#efece9] w-full h-[60vw] rounded-b-[5rem] relative z-50 mb-[-10rem] 3xl:mb-[-5rem] mt-[-5rem] 3xl:mt-[-5rem] 4xl:mt-[-12rem]'>
                 <div className='w-full h-[80%] flex items-center justify-center gap-5'>
                     <div className='w-[20%] h-full flex flex-col justify-between items-center'>
                         <div className='w-full h-[25%] flex flex-col justify-between items-start'>
@@ -283,7 +283,7 @@ const Contact = () => {
                             </Form>
                         )}
                     </Formik>
-                            <hr className='w-full h-[0.1rem] bg-[#4c4c4c] mt-10' />
+                    <hr className='w-full h-[0.1rem] bg-[#4c4c4c] mt-10' />
                     {/* Other Contacts Section */}
                     <div className='w-full flex flex-col items-start gap-6 mt-8'>
                         <h2 className='text-[#6FA598] text-xl font-semibold'>Other Contacts</h2>
