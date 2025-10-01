@@ -29,7 +29,7 @@ const LockFeatures = () => {
                     </div>
 
                     {/* Right Image */}
-                    <div className="flex justify-center w-1/2">
+                    <div className="flex justify-center w-1/2 3xl:w-[45%] 3xl:mt-20">
                         <img
                         loading="lazy" 
                             src="/Feature1.svg"
@@ -44,7 +44,7 @@ const LockFeatures = () => {
                     id="second"
                     className="w-full h-[32%] bg-white flex justify-between items-center rounded-[4rem] pr-12 shadow-md"
                 >
-                    <div className="flex justify-center w-1/2 overflow-hidden">
+                    <div className="flex justify-center w-1/2 overflow-hidden 3xl:ml-[-5rem]">
                         <img
                         loading="lazy" 
                             src="/Feature2.svg"

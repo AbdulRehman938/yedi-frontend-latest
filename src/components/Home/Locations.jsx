@@ -162,7 +162,7 @@ const Locations = () => {
 
 
             {/* ====== DESKTOP VIEW ====== */}
-            <div className="hidden sm:flex flex-col h-[80rem] w-[100vw] ml-12 items-start mt-[30%] max-w-7xl pl-8 z-40 3xl:mt-[50%] 3xl:h-[100rem] 2xl:h-[90rem] 3xl:w-[100vw]">
+            <div className="hidden sm:flex flex-col h-[80rem] w-[100vw] ml-12 items-start mt-[30%] max-w-7xl pl-8 z-40 3xl:mt-[70%] 3xl:h-[90rem] 2xl:h-[90rem] 3xl:w-[100vw] 3xl:ml-[-25rem]">
                 <h1 className="text-5xl font-[#4c4c4c] text-primary font-black mb-6 ml-[6rem]">Locations</h1>
                 <p className="text-xl text-gray-500 mb-8 ml-[6rem]">
                     Discover Yedi in your City
@@ -201,7 +201,7 @@ const Locations = () => {
                 </div>
 
                 {/* Arrows */}
-                <div className="relative w-full left-[85%] top-20 flex gap-4">
+                <div className="relative w-full left-[85%] top-20 flex gap-4 3xl:left-[100%]">
                     <button
                         onClick={prev}
                         className="bg-primary/50 text-white hover:bg-primary rounded-full p-5"
@@ -217,7 +217,7 @@ const Locations = () => {
                 </div>
 
                 {/* Learn More Button */}
-                <div className="ml-[43%] mt-[10%]">
+                <div className="ml-[43%] mt-[10%] 3xl:ml-[60%]">
                     <button className="px-8 py-3 border-2 border-gray-500 rounded-3xl text-gray-700 hover:bg-secondary hover:border-transparent">
                         LEARN MORE
                     </button>
