@@ -9,7 +9,7 @@ const Hero = () => {
           <h1 className='text-8xl font-black text-[#6fa598]'>About us</h1>
           <p className='text-[#4c4c4c] text-3xl font-medium leading-[5vw]'>What started as a personal problem turned into a bigger mission.</p>
         </div>
-        <img src="/About hero.png" alt="Locations Hero" className='w-full h-auto object-contain relative bottom-0 left-0' />
+        <img src="/About Hero.png" alt="Locations Hero" className='w-full h-auto object-contain relative bottom-0 left-0' />
       </div>
 
       {/* Mobile View - Only visible on mobile */}
@@ -19,7 +19,7 @@ const Hero = () => {
           <p className='text-[#4c4c4c] text-xl font-medium leading-relaxed'>What started as a personal problem turned into a bigger mission.</p>
         </div>
         <div className='w-full flex justify-center'>
-          <img src="/About hero.png" alt="Locations Hero" className='w-full h-full scale-[3] object-contain' />
+          <img src="/About Hero.png" alt="Locations Hero" className='w-full h-full scale-[3] object-contain' />
         </div>
       </div>
     </div>
