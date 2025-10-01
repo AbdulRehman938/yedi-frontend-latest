@@ -134,7 +134,7 @@ const Header = () => {
             {/* Header */}
             <div className="fixed top-0 left-0 z-50 w-full flex justify-center items-center px-2 sm:px-4 lg:px-6 xl:px-8">
                 <div
-                    className={`w-full max-w-[1440px] flex justify-between items-center px-4 sm:px-6 lg:px-8 xl:px-12 
+                    className={`w-full max-w-[1536px] flex justify-between items-center px-4 sm:px-6 lg:px-8 xl:px-12 
           transition-all ease-in-out ${scrolled ? 'py-2 bg-transparent' : 'rounded-xl py-2 mt-2 bg-white'}`}
                     style={{ minHeight: '4rem' }}
                 >

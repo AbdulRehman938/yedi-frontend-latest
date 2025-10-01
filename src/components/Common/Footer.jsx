@@ -12,7 +12,7 @@ const Footer = ({ adjustUpOnLocks = false, adjustUpOnLocations = false }) => {
   };
 
   return (
-    <div className={`bg-[#4c4c4c] w-full relative h-[45rem] pt-16 z-[1] overflow-hidden ${getMarginClass()}`}>
+    <div className={`bg-[#4c4c4c] w-full relative h-[45rem] pt-16 z-0 overflow-hidden ${getMarginClass()}`}>
       {/* ===== Desktop / Tablet Footer ===== */}
       <div className="hidden sm:flex w-full h-[40rem] justify-center items-start relative z-0 pt-16">
         <img

@@ -11,6 +11,7 @@ export default {
       xl: "1280px",
       "2xl": "1440px",
       "3xl": "1536px",
+      "4xl": "1720px",
     },
 
     extend: {
