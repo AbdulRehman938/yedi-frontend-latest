@@ -30,7 +30,7 @@ const Mission = () => {
             </div>
 
             {/* Mobile View - Only visible on mobile */}
-            <div className='flex sm:hidden w-full h-[480vw] bg-[#efece9] relative flex-col items-center justify-start px-4 py-8 pt-20 gap-8'>
+            <div className='flex sm:hidden w-full h-[480vw] bg-[#efece9] relative flex-col items-center justify-start px-4 py-8 pt-20 gap-8 mt-[-16vw]'>
                 {/* Background Image - Behind mobile content */}
                 <img src="/About curved mobile.png" alt="curved-path" className='absolute inset-0 w-full h-full object-contain top-[186vw] z-0' />
 
@@ -60,7 +60,7 @@ const Mission = () => {
                     </p>
                 </div>
 
-                <div className='w-full bg-[#f7f6f4] rounded-2xl p-6 mt-8 relative z-10'>
+                <div className='w-full bg-[#f7f6f4] rounded-2xl p-6 mt-20 relative z-10'>
                     <h1 className='text-3xl font-black text-[#91BAB0] text-center mb-4'>Our Mission</h1>
                     <div className='flex flex-col gap-4 text-center'>
                         <p className='text-base font-bold text-[#676666]'>
