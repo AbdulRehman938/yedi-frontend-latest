@@ -164,7 +164,7 @@ const Contact = () => {
             </div>
 
             {/* Mobile View */}
-            <div className='flex sm:hidden bg-[#efece9] w-full h-[300vw] rounded-b-[3rem] relative z-50 mb-[-5rem] px-6 py-8'>
+            <div className='flex sm:hidden bg-[#efece9] w-full h-[300vw] rounded-b-[3rem] relative z-50 mb-[-5rem] px-6 py-8 iphone-pro:h-[270vw]'>
                 <div className='w-full flex flex-col items-center justify-start gap-8'>
 
                     {/* Header Section */}

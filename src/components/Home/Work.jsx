@@ -140,7 +140,7 @@ const Work = () => {
             </div>
 
             {/* ===== Mobile-only Layout ===== */}
-            <motion.div className="sm:hidden w-full bg-background px-4 pt-10 mt-[20rem]">
+            <motion.div className="sm:hidden w-full bg-background px-4 pt-10 mt-[20rem] iphone-pro:mt-[10rem]">
                 <h1 className="text-primary font-bold text-4xl text-right mb-8">How it works</h1>
 
                 {/* Step 1 */}

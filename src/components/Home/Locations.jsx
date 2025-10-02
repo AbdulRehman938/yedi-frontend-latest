@@ -34,20 +34,20 @@ const Locations = () => {
 
 
     return (
-        <section className="w-full flex flex-col relative z-[1000] items-center pt-16 bg-gradient-to-b from-transparent to-[#f8fafc] 3xl:h-[120vw] 3xl:mt-[10vw]">
-            <div className='hidden md:flex absolute w-full h-[50%] -z-10 bottom-[30rem] bg-white blur-3xl 3xl:bottom-[20rem]'></div>
+        <section className="w-full flex flex-col relative z-[1000] items-center pt-16 bg-gradient-to-b from-transparent to-[rgb(248,250,252)] 3xl:h-[120vw] 3xl:mt-[10vw]">
+            <div className='hidden md:flex absolute w-full h-[50%] -z-10 bottom-[30rem] bg-white blur-3xl 3xl:bottom-[20rem] iphone-pro:bottom-[25rem]'></div>
 
             {/* ====== MOBILE VIEW ====== */}
             <div className="sm:hidden w-full flex flex-col items-start mt-[35rem] h-[40rem] px-4">
                 <div className='sm:flex absolute w-[100vw] ml-[-1rem] h-[10%] -z-10 top-[15rem] bg-white blur-xl'></div>
-                <div className='sm:flex absolute w-[100vw] ml-[-1rem] -z-10 top-[20rem] h-[40rem] bg-white'>
+                <div className='sm:flex absolute w-[100vw] ml-[-1rem] -z-10 top-[20rem] h-[40rem] bg-white iphone-pro:h-[50vw] iphone-pro:top-[18rem]'>
                     <h2 className="text-3xl font-bold mt-10 ml-5 text-primary mb-2">Locations</h2>
                     <p className="text-gray-600 text-sm mb-4 ml-5">
                         Discover Yedi in your City
                     </p>
 
                     {/* Mobile carousel */}
-                    <div className="relative w-full overflow-hidden h-[17rem] mt-8">
+                    <div className="relative w-full overflow-hidden h-[17rem] mt-8 iphone-pro:h-[20rem]">
                         <div
                             className="flex transition-transform duration-500 ease-in-out gap-4 px-4"
                             style={{ transform: `translateX(-${activeIndex * 70}%)` }}

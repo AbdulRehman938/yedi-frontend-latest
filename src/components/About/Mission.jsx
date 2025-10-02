@@ -60,13 +60,13 @@ const Mission = () => {
                     </p>
                 </div>
 
-                <div className='w-full bg-[#f7f6f4] rounded-2xl p-6 mt-20 relative z-10 iphone-pro:mt-40'>
+                <div className='w-full bg-[#f7f6f4] flex flex-col justify-center gap-10 items-start rounded-2xl p-6 mt-20 relative z-10 iphone-pro:mt-40 iphone-pro:h-[100vw]'>
                     <h1 className='text-3xl font-black text-[#91BAB0] text-center mb-4'>Our Mission</h1>
-                    <div className='flex flex-col gap-4 text-center'>
-                        <p className='text-base font-bold text-[#676666]'>
+                    <div className='flex flex-col gap-4 text-left'>
+                        <p className='text-lg font-bold text-[#676666]'>
                             To make restrooms more accessible, comfortable, and secure—for everyone.
                         </p>
-                        <p className='text-base font-bold text-[#676666]'>
+                        <p className='text-lg font-bold text-[#676666]'>
                             We empower public spaces with smart tools that give people peace of mind and give businesses more control. Because no one should have to ask permission to meet a basic need.
                         </p>
                     </div>

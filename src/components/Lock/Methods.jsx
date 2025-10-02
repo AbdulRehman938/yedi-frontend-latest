@@ -255,7 +255,7 @@ const Methods = () => {
                 </div>
 
                 {/* Mobile Product Details */}
-                <div className="mt-16 w-[90vw] ml-[-1rem]">
+                <div className="mt-16 w-[90vw] ml-[-1rem] iphone-pro:mt-[-2rem]">
                     <h2 className="text-2xl font-semibold text-[#55887c] text-left mb-10">Product Details</h2>
 
                     <div className="bg-transparent rounded-lg overflow-hidden">
@@ -313,7 +313,7 @@ const Methods = () => {
                 </div>
 
                 {/* Mobile Locations */}
-                <div className="bg-white ml-[-2.4rem] absolute w-[100vw] bottom-[0rem] h-[35rem] rounded-2xl shadow-md flex flex-col items-start pl-5 py-4 sm:hidden z-[10]">
+                <div className="bg-white ml-[-2.4rem] absolute w-[100vw] bottom-[0rem] h-[35rem] rounded-2xl shadow-md flex flex-col items-start pl-5 py-4 sm:hidden z-[10] iphone-pro:h-[38rem] iphone-pro:bottom-[1rem]">
                     <h3 className="text-4xl font-semibold text-[#55887c] mb-3 ml-3">Locations</h3>
                     <p className="text-gray-500 text-xs mb-3 ml-3">Discover Yedi in your city.</p>
 
@@ -355,7 +355,7 @@ const Methods = () => {
                         </div>
 
                         {/* Arrows */}
-                        <div className="flex justify-center gap-10 w-full absolute bottom-[8rem] left-[5rem] px-4">
+                        <div className="flex justify-center gap-10 w-full absolute bottom-[8rem] left-[5rem] px-4 iphone-pro:bottom-[9rem]">
                             <button
                                 onClick={() =>
                                     setIndex((prev) => (prev === 0 ? cities.length - 1 : prev - 1))

@@ -114,7 +114,7 @@ const Footer = ({ adjustUpOnLocks = false, adjustUpOnLocations = false }) => {
           BECOME A PARTNER
         </Link>
 
-        <div className="flex flex-wrap justify-center gap-4 text-white text-xs mt-4">
+        <div className="flex flex-wrap justify-center gap-4 text-white text-xs mt-4 relative z-30">
           <Link to="/">HOME</Link>
           <Link to="/locks">OUR LOCKS</Link>
           <Link to="/locations">LOCATIONS</Link>
@@ -134,7 +134,7 @@ const Footer = ({ adjustUpOnLocks = false, adjustUpOnLocations = false }) => {
           src="/FooterMobile.svg"
           loading="lazy"
           alt="Footer"
-          className="w-[100vw] h-[20rem] object-contain mt-[-7rem]"
+          className="w-[100vw] h-[22rem] object-contain mt-[-7rem]"
         />
         <div className="flex justify-between items-center px-4 w-full text-white text-xs">
           <img loading="lazy" src="/whitelogo.svg" alt="logo" className="h-6" />

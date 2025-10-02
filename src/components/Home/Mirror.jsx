@@ -168,7 +168,7 @@ const Mirror = () => {
       </div>
 
       {/* Mobile-only control container */}
-      <div className="block sm:hidden w-full bg-secondary relative top-[20rem] z-50">
+      <div className="block sm:hidden w-full bg-secondary relative top-[20rem] z-50 iphone-pro:top-[5rem]">
         <div className="w-full bg-secondary flex flex-col items-center relative h-[100rem] pt-56 overflow-visible mt-[30rem]">
           <div className="w-full relative flex flex-col items-center px-4 overflow-visible">
 
@@ -215,7 +215,7 @@ const Mirror = () => {
                 <img src="/brownmobile4.svg" loading="lazy" alt="Mirror part 4" className="brownmobile4 w-full max-h-[35rem] relative z-10 mt-[2rem] object-cover" />
                 <img src="/brownmobile1.svg" loading="lazy" alt="Mirror part 1" className="brownmobile1 w-full max-h-[30rem] relative z-50 mt-[-20rem] object-cover" />
                 <img src="/brownmobile2.svg" loading="lazy" alt="Mirror part 2" className="brownmobile2 w-full max-h-[30rem] relative z-10 mt-[20rem] top-[20rem] object-cover" />
-                <img src="/brownmobile3.svg" loading="lazy" alt="Mirror part 3" className="brownmobile3 w-full max-h-[30rem] relative z-10 mt-[-20rem] top-[30rem] object-cover" />
+                <img src="/brownmobile3.svg" loading="lazy" alt="Mirror part 3" className="brownmobile3 w-full max-h-[30rem] relative z-10 mt-[-20rem] top-[30rem] object-cover iphone-pro:top-[25rem]" />
               </div>
 
               {/* Section 1 */}
@@ -227,7 +227,7 @@ const Mirror = () => {
                 exit="exit"
                 viewport={{ once: false, amount: 0.2 }}
               >
-                <div className="w-full flex flex-col gap-4 text-center px-2 md:order-2 lg:order-1">
+                <div className="w-full flex flex-col gap-4 text-center px-2 md:order-2 lg:order-1 iphone-pro:mt-[5vw]">
                   <h1 className="text-4xl text-primary font-bold">We've all been there</h1>
                   <p className="text-gray-500 font-medium">
                     You're away from home and unsure where you can
@@ -257,7 +257,7 @@ const Mirror = () => {
                   </p>
                 </div>
                 <div className="w-full flex justify-center">
-                  <img loading="lazy" src="/Home-character3.svg" alt="char3" className="w-2/3 max-w-md" />
+                  <img loading="lazy" src="/Home-character3.svg" alt="char3" className="w-2/3 max-w-md iphone-pro:w-[55%]" />
                 </div>
               </motion.div>
 
@@ -270,7 +270,7 @@ const Mirror = () => {
                 exit="exit"
                 viewport={{ once: false, amount: 0.2 }}
               >
-                <div className="w-full flex flex-col gap-4 text-center px-2">
+                <div className="w-full flex flex-col gap-4 text-center px-2 iphone-pro:mt-[-18vw]">
                   <h1 className="text-3xl text-primary font-bold">No more asking permission</h1>
                   <p className="text-gray-500 font-medium">
                     With Yedi, it's easy—go straight in, find the bathroom door, scan, and unlock to find <span className="text-[#4c4c4c] font-medium">relief</span>.
