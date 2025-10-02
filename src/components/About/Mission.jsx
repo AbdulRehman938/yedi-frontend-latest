@@ -30,7 +30,7 @@ const Mission = () => {
             </div>
 
             {/* Mobile View - Only visible on mobile */}
-            <div className='flex sm:hidden w-full h-[480vw] xs:h-[500vw] iphone-pro:h-[420vw] bg-[#efece9] relative flex-col items-center justify-start px-4 py-8 pt-20 gap-8 mt-[-50vw]'>
+            <div className='flex sm:hidden w-full h-[480vw] xs:h-[500vw] iphone-pro:h-[420vw] bg-[#efece9] relative flex-col items-center justify-start px-4 py-8 pt-20 gap-8 mt-[-45vw]'>
                 {/* Background Image - Behind mobile content */}
                 <img src="/About curved mobile.png" alt="curved-path" className='absolute inset-0 w-full h-full object-contain top-[100vw] scale-[1.2] xs:top-[180vw] iphone-pro:top-[150vw] iphone-pro:absolute z-0' />
 
