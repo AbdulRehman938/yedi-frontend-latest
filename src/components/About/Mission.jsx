@@ -30,9 +30,9 @@ const Mission = () => {
             </div>
 
             {/* Mobile View - Only visible on mobile */}
-            <div className='flex sm:hidden w-full h-[480vw] xs:h-[500vw] iphone-pro:h-[420vw] bg-[#efece9] relative flex-col items-center justify-start px-4 py-8 pt-20 gap-8 mt-[-45vw]'>
+            <div className='flex sm:hidden w-full h-[480vw] xs:h-[560vw] iphone-pro:h-[420vw] bg-[#efece9] relative flex-col items-center justify-start px-4 py-8 pt-20 gap-8 mt-[-45vw] xs:mt-[-50vw]'>
                 {/* Background Image - Behind mobile content */}
-                <img src="/About curved mobile.png" alt="curved-path" className='absolute inset-0 w-full h-full object-contain top-[100vw] scale-[1.2] xs:top-[180vw] iphone-pro:top-[150vw] iphone-pro:absolute z-0' />
+                <img src="/About curved mobile.png" alt="curved-path" className='absolute inset-0 w-full h-full object-contain top-[100vw] scale-[1.2] xs:top-[220vw] iphone-pro:top-[150vw] iphone-pro:absolute z-0' />
 
                 <div className='w-full text-center mb-4 relative z-10 px-5'>
                     <h2 className='text-lg font-semibold text-[#B9B5A2] mb-4 text-left'>Our Story</h2>
@@ -60,7 +60,7 @@ const Mission = () => {
                     </p>
                 </div>
 
-                <div className='w-full bg-[#f7f6f4] flex flex-col justify-center gap-10 items-start rounded-2xl p-6 mt-20 relative z-10 iphone-pro:mt-40 iphone-pro:h-[100vw]'>
+                <div className='w-full bg-[#f7f6f4] flex flex-col justify-center gap-10 items-start rounded-2xl p-6 mt-20 relative z-10 iphone-pro:mt-40 iphone-pro:h-[100vw] xs:h-[120vw]'>
                     <h1 className='text-3xl font-black text-[#91BAB0] text-center mb-4'>Our Mission</h1>
                     <div className='flex flex-col gap-4 text-left'>
                         <p className='text-lg font-bold text-[#676666]'>
