@@ -4,7 +4,7 @@ export default {
   theme: {
     screens: {
       xs: "375px",
-      "iphone-pro": "430px",
+      "iphone-pro": "440px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
