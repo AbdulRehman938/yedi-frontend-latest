@@ -19,7 +19,7 @@ const Hero = () => {
           <p className='text-[#4c4c4c] text-xl font-medium leading-relaxed'>What started as a personal problem turned into a bigger mission.</p>
         </div>
         <div className='w-full flex justify-center items-center min-h-[400px] mt-[-10vw]'>
-          <img src="/About Hero Mobile.png" alt="About Hero Mobile" className='w-full scale-[1.1] max-w-[400px] h-auto object-contain' />
+          <img src="/AboutHeroMobile.png" alt="About Hero Mobile" className='w-full scale-[1.1] max-w-[400px] h-auto object-contain' />
         </div>
       </div>
     </div>
