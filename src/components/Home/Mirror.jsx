@@ -21,7 +21,7 @@ const Mirror = () => {
   return (
     <>
       {/* Desktop version */}
-      <div className="hidden sm:flex w-full bg-secondary flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] 2xl:h-[150vw] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[45rem] 3xl:h-[148vw] lg:h-[190vh] xl:h-[157vw] xl:mt-[15rem] lg-xl:h-[300vh]">
+      <div className="hidden sm:flex w-full bg-secondary flex-col items-center relative pt-56 overflow-visible 2xl:mt-[30rem] 2xl:h-[150vw] lg:mt-[30rem] lg:pt-[10rem] 3xl:mt-[45rem] 3xl:h-[148vw] lg:h-[190vh] xl:h-[157vw] xl:mt-[15rem] lg-xl:h-[300vh] 2.5xl:h-[149vw] 4xl:h-[146vw]">
         <div className="w-full relative flex flex-col items-center px-4 sm:px-6 lg:px-8 overflow-visible">
           {/* Top overflowing mirror image */}
           <motion.img
@@ -149,7 +149,7 @@ const Mirror = () => {
               exit="exit"
               viewport={{ once: false, amount: 0.2 }}
             >
-              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 lg:mt-[-1rem] xl:mt-[5rem] 3xl:ml-[10rem] 3xl:mt-[-14vw] lg:ml-[8rem] lg-xl:mt-[5rem] 2xl:mt-[3rem] 4xl:mt-[-5rem]">
+              <div className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left px-2 lg:mt-[-1rem] xl:mt-[5rem] 3xl:ml-[10rem] 3xl:mt-[-14vw] lg:ml-[8rem] lg-xl:mt-[5rem] 2xl:mt-[3rem] 4xl:mt-[-5rem] 2.5xl:mt-[7rem]">
                 <h1 className="3xl:text-5xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-3xl xs:text-2xl text-[#6fa598] font-bold">
                   No more asking permission
                 </h1>
