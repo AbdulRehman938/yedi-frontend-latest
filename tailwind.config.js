@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      xs: "375px",
+      xs: "360px",
       "iphone-pro": "430px",
       sm: "640px",
       md: "768px",
