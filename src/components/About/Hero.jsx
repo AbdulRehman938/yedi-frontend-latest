@@ -13,13 +13,13 @@ const Hero = () => {
       </div>
 
       {/* Mobile View - Only visible on mobile */}
-      <div className='flex sm:hidden w-full h-[60vh] flex-col items-center justify-around px-4 py-8'>
-        <div className='w-full flex flex-col items-center justify-center text-center mb-8'>
+      <div className='flex sm:hidden w-full min-h-[80vh] flex-col items-center justify-center px-4 py-8 gap-8'>
+        <div className='w-full flex flex-col items-center justify-center text-center mt-[15vw]'>
           <h1 className='text-5xl font-black text-[#6fa598] mb-4'>About us</h1>
           <p className='text-[#4c4c4c] text-xl font-medium leading-relaxed'>What started as a personal problem turned into a bigger mission.</p>
         </div>
-        <div className='w-full flex justify-center'>
-          <img src="/About Hero Mobile.png" alt="Locations Hero" className='w-full h-full scale-[1.2] object-contain' />
+        <div className='w-full flex justify-center items-center min-h-[400px] mt-[-10vw]'>
+          <img src="/About Hero Mobile.png" alt="About Hero Mobile" className='w-full scale-[1.1] max-w-[400px] h-auto object-contain' />
         </div>
       </div>
     </div>
